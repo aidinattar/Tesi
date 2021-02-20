@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.2.6)  20 FEB 2021 19:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.2.6)  20 FEB 2021 20:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -246,13 +246,26 @@ File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 (/usr/share/texlive/texmf-dist/tex/latex/pdfx/8bit.def
 File: 8bit.def 2008/03/30 v1.1d Input encoding file
 )
-** pdfx: No file Tesi_Triennale_PMNS.xmpdata . Metadata will be incomplete!
-<<sRGB.icc>> (/usr/share/texlive/texmf-dist/tex/latex/pdfx/8bit.def
+** pdfx: Metadata file Tesi_Triennale_PMNS.xmpdata read successfully.
+(./Tesi_Triennale_PMNS.xmpdata)<<sRGB.icc>>
+(/usr/share/texlive/texmf-dist/tex/latex/pdfx/8bit.def
+File: 8bit.def 2008/03/30 v1.1d Input encoding file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pdfx/8bit.def
+File: 8bit.def 2008/03/30 v1.1d Input encoding file
+)
+(/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-utf8.def
+File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pdfx/8bit.def
 File: 8bit.def 2008/03/30 v1.1d Input encoding file
 )
 Package hyperref Info: Option `unicode' set `true' on input line 2411.
 Package hyperref Info: Option `unicode' set `true' on input line 2412.
 
+(/usr/share/texlive/texmf-dist/tex/latex/pdfx/8bit.def
+File: 8bit.def 2008/03/30 v1.1d Input encoding file
+)
 (/usr/share/texlive/texmf-dist/tex/generic/pdftex/glyphtounicode.tex)
 (/usr/share/texlive/texmf-dist/tex/latex/pdfx/glyphtounicode-cmr.tex)
 (/usr/share/texlive/texmf-dist/tex/latex/pdfx/glyphtounicode-ntx.tex)
@@ -880,10 +893,10 @@ Package rerunfilecheck Info: File `Tesi_Triennale_PMNS.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 165.
  ) 
 Here is how much of TeX's memory you used:
- 22279 strings out of 480906
- 357171 string characters out of 5910773
- 851058 words of memory out of 5000000
- 37475 multiletter control sequences out of 15000+600000
+ 22304 strings out of 480906
+ 357821 string characters out of 5910773
+ 854377 words of memory out of 5000000
+ 37489 multiletter control sequences out of 15000+600000
  576290 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,11n,46p,537b,2341s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -893,7 +906,7 @@ f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
 utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on Tesi_Triennale_PMNS.pdf (7 pages, 203678 bytes).
+Output written on Tesi_Triennale_PMNS.pdf (7 pages, 205593 bytes).
 PDF statistics:
  88 PDF objects out of 1000 (max. 8388607)
  12 named destinations out of 1000 (max. 500000)
