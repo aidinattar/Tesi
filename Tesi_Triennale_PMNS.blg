@@ -1,49 +1,49 @@
 This is BibTeX, Version 0.99d (TeX Live 2020/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Tesi_Triennale_PMNS.aux
-A level-1 auxiliary file: Capitoli/Conclusioni/Conclusioni.aux
+A level-1 auxiliary file: Capitoli/Capitolo_1/Capitolo_1.aux
+A level-1 auxiliary file: Capitoli/Capitolo_2/Capitolo_2.aux
+A level-1 auxiliary file: Capitoli/Capitolo_3/Capitolo_3.aux
 The style file: plain.bst
-I found no \citation commands---while reading file Tesi_Triennale_PMNS.aux
 Database file #1: BibliografiaTesi.bib
-You've used 0 entries,
+You've used 12 entries,
             2118 wiz_defined-function locations,
-            498 strings with 4063 characters,
-and the built_in function-call counts, 18 in all, are:
-= -- 0
-> -- 0
+            582 strings with 6675 characters,
+and the built_in function-call counts, 4362 in all, are:
+= -- 373
+> -- 338
 < -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 7
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
++ -- 136
+- -- 122
+* -- 367
+:= -- 796
+add.period$ -- 37
+call.type$ -- 12
+change.case$ -- 93
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+cite$ -- 12
+duplicate$ -- 128
+empty$ -- 261
+format.name$ -- 122
+if$ -- 842
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 3
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 12
+missing$ -- 15
+newline$ -- 62
+num.names$ -- 24
+pop$ -- 100
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 85
 quote$ -- 0
-skip$ -- 1
+skip$ -- 86
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
+substring$ -- 116
+swap$ -- 12
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
+type$ -- 40
 warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 2
-(There was 1 error message)
+while$ -- 27
+width$ -- 14
+write$ -- 129

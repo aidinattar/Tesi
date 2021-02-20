@@ -1,17 +1,12 @@
-% !TEX root = ../Tesi_Triennale_PMNS.tex
-
+% !TEX root = ../../Tesi_Triennale_PMNS.tex
 \chapter[Osservazione di GW da BNS]{GW170817: osservazione di onde gravitazionali prodotte da un sistema binario di stelle di neutroni}
 \label{chapter:gw170817}
 Rivelato il 17 Agosto 2017 dal network LIGO-Virgo, GW170817 è il primo segnale di onda gravitazionale generato dallo spiraleggiamento un sistema binario di stelle di neutroni.
 Il segnale osservato, alla fine del secondo run di misure O2, è tutt'ora il più energetico osservato finora tra questi tipi di segnale, con un rapporto segnale su rumore (SNR) di 32.4.
 
 Oltre al segnale di GW è stato osservato un $\gamma$-ray burst, dopo 1.7s dalla coalescenza.
-
 \section{Osservazione dello spiraleggiamento}
 \label{section:osservazioneInspiralGW170817}
-%	\begin{center}
-%		$\smallsim 3$ pagine
-%	\end{center}
 \begin{wrapfigure}{r}{0.5\textwidth}
 	\vspace{-15pt}
 	\begin{center}
@@ -22,7 +17,6 @@ Oltre al segnale di GW è stato osservato un $\gamma$-ray burst, dopo 1.7s dalla
 	\label{fig:osservazione_gw170817}
 	\vspace{-40pt}
 \end{wrapfigure}
-
 La rappresentazione tempo-frequenza dei dati a cui viene sottratto il rumore e sbiancati. Si può notare immediatamente che il segnale che, idealmente deve presentare la forma di un chirp, è ben visibile nei due rivelatori LIGO, meglio in Livingston che in Hanford, mentre in Virgo, a causa della posizione celeste della sorgente del segnale, non è possibile distiguere nessun pattern dal rumore di fondo. La (non) rivelazione risulta comunque utile, soprattutto per permettere l'individuazione della posizione celeste della sorgente.
 
 L'analisi del segnale mostra un segnale coerente nei due detector LIGO, grazie al quale si individua la sorgente in una regione identificata da un angolo solido di 31 $\text{deg}^2$, che a sua volta ha permesso l'identificazione della controparte elettromagnetica GRB170817A. 
@@ -43,15 +37,8 @@ Le proprietà della sorgente di onde gravitazionali sono ottenute dal confronto 
 La sorgente viene in questo modo identificata in una regione celeste di 28$\text{deg}^2$ di area e $380\text{Mpc}^3$ di volume, utilizzando una combinazione di timing, fase e ampiezza dei tre detector. La distanza luminosa, la più prossima osservata finora, viene individuata in $40_{-14}^{+8}$Mpc. Per le masse delle stelle compatte risulta più semplice dedurre la massa di chirp, indipendente dalla scelta della prior nell'analisi Bayesiana, che si valuta in $\mathcal{M}=1.188_{-0.002}^{+0.004}$, rispetto alle masse singole, che soffrono invece della degenerazione tra il rapporto tra le masse $q$ e le componenti dello spin $\chi_1$ e $\chi_2$. È necessario fare quindi assunzioni a partire dalle EOS che si considerano, ottenendo dei range $m_1 \in (1.36, 2.26)M_\odot$ e $m_2 \in (0.86, 1.36)M_\odot$ evidentemente meno precisi, ma comunque utili come evidenza della natura di stelle di neutroni del sistema binario, escludendo invece la possibilità di buchi neri che prevederebbe range di masse superiori\cite{Abbott_2017b}.
 
 QUALCOSA SULLE TIDAL DEFORMABILITIES?
-
-%	\lipsum[5]\cite{Abbott_2017b}.
-
 \section{Ricerca del post-merger del residuo}
 \label{section:postmergerGW170817}
-%	\begin{center}
-%		$\smallsim 2$ pagine
-%	\end{center}
-
 L'analisi del post-merger, atteso in seguito all'osservazione del segnale GW170817, non ha portato ad evidenza statisticamente significativa di un oggetto in seguito alla coalescenza, ma ha permesso di ottenere informazioni sul limite superiore sulle ampiezze di strain ed energie di GW osservabili. Gli attuali detector infatti non sono calibrati in modo tale da permettere rivelazioni alle alte frequenze del post-merger.
 
 Mentre lo studio del segnale elettromagnetico associato alla GW non permette di escludere nessuno dei possibili stati finali indicati in sezione \ref{section:residual}, grazie ai valori ottenuti per le masse dei progenitori date nella sezione \ref{subsection:proprietàSorgGW170817} si calcola che per un ampio range di equazioni di stato la coalescenza produce uno stato di NS ipermassiva. Questo spiega anche il ritardo del lampo-$\gamma$rispetto all'istante di rivelazione del segnale di merger. 
@@ -66,7 +53,6 @@ Mentre lo studio del segnale elettromagnetico associato alla GW non permette di 
 	\label{fig:NoiseFrequenze}
 	\vspace{-10pt}
 \end{wrapfigure}
-
 Come si vedrà nella sezione \ref{section:analisiSimSingole} in base alla EOS che si considera si ottiene un contributo diverso nel post-merger che inizia attorno a $\smallsim1$kHz. Più in generale, oltre alla EOS hanno fondamentale importanza le masse e gli spin degli oggetti iniziali. 
 Per quanto riguarda invece la rivelazione di questa fase del segnale, anche considerando modelli ottimistici da stati finali di NS ipermassiva o supermassiva, l'SNR atteso per distanze di $\smallsim40$Mpc è $\smallsim1-2$ ordini di grandezza più piccolo di quello rivelabile dal network LIGO-Virgo attualmente utilizzato, facendo uso di algoritmi di confronto con segnali modellati (che comunque sono meno utilizzati per il post-merger, per la difficoltà nel modellare questa fase del segnale).
 Si ipotizza tuttavia che nei prossimi run O3-O4 la sensibilità del network sarà tale da permettere la rivelazione di queste emissioni.
@@ -79,6 +65,4 @@ Introduzione sui possibili stati finali: BH, NS ipermassiva ->bh, NS supermassiv
 
 Breve rassegna dei metodi di rivelazione: stamp \& cwb
 
-non trovato alcun segnale
-
-%    \lipsum[3]\cite{Abbott_2017a}.
+non trovato alcun segnale\cite{Abbott_2017a}

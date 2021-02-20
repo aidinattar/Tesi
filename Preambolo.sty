@@ -1,0 +1,64 @@
+\ProvidesPackage{Preambolo}
+
+\usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+\usepackage{setspace}
+\usepackage[a-1b]{pdfx}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amssymb,amsmath,amsthm,amsfonts}
+\usepackage{xspace}
+\usepackage{tabularx}
+\usepackage{indentfirst}
+\usepackage{subfigure}
+\usepackage[small]{caption}
+\usepackage{eucal}
+\usepackage{eso-pic}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{afterpage}
+\usepackage{parskip}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{textcomp}
+\usepackage{cite}
+\usepackage{multirow}
+\pagestyle{fancy}
+\usepackage[italian]{babel}
+\usepackage{lipsum}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{siunitx}
+\usepackage[strict]{changepage}
+\usepackage{physics}
+\usepackage{wrapfig}
+\usepackage{array}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{times}
+
+\usepackage[nottoc]{tocbibind}
+\DeclareUnicodeCharacter{2009}{\,} 
+\DeclareSIUnit\solarmass{M\ensuremath{_\odot}}
+\newcommand{\smallsim}{\smallsym{\mathrel}{\sim}}
+
+\makeatletter
+\newcommand{\smallsym}[2]{#1{\mathpalette\make@small@sym{#2}}}
+\newcommand{\make@small@sym}[2]{%
+	\vcenter{\hbox{$\m@th\downgrade@style#1#2$}}%
+}
+\newcommand{\downgrade@style}[1]{%
+	\ifx#1\displaystyle\scriptstyle\else
+	\ifx#1\textstyle\scriptstyle\else
+	\scriptscriptstyle
+	\fi\fi
+}
+\bibliographystyle{plain}
+\includeonly{Capitoli/Frontespizio/Frontespizio,
+			 Capitoli/Capitolo_1/Capitolo_1,
+			 Capitoli/Capitolo_2/Capitolo_2,
+			 Capitoli/Capitolo_3/Capitolo_3,
+			 Capitoli/Capitolo_4/Capitolo_4,
+			 Capitoli/Conclusioni/Conclusioni}

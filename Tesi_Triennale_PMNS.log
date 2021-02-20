@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.2.6)  20 FEB 2021 20:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.2.6)  21 FEB 2021 00:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -23,7 +23,9 @@ File: bk11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
-)
+) (./Preambolo.sty
+Package: Preambolo 
+
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
@@ -49,6 +51,9 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layouthoffset=\dimen141
 \Gm@layoutvoffset=\dimen142
 \Gm@dimlist=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pdfx/pdfx.sty
 Package: pdfx 2019/02/27 v1.6.3 PDF/X and PDF/A support (CVR/HTH/RRM/PS)
@@ -300,6 +305,9 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 \Gin@req@height=\dimen147
 \Gin@req@width=\dimen148
 )
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+)
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 )
@@ -546,9 +554,6 @@ Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@dima=\skip74
 \bigstrutjot=\dimen191
 )
-(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-Package: setspace 2011/12/19 v6.7a set line spacing
-)
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2020/07/13 3.47 The Babel package
 
@@ -682,8 +687,6 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
 )
-   defining Unicode char U+2009 (decimal 8201)
-
 (/usr/share/texlive/texmf-dist/tex/latex/tocbibind/tocbibind.sty
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
 Package tocbibind Info: The document has chapter divisions on input line 50.
@@ -691,29 +694,34 @@ Package tocbibind Info: The document has chapter divisions on input line 50.
 
 Package tocbibind Note: Using chapter style headings, unless overridden.
 
-) (./Tesi_Triennale_PMNS.aux (./Capitoli/Conclusioni/Conclusioni.aux))
+)
+   defining Unicode char U+2009 (decimal 8201)
+) (./Tesi_Triennale_PMNS.aux (./Capitoli/Frontespizio/Frontespizio.aux)
+(./Capitoli/Capitolo_1/Capitolo_1.aux) (./Capitoli/Capitolo_2/Capitolo_2.aux)
+(./Capitoli/Capitolo_3/Capitolo_3.aux) (./Capitoli/Capitolo_4/Capitolo_4.aux)
+(./Capitoli/Conclusioni/Conclusioni.aux))
 \openout1 = `Tesi_Triennale_PMNS.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 84
-.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 3.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -768,23 +776,15 @@ ABD: EveryShipout initializing macros
 \everyMPtoPDFconversion=\toks43
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/latex/grfext/grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box66
-Package hyperref Info: Link coloring OFF on input line 84.
+Package hyperref Info: Link coloring OFF on input line 3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -797,9 +797,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count329
 )
-LaTeX Info: Redefining \ref on input line 84.
-LaTeX Info: Redefining \pageref on input line 84.
-LaTeX Info: Redefining \nameref on input line 84.
+LaTeX Info: Redefining \ref on input line 3.
+LaTeX Info: Redefining \pageref on input line 3.
+LaTeX Info: Redefining \nameref on input line 3.
 
 (./Tesi_Triennale_PMNS.out) (./Tesi_Triennale_PMNS.out)
 \@outlinefile=\write4
@@ -814,8 +814,8 @@ Package caption Info: listings package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count330
-LaTeX Info: Redefining \it@ocap on input line 84.
-LaTeX Info: Redefining \it@ccap on input line 84.
+LaTeX Info: Redefining \it@ocap on input line 3.
+LaTeX Info: Redefining \it@ccap on input line 3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -824,36 +824,39 @@ Dictionary: translator-basic-dictionary, Language: English
 (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 84.
-
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 84.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<UNIPD.png, id=14, 943.525pt x 949.5475pt>
-File: UNIPD.png Graphic file (type png)
-<use UNIPD.png>
-Package pdftex.def Info: UNIPD.png  used on input line 91.
+\openout2 = `Capitoli/Frontespizio/Frontespizio.aux'.
+
+
+(./Capitoli/Frontespizio/Frontespizio.tex
+<figures/Frontespizio/UNIPD.png, id=86, 943.525pt x 949.5475pt>
+File: figures/Frontespizio/UNIPD.png Graphic file (type png)
+<use figures/Frontespizio/UNIPD.png>
+Package pdftex.def Info: figures/Frontespizio/UNIPD.png  used on input line 6.
 (pdftex.def)             Requested size: 122.66255pt x 123.4455pt.
  [1
 
 
 
- <./UNIPD.png>]
-[2
+
+ <./figures/Frontespizio/UNIPD.png>] [2
 
 
-] (./Tesi_Triennale_PMNS.toc)
+]) (./Tesi_Triennale_PMNS.toc)
 \tf@toc=\write5
 \openout5 = `Tesi_Triennale_PMNS.toc'.
 
  [3
+
 
 ]
 
@@ -865,50 +868,209 @@ This may cause the page layout to be inconsistent, however.
 [4
 
 ]
+\openout2 = `Capitoli/Capitolo_1/Capitolo_1.aux'.
+
+ (./Capitoli/Capitolo_1/Capitolo_1.tex
+Capitolo 1.
+<figures/Capitolo_1/APR4.pdf, id=132, 433.62pt x 289.08pt>
+File: figures/Capitolo_1/APR4.pdf Graphic file (type pdf)
+<use figures/Capitolo_1/APR4.pdf>
+Package pdftex.def Info: figures/Capitolo_1/APR4.pdf  used on input line 20.
+(pdftex.def)             Requested size: 266.03474pt x 177.3663pt.
+
+Overfull \hbox (24.18631pt too wide) in paragraph at lines 20--21
+ [] 
+ []
+
+
+Underfull \vbox (badness 1946) has occurred while \output is active []
+
+ [1
+
+
+ <./figures/Capitolo_1/APR4.pdf>]
+<figures/Capitolo_1/GW_spectrogram_short_APR4-q10-M1300.pdf, id=185, 604.4846pt
+ x 528.08565pt>
+File: figures/Capitolo_1/GW_spectrogram_short_APR4-q10-M1300.pdf Graphic file (
+type pdf)
+<use figures/Capitolo_1/GW_spectrogram_short_APR4-q10-M1300.pdf>
+Package pdftex.def Info: figures/Capitolo_1/GW_spectrogram_short_APR4-q10-M1300
+.pdf  used on input line 40.
+(pdftex.def)             Requested size: 241.84843pt x 211.28693pt.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 4
+9.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+Underfull \hbox (badness 1112) in paragraph at lines 50--51
+[]\T1/ptm/m/n/10.95 le fre-quen-ze $\OML/cmm/m/it/10.95 f[]$\T1/ptm/m/n/10.95 ,
+ $\OML/cmm/m/it/10.95 f[]$ \T1/ptm/m/n/10.95 e $\OML/cmm/m/it/10.95 f[]$ \T1/pt
+m/m/n/10.95 rap-pre-sen-ta-no i
+ []
+
+<figures/Capitolo_1/GW_spectrogram_APR4-q10-M1300.pdf, id=189, 604.4846pt x 528
+.08565pt>
+File: figures/Capitolo_1/GW_spectrogram_APR4-q10-M1300.pdf Graphic file (type p
+df)
+<use figures/Capitolo_1/GW_spectrogram_APR4-q10-M1300.pdf>
+Package pdftex.def Info: figures/Capitolo_1/GW_spectrogram_APR4-q10-M1300.pdf  
+used on input line 67.
+(pdftex.def)             Requested size: 241.84843pt x 211.28693pt.
+[2 <./figures/Capitolo_1/GW_spectrogram_short_APR4-q10-M1300.pdf> <./figures/Ca
+pitolo_1/GW_spectrogram_APR4-q10-M1300.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/Capitolo_1/GW_spectrogram_APR
+4-q10-M1300.pdf): PDF inclusion: multiple pdfs with page group included in a si
+ngle page
+>]
+<figures/Capitolo_1/MagnetarEvolution.png, id=264, 1436.36626pt x 643.40375pt>
+File: figures/Capitolo_1/MagnetarEvolution.png Graphic file (type png)
+<use figures/Capitolo_1/MagnetarEvolution.png>
+Package pdftex.def Info: figures/Capitolo_1/MagnetarEvolution.png  used on inpu
+t line 93.
+(pdftex.def)             Requested size: 359.09068pt x 160.85054pt.
+<figures/Capitolo_1/SHT2.2.pdf, id=268, 433.62pt x 289.08pt>
+File: figures/Capitolo_1/SHT2.2.pdf Graphic file (type pdf)
+<use figures/Capitolo_1/SHT2.2.pdf>
+Package pdftex.def Info: figures/Capitolo_1/SHT2.2.pdf  used on input line 108.
+
+(pdftex.def)             Requested size: 241.84843pt x 161.23528pt.
+ [3 <./figures/Capitolo_1/MagnetarEvolution.png> <./figures/Capitolo_1/SHT2.2.p
+df>]
+<figures/Capitolo_1/SHT2.0.pdf, id=315, 433.62pt x 289.08pt>
+File: figures/Capitolo_1/SHT2.0.pdf Graphic file (type pdf)
+<use figures/Capitolo_1/SHT2.0.pdf>
+Package pdftex.def Info: figures/Capitolo_1/SHT2.0.pdf  used on input line 131.
+
+(pdftex.def)             Requested size: 241.84843pt x 161.23528pt.
+) [4 <./figures/Capitolo_1/SHT2.0.pdf>]
+\openout2 = `Capitoli/Capitolo_2/Capitolo_2.aux'.
+
+
+(./Capitoli/Capitolo_2/Capitolo_2.tex
+Capitolo 2.
+<figures/Capitolo_2/gw170817_time_freq.png, id=343, 344.28625pt x 501.875pt>
+File: figures/Capitolo_2/gw170817_time_freq.png Graphic file (type png)
+<use figures/Capitolo_2/gw170817_time_freq.png>
+Package pdftex.def Info: figures/Capitolo_2/gw170817_time_freq.png  used on inp
+ut line 13.
+(pdftex.def)             Requested size: 193.47578pt x 282.03595pt.
+LaTeX Font Info:    Trying to load font information for U+eus on input line 29.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueus.fd
+File: ueus.fd 2013/01/14 v3.01 Euler Script
+) [5
+
+
+
+ <./figures/Capitolo_2/gw170817_time_freq.png (PNG copy)>]
+<figures/Capitolo_2/noiseData.png, id=356, 162.8484pt x 108.405pt>
+File: figures/Capitolo_2/noiseData.png Graphic file (type png)
+<use figures/Capitolo_2/noiseData.png>
+Package pdftex.def Info: figures/Capitolo_2/noiseData.png  used on input line 4
+9.
+(pdftex.def)             Requested size: 241.84843pt x 160.99762pt.
+ [6 <./figures/Capitolo_2/noiseData.png>]) [7]
+\openout2 = `Capitoli/Capitolo_3/Capitolo_3.aux'.
+
+ (./Capitoli/Capitolo_3/Capitolo_3.tex [8
+
+
+
+]
+Capitolo 3.
+) [9]
+\openout2 = `Capitoli/Capitolo_4/Capitolo_4.aux'.
+
+ (./Capitoli/Capitolo_4/Capitolo_4.tex [10
+
+
+
+]
+Capitolo 4.
+<figures/Capitolo_4/APR4_q09/layer4_10__distance5_1250_2500_5000/ced_1164556010
+_790_O4I_GN_LHV_SIM_PMNS_APR4_q09_NEW_4_job1/L1H1V1_1164556494.250_1164556494.2
+50_1164556494.250/l_tfmap_scalogram.png, id=394, 798.985pt x 574.145pt>
+File: figures/Capitolo_4/APR4_q09/layer4_10__distance5_1250_2500_5000/ced_11645
+56010_790_O4I_GN_LHV_SIM_PMNS_APR4_q09_NEW_4_job1/L1H1V1_1164556494.250_1164556
+494.250_1164556494.250/l_tfmap_scalogram.png Graphic file (type png)
+<use figures/Capitolo_4/APR4_q09/layer4_10__distance5_1250_2500_5000/ced_116455
+6010_790_O4I_GN_LHV_SIM_PMNS_APR4_q09_NEW_4_job1/L1H1V1_1164556494.250_11645564
+94.250_1164556494.250/l_tfmap_scalogram.png>
+Package pdftex.def Info: figures/Capitolo_4/APR4_q09/layer4_10__distance5_1250_
+2500_5000/ced_1164556010_790_O4I_GN_LHV_SIM_PMNS_APR4_q09_NEW_4_job1/L1H1V1_116
+4556494.250_1164556494.250_1164556494.250/l_tfmap_scalogram.png  used on input 
+line 12.
+(pdftex.def)             Requested size: 303.61745pt x 218.17737pt.
+<figures/Capitolo_4/hrss_snr_Distribution.pdf, id=396, 569.12625pt x 312.16624p
+t>
+File: figures/Capitolo_4/hrss_snr_Distribution.pdf Graphic file (type pdf)
+<use figures/Capitolo_4/hrss_snr_Distribution.pdf>
+Package pdftex.def Info: figures/Capitolo_4/hrss_snr_Distribution.pdf  used on 
+input line 31.
+(pdftex.def)             Requested size: 387.00073pt x 212.27023pt.
+[11 <./figures/Capitolo_4/APR4_q09/layer4_10__distance5_1250_2500_5000/ced_1164
+556010_790_O4I_GN_LHV_SIM_PMNS_APR4_q09_NEW_4_job1/L1H1V1_1164556494.250_116455
+6494.250_1164556494.250/l_tfmap_scalogram.png>]) [12 <./figures/Capitolo_4/hrss
+_snr_Distribution.pdf, page is rotated 90 degrees>]
 \openout2 = `Capitoli/Conclusioni/Conclusioni.aux'.
 
- (./Capitoli/Conclusioni/Conclusioni.tex
-Capitolo 1.
-) [1
+
+(./Capitoli/Conclusioni/Conclusioni.tex) [13
 
 
-] [2
 
 
 ] (./Tesi_Triennale_PMNS.bbl
+[14
 
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 165.
- [3
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 165.
- (./Tesi_Triennale_PMNS.aux (./Capitoli/Conclusioni/Conclusioni.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 165.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 165.
+])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 15.
+ [15]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 15.
+ (./Tesi_Triennale_PMNS.aux (./Capitoli/Frontespizio/Frontespizio.aux) (./Capit
+oli/Capitolo_1/Capitolo_1.aux) (./Capitoli/Capitolo_2/Capitolo_2.aux) (./Capito
+li/Capitolo_3/Capitolo_3.aux) (./Capitoli/Capitolo_4/Capitolo_4.aux)
+(./Capitoli/Conclusioni/Conclusioni.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 15.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 15.
 Package rerunfilecheck Info: File `Tesi_Triennale_PMNS.out' has not changed.
-(rerunfilecheck)             Checksum: A18EEC1337200FD677826C233ADAE395;95.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 165.
+(rerunfilecheck)             Checksum: BE869D43BC2EE80204B0BFE9165AA443;1468.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 15.
  ) 
 Here is how much of TeX's memory you used:
- 22304 strings out of 480906
- 357821 string characters out of 5910773
- 854377 words of memory out of 5000000
- 37489 multiletter control sequences out of 15000+600000
- 576290 words of font info for 74 fonts, out of 8000000 for 9000
+ 22602 strings out of 480906
+ 365848 string characters out of 5910773
+ 869943 words of memory out of 5000000
+ 37651 multiletter control sequences out of 15000+600000
+ 600162 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,11n,46p,537b,2341s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,12n,50p,1123b,2424s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
-utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on Tesi_Triennale_PMNS.pdf (7 pages, 205593 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/euler/eusm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
+w/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Tesi_Triennale_PMNS.pdf (19 pages, 1751576 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
- 12 named destinations out of 1000 (max. 500000)
- 34 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 544 PDF objects out of 1000 (max. 8388607)
+ 68 named destinations out of 1000 (max. 500000)
+ 228 words of extra memory for PDF output out of 10000 (max. 10000000)
 
