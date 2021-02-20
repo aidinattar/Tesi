@@ -1,0 +1,165 @@
+\documentclass[a4paper,11pt]{book}
+
+\usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+\usepackage[a-1b]{pdfx}
+%\usepackage[pdftex]{graphicx} %per poter inserire le figure
+\usepackage{graphicx}
+%\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amssymb,amsmath,amsthm,amsfonts}
+\usepackage{xspace}
+\usepackage{tabularx}
+\usepackage{indentfirst}
+\usepackage{subfigure}
+\usepackage[small]{caption}
+\usepackage{eucal}
+\usepackage{eso-pic}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{afterpage}
+\usepackage{parskip}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{textcomp}
+\usepackage{cite}
+\usepackage{multirow}
+\usepackage{setspace}
+\pagestyle{fancy}
+\usepackage[italian]{babel}
+\usepackage{lipsum}
+
+
+\usepackage{float}
+\usepackage{listings}
+%\usepackage[usenames]{color}
+%\usepackage{natbib}
+\usepackage{siunitx}
+\usepackage[strict]{changepage}
+\usepackage{physics}
+\usepackage{wrapfig}
+\usepackage{array}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{multirow}
+\usepackage{enumitem}
+%\usepackage{hyperref}
+\usepackage{times}
+%\usepackage{subfig}
+
+\DeclareUnicodeCharacter{2009}{\,} 
+\DeclareSIUnit\solarmass{M\ensuremath{_\odot}}
+\newcommand{\smallsim}{\smallsym{\mathrel}{\sim}}
+
+\makeatletter
+\newcommand{\smallsym}[2]{#1{\mathpalette\make@small@sym{#2}}}
+\newcommand{\make@small@sym}[2]{%
+	\vcenter{\hbox{$\m@th\downgrade@style#1#2$}}%
+}
+\newcommand{\downgrade@style}[1]{%
+	\ifx#1\displaystyle\scriptstyle\else
+	\ifx#1\textstyle\scriptstyle\else
+	\scriptscriptstyle
+	\fi\fi
+}
+
+%Includes "References" in the table of contents
+\usepackage[nottoc]{tocbibind}
+
+%   Reduce the margin of the summary:
+%\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+%\let\endchangemargin=\endlist 
+
+%   Generate the environment for the abstract:
+%\newcommand\summaryname{Abstract}
+%\newenvironment{Abstract}%
+%    {\small\begin{center}%
+%    \bfseries{\summaryname} \end{center}}
+
+\includeonly{Capitoli/Capitolo_1/Capitolo_1,
+			 Capitoli/Capitolo_2/Capitolo_2,
+			 Capitoli/Capitolo_3/Capitolo_3,
+			 Capitoli/Capitolo_4/Capitolo_4,
+			 Capitoli/Conclusioni/Conclusioni}
+
+\begin{document}
+	
+	\frontmatter
+	\begin{titlepage}
+		\vspace{5mm}
+		\begin{figure}[hbtp]
+			\centering
+			\includegraphics[scale=.13]{UNIPD.png}
+		\end{figure}
+		
+		\vspace{5mm}
+		
+		\begin{center}
+			{{\huge{\textsc{\bf UNIVERSIT\`A DEGLI STUDI DI PADOVA}}}\\}
+			\vspace{5mm}
+			{\Large{\bf Dipartimento di Fisica e Astronomia ``Galileo Galilei''}} \\
+			\vspace{5mm}
+			{\Large{\textsc{\bf Corso di Laurea in Fisica}}}\\
+			\vspace{20mm}
+			{\Large{\textsc{\bf Tesi di Laurea}}}\\
+			\vspace{30mm}
+			\begin{spacing}{3}
+				{\LARGE \textbf{Ricerca di segnali gravitazionali dovuti alla coalescenza di sistemi binari di stelle di neutroni nella fase di post coalescenza}}\\
+			\end{spacing}
+			\vspace{8mm}
+		\end{center}
+		
+		\vspace{20mm} %era 20
+		
+		\begin{spacing}{2}
+			\begin{tabular}{ l  c  c c c  cc c c c c  l }
+				{\Large{\bf Relatrice}} &&&&&&&&&&& {\Large{\bf Laureando}}\\
+				{\Large{\bf Dott.ssa Claudia Lazzaro}} &&&&&&&&&&& {\Large{\bf Aidin Attar}}\\
+				%{\Large{\bf Correlatore}}\\
+				%{\Large{\bf Prof./Dr. Nome Cognome}}\\
+			\end{tabular}
+		\end{spacing}
+		\vspace{15 mm} %era 15
+		
+		\begin{center}
+			{\Large{\bf Anno Accademico 2020/2021}}
+		\end{center}
+	\end{titlepage}
+	\clearpage{\pagestyle{empty}\cleardoublepage}
+	
+	
+	
+	%    \nocite{*}
+	
+	%    \setlength{\headheight}{14pt}
+	\tableofcontents
+	%    \listoffigures
+	
+	%    \begin{Abstract}
+	%        \begin{changemargin}{1cm}{1cm}
+	%            Your text:\lipsum[10]
+	%        \end{changemargin}
+	%    \end{Abstract}
+
+    
+
+	\mainmatter
+%	\twocolumn
+
+
+%	\include{Capitoli/Capitolo_1/Capitolo_1}
+%	\include{Capitoli/Capitolo_2/Capitolo_2}
+%	\include{Capitoli/Capitolo_3/Capitolo_3}
+%	\include{Capitoli/Capitolo_4/Capitolo_4}
+	\include{Capitoli/Conclusioni/Conclusioni}    
+	
+	\backmatter
+	\appendix
+%    \chapter{Appendice}
+	\bibliographystyle{plain}
+	\bibliography{BibliografiaTesi}
+
+
+
+
+
+\end{document}
