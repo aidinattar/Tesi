@@ -3,17 +3,15 @@
 \label{chapter:segnaleGWdaBNS}
 Una stella di neutroni è la fase finale dell'evoluzione stellare in seguito alla cessazione delle reazioni di fusione nucleare degli elementi leggeri al suo interno
 per stelle con massa tale che
-
 \begin{equation}
    	\SI{10}{\solarmass} < M < \SI{25}{\solarmass}
    	\label{eqn:massNS}
 \end{equation}
-
 Accade dunque che, in una certa fase del collasso, le densità estremamente alte possono portare gli elettroni a interagire con i protoni, attraverso il fenomeno della cattura elettronica, portando alla formazione di neutroni (e neutrini). Date le densità estreme della stella di neutroni, rimane incertezza sulle equazioni di stato della materia.\cite{hobson2006general}
 
 Una stella di neutroni (NS) è resa stabile, contro il collasso dovuto alla forza di gravità, non da pressioni termiche come per il sole, ma da forze legate al principio di esclusione di Pauli e interazioni nucleari tra i neutroni. Queste forze hanno effetti solo sopra le densità nucleari, che spiega perché le NS sono sono così compatte (una NS ha una massa poco superiore rispetto alla massa solare in un raggio di $\smallsim$10 km)\cite{hartle2003gravity}
-
 %    ALTRO?
+
 \begin{wrapfigure}{r}{0.5\textwidth}
 	\vspace{-15pt}
 	\begin{center}
@@ -31,6 +29,7 @@ La lunga fase di spiraleggiamento consiste nelle due stelle che ruotano attorno 
 La fase di spiraleggiamento termina con i due oggetti che si scontrano dando inizio alla fase di merger e quindi, dopo la fusione, al post-merger che in base alle proprietà iniziali del sistema può portare a forme d'onda e oggetti diversi.	Mentre la fase di merger dura pochi millisecondi, la fase di post-merger genera un segnale quasi-stazionario. Queste due fasi risultano più complesse da modellare, per cui si fa per il loro studio affidamento a metodi numerici. \cite{maggiore2008gravitational}
 
 \section[Frequenze caratteristiche]{Frequenze caratteristiche di merger e post-merger}
+\label{section:frequenze_caratteristiche}
 Una BNS realistica presenta una massa compresa tra $\smallsim\SI{2.4}{\solarmass}$ e $\smallsim\SI{2.8}{\solarmass}$ e una differenza tra le due componenti che è di $\smallsim20\%$ o minore. 
 A partire dal segnale di GW, in particolare nelle fasi di merger e post-merger, possono essere ottenute informazioni sull'equazione di stato della materia a densità nucleari e, da un'analisi spettrale, informazioni sulla tidal deformability (deformabilità mareale) delle due stelle.
 
@@ -79,7 +78,6 @@ Nella fase di post-merger, nei casi in cui il sistema non collassa immediatament
 %    Cenno sulle equazioni di stato.
 \section{Oggetto residuo}
 \label{section:residual}
-
 Ci sono quattro possibili risultati della coalescenza di due stelle di neutroni, in base alle masse delle stelle e dalle loro equazioni di stato. 
 Data la massa dell'oggetto residuo $M$, facendo riferimento alla figura \ref{fig:EvoluzioneBNS}:
 \begin{itemize}
@@ -97,11 +95,13 @@ Data la massa dell'oggetto residuo $M$, facendo riferimento alla figura \ref{fig
 	\end{figure}
 \end{center}
 
-Veloce descrizione delle possibili espulsioni di kilonovae
-
+%Veloce descrizione delle possibili espulsioni di kilonovae
 Descrizione mezza pagina dei $\gamma$ bursts
 
+Spesso, negli eventi di emissione di GW A fianco all'emissione di onde gravitazionali 
+
 \subsection{Formazione diretta un black hole}	
+\label{subsection:Diretto_Black_hole}
 \begin{wrapfigure}{r}{0.5\textwidth}
 	\vspace{-30pt}
 	\begin{center}
@@ -117,7 +117,8 @@ La formazione diretta di un buco nero dopo la coalescenza implica, come si osser
 
 Questo tipo di segnale ha la particolarità, al contrario degli altri casi di post-merger, di ammattere uno studio analitico attraverso metodi perturbativi relativamente semplici (decrescita esponenziale con un tempo caratteristico legato alla massa del buco nero)\cite{maggiore2018gravitational}.
 
-\subsection{Formazione di una NS ipermassiva}	
+\subsection{Formazione di una NS ipermassiva}
+\label{subsection:ipermassiva}	
 La maggior parte dei merger di stelle di neutroni porta alla formazione di stelle di neutroni ipermassive, supermassive o stabili. 
 
 Una stella di neutroni ipermassiva è tale da avere una massa superiore al massimo in massa per una stella rotante uniformemente $M_{TOV}$, ma non collassa per la rotazione differenziale, cioè il fenomeno per cui le sue diverse parti ruotano con velocità angolare differente che permette una maggiore stabilità rispetto a stelle non rotanti o rotanti uniformemente \cite{Baumgarte_2000}, e per il supporto di gradienti termici. Nel momento in cui la stella rallenta la sua rotazione e/o si raffredda il supporto alla sua stessa massa termina e la stella collassa in un buco nero. 
@@ -140,9 +141,21 @@ L'emissione di GW dalla fase di post-merger è attesa avere una ampiezza di stra
 
 Simulazioni numeriche relativistiche di merger di BNS e l'evoluzione del post-merger mostra che l'emissione di GW da un residuo ipermassivo è dominato da modi-f quadrupolari, che in base alla EOS che si considera può trovarsi tra $\smallsim2$ e 4kHz, ed è fortemente correlato con la compattezza e la tidal deformability delle stelle. Questa correlazione, con quantità calcolate per stelle di neutroni fredde e non rotanti, stato in cui non si trova l'ipermassiva residua, suggerisce come gli effetti dovuti a rotazione e temperatura giocano un ruolo limitato nelle proprietà del segnale di onda gravitazionale e mostra come la misura del modo dominante nella frequenza del post-merger possa portare a una importante misura dell'equazione di stato nucleare\cite{sarin2020evolution}.
 
-\subsection{Formazione di una NS supermassiva}
+\subsection{Formazione di una NS con lunga vita media}
+\label{subsection:long_lived}
 I residui del post-merger che hanno una massa inferiore a $\smallsim1.2M_{TOV}$ sopravvivono per un tempo superiore al secondo e vengono denomiate supermassive se hanno una massa superiore al limite definito in precedenza $M_{TOV}$, mentre per valori inferiori sono stabili.
 È importante osservare in figura \ref{fig:EvoluzioneBNS} che per entrambi i prodotti finali si passa comunque per una fase di forte rotazione differenziale immediatamente successiva al merger rendendo i metodi di ricerca di segnali di GW non differenti da quelli per il caso di residuo ipermassivo.
 
 L'osservazione sperimentale mostra che questo tipo di outcome si presenta in un numero non trascurabile di casi.
-\subsection{Formazione di una NS stabile}
+
+Come detto, le simulazioni mostrano che per stelle supermassive generate dal merger di un sistema binario di stelle di neutroni hanno una vita compresa tra $\smallsim10$s e $\smallsim10^4$s. In realtà l'osservazione sperimentale mostra che queste stelle tendono a collassare in una scala di tempi più breve di quella attesa e tale discrepanza si pensa possa includere eccessi di energia emessa in onde gravitazionali nelle prime fasi, o quark liberi che portano a modifiche nel momento di inerzia della stella rispetto al caso con materia ordinaria.
+
+Questi vincoli hanno grande importanza, soprattutto per la ricerca futura: il fatto che le stelle di neutroni nascenti siano composte da quark non confinati suggerisce che vi sia una transizione di fase adrone-quark dipendente dalla temperatura e comprendere dove avvenga questa transizione nel diagramma di fase nucleare è un informazione chiave per comprendere il comportamento della materia nucleare e di conseguenza l'equazione di stato.
+
+Il fatto, invece, che le NS supermassive rallentino la rotazione soprattutto a causa dell'emissione di GW ha importanti conseguenze per la dinamica della NS stesa e permette di avere vincoli sull'energia per ricostruire la natura dell'oggetto residuo nelle future analisi.
+%neutrino emissions, thermal evolution, dynamical evolution, elettromagnetic observations?
+
+Per le NS a lunga vita si conoscono le emissioni elettromagnetiche, mentre per le emissioni di onde gravitazionali la conoscenza del fenomeno risulta ancora incompleta: non si conosce con certezza la gerarchia di importanza dei meccanismi, per quanto tempo rimangono attive o quanta energia viene emessa. Le tre principali instabilita rilevanti per la produzione di GW sono le instabilità di spin-flip, di bar-mode e r-mode.
+L'instabilità precessionale spin-flip, legata al cambiamento di rotazione di un oggetto rotante, porta la nascente NS ad essere un "rotatore ortogonale" e quindi un ottimo emettitore di GW.
+L'instabilità bar-mode si presenta in due varietà: dinamica, che è attiva nel primo secondo della vita della NS, e secolare, che ha maggiore importanza nel lungo periodo. 
+Infine gli r-mode, ovvero oscillazioni toroidali a bassa frequenza per le quali la forza di Coriolis è la "forza di ripristino"\cite{sarin2020evolution}.

@@ -1,73 +1,79 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{}
 
-\bibitem{Abbott_2017b}
-B.~P. Abbott, R.~Abbott, T.~D. Abbott, F.~Acernese, K.~Ackley, C.~Adams,
-  T.~Adams, P.~Addesso, R.~X. Adhikari, V.~B. Adya, and et~al.
-\newblock Search for post-merger gravitational waves from the remnant of the
-  binary neutron star merger gw170817.
-\newblock {\em The Astrophysical Journal}, 851(1):L16, Dec 2017.
-
-\bibitem{Abbott_2019}
-B. P. Abbott, R.~Abbott, T. D. Abbott, S.~Abraham, F.~Acernese, K.~Ackley,
-  C.~Adams, R. X. Adhikari, V. B. Adya, C.~Affeldt, and et~al.
+\bibitem[Abbott et~al., 2019]{Abbott_2019}
+Abbott, B., Abbott, R., Abbott, T., Abraham, S., Acernese, F., Ackley, K.,
+  Adams, C., Adhikari, R., Adya, V., Affeldt, C., and et~al. (2019).
 \newblock Gwtc-1: A gravitational-wave transient catalog of compact binary
   mergers observed by ligo and virgo during the first and second observing
   runs.
-\newblock {\em Physical Review X}, 9(3), Sep 2019.
+\newblock {\em Physical Review X}, 9(3).
 
-\bibitem{Abbott_2017a}
-B. P. Abbott, R.~Abbott, T. D. Abbott, F.~Acernese, K.~Ackley, C.~Adams,
-  T.~Adams, P.~Addesso, R. X. Adhikari, V. B. Adya, and et~al.
+\bibitem[Abbott et~al., 2017a]{Abbott_2017a}
+Abbott, B., Abbott, R., Abbott, T., Acernese, F., Ackley, K., Adams, C., Adams,
+  T., Addesso, P., Adhikari, R., Adya, V., and et~al. (2017a).
 \newblock Gw170817: Observation of gravitational waves from a binary neutron
   star inspiral.
-\newblock {\em Physical Review Letters}, 119(16), Oct 2017.
+\newblock {\em Physical Review Letters}, 119(16).
 
-\bibitem{Baumgarte_2000}
-Thomas~W. Baumgarte, Stuart~L. Shapiro, and Masaru Shibata.
+\bibitem[Abbott et~al., 2020]{Abbott_2020}
+Abbott, B.~P., Abbott, R., Abbott, T.~D., Abraham, S., Acernese, F., Ackley,
+  K., Adams, C., Adya, V.~B., Affeldt, C., and et~al. (2020).
+\newblock Prospects for observing and localizing gravitational-wave transients
+  with advanced ligo, advanced virgo and kagra.
+\newblock {\em Living Reviews in Relativity}, 23(1).
+
+\bibitem[Abbott et~al., 2017b]{Abbott_2017b}
+Abbott, B.~P., Abbott, R., Abbott, T.~D., Acernese, F., Ackley, K., Adams, C.,
+  Adams, T., Addesso, P., Adhikari, R.~X., Adya, V.~B., and et~al. (2017b).
+\newblock Search for post-merger gravitational waves from the remnant of the
+  binary neutron star merger gw170817.
+\newblock {\em The Astrophysical Journal}, 851(1):L16.
+
+\bibitem[Baumgarte et~al., 2000]{Baumgarte_2000}
+Baumgarte, T.~W., Shapiro, S.~L., and Shibata, M. (2000).
 \newblock On the maximum mass of differentially rotating neutron stars.
-\newblock {\em The Astrophysical Journal}, 528(1):L29–L32, Jan 2000.
+\newblock {\em The Astrophysical Journal}, 528(1):L29–L32.
 
-\bibitem{hartle2003gravity}
-J.B. Hartle.
+\bibitem[Hartle, 2003]{hartle2003gravity}
+Hartle, J. (2003).
 \newblock {\em Gravity: An Introduction to Einstein's General Relativity}.
-\newblock Addison-Wesley, 2003.
+\newblock Addison-Wesley.
 
-\bibitem{hobson2006general}
-M.P. Hobson, G.P. Efstathiou, and A.N. Lasenby.
+\bibitem[Hobson et~al., 2006]{hobson2006general}
+Hobson, M., Efstathiou, G., and Lasenby, A. (2006).
 \newblock {\em General Relativity: An Introduction for Physicists}.
-\newblock Cambridge University Press, 2006.
+\newblock Cambridge University Press.
 
-\bibitem{Klimenko_2016}
-S.~Klimenko, G.~Vedovato, M.~Drago, F.~Salemi, V.~Tiwari, G. A. Prodi,
-  C.~Lazzaro, K.~Ackley, S.~Tiwari, C. F. Da~Silva, and et~al.
+\bibitem[Klimenko et~al., 2016]{Klimenko_2016}
+Klimenko, S., Vedovato, G., Drago, M., Salemi, F., Tiwari, V., Prodi, G.,
+  Lazzaro, C., Ackley, K., Tiwari, S., Da~Silva, C., and et~al. (2016).
 \newblock Method for detection and reconstruction of gravitational wave
   transients with networks of advanced detectors.
-\newblock {\em Physical Review D}, 93(4), Feb 2016.
+\newblock {\em Physical Review D}, 93(4).
 
-\bibitem{Klimenko_2008}
-S~Klimenko, I~Yakushin, A~Mercer, and G~Mitselmakher.
+\bibitem[Klimenko et~al., 2008]{Klimenko_2008}
+Klimenko, S., Yakushin, I., Mercer, A., and Mitselmakher, G. (2008).
 \newblock A coherent method for detection of gravitational wave bursts.
-\newblock {\em Classical and Quantum Gravity}, 25(11):114029, May 2008.
+\newblock {\em Classical and Quantum Gravity}, 25(11):114029.
 
-\bibitem{maggiore2008gravitational}
-M.~Maggiore.
+\bibitem[Maggiore, 2008]{maggiore2008gravitational}
+Maggiore, M. (2008).
 \newblock {\em Gravitational Waves: Volume 1: Theory and Experiments}.
-\newblock Gravitational Waves. OUP Oxford, 2008.
+\newblock Gravitational Waves. OUP Oxford.
 
-\bibitem{maggiore2018gravitational}
-M.~Maggiore.
+\bibitem[Maggiore, 2018]{maggiore2018gravitational}
+Maggiore, M. (2018).
 \newblock {\em Gravitational Waves: Volume 2: Astrophysics and Cosmology}.
-\newblock Gravitational Waves. Oxford University Press, 2018.
+\newblock Gravitational Waves. Oxford University Press.
 
-\bibitem{Rezzolla_2016}
-Luciano Rezzolla and Kentaro Takami.
+\bibitem[Rezzolla and Takami, 2016]{Rezzolla_2016}
+Rezzolla, L. and Takami, K. (2016).
 \newblock Gravitational-wave signal from binary neutron stars: A systematic
   analysis of the spectral properties.
-\newblock {\em Physical Review D}, 93(12), Jun 2016.
+\newblock {\em Physical Review D}, 93(12).
 
-\bibitem{sarin2020evolution}
-Nikhil Sarin and Paul~D. Lasky.
-\newblock The evolution of binary neutron star post-merger remnants: a review,
-  2020.
+\bibitem[Sarin and Lasky, 2020]{sarin2020evolution}
+Sarin, N. and Lasky, P.~D. (2020).
+\newblock The evolution of binary neutron star post-merger remnants: a review.
 
 \end{thebibliography}
