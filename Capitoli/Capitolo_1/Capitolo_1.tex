@@ -1,8 +1,7 @@
 % !TEX root = ../../Tesi_Triennale_PMNS.tex
 \chapter[Segnali di GW da BNS]{Segnali di onde gravitazionali da BNS}
 \label{chapter:segnaleGWdaBNS}
-Una stella di neutroni è la fase finale dell'evoluzione stellare in seguito alla cessazione delle reazioni di fusione nucleare degli elementi leggeri al suo interno
-per stelle con massa tale che
+Una stella di neutroni è la fase finale dell'evoluzione stellare, che segue alla cessazione delle reazioni di fusione nucleare degli elementi leggeri al suo interno, per stelle con massa tale che
 \begin{equation}
    	\SI{10}{\solarmass} < M < \SI{25}{\solarmass}
    	\label{eqn:massNS}
@@ -11,7 +10,6 @@ Accade dunque che, in una certa fase del collasso, le densità estremamente alte
 
 Una stella di neutroni (NS) è resa stabile, contro il collasso dovuto alla forza di gravità, non da pressioni termiche come per il sole, ma da forze legate al principio di esclusione di Pauli e interazioni nucleari tra i neutroni. Queste forze hanno effetti solo sopra le densità nucleari, che spiega perché le NS sono sono così compatte (una NS ha una massa poco superiore rispetto alla massa solare in un raggio di $\smallsim$10 km)\cite{hartle2003gravity}
 %    ALTRO?
-
 \begin{wrapfigure}{r}{0.5\textwidth}
 	\vspace{-15pt}
 	\begin{center}
@@ -24,9 +22,9 @@ Una stella di neutroni (NS) è resa stabile, contro il collasso dovuto alla forz
 \end{wrapfigure}
 Un sistema binario di stelle di neutroni (BNS), ovvero una coppia di NS che, legato attraverso la forza di attrazione gravitazionale, ruota attorno al centro di massa, emette segnali di onda gravitazionale (GW) che possono essere interpretati come fase di inspiral, merger e post-merger.
 
-La lunga fase di spiraleggiamento consiste nelle due stelle che ruotano attorno al centro di massa e, a causa dell'emissione di energia sotto forma di onde gravitazionali, il raggio delle orbite diminuisce portando ad un incremento in ampiezza e frequenza della GW, producendo il caratteristico "chirp". Questa è l'unica fase che viene descritta con un approccio analitico.
+La lunga fase di spiraleggiamento consiste nelle due stelle che ruotano attorno al centro di massa, a causa dell'emissione di energia sotto forma di onde gravitazionali, il raggio delle orbite diminuisce portando ad un incremento in ampiezza e frequenza della GW, producendo il caratteristico "chirp". Questa è l'unica fase che viene descritta con un approccio analitico.
 
-La fase di spiraleggiamento termina con i due oggetti che si scontrano dando inizio alla fase di merger e quindi, dopo la fusione, al post-merger che in base alle proprietà iniziali del sistema può portare a forme d'onda e oggetti diversi.	Mentre la fase di merger dura pochi millisecondi, la fase di post-merger genera un segnale quasi-stazionario. Queste due fasi risultano più complesse da modellare, per cui si fa per il loro studio affidamento a metodi numerici. \cite{maggiore2008gravitational}
+La fase di spiraleggiamento termina con i due oggetti che si scontrano dando inizio alla fase di merger e quindi, dopo la fusione, al post-merger, che in base alle proprietà iniziali del sistema può portare a forme d'onda e oggetti diversi.	Mentre la fase di merger dura pochi millisecondi, la fase di post-merger genera un segnale quasi-stazionario. Queste due fasi risultano più complesse da modellare, per cui per il loro studio si fa affidamento a metodi numerici. \cite{maggiore2008gravitational}
 
 \section[Frequenze caratteristiche]{Frequenze caratteristiche di merger e post-merger}
 \label{section:frequenze_caratteristiche}
@@ -43,7 +41,7 @@ A partire dal segnale di GW, in particolare nelle fasi di merger e post-merger, 
 	\label{fig:spettrogramma_merger_APR4}
 	\vspace{-25pt}
 \end{wrapfigure}
-Osservando dunque lo spettro del segnale di onda gravitazionale di merger, in particolare per binarie con masse che non differiscono per più del 20\%, questo presenterà alcune proprietà\cite{Rezzolla_2016}:
+Osservando dunque lo spettro del segnale di onda gravitazionale nella fase di merger, in particolare per binarie con masse che non differiscono per più del 20\%, questo presenterà alcune proprietà\cite{Rezzolla_2016}:
 \begin{itemize}
    	\item la frequenza della GW al massimo di ampiezza $f_{max}$ è legata in modo quasi-universale con la tidal deformability delle due stelle;
    	\item le frequenze $f_1$, $f_{2,i}$ e $f_3$ rappresentano i picchi principali visibili dall'osservazione del post-merger, tra le quali si ottiene la seguente relazione empirica:
@@ -80,38 +78,48 @@ Nella fase di post-merger, nei casi in cui il sistema non collassa immediatament
 \label{section:residual}
 Ci sono quattro possibili risultati della coalescenza di due stelle di neutroni, in base alle masse delle stelle e dalle loro equazioni di stato. 
 Data la massa dell'oggetto residuo $M$, facendo riferimento alla figura \ref{fig:EvoluzioneBNS}:
+
 \begin{itemize}
 	\item $M\gtrsim 1.5 M_{TOV}$\footnote{$M_{TOV}$ è detta massa di Tolman-Oppenheimer-Volkoff e indica la massa massima che può avere una stella di neutroni non rotante}: il sistema collassa immediatamente in un buco nero seguendo il percorso A$\rightarrow$ B$\rightarrow$ C;
 	\item $1.2 M_{TOV} \lesssim M \lesssim 1.5 M_{TOV}$: l'oggetto rimanente è una stella di neutroni ipermassiva, che collassa in un buco nero in un tempo $\lesssim 1$s, seguendo A$\rightarrow$ B$\rightarrow$ D$\rightarrow$ E;		
 	\item $M_{TOV} \lesssim M \lesssim 1.2 M_{TOV}$: rimane una stella di neutroni supermassiva che è destinata a collassare in un buco nero in un tempo di 10 \textdiv $10^4$s, secondo il percorso A$\rightarrow$ B$\rightarrow$ D$\rightarrow$ F$\rightarrow$ G;		\item $M\lesssim M_{TOV}$: rimane una stella di neutroni stabile, secondo il percorso A$\rightarrow$ B$\rightarrow$ D$\rightarrow$ F$\rightarrow$ H \cite{sarin2020evolution}.	
 \end{itemize}
-\begin{center}
-	\begin{figure}[ht]
-		\centering
-		\includegraphics[scale=0.25, angle=0]{figures/Capitolo_1/MagnetarEvolution.png}
-		\setlength{\belowcaptionskip}{-20pt}
-		\caption{Rappresentazione pittorica del destino del residuo del merger di un sistema binario di stelle di neutroni, presa da \cite{sarin2020evolution}}
-		\label{fig:EvoluzioneBNS}
-	\end{figure}
-\end{center}
 
+\vspace{-20pt}
+\begin{SCfigure}[][h]
+	\includegraphics[scale=0.25]{figures/Capitolo_1/MagnetarEvolution.png}
+	\captionsetup{width=0.8\textwidth}
+	\caption{Rappresentazione pittorica del destino del residuo del merger di un sistema binario di stelle di neutroni, presa da \cite{sarin2020evolution}}
+	\label{fig:EvoluzioneBNS}
+	\vspace{-15pt}
+\end{SCfigure}
+%\begin{center}
+%	\begin{figure}[ht]
+%		\vspace{-20pt}
+%		\centering
+%		\includegraphics[scale=0.2, angle=0]{figures/Capitolo_1/MagnetarEvolution.png}
+%		\setlength{\belowcaptionskip}{-25pt}
+%		\caption{Rappresentazione pittorica del destino del residuo del merger di un sistema binario di stelle di neutroni, presa da \cite{sarin2020evolution}}
+%		\label{fig:EvoluzioneBNS}
+%	\end{figure}
+%\end{center}
 %Veloce descrizione delle possibili espulsioni di kilonovae
-Descrizione mezza pagina dei $\gamma$ bursts
 
-Spesso, negli eventi di emissione di GW A fianco all'emissione di onde gravitazionali 
+I sistemi binari di stelle di neutroni, oltre che ottime sorgenti di onde gravitazionali, risultano anche i migliori scenari per spiegare la fenomenologia dei lampi gamma brevi (short gamma ray burst). I lampi gamma consistono nell'emissione di intensi raggi gamma con uno spettro di durate estremamente vario, per cui si distinguono i short gamma ray burst con durata tipica inferiore a 2s e con un energia media dei fotoni superiore, i long gamma ray burst la quale durata è piccata attorno a 30s, fino agli ultra-long gamma ray burst che arrivano a durare diverse ore, mediamente meno energetici. 
+La separazione è legata ai fenomeni fisici che generano questo fenomeno: mentre i GRB lunghi hanno origine nel collasso del nucleo di stelle massive, nel fenomeno della post-luminescenza, la comprensione dell'origine di GRB brevi è risultata più complessa, infatti l'osservazione sperimentale ha portato ad escludere il collasso di stelle massive come origine di tali fenomeni. Candidati plausibili sono risultati invece i merger di BNS o di binarie NS-BH, poiché la durata di GRB brevi richiede strutture compatte con caratteristiche sulla scala dei tempi nell'ordine delle decine di millisecondi, compatibilit con il merger di un sistema binario di compatte. In realtà l'osservazione sperimentale, in particolare di GW170817, evento che si approfondirà nel capitolo \ref{chapter:gw170817}, mostra come le caratteristiche dei GRB associati a questi fenomeni risultano differenti dai GRB cosmologici, per cui si ipotizza che questi siano espressione di un nuovo tipo di transiente \cite{maggiore2018gravitational}.
 
-\subsection{Formazione diretta un black hole}	
-\label{subsection:Diretto_Black_hole}
 \begin{wrapfigure}{r}{0.5\textwidth}
-	\vspace{-30pt}
+	\vspace{-50pt}
 	\begin{center}
 		\includegraphics[width=0.5\textwidth]{figures/Capitolo_1/SHT2.2.pdf}
 	\end{center}
 	\vspace{-10pt}
 	\caption{Forma d'onda per la coalescenza di una BNS con equazione di stato SHT2, in cui le masse sono tali da portare il sistema a collassare immediatamente in un BH, producendo nella fase di post merger il ringdown}
 	\label{fig:FormaOndaBH}
-	\vspace{-20pt}
+	\vspace{-30pt}
 \end{wrapfigure}
+\subsection{Formazione diretta un black hole}	
+\label{subsection:Diretto_Black_hole}
 
 La formazione diretta di un buco nero dopo la coalescenza implica, come si osserva in figura \ref{fig:FormaOndaBH} lo spegnimento del segnale, con un collasso quasi sferico che genera delle onde gravitazionali minime\cite{sarin2020evolution}.
 
@@ -137,7 +145,7 @@ Nel caso in cui la stella ipermassiva abbia massa tale che $M \gtrsim 1.2 M_{TOV
 	\vspace{-20pt}
 \end{wrapfigure}
 
-L'emissione di GW dalla fase di post-merger è attesa avere una ampiezza di strain relativamente ampia, confrontabile con il picco dell'inspiral ma a frequenze maggiori, in cui come detto i detector hanno una precisione sensibilmente inferiore.
+L'emissione di GW dalla fase di post-merger è attesa avere una ampiezza di strain relativamente ampia, confrontabile con il picco dell'inspiral ma a frequenze maggiori, in cui i detector hanno una precisione sensibilmente inferiore.
 
 Simulazioni numeriche relativistiche di merger di BNS e l'evoluzione del post-merger mostra che l'emissione di GW da un residuo ipermassivo è dominato da modi-f quadrupolari, che in base alla EOS che si considera può trovarsi tra $\smallsim2$ e 4kHz, ed è fortemente correlato con la compattezza e la tidal deformability delle stelle. Questa correlazione, con quantità calcolate per stelle di neutroni fredde e non rotanti, stato in cui non si trova l'ipermassiva residua, suggerisce come gli effetti dovuti a rotazione e temperatura giocano un ruolo limitato nelle proprietà del segnale di onda gravitazionale e mostra come la misura del modo dominante nella frequenza del post-merger possa portare a una importante misura dell'equazione di stato nucleare\cite{sarin2020evolution}.
 
@@ -145,17 +153,15 @@ Simulazioni numeriche relativistiche di merger di BNS e l'evoluzione del post-me
 \label{subsection:long_lived}
 I residui del post-merger che hanno una massa inferiore a $\smallsim1.2M_{TOV}$ sopravvivono per un tempo superiore al secondo e vengono denomiate supermassive se hanno una massa superiore al limite definito in precedenza $M_{TOV}$, mentre per valori inferiori sono stabili.
 È importante osservare in figura \ref{fig:EvoluzioneBNS} che per entrambi i prodotti finali si passa comunque per una fase di forte rotazione differenziale immediatamente successiva al merger rendendo i metodi di ricerca di segnali di GW non differenti da quelli per il caso di residuo ipermassivo.
-
 L'osservazione sperimentale mostra che questo tipo di outcome si presenta in un numero non trascurabile di casi.
 
 Come detto, le simulazioni mostrano che per stelle supermassive generate dal merger di un sistema binario di stelle di neutroni hanno una vita compresa tra $\smallsim10$s e $\smallsim10^4$s. In realtà l'osservazione sperimentale mostra che queste stelle tendono a collassare in una scala di tempi più breve di quella attesa e tale discrepanza si pensa possa includere eccessi di energia emessa in onde gravitazionali nelle prime fasi, o quark liberi che portano a modifiche nel momento di inerzia della stella rispetto al caso con materia ordinaria.
 
-Questi vincoli hanno grande importanza, soprattutto per la ricerca futura: il fatto che le stelle di neutroni nascenti siano composte da quark non confinati suggerisce che vi sia una transizione di fase adrone-quark dipendente dalla temperatura e comprendere dove avvenga questa transizione nel diagramma di fase nucleare è un informazione chiave per comprendere il comportamento della materia nucleare e di conseguenza l'equazione di stato.
-
-Il fatto, invece, che le NS supermassive rallentino la rotazione soprattutto a causa dell'emissione di GW ha importanti conseguenze per la dinamica della NS stesa e permette di avere vincoli sull'energia per ricostruire la natura dell'oggetto residuo nelle future analisi.
+Questi vincoli hanno grande importanza, soprattutto per la ricerca futura: il fatto che le stelle di neutroni nascenti siano composte da quark non confinati suggerisce che vi sia una transizione di fase adrone-quark dipendente dalla temperatura e, comprendere dove avvenga questa transizione nel diagramma di fase nucleare è un informazione chiave per dedurre informazioni sul comportamento della materia nucleare e di conseguenza sull'equazione di stato.
+Il fatto, invece, che le NS supermassive rallentino la rotazione soprattutto a causa dell'emissione di GW ha importanti conseguenze per la dinamica della NS stessa e permette di avere vincoli sull'energia per ricostruire la natura dell'oggetto residuo nelle future analisi.
 %neutrino emissions, thermal evolution, dynamical evolution, elettromagnetic observations?
 
 Per le NS a lunga vita si conoscono le emissioni elettromagnetiche, mentre per le emissioni di onde gravitazionali la conoscenza del fenomeno risulta ancora incompleta: non si conosce con certezza la gerarchia di importanza dei meccanismi, per quanto tempo rimangono attive o quanta energia viene emessa. Le tre principali instabilita rilevanti per la produzione di GW sono le instabilità di spin-flip, di bar-mode e r-mode.
 L'instabilità precessionale spin-flip, legata al cambiamento di rotazione di un oggetto rotante, porta la nascente NS ad essere un "rotatore ortogonale" e quindi un ottimo emettitore di GW.
 L'instabilità bar-mode si presenta in due varietà: dinamica, che è attiva nel primo secondo della vita della NS, e secolare, che ha maggiore importanza nel lungo periodo. 
-Infine gli r-mode, ovvero oscillazioni toroidali a bassa frequenza per le quali la forza di Coriolis è la "forza di ripristino"\cite{sarin2020evolution}.
+e infine gli r-mode, ovvero oscillazioni toroidali a bassa frequenza per le quali la forza di Coriolis è la "forza di ripristino"\cite{sarin2020evolution}.
