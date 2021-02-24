@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.2.6)  23 FEB 2021 23:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.2.6)  24 FEB 2021 20:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -705,10 +705,7 @@ Package tocbibind Note: Using chapter style headings, unless overridden.
 
 )
    defining Unicode char U+2009 (decimal 8201)
-) (./Tesi_Triennale_PMNS.aux (./Capitoli/Frontespizio/Frontespizio.aux)
-(./Capitoli/Capitolo_1/Capitolo_1.aux) (./Capitoli/Capitolo_2/Capitolo_2.aux)
-(./Capitoli/Capitolo_3/Capitolo_3.aux) (./Capitoli/Capitolo_4/Capitolo_4.aux)
-(./Capitoli/Conclusioni/Conclusioni.aux))
+) (./Tesi_Triennale_PMNS.aux (./Capitoli/Capitolo_3/Capitolo_3.aux))
 \openout1 = `Tesi_Triennale_PMNS.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -868,317 +865,75 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-\openout2 = `Capitoli/Frontespizio/Frontespizio.aux'.
+\openout2 = `Capitoli/Capitolo_3/Capitolo_3.aux'.
 
 
-(./Capitoli/Frontespizio/Frontespizio.tex
-<figures/Frontespizio/UNIPD.png, id=94, 943.525pt x 949.5475pt>
-File: figures/Frontespizio/UNIPD.png Graphic file (type png)
-<use figures/Frontespizio/UNIPD.png>
-Package pdftex.def Info: figures/Frontespizio/UNIPD.png  used on input line 6.
-(pdftex.def)             Requested size: 122.66255pt x 123.4455pt.
- [1
+(./Capitoli/Capitolo_3/Capitolo_3.tex
+Capitolo 1.
+<figures/Capitolo_3/noiseO4.pdf, id=14, 1386.17876pt x 1078.0275pt>
+File: figures/Capitolo_3/noiseO4.pdf Graphic file (type pdf)
+<use figures/Capitolo_3/noiseO4.pdf>
+Package pdftex.def Info: figures/Capitolo_3/noiseO4.pdf  used on input line 21.
+
+(pdftex.def)             Requested size: 346.54384pt x 269.50621pt.
+[1
 
 
 
 
- <./figures/Frontespizio/UNIPD.png>] [2
 
-
-] (./Tesi_Triennale_PMNS.toc)
-\tf@toc=\write5
-\openout5 = `Tesi_Triennale_PMNS.toc'.
-
-) [3
-
-]
+ <./figures/Capitolo_3/noiseO4.pdf>])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[4
-
-
-]
-\openout2 = `Capitoli/Capitolo_1/Capitolo_1.aux'.
-
- (./Capitoli/Capitolo_1/Capitolo_1.tex
-Capitolo 1.
-<figures/Capitolo_1/APR4.pdf, id=142, 433.62pt x 289.08pt>
-File: figures/Capitolo_1/APR4.pdf Graphic file (type pdf)
-<use figures/Capitolo_1/APR4.pdf>
-Package pdftex.def Info: figures/Capitolo_1/APR4.pdf  used on input line 16.
-(pdftex.def)             Requested size: 266.03474pt x 177.3663pt.
-
-Overfull \hbox (24.18631pt too wide) in paragraph at lines 16--17
- [] 
- []
-
-<figures/Capitolo_1/GW_spectrogram_short_APR4-q10-M1300.pdf, id=144, 604.4846pt
- x 528.08565pt>
-File: figures/Capitolo_1/GW_spectrogram_short_APR4-q10-M1300.pdf Graphic file (
-type pdf)
-<use figures/Capitolo_1/GW_spectrogram_short_APR4-q10-M1300.pdf>
-Package pdftex.def Info: figures/Capitolo_1/GW_spectrogram_short_APR4-q10-M1300
-.pdf  used on input line 37.
-(pdftex.def)             Requested size: 241.84843pt x 211.28693pt.
-[1
-
-
- <./figures/Capitolo_1/APR4.pdf>]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 4
-6.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-Underfull \hbox (badness 1112) in paragraph at lines 47--48
-[]\T1/ptm/m/n/10.95 le fre-quen-ze $\OML/cmm/m/it/10.95 f[]$\T1/ptm/m/n/10.95 ,
- $\OML/cmm/m/it/10.95 f[]$ \T1/ptm/m/n/10.95 e $\OML/cmm/m/it/10.95 f[]$ \T1/pt
-m/m/n/10.95 rap-pre-sen-ta-no i
- []
-
-<figures/Capitolo_1/GW_spectrogram_APR4-q10-M1300.pdf, id=199, 604.4846pt x 528
-.08565pt>
-File: figures/Capitolo_1/GW_spectrogram_APR4-q10-M1300.pdf Graphic file (type p
-df)
-<use figures/Capitolo_1/GW_spectrogram_APR4-q10-M1300.pdf>
-Package pdftex.def Info: figures/Capitolo_1/GW_spectrogram_APR4-q10-M1300.pdf  
-used on input line 64.
-(pdftex.def)             Requested size: 241.84843pt x 211.28693pt.
-[2 <./figures/Capitolo_1/GW_spectrogram_short_APR4-q10-M1300.pdf> <./figures/Ca
-pitolo_1/GW_spectrogram_APR4-q10-M1300.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/Capitolo_1/GW_spectrogram_APR
-4-q10-M1300.pdf): PDF inclusion: multiple pdfs with page group included in a si
-ngle page
->]
-<figures/Capitolo_1/MagnetarEvolution.png, id=279, 1436.36626pt x 643.40375pt>
-File: figures/Capitolo_1/MagnetarEvolution.png Graphic file (type png)
-<use figures/Capitolo_1/MagnetarEvolution.png>
-Package pdftex.def Info: figures/Capitolo_1/MagnetarEvolution.png  used on inpu
-t line 90.
-(pdftex.def)             Requested size: 359.09068pt x 160.85054pt.
-
-Underfull \hbox (badness 4291) in paragraph at lines 95--95
-[][]\T1/ptm/m/n/10 : |Rap-pre-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--95
-\T1/ptm/m/n/10 sen-ta-zio-ne pit-to-ri-ca
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--95
-\T1/ptm/m/n/10 del mer-ger di un
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--95
-\T1/ptm/m/n/10 si-ste-ma bi-na-rio di
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--95
-\T1/ptm/m/n/10 stel-le di neu-tro-ni,
- []
-
-
-Underfull \hbox (badness 2285) in paragraph at lines 95--95
-\T1/ptm/m/n/10 pre-sa da [[]Sa-rin and
- []
-
-<figures/Capitolo_1/SHT2.2.pdf, id=285, 433.62pt x 289.08pt>
-File: figures/Capitolo_1/SHT2.2.pdf Graphic file (type pdf)
-<use figures/Capitolo_1/SHT2.2.pdf>
-Package pdftex.def Info: figures/Capitolo_1/SHT2.2.pdf  used on input line 114.
-
-(pdftex.def)             Requested size: 241.84843pt x 161.23528pt.
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 12
-1.
-
-[3 <./figures/Capitolo_1/MagnetarEvolution.png> <./figures/Capitolo_1/SHT2.2.pd
-f>]
-<figures/Capitolo_1/SHT2.0.pdf, id=331, 433.62pt x 289.08pt>
-File: figures/Capitolo_1/SHT2.0.pdf Graphic file (type pdf)
-<use figures/Capitolo_1/SHT2.0.pdf>
-Package pdftex.def Info: figures/Capitolo_1/SHT2.0.pdf  used on input line 140.
-
-(pdftex.def)             Requested size: 241.84843pt x 161.23528pt.
-) [4 <./figures/Capitolo_1/SHT2.0.pdf>] [5]
-\openout2 = `Capitoli/Capitolo_2/Capitolo_2.aux'.
-
-
-(./Capitoli/Capitolo_2/Capitolo_2.tex [6
-
-
-
-]
-Capitolo 2.
-<figures/Capitolo_2/gw170817_time_freq.png, id=368, 344.28625pt x 501.875pt>
-File: figures/Capitolo_2/gw170817_time_freq.png Graphic file (type png)
-<use figures/Capitolo_2/gw170817_time_freq.png>
-Package pdftex.def Info: figures/Capitolo_2/gw170817_time_freq.png  used on inp
-ut line 13.
-(pdftex.def)             Requested size: 193.47578pt x 282.03595pt.
-LaTeX Font Info:    Trying to load font information for U+eus on input line 29.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueus.fd
-File: ueus.fd 2013/01/14 v3.01 Euler Script
-) [7 <./figures/Capitolo_2/gw170817_time_freq.png (PNG copy)>]
-<figures/Capitolo_2/noiseData.png, id=381, 162.8484pt x 108.405pt>
-File: figures/Capitolo_2/noiseData.png Graphic file (type png)
-<use figures/Capitolo_2/noiseData.png>
-Package pdftex.def Info: figures/Capitolo_2/noiseData.png  used on input line 4
-9.
-(pdftex.def)             Requested size: 241.84843pt x 160.99762pt.
- [8 <./figures/Capitolo_2/noiseData.png>]
-<figures/Capitolo_2/signal.png, id=397, 468.75125pt x 501.875pt>
-File: figures/Capitolo_2/signal.png Graphic file (type png)
-<use figures/Capitolo_2/signal.png>
-Package pdftex.def Info: figures/Capitolo_2/signal.png  used on input line 97.
-(pdftex.def)             Requested size: 241.84843pt x 258.93181pt.
- [9]
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 10
-4.
-
-) [10 <./figures/Capitolo_2/signal.png (PNG copy)>]
-\openout2 = `Capitoli/Capitolo_3/Capitolo_3.aux'.
-
-
-(./Capitoli/Capitolo_3/Capitolo_3.tex
-Capitolo 3.
-<figures/Capitolo_3/noiseO4.pdf, id=417, 1386.17876pt x 1078.0275pt>
-File: figures/Capitolo_3/noiseO4.pdf Graphic file (type pdf)
-<use figures/Capitolo_3/noiseO4.pdf>
-Package pdftex.def Info: figures/Capitolo_3/noiseO4.pdf  used on input line 21.
-
-(pdftex.def)             Requested size: 346.54384pt x 269.50621pt.
-[11
-
-
-
- <./figures/Capitolo_3/noiseO4.pdf>]) [12]
-\openout2 = `Capitoli/Capitolo_4/Capitolo_4.aux'.
-
-
-(./Capitoli/Capitolo_4/Capitolo_4.tex
-Capitolo 4.
-<figures/Capitolo_4/APR4_q09/layer4_10__distance5_1250_2500_5000/ced_1164556010
-_790_O4I_GN_LHV_SIM_PMNS_APR4_q09_NEW_4_job1/L1H1V1_1164556494.250_1164556494.2
-50_1164556494.250/l_tfmap_scalogram.png, id=442, 798.985pt x 574.145pt>
-File: figures/Capitolo_4/APR4_q09/layer4_10__distance5_1250_2500_5000/ced_11645
-56010_790_O4I_GN_LHV_SIM_PMNS_APR4_q09_NEW_4_job1/L1H1V1_1164556494.250_1164556
-494.250_1164556494.250/l_tfmap_scalogram.png Graphic file (type png)
-<use figures/Capitolo_4/APR4_q09/layer4_10__distance5_1250_2500_5000/ced_116455
-6010_790_O4I_GN_LHV_SIM_PMNS_APR4_q09_NEW_4_job1/L1H1V1_1164556494.250_11645564
-94.250_1164556494.250/l_tfmap_scalogram.png>
-Package pdftex.def Info: figures/Capitolo_4/APR4_q09/layer4_10__distance5_1250_
-2500_5000/ced_1164556010_790_O4I_GN_LHV_SIM_PMNS_APR4_q09_NEW_4_job1/L1H1V1_116
-4556494.250_1164556494.250_1164556494.250/l_tfmap_scalogram.png  used on input 
-line 12.
-(pdftex.def)             Requested size: 303.61745pt x 218.17737pt.
-<figures/Capitolo_4/likelihoodDistribution.pdf, id=444, 569.12625pt x 312.16624
-pt>
-File: figures/Capitolo_4/likelihoodDistribution.pdf Graphic file (type pdf)
-<use figures/Capitolo_4/likelihoodDistribution.pdf>
-Package pdftex.def Info: figures/Capitolo_4/likelihoodDistribution.pdf  used on
- input line 26.
-(pdftex.def)             Requested size: 455.30162pt x 249.73334pt.
-
-Underfull \vbox (badness 2591) has occurred while \output is active []
-
- [13
-
-
-
- <./figures/Capitolo_4/APR4_q09/layer4_10__distance5_1250_2500_5000/ced_1164556
-010_790_O4I_GN_LHV_SIM_PMNS_APR4_q09_NEW_4_job1/L1H1V1_1164556494.250_116455649
-4.250_1164556494.250/l_tfmap_scalogram.png>]
-<figures/Capitolo_4/hrss_snr_Distribution.pdf, id=450, 569.12625pt x 312.16624p
-t>
-File: figures/Capitolo_4/hrss_snr_Distribution.pdf Graphic file (type pdf)
-<use figures/Capitolo_4/hrss_snr_Distribution.pdf>
-Package pdftex.def Info: figures/Capitolo_4/hrss_snr_Distribution.pdf  used on 
-input line 41.
-(pdftex.def)             Requested size: 387.00073pt x 212.27023pt.
-) [14 <./figures/Capitolo_4/likelihoodDistribution.pdf, page is rotated 90 degr
-ees> <./figures/Capitolo_4/hrss_snr_Distribution.pdf, page is rotated 90 degree
-s>] [15] [16
-
-
-]
-\openout2 = `Capitoli/Conclusioni/Conclusioni.aux'.
-
-
-(./Capitoli/Conclusioni/Conclusioni.tex) [17
-
-
-] (./Tesi_Triennale_PMNS.bbl
-[18
-
-
-
-]
-Underfull \hbox (badness 2103) in paragraph at lines 55--58
+[2] (./Tesi_Triennale_PMNS.bbl
+Underfull \hbox (badness 2103) in paragraph at lines 62--65
 \T1/ptm/m/n/10.95 co-he-rent me-thod for de-tec-tion of gra-vi-ta-tio-nal
  []
 
 
-Underfull \hbox (badness 1132) in paragraph at lines 76--78
+Underfull \hbox (badness 1132) in paragraph at lines 83--85
 \T1/ptm/m/n/10.95 (2020).  The evo-lu-tion of bi-na-ry neu-tron star
  []
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 15.
- [19]
+ [3
+
+
+
+
+]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 15.
- (./Tesi_Triennale_PMNS.aux (./Capitoli/Frontespizio/Frontespizio.aux)
-(./Capitoli/Capitolo_1/Capitolo_1.aux) (./Capitoli/Capitolo_2/Capitolo_2.aux)
-(./Capitoli/Capitolo_3/Capitolo_3.aux) (./Capitoli/Capitolo_4/Capitolo_4.aux)
-(./Capitoli/Conclusioni/Conclusioni.aux))
+ (./Tesi_Triennale_PMNS.aux (./Capitoli/Capitolo_3/Capitolo_3.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 15.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 15.
 Package rerunfilecheck Info: File `Tesi_Triennale_PMNS.out' has not changed.
-(rerunfilecheck)             Checksum: 2F9936B39A43CC9B64DED4A39938E7AA;1635.
+(rerunfilecheck)             Checksum: 8AD84E1CD7D9A0EB665ACF4676362BA3;86.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 15.
  ) 
 Here is how much of TeX's memory you used:
- 22807 strings out of 480906
- 369618 string characters out of 5910773
- 873455 words of memory out of 5000000
- 37826 multiletter control sequences out of 15000+600000
- 600362 words of font info for 106 fonts, out of 8000000 for 9000
+ 22461 strings out of 480906
+ 360620 string characters out of 5910773
+ 866176 words of memory out of 5000000
+ 37629 multiletter control sequences out of 15000+600000
+ 561887 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 61i,12n,57p,1123b,2421s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,11n,50p,562b,2374s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/euler/eusm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
-w/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Tesi_Triennale_PMNS.pdf (23 pages, 2475895 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
+rw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Tesi_Triennale_PMNS.pdf (3 pages, 587038 bytes).
 PDF statistics:
- 650 PDF objects out of 1000 (max. 8388607)
- 82 named destinations out of 1000 (max. 500000)
- 259 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 104 PDF objects out of 1000 (max. 8388607)
+ 21 named destinations out of 1000 (max. 500000)
+ 34 words of extra memory for PDF output out of 10000 (max. 10000000)
 

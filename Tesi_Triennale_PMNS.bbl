@@ -15,9 +15,16 @@ Abbott, B., Abbott, R., Abbott, T., Acernese, F., Ackley, K., Adams, C., Adams,
   star inspiral.
 \newblock {\em Physical Review Letters}, 119(16).
 
-\bibitem[Abbott et~al., 2020]{Abbott_2020}
+\bibitem[Abbott et~al., 2020a]{Abbott_2020b}
 Abbott, B.~P., Abbott, R., Abbott, T.~D., Abraham, S., Acernese, F., Ackley,
-  K., Adams, C., Adya, V.~B., Affeldt, C., and et~al. (2020).
+  K., Adams, C., Adhikari, R.~X., Adya, V.~B., Affeldt, C., and et~al. (2020a).
+\newblock Gw190425: Observation of a compact binary coalescence with total mass
+  $\sim3.4${M}$_\odot$.
+\newblock {\em The Astrophysical Journal}, 892(1):L3.
+
+\bibitem[Abbott et~al., 2020b]{Abbott_2020a}
+Abbott, B.~P., Abbott, R., Abbott, T.~D., Abraham, S., Acernese, F., Ackley,
+  K., Adams, C., Adya, V.~B., Affeldt, C., and et~al. (2020b).
 \newblock Prospects for observing and localizing gravitational-wave transients
   with advanced ligo, advanced virgo and kagra.
 \newblock {\em Living Reviews in Relativity}, 23(1).
