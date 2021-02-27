@@ -1,18 +1,7 @@
+\contentsline {chapter}{\numberline {1}cWB}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Analisi coerente}{3}{section.1.1}%
+\contentsline {paragraph}{Regolatori}{4}{section*.2}%
+\contentsline {subsection}{\numberline {1.1.1}Trasformazioni di wavelet}{4}{subsection.1.1.1}%
 \babel@toc {italian}{}
 \babel@toc {italian}{}
-\contentsline {chapter}{\numberline {1}Segnali di GW da BNS}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Frequenze caratteristiche}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Oggetto residuo}{2}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Formazione diretta un black hole}{3}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Formazione di una NS ipermassiva}{3}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Formazione di una NS con lunga vita media}{4}{subsection.1.2.3}%
-\contentsline {chapter}{\numberline {2}Osservazione di GW da BNS}{7}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Osservazione dello spiraleggiamento}{7}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Proprietà della sorgente}{7}{subsection.2.1.1}%
-\contentsline {section}{\numberline {2.2}Ricerca del post-merger del residuo}{8}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Segnali brevi}{9}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Segnali di durata intermedia}{10}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}Sugli altri eventi rivelati}{10}{section.2.3}%
-\contentsline {paragraph}{Proprietà della sorgente}{10}{section*.13}%
-\contentsline {chapter}{\numberline {3}cWB}{11}{chapter.3}%
-\contentsline {chapter}{Bibliografia}{13}{chapter*.15}%
+\contentsline {chapter}{Bibliografia}{7}{chapter*.4}%
