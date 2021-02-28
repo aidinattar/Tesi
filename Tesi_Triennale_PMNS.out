@@ -1,5 +1,10 @@
 \BOOKMARK [0][-]{chapter.1}{cWB}{}% 1
 \BOOKMARK [1][-]{section.1.1}{Analisi\040coerente}{chapter.1}% 2
-\BOOKMARK [2][-]{subsection.1.1.1}{Trasformazioni\040di\040wavelet}{section.1.1}% 3
-\BOOKMARK [2][-]{subsection.1.1.2}{Filtro\040di\040predizione\040lineare\040dell'errore}{section.1.1}% 4
-\BOOKMARK [0][-]{chapter*.4}{Bibliografia}{}% 5
+\BOOKMARK [1][-]{section.1.2}{Algoritmi\040per\040l'analisi\040dati}{chapter.1}% 3
+\BOOKMARK [2][-]{subsection.1.2.1}{Trasformazioni\040di\040wavelet}{section.1.2}% 4
+\BOOKMARK [2][-]{subsection.1.2.2}{Filtro\040di\040predizione\040lineare\040dell'errore}{section.1.2}% 5
+\BOOKMARK [2][-]{subsection.1.2.3}{Filtri\040per\040il\040ritardo\040temporale\040nel\040dominio\040di\040wavelet}{section.1.2}% 6
+\BOOKMARK [2][-]{subsection.1.2.4}{Generazione\040di\040trigger\040coerenti}{section.1.2}% 7
+\BOOKMARK [1][-]{section.1.3}{Selezione\040dei\040trigger\040coerenti}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.4}{Esempi\040di\040analisi\040utilizzando\040cWB}{chapter.1}% 9
+\BOOKMARK [0][-]{chapter*.4}{Bibliografia}{}% 10

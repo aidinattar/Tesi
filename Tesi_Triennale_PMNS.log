@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.2.6)  27 FEB 2021 22:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.2.6)  28 FEB 2021 18:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -870,7 +870,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 (./Capitoli/Capitolo_3/Capitolo_3.tex
 Capitolo 1.
-LaTeX Font Info:    Trying to load font information for U+eus on input line 13.
+LaTeX Font Info:    Trying to load font information for U+eus on input line 14.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueus.fd
 File: ueus.fd 2013/01/14 v3.01 Euler Script
@@ -881,35 +881,42 @@ File: ueus.fd 2013/01/14 v3.01 Euler Script
 
 
 ]
-<figures/Capitolo_3/L1_scalogram_0.png, id=48, 798.985pt x 574.145pt>
+<figures/Capitolo_3/L1_scalogram_0.png, id=72, 798.985pt x 574.145pt>
 File: figures/Capitolo_3/L1_scalogram_0.png Graphic file (type png)
 <use figures/Capitolo_3/L1_scalogram_0.png>
 Package pdftex.def Info: figures/Capitolo_3/L1_scalogram_0.png  used on input l
-ine 59.
-(pdftex.def)             Requested size: 241.84843pt x 173.78671pt.
+ine 53.
+(pdftex.def)             Requested size: 229.75896pt x 165.10483pt.
 
-Overfull \hbox (24.18633pt too wide) in paragraph at lines 59--60
+Overfull \hbox (7.25516pt too wide) in paragraph at lines 53--54
  [] 
  []
 
-<figures/Capitolo_3/noiseO4.pdf, id=50, 1386.17876pt x 1078.0275pt>
-File: figures/Capitolo_3/noiseO4.pdf Graphic file (type pdf)
-<use figures/Capitolo_3/noiseO4.pdf>
-Package pdftex.def Info: figures/Capitolo_3/noiseO4.pdf  used on input line 84.
 
-(pdftex.def)             Requested size: 346.54384pt x 269.50621pt.
-)
+Underfull \hbox (badness 1845) in paragraph at lines 56--56
+[]\T1/ptm/m/n/10 Figura 1.1: |Sca-lo-gram-ma ot-te-nu-to da una ana-li-si
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[2 <./figures/Capitolo_3/L1_scalogram_0.png>] [3 <./figures/Capitolo_3/noiseO4.
-pdf>] [4
+[2 <./figures/Capitolo_3/L1_scalogram_0.png>]
+<figures/Capitolo_3/l_tfmap_scalogram.png, id=88, 798.985pt x 574.145pt>
+File: figures/Capitolo_3/l_tfmap_scalogram.png Graphic file (type png)
+<use figures/Capitolo_3/l_tfmap_scalogram.png>
+Package pdftex.def Info: figures/Capitolo_3/l_tfmap_scalogram.png  used on inpu
+t line 107.
+(pdftex.def)             Requested size: 229.75896pt x 165.10483pt.
 
+Overfull \hbox (7.25516pt too wide) in paragraph at lines 107--108
+ [] 
+ []
 
-] (./Tesi_Triennale_PMNS.bbl
+[3 <./figures/Capitolo_3/l_tfmap_scalogram.png>]) [4]
+(./Tesi_Triennale_PMNS.bbl
 Underfull \hbox (badness 2103) in paragraph at lines 62--65
 \T1/ptm/m/n/10.95 co-he-rent me-thod for de-tec-tion of gra-vi-ta-tio-nal
  []
@@ -924,23 +931,25 @@ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 15.
  [5
 
 
+
+
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 15.
  (./Tesi_Triennale_PMNS.aux (./Capitoli/Capitolo_3/Capitolo_3.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 15.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 15.
 Package rerunfilecheck Info: File `Tesi_Triennale_PMNS.out' has not changed.
-(rerunfilecheck)             Checksum: 73F95FA6F0EFE5D753AAF56A0C528981;340.
+(rerunfilecheck)             Checksum: DE60E4B22367A84E2BE03C9FDCC9781C;824.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 15.
  ) 
 Here is how much of TeX's memory you used:
- 22522 strings out of 480906
- 361686 string characters out of 5910773
- 872189 words of memory out of 5000000
- 37668 multiletter control sequences out of 15000+600000
+ 22555 strings out of 480906
+ 362256 string characters out of 5910773
+ 712240 words of memory out of 5000000
+ 37684 multiletter control sequences out of 15000+600000
  580864 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 61i,11n,50p,924b,2341s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,11n,50p,923b,2341s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -954,9 +963,9 @@ pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/urw/times/utmri8a.pfb>
-Output written on Tesi_Triennale_PMNS.pdf (5 pages, 668049 bytes).
+Output written on Tesi_Triennale_PMNS.pdf (5 pages, 233193 bytes).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
- 33 named destinations out of 1000 (max. 500000)
- 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 197 PDF objects out of 1000 (max. 8388607)
+ 50 named destinations out of 1000 (max. 500000)
+ 103 words of extra memory for PDF output out of 10000 (max. 10000000)
 
