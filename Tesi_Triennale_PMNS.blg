@@ -1,52 +1,47 @@
-This is BibTeX, Version 0.99d (TeX Live 2020/Debian)
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: Tesi_Triennale_PMNS.aux
 The style file: apalike.bst
-A level-1 auxiliary file: Capitoli/Frontespizio/Frontespizio.aux
-A level-1 auxiliary file: Capitoli/Capitolo_1/Capitolo_1.aux
-A level-1 auxiliary file: Capitoli/Capitolo_2/Capitolo_2.aux
 A level-1 auxiliary file: Capitoli/Capitolo_3/Capitolo_3.aux
-A level-1 auxiliary file: Capitoli/Capitolo_4/Capitolo_4.aux
-A level-1 auxiliary file: Capitoli/Conclusioni/Conclusioni.aux
 Database file #1: BibliografiaTesi.bib
-You've used 15 entries,
+You've used 3 entries,
             1935 wiz_defined-function locations,
-            573 strings with 7209 characters,
-and the built_in function-call counts, 6613 in all, are:
-= -- 577
-> -- 456
-< -- 6
-+ -- 172
-- -- 166
-* -- 625
-:= -- 1233
-add.period$ -- 46
-call.type$ -- 15
-change.case$ -- 154
-chr.to.int$ -- 13
-cite$ -- 15
-duplicate$ -- 201
-empty$ -- 354
-format.name$ -- 185
-if$ -- 1215
-int.to.chr$ -- 3
+            498 strings with 4515 characters,
+and the built_in function-call counts, 1372 in all, are:
+= -- 119
+> -- 94
+< -- 1
++ -- 36
+- -- 34
+* -- 133
+:= -- 257
+add.period$ -- 9
+call.type$ -- 3
+change.case$ -- 32
+chr.to.int$ -- 3
+cite$ -- 3
+duplicate$ -- 40
+empty$ -- 72
+format.name$ -- 39
+if$ -- 249
+int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 18
-newline$ -- 77
-num.names$ -- 45
-pop$ -- 139
+missing$ -- 3
+newline$ -- 18
+num.names$ -- 9
+pop$ -- 25
 preamble$ -- 1
-purify$ -- 158
+purify$ -- 32
 quote$ -- 0
-skip$ -- 154
+skip$ -- 34
 stack$ -- 0
-substring$ -- 262
-swap$ -- 14
+substring$ -- 56
+swap$ -- 3
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 82
+type$ -- 18
 warning$ -- 0
-while$ -- 35
+while$ -- 7
 width$ -- 0
-write$ -- 192
+write$ -- 41

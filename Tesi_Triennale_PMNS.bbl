@@ -1,56 +1,5 @@
 \begin{thebibliography}{}
 
-\bibitem[Abbott et~al., 2019]{Abbott_2019}
-Abbott, B., Abbott, R., Abbott, T., Abraham, S., Acernese, F., Ackley, K.,
-  Adams, C., Adhikari, R., Adya, V., Affeldt, C., and et~al. (2019).
-\newblock Gwtc-1: A gravitational-wave transient catalog of compact binary
-  mergers observed by ligo and virgo during the first and second observing
-  runs.
-\newblock {\em Physical Review X}, 9(3).
-
-\bibitem[Abbott et~al., 2017a]{Abbott_2017a}
-Abbott, B., Abbott, R., Abbott, T., Acernese, F., Ackley, K., Adams, C., Adams,
-  T., Addesso, P., Adhikari, R., Adya, V., and et~al. (2017a).
-\newblock Gw170817: Observation of gravitational waves from a binary neutron
-  star inspiral.
-\newblock {\em Physical Review Letters}, 119(16).
-
-\bibitem[Abbott et~al., 2020a]{Abbott_2020b}
-Abbott, B.~P., Abbott, R., Abbott, T.~D., Abraham, S., Acernese, F., Ackley,
-  K., Adams, C., Adhikari, R.~X., Adya, V.~B., Affeldt, C., and et~al. (2020a).
-\newblock Gw190425: Observation of a compact binary coalescence with total mass
-  $\sim3.4${M}$_\odot$.
-\newblock {\em The Astrophysical Journal}, 892(1):L3.
-
-\bibitem[Abbott et~al., 2020b]{Abbott_2020a}
-Abbott, B.~P., Abbott, R., Abbott, T.~D., Abraham, S., Acernese, F., Ackley,
-  K., Adams, C., Adya, V.~B., Affeldt, C., and et~al. (2020b).
-\newblock Prospects for observing and localizing gravitational-wave transients
-  with advanced ligo, advanced virgo and kagra.
-\newblock {\em Living Reviews in Relativity}, 23(1).
-
-\bibitem[Abbott et~al., 2017b]{Abbott_2017b}
-Abbott, B.~P., Abbott, R., Abbott, T.~D., Acernese, F., Ackley, K., Adams, C.,
-  Adams, T., Addesso, P., Adhikari, R.~X., Adya, V.~B., and et~al. (2017b).
-\newblock Search for post-merger gravitational waves from the remnant of the
-  binary neutron star merger gw170817.
-\newblock {\em The Astrophysical Journal}, 851(1):L16.
-
-\bibitem[Baumgarte et~al., 2000]{Baumgarte_2000}
-Baumgarte, T.~W., Shapiro, S.~L., and Shibata, M. (2000).
-\newblock On the maximum mass of differentially rotating neutron stars.
-\newblock {\em The Astrophysical Journal}, 528(1):L29–L32.
-
-\bibitem[Hartle, 2003]{hartle2003gravity}
-Hartle, J. (2003).
-\newblock {\em Gravity: An Introduction to Einstein's General Relativity}.
-\newblock Addison-Wesley.
-
-\bibitem[Hobson et~al., 2006]{hobson2006general}
-Hobson, M., Efstathiou, G., and Lasenby, A. (2006).
-\newblock {\em General Relativity: An Introduction for Physicists}.
-\newblock Cambridge University Press.
-
 \bibitem[Klimenko et~al., 2016]{Klimenko_2016}
 Klimenko, S., Vedovato, G., Drago, M., Salemi, F., Tiwari, V., Prodi, G.,
   Lazzaro, C., Ackley, K., Tiwari, S., Da~Silva, C., and et~al. (2016).
@@ -63,29 +12,9 @@ Klimenko, S., Yakushin, I., Mercer, A., and Mitselmakher, G. (2008).
 \newblock A coherent method for detection of gravitational wave bursts.
 \newblock {\em Classical and Quantum Gravity}, 25(11):114029.
 
-\bibitem[Maggiore, 2008]{maggiore2008gravitational}
-Maggiore, M. (2008).
-\newblock {\em Gravitational Waves: Volume 1: Theory and Experiments}.
-\newblock Gravitational Waves. OUP Oxford.
-
-\bibitem[Maggiore, 2018]{maggiore2018gravitational}
-Maggiore, M. (2018).
-\newblock {\em Gravitational Waves: Volume 2: Astrophysics and Cosmology}.
-\newblock Gravitational Waves. Oxford University Press.
-
-\bibitem[Rezzolla and Takami, 2016]{Rezzolla_2016}
-Rezzolla, L. and Takami, K. (2016).
-\newblock Gravitational-wave signal from binary neutron stars: A systematic
-  analysis of the spectral properties.
-\newblock {\em Physical Review D}, 93(12).
-
-\bibitem[Sarin and Lasky, 2020]{sarin2020evolution}
-Sarin, N. and Lasky, P.~D. (2020).
-\newblock The evolution of binary neutron star post-merger remnants: a review.
-
-\bibitem[Schutz, 2011]{Schutz_2011}
-Schutz, B.~F. (2011).
-\newblock Networks of gravitational wave detectors and three figures of merit.
-\newblock {\em Classical and Quantum Gravity}, 28(12):125023.
+\bibitem[Sathyaprakash and Schutz, 2009]{Sathyaprakash_2009}
+Sathyaprakash, B.~S. and Schutz, B.~F. (2009).
+\newblock Physics, astrophysics and cosmology with gravitational waves.
+\newblock {\em Living Reviews in Relativity}, 12(1).
 
 \end{thebibliography}

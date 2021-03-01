@@ -9,42 +9,95 @@ I vantaggi di questo tipo di analisi sono molteplici: innanzitutto la sensibilit
 L'algoritmo cWB lavora in due modi differenti: viene utilizzato in tempo reale con i dati provenienti dai rivelatori per identificare e ricostruire candidati significativi e poter, una volta ottenuta una prima stima della posizione celeste della sorgente, condividerla con i telescopi partner per identificare i segnali elettromagnetici legati; alternativamente si utilizza per l'analisi di dati consolidati volta a ottenere risultati più approfonditi sull'evento, stabilendo la significanza degli eventi osservati e identificando le stelle progenitrici\cite{Klimenko_2016}. In questo e nel prossimo capitolo ci si concentrerà sul secondo tipo di analisi.
 \section{Analisi coerente}
 \label{section:coherent_analysis}
-I dati che si raccolgono da un network di $K$ detector sono nella forma di serie discreta $x_k[i]$
-La pipeline di cWB per rivelare e ricostruire segnali utilizza un metodo basato sul funzionale rapporto di verosimiglianza, che, in un'ipotesi idealistica di rumore gaussiano quasi stazionario, può essere scritto nel dominio di wavelet (in un piano tempo-frequenza) come
+La pipeline di cWB per rivelare e ricostruire segnali utilizza un metodo basato sul funzionale rapporto di verosimiglianza, definito come il logaritmo del rapporto di verosimiglianza (a meno di un fattore moltiplicativo pari a 2). Il rapport di verosimiglianza, che senza fare ipotesi sul modello del rumore, si scriverà
 \begin{equation}
-	\mathcal{L} = \sum_{k=1}^{K}\sum_{i,j=1}^{N}\left(\frac{w_k^2[i,j]}{\sigma_k^2[i,j]} - \frac{(w_k[i,j]-\xi_k[i,j])^2}{\sigma_k^2[i,j]}  \right)
+	\mathcal{\Lambda}(\mathbf{x},\Omega) = \frac{p(\mathbf{x}|\mathbf{h}(\Omega))}{p(\mathbf{x}|0)}
+\end{equation}
+con $\Omega$ set di parametri che descrive il segnale, $p(\mathbf{x}|0)$ è la probabilità dell'ipotesi nulla, quindi di solo rumore strumentale, mentre $p(\mathbf{x}|\mathbf{h})$ è la probabilità composta che vi sia un segnale $\mathbf{h}$ nel campione $\mathbf{x}$\cite{Klimenko_2016}.
+Nell'ipotesi idealistica di rumore gaussiano quasi stazionario, il funzionale può essere scritto nel dominio di wavelet (in un piano tempo-frequenza) come
+\begin{equation}
+	\mathcal{L} = \sum_{k=1}^{K}\sum_{i,j=1}^{N}\left(\frac{x_k^2[i,j]}{\sigma_k^2[i,j]} - \frac{(x_k[i,j]-\xi_k[i,j])^2}{\sigma_k^2[i,j]}  \right)
 	\label{eqn:Likelihood}
 \end{equation}
-dove K è il numero di detector nel network, $w_k[i,j]$ è il campione di dati del detector (l'indice i itera sui tempi, mentre l'indice j itera sulle frequenze) e infine $\xi_k[i,j]$ è la risposta del detector k-esimo.
-Il rumore del detector è è caratterizzato dalla deviazione standard $\sigma_k[i,j]$ che può variare lungo il piano tempo-frequenza.
+dove K è il numero di detector nel network, $w_k[i,j]$ è il campione di dati del detector (l'indice i itera sui tempi, mentre l'indice j itera sulle frequenze) e infine $\xi_k[i,j]$ è la risposta del detector k-esimo\cite{Klimenko_2008}.
+Il rumore del detector è è caratterizzato dalla deviazione standard $\sigma_k[i,j]$,  anch'essa una funzione sul piano tempo-frequenza. I valori $w_k[i,j] = x_k[i,j]/\sigma_k[i,j]$ saranno i dati scalati con il rumore (detti sbiancati)\cite{Klimenko_2016}.
+Per semplicità si introducono i seguenti vettori:
+\[
+\mathbf{x}[i,j] = \left(x_1[i,j],\dots, x_K[i,j] \right) ;
+\quad
+\mathbf{w}[i,j] = \left(\frac{x_1[i,j]}{\sigma_1[i,j]},\dots, \frac{x_K[i,j]}{\sigma_K[i,j]} \right) ;
+\]
+\[
+\mathbf{h}[i,j] = (h_+[i,j], h_\times[i,j])
+\quad
+\mathbf{f}_{+(\times)}[i,j] = \left(\frac{F_{1+(\times)}[i,j]}{\sigma_1[i,j]},\dots, \frac{F_{K+(\times)}[i,j]}{\sigma_K[i,j]} \right) 
+\]
+mentre con la notazione $\sum_{\Omega_{TF}} = \sum_{i,j=1}^N$, in quanto si scriverà $\Omega_{TF}$ come il dominio tempo-frequenza. 
 Le risposte del network sono scritte come
 \begin{equation}
 	\xi_k[i,j] = F_{+,k}h_+[i,j] + F_{\times,k}h_\times[i,j]
 	\label{eqn:detector_response}
 \end{equation}
-dove $h_{+}[i,j]$ e $h_{\times}[i,j]$ sono le ampiezze delle due polarizzazioni della GW e $F_{+,k}(\theta,\phi)$ e $F_{\times,k}(\theta,\phi)$ sono gli antenna pattern del detector k-esimo\cite{Klimenko_2008}. Gli antenna pattern descrivono come il detector riceve l'energia in funzione della posizione angolare. *Breve descrizione antenna pattern* *immagine antenna pattern di uno dei rivelatori*\cite{Schutz_2011}.
+dove $h_{+}[i,j]$ e $h_{\times}[i,j]$ sono le ampiezze delle due polarizzazioni della GW e $F_{+,k}(\theta,\phi)$ e $F_{\times,k}(\theta,\phi)$ sono gli antenna pattern del detector k-esimo\cite{Klimenko_2008}. Con le notazioni precedenti e denotando il rumore $\mathbf{n}[i,j]$, si può scrivere
+\begin{equation}
+	\mathbf{x}[i,j] = \mathcal{F}\mathbf{h}[i,j] + \mathbf{n}[i]
+\end{equation}
+con $\mathcal{F}$ la matrice di antenna pattern, definita come
+\begin{wrapfigure}{r}{0.46\textwidth}
+	\vspace{-10pt}
+	\begin{center}
+		\includegraphics[width=0.25\textwidth]{figures/Capitolo_3/Detector_sky_full.eps}
+	\end{center}
+	\vspace{-5pt}
+	\caption{L'orientazione relativa del piano delle polarizzazioni della GW e del piano su cui giacciono i bracci del detector, presa da \cite{Sathyaprakash_2009}.}
+	\label{fig:antenna_pattern}
+	\vspace{-30pt}
+\end{wrapfigure}
+\begin{equation}
+	\mathcal{F} = \begin{bmatrix}
+				     F_{1+}(\theta,\phi)	&F_{1\times}(\theta,\phi)\\
+				     \vdots					&   \vdots				 \\
+				     F_{K+}(\theta,\phi)	&F_{K\times}(\theta,\phi)\\
+				  \end{bmatrix}
+\end{equation}
+Gli antenna pattern descrivono come il detector riceve l'energia in funzione della posizione angolare e, in particolare, sono caratterizzati da una trasformazione basata sull'angolo di polarizzazione $\Psi$, equivalente alla rotazione del piano sul quale è definito $\mathbf{h}$.
 
 Dunque, al variare di $h_{+}[i,j]$ e $h_{\times}[i,j]$ varia anche $\mathcal{L}$, l'obiettivo è quindi ottenere i valori delle ampiezze che massimizzano il funzionale di verosimiglianza e quindi si deduce la forma d'onda nel dominio dei tempi facendo una trasformazione di wavelet inversa.%, che consisterà dunque 
 
-Per semplicità si introducono i seguenti vettori:
-\[
-	\textbf{w}[i,j] = \left(\frac{w_1[i,j]}{\sigma_1[i,j]},\dots, \frac{w_K[i,j]}{\sigma_K[i,j]} \right) ;
-	\quad
-	\textbf{f}_{+(\times)}[i,j] = \left(\frac{F_{1+(\times)}[i,j]}{\sigma_1[i,j]},\dots, \frac{F_{K+(\times)}[i,j]}{\sigma_K[i,j]} \right) 
-\]
-mentre con la notazione $\sum_{\Omega_{TF}} = \sum_{i,j=1}^N$, in quanto si scriverà $\Omega_{TF}$ come il dominio tempo-frequenza. 
-
 Il funzionale rapporto di verosimiglianza in equazione \ref{eqn:Likelihood} si può scrivere come
 \begin{equation}
-	\mathcal{L} = \mathcal{L}_+ + \mathcal{L}_\times = \sum_{\Omega_{TF}}\left[ \textbf{w} \cdot \textbf{f}_+ - \frac{1}{2}|\textbf{f}_+|^2h_+^2\right] + \sum_{\Omega_{TF}}\left[ \textbf{w} \cdot \textbf{f}_\times - \frac{1}{2}|\textbf{f}_\times|^2h_\times^2\right]
+	\mathcal{L} = \braket{w}{\xi} - \frac{1}{2} \braket{\xi}{\xi} = \mathcal{L}_+ + \mathcal{L}_\times = \sum_{\Omega_{TF}}\left[ \mathbf{w} \cdot \mathbf{f}_+ - \frac{1}{2}|\mathbf{f}_+|^2h_+^2\right] + \sum_{\Omega_{TF}}\left[ \mathbf{w} \cdot \mathbf{f}_\times - \frac{1}{2}|\mathbf{f}_\times|^2h_\times^2\right]
 	\label{eqn:label_separated}
 \end{equation}
-dove i vettori di antenna pattern $\textbf{f}_+$ e $\textbf{f}_\times$ sono definiti nel Dominant Polarisation wave Frame (DPF), ovvero il piano in cui entrambi gli antenna pattern sono reali e definiti positivi e vale $\textbf{f}_+ \cdot \textbf{f}_\times = 0$. Alla luce di questo per ottenere la massima likelihood si dovrà risolvere le equazioni:
+dove i vettori di antenna pattern $\mathbf{f}_+$ e $\mathbf{f}_\times$ sono definiti nel Dominant Polarisation wave Frame (DPF), ovvero il piano in cui entrambi gli antenna pattern sono reali e definiti positivi e valgono $\mathbf{f}_+ \cdot \mathbf{f}_\times = 0$ e $ |\mathbf{f}_\times| \leq |\mathbf{f}_+|$.  Alla luce di questo per ottenere la massima likelihood si dovrà risolvere le equazioni:
 \begin{equation}
-	\textbf{w} \cdot \textbf{f}_+ = |\textbf{f}_+|^2h_+ \quad\quad\quad  \textbf{w} \cdot \textbf{f}_\times = |\textbf{f}_+|^2h_\times 
+%	\mathbf{w} \cdot \mathbf{f}_+ = |\mathbf{f}_+|^2h_+ \quad\quad\quad  \mathbf{w} \cdot \mathbf{f}_\times = |\mathbf{f}_+|^2h_\times 
+	\begin{bmatrix}
+	(\mathbf{w}[i,j]\cdot \mathbf{e}_+[i,j])\\
+	(\mathbf{w}[i,j]\cdot \mathbf{e}_+[i,j])
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+	\mathbf{f}_+[i,j]	&0\\
+	0					&\mathbf{f}_\times[i,j]
+	\end{bmatrix}
+	\begin{bmatrix}
+	h_+[i,j]\\
+	h_\times[i,j]\\
+	\end{bmatrix}
 	\label{eqn:sistema_soluzione}
 \end{equation}
-\paragraph{Regolatori} C'è una particolare classe di vincoli, i regolatori, che dipendono da come il network reagisce a un determinato segnale\cite{Klimenko_2008}.
+La massima verosimiglianza può essere scritta quindi sostituendo le soluzioni di \ref{eqn:sistema_soluzione} in $\mathcal{L}(h)$, che restituisce
+\begin{equation}
+	L_{max} = \sum_{\Omega_{TF}}\mathbf{w}[i,j]P[i,j]\mathbf{w}^\intercal[i,j]
+\end{equation}
+dove la matrice $P$ è il proiettore costruito a partire dai versori $\mathbf{e}_+$ e $\mathbf{e}_\times$:
+\begin{equation}
+	P_{nm}[i,j]=e_{n+}[i,j]e_{m+}[i,j]+e_{n\times}[i,j]e_{m\times}[i,j]
+	\label{eqn:proiection}
+\end{equation}
+
+\paragraph{Regolatori} C'è una particolare classe di vincoli, i regolatori, che dipendono da come il network reagisce a un determinato segnale. Quando $|f_\times|=0$, come nel caso di detector allineati la risposta del network dovrebbe essere lungo la direzione di $f_+$
 \section{Algoritmi per l'analisi dati}
 \subsection{Trasformazioni di wavelet}
 \label{subsection:wavelet_transform}
@@ -94,7 +147,7 @@ La generazione dei trigger, quindi l'identificazione dei segnali, è basata su s
 
 Il funzionale di likelihood viene calcolato come somma sui campioni selezionati per l'analisi, il numero di termini sommati sipende all'area nel piano tempo-frequenza che si considera, se tale somma consiste di un solo elemento si può scrivere il funzionale come
 \begin{equation}
-	\mathcal{L}_p(i,j,\theta,\phi)=|\textbf{w}|^2 -|\textbf{w} - \textbf{f}_+h_+ - \textbf{f}_\times h_\times|^2
+	\mathcal{L}_p(i,j,\theta,\phi)=|\mathbf{w}|^2 -|\mathbf{w} - \mathbf{f}_+h_+ - \mathbf{f}_\times h_\times|^2
 	\label{eqn:likelihood_single_term}
 \end{equation}
 Poiché è possibile applicare il metodo della likelihood al funzionale \ref{eqn:likelihood_single_term}, si può trovare il massimo $L_p(\theta, \phi)$ al variare di $h_+$ e $h_\times$ e quindi ricercare il massimo in funzione della posizione celeste
@@ -126,9 +179,16 @@ La matrice di likelihood $L_{mn}$ è ottenuta dalla forma quadratica della likel
 	L_{max} = \sum_{mn}L_{mn} = \sum_{mn}\left[\left< w_nw_me_{+n}e_{+m} \right> + \left< w_nw_me'_{\times n}e'_{\times m} \right>\right]
 	\label{eqn:likelihood_matrix}
 \end{equation}
-dove $m\text{ e }n$ sono gli indici che identificano i detector. Gli elementi della diagonale di $L_{mn}$ descrivono l'energia incoerente normalizzata, mentre quelli dell'antidiagonale sono espressione dell'energia coerente normalizzata, la cui somma restituisce l'energia coerente totale $E_{coh}$ rivelata dal network. Si può dunque esprimere i coefficienti di correlazione per detector allineati e quindi l'energia coerente ridotta
+dove $m\text{ e }n$ sono gli indici che identificano i detector\cite{Klimenko_2008}. Gli elementi della diagonale di $L_{mn}$ descrivono l'energia incoerente normalizzata, mentre quelli dell'antidiagonale sono espressione dell'energia coerente normalizzata, la cui somma restituisce l'energia coerente totale $E_{coh}$ rivelata dal network, che si possono esprimere, in accordo con la notazione di equazione \ref{eqn:proiection}
 \begin{equation}
-	r_{mn} = \frac{L_{mn}}{\sqrt{L_{nn}L_{mm}}} \quad\quad\quad \rightarrow \quad\quad\quad e_{coh}=\sum_{mn}L_{nm}|r_{nm}|, \quad n\neq m
+	E_{inc} = \sum_{\Omega_{TF}}\sum_{n}w_n[i,j]P_{mn}[i,j]w_n[i,j],
+	\quad\quad
+	E_{coh} = \sum_{\Omega_{TF}}\sum_{m\neq n}w_n[i,j]P_{mn}[i,j]w_n[i,j].
+\end{equation}
+Queste statistiche coerenti sono particolarmente utilizzate per la ricerca di segnali e la ricostruzione\cite{Klimenko_2016}.
+Si può dunque esprimere i coefficienti di correlazione per detector allineati e quindi l'energia coerente ridotta
+\begin{equation}
+	r_{mn} = \frac{L_{mn}}{\sqrt{L_{nn}L_{mm}}} \quad\quad\quad \rightarrow \quad\quad\quad e_{coh}=\sum_{ n\neq m}L_{nm}|r_{nm}|
 	\label{eqn:coherent_energy}
 \end{equation}
 quest'ultima in particolare risulta uno dei parametri più efficienti per l'accettazione/rifiuto di un trigger.
@@ -141,7 +201,7 @@ con $E_{mn}$  è la matrice diagonale delle energie normalizzate dei detector $E
 \begin{equation}
 	C_{net} = \frac{E_{coh}}{N_{ull}+|E_{coh}|}, \quad\quad\quad c_{net} = \frac{e_{coh}}{N_{ull}+|e_{coh}|}
 \end{equation}
-dove $N_{ull}$ è la somma di tutti gli elementi della matrice null, che rappresenta l'energia totale nella serie null. Accade infatti che eccessi di rumore vengano ricostruiti come segnale: i coefficienti $C_{net}$ e $c_{net}$ sono usati quindi come verifica della consistenza del segnale in quanto comparano l'energia del null e l'energia coerente\cite{Klimenko_2008}.
+dove $N_{ull}$ è la somma di tutti gli elementi della matrice null, che rappresenta l'energia totale nella serie null. Accade infatti che eccessi di rumore vengano ricostruiti come segnale: i coefficienti $C_{net}$ e $c_{net}$ sono usati quindi come verifica della consistenza del segnale in quanto comparano l'energia del null e l'energia coerente\cite{Klimenko_2008},in particolare un evento genuino risulta per $c\smallsim 1$, mentre per $c \ll 1$ corrisponde ad un evento spurio\cite{Klimenko_2016}.
 %Introduzione sull'algoritmo fatta nel paragrafo precedente, magari riprenderla veltocemente.
 %Coherent analysis, significato e descrizione della likelihood: spiega quindi bene la differenza con gli algoritmi classici di confronto con segnali già modellati.
 
