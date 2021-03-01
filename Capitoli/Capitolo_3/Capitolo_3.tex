@@ -97,7 +97,7 @@ dove la matrice $P$ è il proiettore costruito a partire dai versori $\mathbf{e}
 	\label{eqn:proiection}
 \end{equation}
 
-\paragraph{Regolatori} C'è una particolare classe di vincoli, i regolatori, che dipendono da come il network reagisce a un determinato segnale. Quando $|f_\times|=0$, come nel caso di detector allineati la risposta del network dovrebbe essere lungo la direzione di $f_+$
+\paragraph{Regolatori} C'è una particolare classe di vincoli, i regolatori, che dipendono da come il network reagisce a un determinato segnale. Si può citare un esempio considerando il caso in cui $|f_\times|=0$, come nel caso di detector allineati; la risposta del network dovrebbe essere lungo la direzione di $f_+$ e imporre questo vincolo porta l'analisi della likelihood a ignorare la risposta-$\times$ del network.
 \section{Algoritmi per l'analisi dati}
 \subsection{Trasformazioni di wavelet}
 \label{subsection:wavelet_transform}
@@ -200,8 +200,11 @@ La matrice di null rappresenta l'energia normalizzata del rumore ricostruito
 con $E_{mn}$  è la matrice diagonale delle energie normalizzate dei detector $E_{mm}  = \left<x_m^2\right>$. Per distinguere i segnali effettivi da rumore strumentale e ambientale si usano i coefficienti di correlazione 
 \begin{equation}
 	C_{net} = \frac{E_{coh}}{N_{ull}+|E_{coh}|}, \quad\quad\quad c_{net} = \frac{e_{coh}}{N_{ull}+|e_{coh}|}
+	\label{eqn:coefficient_energy}
 \end{equation}
 dove $N_{ull}$ è la somma di tutti gli elementi della matrice null, che rappresenta l'energia totale nella serie null. Accade infatti che eccessi di rumore vengano ricostruiti come segnale: i coefficienti $C_{net}$ e $c_{net}$ sono usati quindi come verifica della consistenza del segnale in quanto comparano l'energia del null e l'energia coerente\cite{Klimenko_2008},in particolare un evento genuino risulta per $c\smallsim 1$, mentre per $c \ll 1$ corrisponde ad un evento spurio\cite{Klimenko_2016}.
+\section{Generazione rumore}
+\label{section:noise_generation}
 %Introduzione sull'algoritmo fatta nel paragrafo precedente, magari riprenderla veltocemente.
 %Coherent analysis, significato e descrizione della likelihood: spiega quindi bene la differenza con gli algoritmi classici di confronto con segnali già modellati.
 
@@ -220,6 +223,82 @@ dove $N_{ull}$ è la somma di tutti gli elementi della matrice null, che rappres
 
 \section{Esempi di analisi utilizzando cWB}
 \label{section:examples}
+Vengono ora riportati alcuni esempi di analisi di eventi simulati utilizzando cWB, partendo da forme d'onda simulate a partire da due diverse EOS. In particolare per ogni analisi verranno riportati i seguenti grafici e coefficienti:
+\begin{itemize}
+		\item una tabella in cui si riportano il rapporto segnale su rumore (SNR); il valore del coefficiente $\rho$, ovvero una ranking statistic che esprime la significanza del segnale descrivendo l'ampiezza correlata effettiva; il coefficiente $c_{net}$ descritto in equazione \ref{eqn:coefficient_energy}; ED che descrive lo sbilanciamento dell'energia tra i detector nel network e, infine, $\theta$ e $\phi$ che descrivono la posizione celeste della sorgente;
+		\item gli spettrogrammi per ciascun detector, che mostrano una rappresentazione sul piano tempo-frequenza del trigger, basandosi sulla scomposizione di Fourier;
+		\item il grafico della likelihood nel piano tempo-frequenza, che descrive il contributo dell'energia totale del campione associato all'evento ricostruito
+		\item i grafici dell'ampiezza di strain ricostruita nel dominio dei tempi e nel dominio delle frequenze relative a un solo rivelatore.		
+\end{itemize}
+\subsection{Forma d'onda APR4 q09}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{cccccc}
+		\toprule
+		SNR	&$\rho$	&$c_{net}$	&ED	&$\theta$	&$\phi$	\\
+		\midrule
+		214.1	&71.9	&0.94	&0.1	&1.8	&19.5	\\
+		\bottomrule
+	\end{tabular}
+	\vspace{-5pt}
+	\caption{Principali coefficienti per la classificazione del segnale}
+	\label{tab:coeff_apr4}
+	\vspace{-10pt}
+\end{table}
+\begin{figure}[H]
+	\vspace{-20pt}
+	\centering
+	\subfloat[][\emph{LIGO-Livingstone}]
+	{\includegraphics[width=.318125\textwidth]{figures/Capitolo_3/APR4_q09/L1_spectrogram_logy_0.png}} \quad
+	\subfloat[][\emph{LIGO-Hanford}]
+	{\includegraphics[width=.318125\textwidth]{figures/Capitolo_3/APR4_q09/H1_spectrogram_logy_0.png}} \quad
+	\subfloat[][\emph{Virgo}]
+	{\includegraphics[width=.318125\textwidth]{figures/Capitolo_3/APR4_q09/V1_spectrogram_logy_0.png}}
+	\vspace{-5pt}
+	\caption{Spettrogrammi}
+	\label{fig:spettrogramma_apr4}
+	\vspace{-15pt}
+\end{figure}
+\begin{wrapfigure}{r}{0.46\textwidth}
+	\vspace{-20pt}
+	\begin{center}
+		\includegraphics[width=0.475\textwidth]{figures/Capitolo_3/APR4_q09/l_tfmap_scalogram.png}
+	\end{center}
+	\vspace{-5pt}
+	\caption{Mappa di Likelihood}
+	\label{fig:Likelihood_APR4}
+	\vspace{-10pt}
+\end{wrapfigure}
+Bla
+
+Bla
+
+Bla
+
+Bla
+
+Bla
+
+Bla
+
+Bla
+
+Bla
+
+Bla
+
+\begin{figure}[H]
+	\vspace{-20pt}
+	\centering
+	\subfloat[][\emph{Dominio dei tempi}]
+	{\includegraphics[width=.318125\textwidth]{figures/Capitolo_3/APR4_q09/L1_wf_white_inj_rec.png}} \quad
+	\subfloat[][\emph{Dominio delle frequenze}]
+	{\includegraphics[width=.318125\textwidth]{figures/Capitolo_3/APR4_q09/L1_wf_white_inj_rec_fft.png}}
+	\vspace{-5pt}
+	\caption{Strain per }
+	\label{fig:strain_apr4}
+	\vspace{-15pt}
+\end{figure}
 
 %\begin{center}
 %	\begin{figure}[ht]
