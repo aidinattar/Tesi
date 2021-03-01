@@ -9,6 +9,7 @@ I vantaggi di questo tipo di analisi sono molteplici: innanzitutto la sensibilit
 L'algoritmo cWB lavora in due modi differenti: viene utilizzato in tempo reale con i dati provenienti dai rivelatori per identificare e ricostruire candidati significativi e poter, una volta ottenuta una prima stima della posizione celeste della sorgente, condividerla con i telescopi partner per identificare i segnali elettromagnetici legati; alternativamente si utilizza per l'analisi di dati consolidati volta a ottenere risultati più approfonditi sull'evento, stabilendo la significanza degli eventi osservati e identificando le stelle progenitrici\cite{Klimenko_2016}. In questo e nel prossimo capitolo ci si concentrerà sul secondo tipo di analisi.
 \section{Analisi coerente}
 \label{section:coherent_analysis}
+I dati che si raccolgono da un network di $K$ detector sono nella forma di serie discreta $x_k[i]$
 La pipeline di cWB per rivelare e ricostruire segnali utilizza un metodo basato sul funzionale rapporto di verosimiglianza, che, in un'ipotesi idealistica di rumore gaussiano quasi stazionario, può essere scritto nel dominio di wavelet (in un piano tempo-frequenza) come
 \begin{equation}
 	\mathcal{L} = \sum_{k=1}^{K}\sum_{i,j=1}^{N}\left(\frac{w_k^2[i,j]}{\sigma_k^2[i,j]} - \frac{(w_k[i,j]-\xi_k[i,j])^2}{\sigma_k^2[i,j]}  \right)
