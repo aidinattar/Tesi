@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.2.6)  1 MAR 2021 22:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.2.6)  16 MAR 2021 11:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -700,7 +700,7 @@ Package tocbibind Note: Using chapter style headings, unless overridden.
 
 )
    defining Unicode char U+2009 (decimal 8201)
-) (./Tesi_Triennale_PMNS.aux (./Capitoli/Capitolo_3/Capitolo_3.aux))
+) (./Tesi_Triennale_PMNS.aux (./Capitoli/Capitolo_4/Capitolo_4.aux))
 \openout1 = `Tesi_Triennale_PMNS.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -861,53 +861,117 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-\openout2 = `Capitoli/Capitolo_3/Capitolo_3.aux'.
+\openout2 = `Capitoli/Capitolo_4/Capitolo_4.aux'.
 
 
-(./Capitoli/Capitolo_3/Capitolo_3.tex
+(./Capitoli/Capitolo_4/Capitolo_4.tex
 Capitolo 1.
-LaTeX Font Info:    Trying to load font information for U+eus on input line 14.
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueus.fd
-File: ueus.fd 2013/01/14 v3.01 Euler Script
-)
-Missing character: There is no ^^C in font eusm10!
- [1
+LaTeX Warning: Reference `eqn:coefficient_energy' on page 1 undefined on input 
+line 28.
 
+<figures/Capitolo_3/APR4_q09/L1_spectrogram_logy_0.png, id=34, 798.985pt x 574.
+145pt>
+File: figures/Capitolo_3/APR4_q09/L1_spectrogram_logy_0.png Graphic file (type 
+png)
+<use figures/Capitolo_3/APR4_q09/L1_spectrogram_logy_0.png>
+Package pdftex.def Info: figures/Capitolo_3/APR4_q09/L1_spectrogram_logy_0.png 
+ used on input line 42.
+(pdftex.def)             Requested size: 153.87872pt x 110.578pt.
+<figures/Capitolo_3/APR4_q09/H1_spectrogram_logy_0.png, id=35, 798.985pt x 574.
+145pt>
+File: figures/Capitolo_3/APR4_q09/H1_spectrogram_logy_0.png Graphic file (type 
+png)
+<use figures/Capitolo_3/APR4_q09/H1_spectrogram_logy_0.png>
+Package pdftex.def Info: figures/Capitolo_3/APR4_q09/H1_spectrogram_logy_0.png 
+ used on input line 44.
+(pdftex.def)             Requested size: 153.87872pt x 110.578pt.
+<figures/Capitolo_3/APR4_q09/V1_spectrogram_logy_0.png, id=36, 798.985pt x 574.
+145pt>
+File: figures/Capitolo_3/APR4_q09/V1_spectrogram_logy_0.png Graphic file (type 
+png)
+<use figures/Capitolo_3/APR4_q09/V1_spectrogram_logy_0.png>
+Package pdftex.def Info: figures/Capitolo_3/APR4_q09/V1_spectrogram_logy_0.png 
+ used on input line 46.
+(pdftex.def)             Requested size: 153.87872pt x 110.578pt.
 
-
-
-
-]
-Package epstopdf Info: Source file: <figures/Capitolo_3/Detector_sky_full.eps>
-(epstopdf)                    date: 2021-03-01 18:47:08
-(epstopdf)                    size: 80675 bytes
-(epstopdf)             Output file: <figures/Capitolo_3/Detector_sky_full-eps-c
-onverted-to.pdf>
-(epstopdf)                    date: 2021-03-01 18:47:08
-(epstopdf)                    size: 23294 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/Capitolo_3/Detecto
-r_sky_full-eps-converted-to.pdf figures/Capitolo_3/Detector_sky_full.eps>
-(epstopdf)             \includegraphics on input line 49.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/Capitolo_3/Detector_sky_full-
-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most vers
-ion <1.5> allowed
-<figures/Capitolo_3/Detector_sky_full-eps-converted-to.pdf, id=76, 324.21124pt 
-x 420.57124pt>
-File: figures/Capitolo_3/Detector_sky_full-eps-converted-to.pdf Graphic file (t
-ype pdf)
-<use figures/Capitolo_3/Detector_sky_full-eps-converted-to.pdf>
-Package pdftex.def Info: figures/Capitolo_3/Detector_sky_full-eps-converted-to.
-pdf  used on input line 49.
-(pdftex.def)             Requested size: 120.92421pt x 156.86673pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--55
-\T1/ptm/m/n/10.95 con $\U/eus/m/n/10.95 F$ \T1/ptm/m/n/10.95 la ma-tri-ce di an
--ten-na pat-tern, de-fi-ni-ta co-me
+Overfull \hbox (0.4676pt too wide) in paragraph at lines 27--51
+[]$[]$   [] 
  []
+
+[1
+
+
+
+
+
+ <./figures/Capitolo_3/APR4_q09/L1_spectrogram_logy_0.png> <./figures/Capitolo_
+3/APR4_q09/H1_spectrogram_logy_0.png> <./figures/Capitolo_3/APR4_q09/V1_spectro
+gram_logy_0.png>]
+<figures/Capitolo_3/APR4_q09/l_tfmap_scalogram.png, id=54, 798.985pt x 574.145p
+t>
+File: figures/Capitolo_3/APR4_q09/l_tfmap_scalogram.png Graphic file (type png)
+
+<use figures/Capitolo_3/APR4_q09/l_tfmap_scalogram.png>
+Package pdftex.def Info: figures/Capitolo_3/APR4_q09/l_tfmap_scalogram.png  use
+d on input line 58.
+(pdftex.def)             Requested size: 229.75896pt x 165.10483pt.
+
+Overfull \hbox (7.25516pt too wide) in paragraph at lines 58--59
+ [] 
+ []
+
+<figures/Capitolo_3/APR4_q09/L1_wf_white_inj_rec.png, id=57, 798.985pt x 473.77
+pt>
+File: figures/Capitolo_3/APR4_q09/L1_wf_white_inj_rec.png Graphic file (type pn
+g)
+<use figures/Capitolo_3/APR4_q09/L1_wf_white_inj_rec.png>
+Package pdftex.def Info: figures/Capitolo_3/APR4_q09/L1_wf_white_inj_rec.png  u
+sed on input line 71.
+(pdftex.def)             Requested size: 217.66211pt x 129.06181pt.
+<figures/Capitolo_3/APR4_q09/L1_wf_white_inj_rec_fft.png, id=58, 798.985pt x 47
+3.77pt>
+File: figures/Capitolo_3/APR4_q09/L1_wf_white_inj_rec_fft.png Graphic file (typ
+e png)
+<use figures/Capitolo_3/APR4_q09/L1_wf_white_inj_rec_fft.png>
+Package pdftex.def Info: figures/Capitolo_3/APR4_q09/L1_wf_white_inj_rec_fft.pn
+g  used on input line 73.
+(pdftex.def)             Requested size: 217.66211pt x 129.06181pt.
+<figures/Capitolo_3/SHT2.0spinf1_1/l_tfmap_scalogram.png, id=61, 798.985pt x 57
+4.145pt>
+File: figures/Capitolo_3/SHT2.0spinf1_1/l_tfmap_scalogram.png Graphic file (typ
+e png)
+<use figures/Capitolo_3/SHT2.0spinf1_1/l_tfmap_scalogram.png>
+Package pdftex.def Info: figures/Capitolo_3/SHT2.0spinf1_1/l_tfmap_scalogram.pn
+g  used on input line 86.
+(pdftex.def)             Requested size: 241.84843pt x 173.78671pt.
+<figures/Capitolo_3/SHT2.2spinf1_1/l_tfmap_scalogram.png, id=62, 798.985pt x 57
+4.145pt>
+File: figures/Capitolo_3/SHT2.2spinf1_1/l_tfmap_scalogram.png Graphic file (typ
+e png)
+<use figures/Capitolo_3/SHT2.2spinf1_1/l_tfmap_scalogram.png>
+Package pdftex.def Info: figures/Capitolo_3/SHT2.2spinf1_1/l_tfmap_scalogram.pn
+g  used on input line 88.
+(pdftex.def)             Requested size: 241.84843pt x 173.78671pt.
+<figures/Capitolo_4/Network_SNR_FactorsSHT2_0spin1.pdf, id=63, 569.12625pt x 73
+6.7525pt>
+File: figures/Capitolo_4/Network_SNR_FactorsSHT2_0spin1.pdf Graphic file (type 
+pdf)
+<use figures/Capitolo_4/Network_SNR_FactorsSHT2_0spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/Network_SNR_FactorsSHT2_0spin1.pdf 
+ used on input line 102.
+(pdftex.def)             Requested size: 241.84843pt x 313.08757pt.
+<figures/Capitolo_4/Network_SNR_FactorsAPR4_q09.pdf, id=64, 569.12625pt x 736.7
+525pt>
+File: figures/Capitolo_4/Network_SNR_FactorsAPR4_q09.pdf Graphic file (type pdf
+)
+<use figures/Capitolo_4/Network_SNR_FactorsAPR4_q09.pdf>
+Package pdftex.def Info: figures/Capitolo_4/Network_SNR_FactorsAPR4_q09.pdf  us
+ed on input line 104.
+(pdftex.def)             Requested size: 241.84843pt x 313.08757pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -915,113 +979,209 @@ Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[2 <./figures/Capitolo_3/Detector_sky_full-eps-converted-to.pdf>]
-<figures/Capitolo_3/L1_scalogram_0.png, id=108, 798.985pt x 574.145pt>
-File: figures/Capitolo_3/L1_scalogram_0.png Graphic file (type png)
-<use figures/Capitolo_3/L1_scalogram_0.png>
-Package pdftex.def Info: figures/Capitolo_3/L1_scalogram_0.png  used on input l
-ine 107.
-(pdftex.def)             Requested size: 229.75896pt x 165.10483pt.
+[2 <./figures/Capitolo_3/APR4_q09/l_tfmap_scalogram.png> <./figures/Capitolo_3/
+APR4_q09/L1_wf_white_inj_rec.png> <./figures/Capitolo_3/APR4_q09/L1_wf_white_in
+j_rec_fft.png> <./figures/Capitolo_3/SHT2.0spinf1_1/l_tfmap_scalogram.png> <./f
+igures/Capitolo_3/SHT2.2spinf1_1/l_tfmap_scalogram.png>]
+<figures/Capitolo_4/FITSHT2_0spin1.pdf, id=78, 569.12625pt x 107.40125pt>
+File: figures/Capitolo_4/FITSHT2_0spin1.pdf Graphic file (type pdf)
+<use figures/Capitolo_4/FITSHT2_0spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/FITSHT2_0spin1.pdf  used on input l
+ine 115.
+(pdftex.def)             Requested size: 483.69687pt x 91.28328pt.
+<figures/Capitolo_4/FITAPR4_q09.pdf, id=79, 569.12625pt x 107.40125pt>
+File: figures/Capitolo_4/FITAPR4_q09.pdf Graphic file (type pdf)
+<use figures/Capitolo_4/FITAPR4_q09.pdf>
+Package pdftex.def Info: figures/Capitolo_4/FITAPR4_q09.pdf  used on input line
+ 118.
+(pdftex.def)             Requested size: 483.69687pt x 91.28328pt.
 
-Overfull \hbox (7.25516pt too wide) in paragraph at lines 107--108
- [] 
+
+Package Fancyhdr Warning: \headheight is too small (13.59999pt): 
+Make it at least 13.9186pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[3 <./figures/Capitolo_4/Network_SNR_FactorsSHT2_0spin1.pdf> <./figures/Capitol
+o_4/Network_SNR_FactorsAPR4_q09.pdf> <./figures/Capitolo_4/FITSHT2_0spin1.pdf, 
+page is rotated 90 degrees> <./figures/Capitolo_4/FITAPR4_q09.pdf, page is rota
+ted 90 degrees>]
+<figures/Capitolo_4/EnergyDistributionDetector1SHT2_0spin1.pdf, id=262, 569.126
+25pt x 384.43625pt>
+File: figures/Capitolo_4/EnergyDistributionDetector1SHT2_0spin1.pdf Graphic fil
+e (type pdf)
+<use figures/Capitolo_4/EnergyDistributionDetector1SHT2_0spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/EnergyDistributionDetector1SHT2_0sp
+in1.pdf  used on input line 138.
+(pdftex.def)             Requested size: 241.84843pt x 163.36858pt.
+<figures/Capitolo_4/EnergyDistributionDetector1APR4_q09.pdf, id=263, 569.12625p
+t x 384.43625pt>
+File: figures/Capitolo_4/EnergyDistributionDetector1APR4_q09.pdf Graphic file (
+type pdf)
+<use figures/Capitolo_4/EnergyDistributionDetector1APR4_q09.pdf>
+Package pdftex.def Info: figures/Capitolo_4/EnergyDistributionDetector1APR4_q09
+.pdf  used on input line 140.
+(pdftex.def)             Requested size: 241.84843pt x 163.36858pt.
+<figures/Capitolo_4/OverlapDistributionDetector1SHT2_0spin1.pdf, id=264, 569.12
+625pt x 480.79625pt>
+File: figures/Capitolo_4/OverlapDistributionDetector1SHT2_0spin1.pdf Graphic fi
+le (type pdf)
+<use figures/Capitolo_4/OverlapDistributionDetector1SHT2_0spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/OverlapDistributionDetector1SHT2_0s
+pin1.pdf  used on input line 150.
+(pdftex.def)             Requested size: 159.62085pt x 134.84944pt.
+<figures/Capitolo_4/OverlapDistributionDetector2SHT2_0spin1.pdf, id=265, 569.12
+625pt x 480.79625pt>
+File: figures/Capitolo_4/OverlapDistributionDetector2SHT2_0spin1.pdf Graphic fi
+le (type pdf)
+<use figures/Capitolo_4/OverlapDistributionDetector2SHT2_0spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/OverlapDistributionDetector2SHT2_0s
+pin1.pdf  used on input line 152.
+(pdftex.def)             Requested size: 159.62085pt x 134.84944pt.
+<figures/Capitolo_4/OverlapDistributionDetector3SHT2_0spin1.pdf, id=266, 569.12
+625pt x 480.79625pt>
+File: figures/Capitolo_4/OverlapDistributionDetector3SHT2_0spin1.pdf Graphic fi
+le (type pdf)
+<use figures/Capitolo_4/OverlapDistributionDetector3SHT2_0spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/OverlapDistributionDetector3SHT2_0s
+pin1.pdf  used on input line 154.
+(pdftex.def)             Requested size: 159.62085pt x 134.84944pt.
+<figures/Capitolo_4/OverlapDistributionDetector1APR4_q09.pdf, id=267, 569.12625
+pt x 480.79625pt>
+File: figures/Capitolo_4/OverlapDistributionDetector1APR4_q09.pdf Graphic file 
+(type pdf)
+<use figures/Capitolo_4/OverlapDistributionDetector1APR4_q09.pdf>
+Package pdftex.def Info: figures/Capitolo_4/OverlapDistributionDetector1APR4_q0
+9.pdf  used on input line 157.
+(pdftex.def)             Requested size: 159.62085pt x 134.84944pt.
+<figures/Capitolo_4/OverlapDistributionDetector2APR4_q09.pdf, id=268, 569.12625
+pt x 480.79625pt>
+File: figures/Capitolo_4/OverlapDistributionDetector2APR4_q09.pdf Graphic file 
+(type pdf)
+<use figures/Capitolo_4/OverlapDistributionDetector2APR4_q09.pdf>
+Package pdftex.def Info: figures/Capitolo_4/OverlapDistributionDetector2APR4_q0
+9.pdf  used on input line 159.
+(pdftex.def)             Requested size: 159.62085pt x 134.84944pt.
+<figures/Capitolo_4/OverlapDistributionDetector3APR4_q09.pdf, id=269, 569.12625
+pt x 480.79625pt>
+File: figures/Capitolo_4/OverlapDistributionDetector3APR4_q09.pdf Graphic file 
+(type pdf)
+<use figures/Capitolo_4/OverlapDistributionDetector3APR4_q09.pdf>
+Package pdftex.def Info: figures/Capitolo_4/OverlapDistributionDetector3APR4_q0
+9.pdf  used on input line 161.
+(pdftex.def)             Requested size: 159.62085pt x 134.84944pt.
+<figures/Capitolo_4/FrequencyLHDistributionDetector1SHT2_0spin1.pdf, id=271, 56
+9.12625pt x 384.43625pt>
+File: figures/Capitolo_4/FrequencyLHDistributionDetector1SHT2_0spin1.pdf Graphi
+c file (type pdf)
+<use figures/Capitolo_4/FrequencyLHDistributionDetector1SHT2_0spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/FrequencyLHDistributionDetector1SHT
+2_0spin1.pdf  used on input line 172.
+(pdftex.def)             Requested size: 241.84843pt x 163.36858pt.
+<figures/Capitolo_4/FrequencyLHDistributionDetector1APR4_q09.pdf, id=272, 569.1
+2625pt x 384.43625pt>
+File: figures/Capitolo_4/FrequencyLHDistributionDetector1APR4_q09.pdf Graphic f
+ile (type pdf)
+<use figures/Capitolo_4/FrequencyLHDistributionDetector1APR4_q09.pdf>
+Package pdftex.def Info: figures/Capitolo_4/FrequencyLHDistributionDetector1APR
+4_q09.pdf  used on input line 174.
+(pdftex.def)             Requested size: 241.84843pt x 163.36858pt.
+ [4 <./figures/Capitolo_4/EnergyDistributionDetector1SHT2_0spin1.pdf, page is r
+otated 90 degrees> <./figures/Capitolo_4/EnergyDistributionDetector1APR4_q09.pd
+f, page is rotated 90 degrees> <./figures/Capitolo_4/OverlapDistributionDetecto
+r1SHT2_0spin1.pdf, page is rotated 90 degrees> <./figures/Capitolo_4/OverlapDis
+tributionDetector2SHT2_0spin1.pdf, page is rotated 90 degrees> <./figures/Capit
+olo_4/OverlapDistributionDetector3SHT2_0spin1.pdf, page is rotated 90 degrees> 
+<./figures/Capitolo_4/OverlapDistributionDetector1APR4_q09.pdf, page is rotated
+ 90 degrees> <./figures/Capitolo_4/OverlapDistributionDetector2APR4_q09.pdf, pa
+ge is rotated 90 degrees> <./figures/Capitolo_4/OverlapDistributionDetector3APR
+4_q09.pdf, page is rotated 90 degrees>]
+<figures/Capitolo_4/FITAPR4_q09_CUT.pdf, id=635, 569.12625pt x 107.40125pt>
+File: figures/Capitolo_4/FITAPR4_q09_CUT.pdf Graphic file (type pdf)
+<use figures/Capitolo_4/FITAPR4_q09_CUT.pdf>
+Package pdftex.def Info: figures/Capitolo_4/FITAPR4_q09_CUT.pdf  used on input 
+line 186.
+(pdftex.def)             Requested size: 483.69687pt x 91.28328pt.
+<figures/Capitolo_4/EnergyDistributionFactorDetector1APR4_q09_CUT.pdf, id=636, 
+569.12625pt x 107.40125pt>
+File: figures/Capitolo_4/EnergyDistributionFactorDetector1APR4_q09_CUT.pdf Grap
+hic file (type pdf)
+<use figures/Capitolo_4/EnergyDistributionFactorDetector1APR4_q09_CUT.pdf>
+Package pdftex.def Info: figures/Capitolo_4/EnergyDistributionFactorDetector1AP
+R4_q09_CUT.pdf  used on input line 189.
+(pdftex.def)             Requested size: 483.69687pt x 91.28328pt.
+<figures/Capitolo_4/OverlapDistributionFactorDetector2APR4_q09_CUT.pdf, id=637,
+ 569.12625pt x 107.40125pt>
+File: figures/Capitolo_4/OverlapDistributionFactorDetector2APR4_q09_CUT.pdf Gra
+phic file (type pdf)
+<use figures/Capitolo_4/OverlapDistributionFactorDetector2APR4_q09_CUT.pdf>
+Package pdftex.def Info: figures/Capitolo_4/OverlapDistributionFactorDetector2A
+PR4_q09_CUT.pdf  used on input line 192.
+(pdftex.def)             Requested size: 483.69687pt x 91.28328pt.
+ [5 <./figures/Capitolo_4/FrequencyLHDistributionDetector1SHT2_0spin1.pdf, page
+ is rotated 90 degrees> <./figures/Capitolo_4/FrequencyLHDistributionDetector1A
+PR4_q09.pdf, page is rotated 90 degrees> <./figures/Capitolo_4/FITAPR4_q09_CUT.
+pdf, page is rotated 90 degrees> <./figures/Capitolo_4/EnergyDistributionFactor
+Detector1APR4_q09_CUT.pdf, page is rotated 90 degrees> <./figures/Capitolo_4/Ov
+erlapDistributionFactorDetector2APR4_q09_CUT.pdf, page is rotated 90 degrees>]
+<figures/Capitolo_4/OverlapDistributionsDetector1APR4_q09_CUT_1.pdf, id=864, 56
+9.12625pt x 272.01625pt>
+File: figures/Capitolo_4/OverlapDistributionsDetector1APR4_q09_CUT_1.pdf Graphi
+c file (type pdf)
+<use figures/Capitolo_4/OverlapDistributionsDetector1APR4_q09_CUT_1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/OverlapDistributionsDetector1APR4_q
+09_CUT_1.pdf  used on input line 216.
+(pdftex.def)             Requested size: 483.69687pt x 231.19414pt.
+<figures/Capitolo_4/Overlaps_GrapgDetector1SHT2_0spin1.pdf, id=865, 569.12625pt
+ x 408.52625pt>
+File: figures/Capitolo_4/Overlaps_GrapgDetector1SHT2_0spin1.pdf Graphic file (t
+ype pdf)
+<use figures/Capitolo_4/Overlaps_GrapgDetector1SHT2_0spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/Overlaps_GrapgDetector1SHT2_0spin1.
+pdf  used on input line 226.
+(pdftex.def)             Requested size: 237.01411pt x 170.13365pt.
+<figures/Capitolo_4/Overlaps_GrapgDetector1APR4_q09_CUT.pdf, id=866, 569.12625p
+t x 408.52625pt>
+File: figures/Capitolo_4/Overlaps_GrapgDetector1APR4_q09_CUT.pdf Graphic file (
+type pdf)
+<use figures/Capitolo_4/Overlaps_GrapgDetector1APR4_q09_CUT.pdf>
+Package pdftex.def Info: figures/Capitolo_4/Overlaps_GrapgDetector1APR4_q09_CUT
+.pdf  used on input line 228.
+(pdftex.def)             Requested size: 237.01411pt x 170.13365pt.
+) [6 <./figures/Capitolo_4/OverlapDistributionsDetector1APR4_q09_CUT_1.pdf, pag
+e is rotated 90 degrees> <./figures/Capitolo_4/Overlaps_GrapgDetector1SHT2_0spi
+n1.pdf, page is rotated 90 degrees> <./figures/Capitolo_4/Overlaps_GrapgDetecto
+r1APR4_q09_CUT.pdf, page is rotated 90 degrees>] (./Tesi_Triennale_PMNS.bbl
+Underfull \hbox (badness 1762) in paragraph at lines 11--16
+\T1/ptm/m/it/10.95 The Astro-phy-si-cal Jour-nal\T1/ptm/m/n/10.95 , 851(1):L16,
+ Dec
  []
 
 
-Underfull \hbox (badness 1845) in paragraph at lines 110--110
-[]\T1/ptm/m/n/10 Figura 1.2: |Sca-lo-gram-ma ot-te-nu-to da una ana-li-si
- []
-
-[3 <./figures/Capitolo_3/L1_scalogram_0.png>]
-<figures/Capitolo_3/l_tfmap_scalogram.png, id=123, 798.985pt x 574.145pt>
-File: figures/Capitolo_3/l_tfmap_scalogram.png Graphic file (type png)
-<use figures/Capitolo_3/l_tfmap_scalogram.png>
-Package pdftex.def Info: figures/Capitolo_3/l_tfmap_scalogram.png  used on inpu
-t line 161.
-(pdftex.def)             Requested size: 229.75896pt x 165.10483pt.
-
-Overfull \hbox (7.25516pt too wide) in paragraph at lines 161--162
- [] 
- []
-
-[4 <./figures/Capitolo_3/l_tfmap_scalogram.png>]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
-28.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-<figures/Capitolo_3/APR4_q09/L1_spectrogram_logy_0.png, id=143, 798.985pt x 574
-.145pt>
-File: figures/Capitolo_3/APR4_q09/L1_spectrogram_logy_0.png Graphic file (type 
-png)
-<use figures/Capitolo_3/APR4_q09/L1_spectrogram_logy_0.png>
-Package pdftex.def Info: figures/Capitolo_3/APR4_q09/L1_spectrogram_logy_0.png 
- used on input line 252.
-(pdftex.def)             Requested size: 153.87872pt x 110.578pt.
-<figures/Capitolo_3/APR4_q09/H1_spectrogram_logy_0.png, id=144, 798.985pt x 574
-.145pt>
-File: figures/Capitolo_3/APR4_q09/H1_spectrogram_logy_0.png Graphic file (type 
-png)
-<use figures/Capitolo_3/APR4_q09/H1_spectrogram_logy_0.png>
-Package pdftex.def Info: figures/Capitolo_3/APR4_q09/H1_spectrogram_logy_0.png 
- used on input line 254.
-(pdftex.def)             Requested size: 153.87872pt x 110.578pt.
-<figures/Capitolo_3/APR4_q09/V1_spectrogram_logy_0.png, id=145, 798.985pt x 574
-.145pt>
-File: figures/Capitolo_3/APR4_q09/V1_spectrogram_logy_0.png Graphic file (type 
-png)
-<use figures/Capitolo_3/APR4_q09/V1_spectrogram_logy_0.png>
-Package pdftex.def Info: figures/Capitolo_3/APR4_q09/V1_spectrogram_logy_0.png 
- used on input line 256.
-(pdftex.def)             Requested size: 153.87872pt x 110.578pt.
- [5]
-<figures/Capitolo_3/APR4_q09/l_tfmap_scalogram.png, id=156, 798.985pt x 574.145
-pt>
-File: figures/Capitolo_3/APR4_q09/l_tfmap_scalogram.png Graphic file (type png)
-
-<use figures/Capitolo_3/APR4_q09/l_tfmap_scalogram.png>
-Package pdftex.def Info: figures/Capitolo_3/APR4_q09/l_tfmap_scalogram.png  use
-d on input line 265.
-(pdftex.def)             Requested size: 229.75896pt x 165.10483pt.
-
-Overfull \hbox (7.25516pt too wide) in paragraph at lines 265--266
- [] 
- []
-
-<figures/Capitolo_3/APR4_q09/L1_wf_white_inj_rec.png, id=157, 798.985pt x 473.7
-7pt>
-File: figures/Capitolo_3/APR4_q09/L1_wf_white_inj_rec.png Graphic file (type pn
-g)
-<use figures/Capitolo_3/APR4_q09/L1_wf_white_inj_rec.png>
-Package pdftex.def Info: figures/Capitolo_3/APR4_q09/L1_wf_white_inj_rec.png  u
-sed on input line 294.
-(pdftex.def)             Requested size: 153.87872pt x 91.24619pt.
-<figures/Capitolo_3/APR4_q09/L1_wf_white_inj_rec_fft.png, id=158, 798.985pt x 4
-73.77pt>
-File: figures/Capitolo_3/APR4_q09/L1_wf_white_inj_rec_fft.png Graphic file (typ
-e png)
-<use figures/Capitolo_3/APR4_q09/L1_wf_white_inj_rec_fft.png>
-Package pdftex.def Info: figures/Capitolo_3/APR4_q09/L1_wf_white_inj_rec_fft.pn
-g  used on input line 296.
-(pdftex.def)             Requested size: 153.87872pt x 91.24619pt.
-) [6 <./figures/Capitolo_3/APR4_q09/L1_spectrogram_logy_0.png> <./figures/Capit
-olo_3/APR4_q09/H1_spectrogram_logy_0.png> <./figures/Capitolo_3/APR4_q09/V1_spe
-ctrogram_logy_0.png> <./figures/Capitolo_3/APR4_q09/l_tfmap_scalogram.png> <./f
-igures/Capitolo_3/APR4_q09/L1_wf_white_inj_rec.png> <./figures/Capitolo_3/APR4_
-q09/L1_wf_white_inj_rec_fft.png>] (./Tesi_Triennale_PMNS.bbl
-Underfull \hbox (badness 2103) in paragraph at lines 55--58
-\T1/ptm/m/n/10.95 co-he-rent me-thod for de-tec-tion of gra-vi-ta-tio-nal
+Underfull \hbox (badness 2990) in paragraph at lines 33--36
+\T1/ptm/m/n/10.95 Ma-sa-ru Shi-ba-ta.  On the ma-xi-mum mass
  []
 
 
-Underfull \hbox (badness 1132) in paragraph at lines 76--78
-\T1/ptm/m/n/10.95 (2020).  The evo-lu-tion of bi-na-ry neu-tron star
+Underfull \hbox (badness 3240) in paragraph at lines 33--36
+\T1/ptm/m/it/10.95 Astro-phy-si-cal Jour-nal\T1/ptm/m/n/10.95 , 528(1):L29^^UL3
+2, Jan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--83
-[]\T1/ptm/m/n/10.95 Sathyaprakash,
+Underfull \hbox (badness 1389) in paragraph at lines 38--41
+\T1/ptm/m/it/10.95 stein's Ge-ne-ral Re-la-ti-vi-ty\T1/ptm/m/n/10.95 .  Addison
+-Wesley,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--79
+[]\T1/ptm/m/n/10.95 Luciano Rez-zol-la and Ken-ta-ro Ta-ka-mi.
+ []
+
+
+Underfull \hbox (badness 4556) in paragraph at lines 75--79
+\T1/ptm/m/n/10.95 Gravitational-wave si-gnal from bi-na-ry neu-
  []
 
 )
@@ -1033,39 +1193,40 @@ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 15.
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 15.
- (./Tesi_Triennale_PMNS.aux (./Capitoli/Capitolo_3/Capitolo_3.aux))
+ (./Tesi_Triennale_PMNS.aux (./Capitoli/Capitolo_4/Capitolo_4.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 15.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 15.
 Package rerunfilecheck Info: File `Tesi_Triennale_PMNS.out' has not changed.
-(rerunfilecheck)             Checksum: 74648E1E0410462527C0AF34141C9CB5;976.
+(rerunfilecheck)             Checksum: 1D3A46F85217D6B29307E3D618EF410A;540.
+
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 15.
  ) 
 Here is how much of TeX's memory you used:
- 22660 strings out of 480906
- 365644 string characters out of 5910773
- 715083 words of memory out of 5000000
- 37755 multiletter control sequences out of 15000+600000
- 584285 words of font info for 89 fonts, out of 8000000 for 9000
+ 22711 strings out of 480906
+ 371864 string characters out of 5910773
+ 712768 words of memory out of 5000000
+ 37800 multiletter control sequences out of 15000+600000
+ 579154 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 61i,12n,54p,923b,2406s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,12n,54p,1035b,2356s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
-imes/utmri8a.pfb>
-Output written on Tesi_Triennale_PMNS.pdf (7 pages, 644247 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/times/utmri8a.pfb>
+Output written on Tesi_Triennale_PMNS.pdf (7 pages, 1564815 bytes).
 PDF statistics:
- 269 PDF objects out of 1000 (max. 8388607)
- 69 named destinations out of 1000 (max. 500000)
- 154 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1091 PDF objects out of 1200 (max. 8388607)
+ 68 named destinations out of 1000 (max. 500000)
+ 209 words of extra memory for PDF output out of 10000 (max. 10000000)
 
