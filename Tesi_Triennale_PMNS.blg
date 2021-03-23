@@ -1,50 +1,59 @@
 This is BibTeX, Version 0.99d (TeX Live 2020/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Tesi_Triennale_PMNS.aux
-The style file: plain.bst
+The style file: acm.bst
 A level-1 auxiliary file: Capitoli/Frontespizio/Frontespizio.aux
 A level-1 auxiliary file: Capitoli/Capitolo_1/Capitolo_1.aux
 A level-1 auxiliary file: Capitoli/Capitolo_2/Capitolo_2.aux
 A level-1 auxiliary file: Capitoli/Capitolo_3/Capitolo_3.aux
+A level-1 auxiliary file: Capitoli/Capitolo_4/Capitolo_4.aux
 Database file #1: BibliografiaTesi.bib
-You've used 14 entries,
-            2118 wiz_defined-function locations,
-            594 strings with 7105 characters,
-and the built_in function-call counts, 5169 in all, are:
-= -- 441
-> -- 409
+I was expecting a `,' or a `}'---line 273 of file BibliografiaTesi.bib
+ :    
+ :    month={Jul},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty journal in Puecher_2018
+Warning--empty journal in Tringali_2017
+You've used 17 entries,
+            2253 wiz_defined-function locations,
+            638 strings with 7402 characters,
+and the built_in function-call counts, 6024 in all, are:
+= -- 505
+> -- 469
 < -- 0
-+ -- 165
-- -- 148
-* -- 442
-:= -- 945
-add.period$ -- 43
-call.type$ -- 14
-change.case$ -- 112
++ -- 194
+- -- 174
+* -- 554
+:= -- 1082
+add.period$ -- 50
+call.type$ -- 17
+change.case$ -- 134
 chr.to.int$ -- 0
-cite$ -- 14
-duplicate$ -- 149
-empty$ -- 301
-format.name$ -- 148
-if$ -- 993
+cite$ -- 19
+duplicate$ -- 166
+empty$ -- 360
+format.name$ -- 174
+if$ -- 1147
 int.to.chr$ -- 0
-int.to.str$ -- 14
-missing$ -- 17
-newline$ -- 72
-num.names$ -- 28
-pop$ -- 115
+int.to.str$ -- 17
+missing$ -- 20
+newline$ -- 85
+num.names$ -- 34
+pop$ -- 140
 preamble$ -- 1
-purify$ -- 102
+purify$ -- 121
 quote$ -- 0
-skip$ -- 102
+skip$ -- 91
 stack$ -- 0
-substring$ -- 133
-swap$ -- 14
+substring$ -- 157
+swap$ -- 32
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 48
-warning$ -- 0
-while$ -- 32
-width$ -- 16
-write$ -- 151
+type$ -- 60
+warning$ -- 2
+while$ -- 39
+width$ -- 19
+write$ -- 161
+(There was 1 error message)

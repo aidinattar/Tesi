@@ -1,11 +1,28 @@
 % !TEX root = ../../Tesi_Triennale_PMNS.tex
-\chapter[Segnali di GW da BNS]{Segnali di onde gravitazionali da BNS}
+\chapter{Segnali gravitazionali da coalescenza di  sistemi binari di stelle di neutroni}
 \label{chapter:segnaleGWdaBNS}
-Una stella di neutroni (NS) è la fase finale dell'evoluzione stellare, che segue alla cessazione delle reazioni di fusione nucleare degli elementi leggeri al suo interno, per stelle con massa tale che	$\SI{10}{\solarmass} < M < \SI{25}{\solarmass}$. Accade dunque che, in una certa fase del collasso, le densità estremamente alte portino gli elettroni a interagire con i protoni, attraverso il fenomeno della cattura elettronica, con la formazione di neutroni (e neutrini). Date le densità estreme della stella di neutroni, rimane incertezza sulle equazioni di stato della materia\cite{hobson2006general}.
+L'idea fondamentale della relatività generale è che le masse producono una curvatura nello spazio-tempo. Le equazioni che mettono in relazione la curvatura locale dello spazio-tempo e il tensore energia-impulso sono dette equazioni di Einstein:
+\begin{equation}
+	R_{\alpha\beta} -\frac{1}{2}Rg_{\alpha\beta}=\frac{8\pi G}{c^4}T_{\alpha\beta}
+\end{equation}
+con $R_{\alpha\beta}$ e $R$ rispettivamente tensore di Ricci e scalare di Ricci, legati al tensore di curvatura, $g_{\alpha\beta}$ tensore metrico, simmetrico e non degenere, e $T_{\alpha\beta}$ il tensore energia-impulso che è descrivibile come flusso di energia o equivalentemente come densità di impulso.
+Tale equazione rappresenta un sistema di 10 equazioni differenziali non lineari indipendenti, risolvibili solo in casi particolari. \\
+Considerando l'approssimazione di campo debole 
+\begin{equation}
+	g_{\alpha\beta} = \eta_{\alpha\beta} + h_{\alpha\beta}\quad\quad\text{ con }\quad |h_{\alpha\beta}|\ll \eta_{\alpha\beta} 
+\end{equation}
+cioè ponendosi a distanza sufficiente dalla massa da poter considerare lo spazio piatto, è possibile linearizzare le equazioni di Einstein e, sviluppando i calcoli matematici e facendo opportune scelte di gauge, che non vengono qui riportate ma che si possono osservare in \cite{maggiore2008gravitational}, è possibile ottenere l'equazione d'onda gravitazionale:
+\begin{equation}
+	\square\bar{h}_{\mu\nu} = -\frac{16\pi G}{c^4}T_{\mu\nu}
+\end{equation}
+con $\bar{h}_{\mu\nu} = h_{\mu\nu} - \frac{1}{2}\eta_{\mu\nu}h$ traccia inversa.
+
+Tra le sorgenti più interessanti di onde gravitazioni vi è la coalescenza di stelle di neutroni.
+Una stella di neutroni (NS) è la fase finale dell'evoluzione stellare, che segue alla cessazione delle reazioni di fusione nucleare degli elementi leggeri al suo interno, per stelle con massa $\SI{10}{\solarmass} < M < \SI{25}{\solarmass}$. Accade dunque che, in una certa fase del collasso, le densità estremamente alte portino gli elettroni a interagire con i protoni, attraverso il fenomeno della cattura elettronica, con la formazione di neutroni (e neutrini). Date le densità estreme della stella di neutroni, rimane incertezza sulle equazioni di stato della materia nucleare\cite{hobson2006general}.
 Una stella di neutroni è resa stabile, contro il collasso dovuto alla forza di gravità, non da pressioni termiche come per il sole, ma da forze legate al principio di esclusione di Pauli e interazioni nucleari tra i neutroni. Queste forze hanno effetti solo sopra le densità nucleari, spiegando perché le NS siano così compatte (una NS ha una massa poco superiore rispetto alla massa solare in un raggio di $\smallsim$10 km)\cite{hartle2003gravity}
 %    ALTRO?
 
-Un sistema binario di stelle di neutroni (BNS), ovvero una coppia di NS che ruota attorno al centro di massa, legato attraverso la forza di attrazione gravitazionale, emettendo segnali di onda gravitazionale (GW) che possono essere interpretati come fase di inspiral, merger e post-merger. Si consideri infatti una coppia di stelle con masse $m_1$ e $m_2$, massa totale $M = m_1 + m_2$ e massa ridotta $\mu = m_1m_2/(m_1+m_2)$, in orbita circolare di raggio R attorno al centro di massa e velocità tangenziale $v$. Utilizzando una analisi newtoniana, si ottiene immediatamente che l'equilibrio di forza gravitazionale e forza centrifuga conduce alla terza legge di Keplero $\frac{v^2}{R} = \frac{GM}{4R^2}$. Definendo la frequenza orbitale $\Omega=2\pi/T$, con $T$ periodo dell'orbita, si ottiene	$\Omega=\sqrt{\frac{GM}{4R^3}}$. Facendo un'opportuna parametrizzazione delle coordinate delle stelle si ottiene il tensore momento di quadrupolo
+Un sistema binario di stelle di neutroni (BNS), ovvero una coppia di NS che ruota attorno al centro di massa, legato attraverso la forza di attrazione gravitazionale, emette segnali di onda gravitazionale (GW) che possono essere interpretati come fase di spiraleggiamento, coalescenza e post-coalescenza (Figura \ref{fig:forma_onda_APR4}). Si consideri infatti una coppia di stelle con masse $m_1$ e $m_2$, massa totale $M = m_1 + m_2$ e massa ridotta $\mu = m_1m_2/(m_1+m_2)$, in orbita circolare di raggio R attorno al centro di massa e velocità tangenziale $v$: utilizzando un'analisi newtoniana si ottiene immediatamente che l'equilibrio di forza gravitazionale e forza centrifuga conduce alla terza legge di Keplero $\frac{v^2}{R} = \frac{GM}{4R^2}$. Definendo la frequenza orbitale $\Omega=2\pi/T$, con $T$ periodo dell'orbita, si ottiene	$\Omega=\sqrt{\frac{GM}{4R^3}}$. Facendo un'opportuna parametrizzazione delle coordinate delle stelle si ottiene il tensore momento di quadrupolo, definito come $I^{ij} = \int d^3yT^{00}y^iy^j$
 \begin{equation}
 	I^{xx} = \mu R^2\frac{1-\cos{2\Omega t}}{2}, \quad I^{yy} = \mu R^2\frac{1+\cos{2\Omega t}}{2}, \quad I^{xy}  = -\frac{1}{2}\mu R^2\sin{2\Omega t}= I^{yx}
 	\label{eqn:quadrupole_moment}
@@ -21,7 +38,7 @@ che porta a un'onda
 	\label{eqn:wave_form}
 \end{equation}
 La frequenza dell'onda gravitazionale emessa da questi sistemi è tale che $\omega_{GW} = 2\Omega$.
-Si può scrivere la potenza irradiata $P=\frac{32}{5}\frac{c^5}{G}\left(\frac{GM_c\omega_{GW}}{2c^3}\right)^{10/3}$, con $M_c=\left(m_1m_2\right)^{3/5}/\left(m_1+m_2\right)^{1/5}$ massa di chirp. Con la radiazione di potenza c'è perdita di energia nel sistema $E_{orbita} = T + U = -\frac{Gm_1m_2}{R}$, per compensare l'energia persa, $R$ deve decrescere e di conseguenza $\Omega$ aumentare, andamento che conduce alla coalescenza dei due corpi.
+Si può scrivere la potenza irradiata $P=\frac{32}{5}\frac{c^5}{G}\left(\frac{GM_c\omega_{GW}}{2c^3}\right)^{10/3}$, con $M_c=\left(m_1m_2\right)^{3/5}/\left(m_1+m_2\right)^{1/5}$ massa di chirp. Con la radiazione di potenza nel sistema c'è perdita di energia $E_{orbita} = T + U = -\frac{Gm_1m_2}{R}$, per compensare l'energia persa, $R$ deve decrescere e di conseguenza $\Omega$ aumentare, andamento che conduce alla coalescenza dei due corpi.
 A partire dalla legge per la potenza irradiata, è possibile valutare l'evoluzione della frequenza dell'onda gravitazionale 
 \begin{equation}
 	\dot{\omega}_{GW} = \frac{12}{5}2^{1/3}\left(\frac{GM_c}{c^3}\right)^{5/3}\omega_{GW}^{11/3}
@@ -29,22 +46,24 @@ A partire dalla legge per la potenza irradiata, è possibile valutare l'evoluzio
 \end{equation} 
 che integrata restituisce $\omega_{GW}$, che formalmente diverge in un tempo finito: si avrà che la fase di spiraleggiamento sarà descritta da un andamento a chirp e sarà descrivibile con un approccio analitico. Ovviamente la divergenza della frequenza non è fisica e compare solo formalmente, nella realtà infatti a distanze minori di una soglia critica l'approssimazione di corpi puntiformi fatta fin'ora non è più corretta e a dominare invece sono gli effetti di deformazione mareale, tipici di corpi estesi. Questo andamento viene sfruttato da Hulse e Taylor nella scoperta del primo sistema binario, osservando la decadenza dell'orbita a causa dell'emissione di onde gravitazionali.
 \begin{wrapfigure}{r}{0.45\textwidth}
-	\vspace{-20pt}
+	\vspace{-24pt}
 	\begin{center}
-		\includegraphics[width=0.5\textwidth]{figures/Capitolo_1/APR4.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/Capitolo_1/APR4.pdf}
 	\end{center}
-	\vspace{-10pt}
+	\vspace{-11pt}
 	\caption{Segnale teorico previsto per per la coalescenza di una BNS con equazione di stato APR4, con una divisione qualitativa tra le diverse fasi}
 	\label{fig:forma_onda_APR4}
-	\vspace{-50pt}
+	\vspace{-20pt}
 \end{wrapfigure}
 Perciò la fase di spiraleggiamento termina con i due oggetti che si scontrano dando inizio alla fase di coalescenza e quindi, dopo la fusione, alla post-coalescenza, che in base alle proprietà iniziali del sistema può portare a forme d'onda e oggetti diversi.	Mentre la fase di coalescenza dura pochi millisecondi, la fase di post-coalescenza genera un segnale quasi-stazionario. Queste due fasi risultano più complesse da modellare, per cui per il loro studio si fa affidamento a metodi numerici. \cite{maggiore2008gravitational}
 %    Cenno sulle equazioni di stato.
-\section{Oggetto residuo}
+
+I sistemi binari di stelle di neutroni, oltre che ottime sorgenti di onde gravitazionali, risultano anche i migliori scenari per spiegare la fenomenologia dei lampi gamma brevi (short gamma ray burst). I lampi gamma consistono nell'emissione di intensi raggi gamma con uno spettro di durate estremamente vario, per cui si distinguono i short gamma ray burst con durata tipica inferiore a 2s e con un energia media dei fotoni superiore, i long gamma ray burst la quale durata è piccata attorno a 30s, fino agli ultra-long gamma ray burst che arrivano a durare diverse ore, mediamente meno energetici. 
+La separazione è legata ai fenomeni fisici che li generano: mentre i GRB lunghi hanno origine nel collasso del nucleo di stelle massive, nel fenomeno della post-luminescenza, la comprensione dell'origine di GRB brevi è risultata più complessa, infatti l'osservazione sperimentale ha portato ad escludere il collasso di stelle massive come origine di tali fenomeni. Candidati plausibili sono risultati invece la coalescenza di BNS o di binarie NS-BH, poiché la durata di GRB brevi richiede strutture compatte con caratteristiche sulla scala dei tempi nell'ordine delle decine di millisecondi, compatibili con la coalescenza di un sistema binario di NS, in particolare l'osservazione di GW170817, evento che si approfondirà nel Capitolo \ref{chapter:gw170817}, mostra come i GRB brevi siano effettivamente legati alla coalescenza di sistemi binari di stelle compatte \cite{maggiore2018gravitational}.
+\section{Formazione del corpo celeste}
 \label{section:residual}
 Ci sono quattro possibili risultati della coalescenza di due stelle di neutroni, in base alle masse delle stelle e dalle loro equazioni di stato. 
-Data la massa dell'oggetto residuo $M$, facendo riferimento alla figura \ref{fig:EvoluzioneBNS}, \cite{sarin2020evolution} ne descrive gli stati finali come:
-
+Data la massa dell'oggetto $M$, \cite{sarin2020evolution} descrive i possibili stati finali del sistema (Fig.\ref{fig:EvoluzioneBNS}):
 \begin{itemize}
 	\item $M\gtrsim 1.5 M_{TOV}$\footnote{$M_{TOV}$ è detta massa di Tolman-Oppenheimer-Volkoff e indica la massa massima che può avere una stella di neutroni non rotante}: il sistema collassa immediatamente in un buco nero seguendo il percorso A$\rightarrow$ B$\rightarrow$ C;
 \end{itemize}
@@ -54,13 +73,13 @@ Data la massa dell'oggetto residuo $M$, facendo riferimento alla figura \ref{fig
 	\item $M_{TOV} \lesssim M \lesssim 1.2 M_{TOV}$: rimane una stella di neutroni supermassiva che è destinata a collassare in un buco nero in un tempo di 10 \textdiv $10^4$s, secondo il percorso A$\rightarrow$ B$\rightarrow$ D$\rightarrow$ F$\rightarrow$ G;		\item $M\lesssim M_{TOV}$: rimane una stella di neutroni stabile, secondo il percorso A$\rightarrow$ B$\rightarrow$ D$\rightarrow$ F$\rightarrow$ H.	
 \end{itemize}
 
-\vspace{-15pt}
-\begin{SCfigure}[][h]
+\vspace{0pt}
+\begin{SCfigure}[][ht]
 	\includegraphics[scale=0.2]{figures/Capitolo_1/MagnetarEvolution.png}
 	\captionsetup{width=0.8\textwidth}
 	\caption{Rappresentazione pittorica del destino del residuo del merger di un sistema binario di stelle di neutroni, \cite{sarin2020evolution}}
 	\label{fig:EvoluzioneBNS}
-	\vspace{-15pt}
+	\vspace{-20pt}
 \end{SCfigure}
 %\begin{center}
 %	\begin{figure}[ht]
@@ -74,24 +93,20 @@ Data la massa dell'oggetto residuo $M$, facendo riferimento alla figura \ref{fig
 %\end{center}
 %Veloce descrizione delle possibili espulsioni di kilonovae
 
-I sistemi binari di stelle di neutroni, oltre che ottime sorgenti di onde gravitazionali, risultano anche i migliori scenari per spiegare la fenomenologia dei lampi gamma brevi (short gamma ray burst). I lampi gamma consistono nell'emissione di intensi raggi gamma con uno spettro di durate estremamente vario, per cui si distinguono i short gamma ray burst con durata tipica inferiore a 2s e con un energia media dei fotoni superiore, i long gamma ray burst la quale durata è piccata attorno a 30s, fino agli ultra-long gamma ray burst che arrivano a durare diverse ore, mediamente meno energetici. 
-La separazione è legata ai fenomeni fisici che li generano: mentre i GRB lunghi hanno origine nel collasso del nucleo di stelle massive, nel fenomeno della post-luminescenza, la comprensione dell'origine di GRB brevi è risultata più complessa, infatti l'osservazione sperimentale ha portato ad escludere il collasso di stelle massive come origine di tali fenomeni. Candidati plausibili sono risultati invece i merger di BNS o di binarie NS-BH, poiché la durata di GRB brevi richiede strutture compatte con caratteristiche sulla scala dei tempi nell'ordine delle decine di millisecondi, compatibili con il merger di un sistema binario di compatte, in particolare l'osservazione di GW170817, evento che si approfondirà nel capitolo \ref{chapter:gw170817}, mostra come i GRB brevi siano effettivamente legati alla coalescenza di sistemi binari di stelle compatte \cite{maggiore2018gravitational}.
-
 \subsection{Formazione diretta un black hole}	
 \label{subsection:Diretto_Black_hole}
 
-\begin{wrapfigure}{r}{0.45\textwidth}
-	\vspace{-15pt}
-	\begin{center}
-		\includegraphics[width=0.5\textwidth]{figures/Capitolo_1/SHT2.2.pdf}
-	\end{center}
-	\vspace{-10pt}
-	\caption{Forma d'onda per la coalescenza di una BNS con equazione di stato SHT2, in cui le masse sono tali da portare il sistema a collassare immediatamente in un BH, producendo nella fase di post merger il ringdown}
-	\label{fig:FormaOndaBH}
-	\vspace{-50pt}
-\end{wrapfigure}
-La formazione diretta di un buco nero dopo la coalescenza implica, come si osserva in figura \ref{fig:FormaOndaBH} lo spegnimento del segnale, con un collasso quasi sferico che genera delle onde gravitazionali minime\cite{sarin2020evolution}.
-
+%\begin{wrapfigure}{r}{0.45\textwidth}
+%	\vspace{-15pt}
+%	\begin{center}
+%		\includegraphics[width=0.5\textwidth]{figures/Capitolo_1/SHT2.2.pdf}
+%	\end{center}
+%	\vspace{-10pt}
+%	\caption{Forma d'onda per la coalescenza di una BNS con equazione di stato SHT2, in cui le masse sono tali da portare il sistema a collassare immediatamente in un BH, producendo nella fase di post merger il ringdown}
+%	\label{fig:FormaOndaBH}
+%	\vspace{-50pt}
+%\end{wrapfigure}
+La formazione diretta di un buco nero dopo la coalescenza implica lo spegnimento del segnale, con un collasso quasi sferico che genera delle onde gravitazionali minime\cite{sarin2020evolution}.\\
 Questo tipo di segnale ha la particolarità, al contrario degli altri casi di post-merger, di ammattere uno studio analitico attraverso metodi perturbativi relativamente semplici (decrescita esponenziale con un tempo caratteristico legato alla massa del buco nero)\cite{maggiore2018gravitational}.
 
 \subsection{Formazione di una NS ipermassiva}
@@ -99,33 +114,32 @@ Questo tipo di segnale ha la particolarità, al contrario degli altri casi di po
 La maggior parte delle coalescenze di stelle di neutroni porta alla formazione di stelle di neutroni ipermassive, supermassive o stabili. 
 
 Una stella di neutroni ipermassiva è tale da avere una massa superiore al massimo in massa per una stella rotante uniformemente $M_{TOV}$, ma non collassa per la rotazione differenziale, cioè il fenomeno per cui le sue diverse parti ruotano con velocità angolare differente che permette una maggiore stabilità rispetto a stelle non rotanti o rotanti uniformemente \cite{Baumgarte_2000}, e per il supporto di gradienti termici.
-
-\begin{wrapfigure}{r}{0.45\textwidth}
-	\vspace{-35pt}
-	\begin{center}
-		\includegraphics[width=0.5\textwidth]{figures/Capitolo_1/SHT2.0.pdf}
-	\end{center}
-	\vspace{-10pt}
-	\caption{Forma d'onda per la coalescenza di una BNS con equazione di stato SHT2, in cui le masse sono tali da portare il sistema a formare una NS ipermassiva, producendo nella fase di post merger un segnale visibile}
-	\label{fig:FormaOndaToNS}
-	\vspace{-30pt}
-\end{wrapfigure}
-Nel momento in cui la stella rallenta la sua rotazione e/o si raffredda, il supporto alla sua stessa massa termina e la stella collassa in un buco nero. 
-Nel caso in cui la stella ipermassiva abbia massa tale che $M \gtrsim 1.2 M_{TOV}$ la rotazione uniforme non può dare sufficiente supporto centrifugo per evitare il collasso, per cui la stella collassa non appena la rotazione differenziale termina.
-
-È in generale molto complessa la fisica che regola il collasso dell'ipermassiva residua tuttavia assumendo che per il rilascio del lampo gamma sia necessario tale collasso in buco nero, il ritardo con il quale si è osservato per GW170817, come si vedrà nel capitolo \ref{chapter:gw170817}, può essere, almeno in parte, spiegato con il collasso.
-
-
-L'emissione di GW dalla fase di post-coalescenza è attesa avere una quantità di energia rilasciata sotto forma di GW relativamente ampia e confrontabile con il massimo dell'inspiral\cite{sarin2020evolution}. 
+%
+%\begin{wrapfigure}{r}{0.45\textwidth}
+%	\vspace{-35pt}
+%	\begin{center}
+%		\includegraphics[width=0.5\textwidth]{figures/Capitolo_1/SHT2.0.pdf}
+%	\end{center}
+%	\vspace{-10pt}
+%	\caption{Forma d'onda per la coalescenza di una BNS con equazione di stato SHT2, in cui le masse sono tali da portare il sistema a formare una NS ipermassiva, producendo nella fase di post merger un segnale visibile}
+%	\label{fig:FormaOndaToNS}
+%	\vspace{-30pt}
+%\end{wrapfigure}
+Nel momento in cui la stella rallenta la sua rotazione e/o si raffredda e la stella collassa in un buco nero. 
+%Nel caso in cui la stella ipermassiva abbia massa tale che $M \gtrsim 1.2 M_{TOV}$ la rotazione uniforme non può dare sufficiente supporto centrifugo per evitare il collasso, per cui la stella collassa non appena la rotazione differenziale termina.
+%
+%È in generale molto complessa la fisica che regola il collasso dell'ipermassiva residua tuttavia assumendo che per il rilascio del lampo gamma sia necessario tale collasso in buco nero, il ritardo con il quale si è osservato per GW170817, come si vedrà nel capitolo \ref{chapter:gw170817}, può essere, almeno in parte, spiegato con il collasso.
+%
+%
+L'emissione di GW dalla fase di post-coalescenza è attesa avere una quantità di energia rilasciata sotto forma di GW relativamente ampia e confrontabile con il massimo dello spiraleggiamento\cite{sarin2020evolution}. 
 
 \subsection{Formazione di una NS con lunga vita media}
 \label{subsection:long_lived}
-I residui del post-merger che hanno una massa inferiore a $\smallsim1.2M_{TOV}$ sopravvivono per un tempo superiore al secondo e vengono denomiate supermassive se hanno una massa superiore al limite definito in precedenza $M_{TOV}$, mentre per valori inferiori sono stabili.
-È importante osservare in figura \ref{fig:EvoluzioneBNS} che per entrambi i prodotti finali si passa comunque per una fase di forte rotazione differenziale immediatamente successiva alla coalescenza rendendo i metodi di ricerca di segnali di GW non differenti da quelli per il caso di residuo ipermassivo.
+I residui della post-coalescenza che hanno una massa inferiore a $\smallsim1.2M_{TOV}$ sopravvivono per un tempo superiore al secondo e vengono denomiate supermassive se hanno una massa superiore al limite definito in precedenza $M_{TOV}$, mentre per valori inferiori sono stabili.
+È importante osservare in Figura \ref{fig:EvoluzioneBNS} che per entrambi i prodotti finali si passa comunque per una fase di forte rotazione differenziale immediatamente successiva alla coalescenza rendendo i metodi di ricerca di segnali di GW non differenti da quelli per il caso di residuo ipermassivo.
 L'osservazione sperimentale mostra che questo tipo di esito si presenta in un numero non trascurabile di casi.
 
-Come detto, le simulazioni mostrano che per stelle supermassive generate dalla coalescenza di un sistema binario di stelle di neutroni hanno una vita compresa tra $\smallsim10$s e $\smallsim10^4$s. In realtà l'osservazione sperimentale mostra che queste stelle tendono a collassare in una scala di tempi più breve di quella attesa e tale discrepanza si pensa possa includere eccessi di energia emessa in onde gravitazionali nelle prime fasi, o quark liberi che portano a modifiche nel momento di inerzia della stella rispetto al caso con materia ordinaria.
-
+Come detto, le simulazioni mostrano che stelle supermassive generate dalla coalescenza di un sistema binario di stelle di neutroni hanno una vita compresa tra $\smallsim10$s e $\smallsim10^4$s. In realtà l'osservazione sperimentale mostra che queste stelle tendono a collassare in una scala di tempi più breve di quella attesa e tale discrepanza si pensa possa includere eccessi di energia emessa in onde gravitazionali nelle prime fasi, o quark liberi che portano a modifiche nel momento di inerzia della stella rispetto al caso con materia ordinaria\cite{sarin2020evolution}.\\
 Questi vincoli hanno grande importanza, soprattutto per la ricerca futura: il fatto che le stelle di neutroni nascenti siano composte da quark non confinati suggerisce che vi sia una transizione di fase adrone-quark dipendente dalla temperatura e, comprendere dove avvenga questa transizione nel diagramma di fase nucleare è un informazione chiave per dedurre informazioni sul comportamento della materia nucleare e di conseguenza sull'equazione di stato.
 Il fatto, invece, che le NS supermassive rallentino la rotazione soprattutto a causa dell'emissione di GW ha importanti conseguenze per la dinamica della NS stessa e permette di avere vincoli sull'energia per ricostruire la natura dell'oggetto residuo nelle future analisi\cite{sarin2020evolution}.
 %neutrino emissions, thermal evolution, dynamical evolution, elettromagnetic observations?
@@ -134,50 +148,39 @@ Il fatto, invece, che le NS supermassive rallentino la rotazione soprattutto a c
 %L'instabilità precessionale spin-flip, legata al cambiamento di rotazione di un oggetto rotante, porta la nascente NS ad essere un "rotatore ortogonale" e quindi un ottimo emettitore di GW.
 %L'instabilità bar-mode si presenta in due varietà: dinamica, che è attiva nel primo secondo della vita della NS, e secolare, che ha maggiore importanza nel lungo periodo. 
 %Infine gli r-mode, ovvero oscillazioni toroidali a bassa frequenza per le quali la forza di Coriolis è la "forza di ripristino"\cite{sarin2020evo5lution}.]
-
-\section[Frequenze caratteristiche]{Frequenze caratteristiche di coalescenza e post-coalescenza}
+\section[Frequenze caratteristiche]{Frequenze  di coalescenza e post-coalescenza di un'ipermassiva}
 \label{section:frequenze_caratteristiche}
 \begin{wrapfigure}{r}{0.45\textwidth}
-	\vspace{-15pt}
+	\vspace{-25pt}
 	\begin{center}
-		\includegraphics[width=0.5\textwidth]{figures/Capitolo_1/GW_spectrogram_short_APR4-q10-M1300.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/Capitolo_1/GW_spectrogram_APR4-q10-M1300.pdf}
 	\end{center}
 	\vspace{-10pt}
-	\caption{Forma d'onda e relativo spettrogramma per la coalescenza di una BNS con equazione di stato APR4 (morbida), \cite{Rezzolla_2016}}
-	\label{fig:spettrogramma_merger_APR4}
+	\caption{Forma d'onda e relativo spettrogramma per la post-coalescenza di una BNS con equazione di stato APR4 (morbida), \cite{Rezzolla_2016}}
+	\label{fig:spettrogramma_postmerger_APR4}
 	\vspace{-20pt}
 \end{wrapfigure}
+%\begin{wrapfigure}{r}{0.45\textwidth}
+%	\vspace{-15pt}
+%	\begin{center}
+%		\includegraphics[width=0.5\textwidth]{figures/Capitolo_1/GW_spectrogram_short_APR4-q10-M1300.pdf}
+%	\end{center}
+%	\vspace{-10pt}
+%	\caption{Forma d'onda e relativo spettrogramma per la coalescenza di una BNS con equazione di stato APR4 (morbida), \cite{Rezzolla_2016}}
+%	\label{fig:spettrogramma_merger_APR4}
+%	\vspace{-20pt}
+%\end{wrapfigure}
 %Una BNS realistica presenta una massa compresa tra $\smallsim\SI{2.4}{\solarmass}$ e $\smallsim\SI{2.8}{\solarmass}$ e una differenza tra le due componenti che è di $\smallsim20\%$ o minore.
-A partire dal segnale di GW, in particolare nelle fasi di coalescenza e post-coalescenza, possono essere ottenute informazioni sull'equazione di stato della materia a densità nucleare e, da un'analisi spettrale, informazioni sulla tidal deformability (deformabilità mareale) delle due stelle.
-
-Simulazioni numeriche relativistiche di coalescenza di BNS e l'evoluzione della post-coalescenza mostra che l'emissione di GW da un residuo ipermassivo è legato alla EOS e può trovarsi a frequenze comprese tra $\smallsim2$ e 4kHz, ed è fortemente correlato con la compattezza e la deformabilità mareale delle stelle. Questa correlazione, con quantità calcolate per stelle di neutroni fredde e non rotanti, stato in cui non si trova l'ipermassiva residua, suggerisce come gli effetti dovuti a rotazione e temperatura giocano un ruolo limitato nelle proprietà del segnale di onda gravitazionale e mostra come la misura del modo dominante nella frequenza del post-merger possa portare a una importante misura dell'equazione di stato nucleare\cite{sarin2020evolution}.
-
-\begin{wrapfigure}{r}{0.45\textwidth}
-	\vspace{-15pt}
-	\begin{center}
-		\includegraphics[width=0.5\textwidth]{figures/Capitolo_1/GW_spectrogram_APR4-q10-M1300.pdf}
-	\end{center}
-	\vspace{-10pt}
-	\caption{Forma d'onda e relativo spettrogramma per la post-coalescenza di una BNS con equazione di stato APR4, \cite{Rezzolla_2016}}
-	\label{fig:spettrogramma_postmerger_APR4}
-	\vspace{-30pt}
-\end{wrapfigure}
-Considerando dunque il segnale gravitazionale dovuto alla coalescenza di due stelle di neutroni, con una differneza di massa inferiore a 20\%, \cite{Rezzolla_2016} ne riassume le proprietà spettrali fondamentali in:
+A partire dal segnale di GW, in particolare nelle fasi di coalescenza e post-coalescenza, possono essere ottenute informazioni sull'equazione di stato della materia a densità nucleare e, da un'analisi spettrale, informazioni sulla deformabilità mareale delle due stelle.\\
+Simulazioni numeriche relativistiche di coalescenza di BNS e l'evoluzione della post-coalescenza mostra che l'emissione di GW da un residuo ipermassivo è legato alla EOS e può trovarsi a frequenze comprese tra $\smallsim2$ e 4kHz, ed è fortemente correlato con la compattezza e la deformabilità mareale delle stelle. Questa correlazione, con quantità calcolate per stelle di neutroni fredde e non rotanti, stato in cui non si trova l'ipermassiva residua, suggerisce come gli effetti dovuti a rotazione e temperatura giochino un ruolo limitato nelle proprietà del segnale di onda gravitazionale e mostra come la misura del modo dominante nella frequenza del post-merger possa portare a una importante misura dell'equazione di stato nucleare\cite{sarin2020evolution}.\\
+Considerando dunque il segnale gravitazionale dovuto alla coalescenza di due stelle di neutroni, con una differneza di massa inferiore al 20\%, si possono riassumere le proprietà fondamentali come descritto in \cite{Rezzolla_2016}:
 \begin{itemize}
-	\item la frequenza della GW al massimo di ampiezza $f_{max}$ è legata in modo quasi-universale con la tidal deformability delle due stelle;
-	\item le frequenze $f_1$, $f_{2,i}$ e $f_3$ rappresentano i picchi principali visibili dall'osservazione del post-merger, tra le quali si ottiene la seguente relazione empirica:
-	\begin{equation}
-	f_{2,i}\simeq\frac{f_1 + f_3}{2} 
-	\label{eqn:f1_2_3}
-	\end{equation} 
-	il picco $f_1$ è legato alla compattezza delle stelle, mentre il picco $f_{2,i}$ è legato al raggio della configurazione non rotante più massiva e corrisponde al modo fondamentale della NS ipermassiva con l=2=m;
-\end{itemize}
-
-\begin{itemize}
-	\item si identifica in alcuni casi un altro picco $f_{2-0}$ che si riferisce all'accoppiamento tra il modo fondamentale con l=2=m e il modo con simmetria assiale, cioè con l=2 e m=0;
+	\item la frequenza della GW al massimo di ampiezza $f_{max}$ è legata in modo quasi-universale con la deformabilità mareale delle due stelle;
+	\item le frequenze $f_1$, $f_{2,i}$ e $f_3$ rappresentano i picchi principali visibili dall'osservazione della post-coalescenza, tra le quali si ottiene la seguente relazione empirica: $f_{2,i}\simeq\frac{f_1 + f_3}{2}$. Il picco $f_1$ è legato alla compattezza delle stelle, mentre il picco $f_{2,i}$ è legato al raggio della configurazione non rotante più massiva e corrisponde al modo fondamentale della NS ipermassiva con $l=2=m$;
+	\item si identifica in alcuni casi un altro picco $f_{2-0}$ che si riferisce all'accoppiamento tra il modo fondamentale con $l=2=m$ e il modo con simmetria assiale, cioè con $l=2$ e $m=0$;
 	\item il picco $f_{spiral}$ associato alla deformazione spiraleggiante dovuta alla rotazione, è però impossibile da misurare in calcoli numerici e si utilizzano dunque i valori prodotti da considerazioni analitiche. Si nota infine che $f_{spiral}$ coincide per molte EOS (in particolare EOS rigide) con la frequenza $f_1$, mentre per altre (EOS morbide) non si ha questa corrispondenza.
 \end{itemize}
 
-Nella fase di post-merger, nei casi in cui il sistema non collassa immediatamente in un buco nero, evidenziando nella forma d'onda una fase di ringdown in cui il segnale si spegne, l'unica frequenza a sopravvivere è il picco $f_2$, spariscono gli altri picchi, lasciando solo $f_{2-0}$ a basse energie.
+Nella fase di post-coalescenza, nei casi in cui il sistema non collassa immediatamente in un buco nero, evidenziando nella forma d'onda una fase di ringdown in cui il segnale si spegne, l'unica frequenza a sopravvivere è il picco $f_2$, spariscono gli altri picchi, lasciando solo $f_{2-0}$ a basse energie, come si osserva in Figura \ref{fig:spettrogramma_postmerger_APR4}.
 
 È poi possibile trovare diverse relazioni quantitative che legano le frequenze osservate con le proprietà stellari, che risultano particolarmente utili come verifica delle previsioni teoriche.

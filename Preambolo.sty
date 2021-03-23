@@ -68,7 +68,27 @@
 			\bfseries{\summaryname}
 	   \end{center}}
 
-\bibliographystyle{plain}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{} % clear all header fields
+%\setlength{\headheight}{15pt}
+\renewcommand{\chaptermark}[1]{%
+	\markboth{\thechapter.\ #1}{}}
+%\lhead{\nouppercase{\rightmark}}
+%\rhead{\nouppercase{\leftmark}}
+\newcommand{\changefont}{%
+	\fontsize{9}{11}\selectfont
+}
+\fancyhf{}
+\fancyhead[LE,RO]{\changefont \slshape \nouppercase{\rightmark}} %section
+\fancyhead[RE,LO]{\changefont \slshape \nouppercase{\leftmark}} %chapter
+\fancyfoot[C]{\changefont \thepage} %footer
+%\renewcommand{\sectionmark}[1]{\markboth{{#1}}{}}
+%\fancyfoot{}
+%\fancyfoot[CE,CO]{\thepage} % clear all footer fields
+\setlist[itemize]{noitemsep}
+
+\bibliographystyle{acm}
 \includeonly{Capitoli/Frontespizio/Frontespizio,
 			 Capitoli/Capitolo_1/Capitolo_1,
 			 Capitoli/Capitolo_2/Capitolo_2,

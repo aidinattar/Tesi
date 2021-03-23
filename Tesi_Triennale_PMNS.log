@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.2.6)  16 MAR 2021 11:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.2.6)  23 MAR 2021 13:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -700,7 +700,9 @@ Package tocbibind Note: Using chapter style headings, unless overridden.
 
 )
    defining Unicode char U+2009 (decimal 8201)
-) (./Tesi_Triennale_PMNS.aux (./Capitoli/Capitolo_4/Capitolo_4.aux))
+) (./Tesi_Triennale_PMNS.aux (./Capitoli/Frontespizio/Frontespizio.aux)
+(./Capitoli/Capitolo_1/Capitolo_1.aux) (./Capitoli/Capitolo_2/Capitolo_2.aux)
+(./Capitoli/Capitolo_3/Capitolo_3.aux) (./Capitoli/Capitolo_4/Capitolo_4.aux))
 \openout1 = `Tesi_Triennale_PMNS.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -861,372 +863,836 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-\openout2 = `Capitoli/Capitolo_4/Capitolo_4.aux'.
+\openout2 = `Capitoli/Frontespizio/Frontespizio.aux'.
 
 
-(./Capitoli/Capitolo_4/Capitolo_4.tex
+(./Capitoli/Frontespizio/Frontespizio.tex
+<figures/Frontespizio/UNIPD.png, id=102, 943.525pt x 949.5475pt>
+File: figures/Frontespizio/UNIPD.png Graphic file (type png)
+<use figures/Frontespizio/UNIPD.png>
+Package pdftex.def Info: figures/Frontespizio/UNIPD.png  used on input line 6.
+(pdftex.def)             Requested size: 122.66255pt x 123.4455pt.
+ [1
+
+
+
+
+ <./figures/Frontespizio/UNIPD.png>] [2
+
+
+] (./Tesi_Triennale_PMNS.toc)
+\tf@toc=\write5
+\openout5 = `Tesi_Triennale_PMNS.toc'.
+
+ [3
+
+]) [4]
+\openout2 = `Capitoli/Capitolo_1/Capitolo_1.aux'.
+
+
+(./Capitoli/Capitolo_1/Capitolo_1.tex
 Capitolo 1.
-
-LaTeX Warning: Reference `eqn:coefficient_energy' on page 1 undefined on input 
-line 28.
-
-<figures/Capitolo_3/APR4_q09/L1_spectrogram_logy_0.png, id=34, 798.985pt x 574.
-145pt>
-File: figures/Capitolo_3/APR4_q09/L1_spectrogram_logy_0.png Graphic file (type 
-png)
-<use figures/Capitolo_3/APR4_q09/L1_spectrogram_logy_0.png>
-Package pdftex.def Info: figures/Capitolo_3/APR4_q09/L1_spectrogram_logy_0.png 
- used on input line 42.
-(pdftex.def)             Requested size: 153.87872pt x 110.578pt.
-<figures/Capitolo_3/APR4_q09/H1_spectrogram_logy_0.png, id=35, 798.985pt x 574.
-145pt>
-File: figures/Capitolo_3/APR4_q09/H1_spectrogram_logy_0.png Graphic file (type 
-png)
-<use figures/Capitolo_3/APR4_q09/H1_spectrogram_logy_0.png>
-Package pdftex.def Info: figures/Capitolo_3/APR4_q09/H1_spectrogram_logy_0.png 
- used on input line 44.
-(pdftex.def)             Requested size: 153.87872pt x 110.578pt.
-<figures/Capitolo_3/APR4_q09/V1_spectrogram_logy_0.png, id=36, 798.985pt x 574.
-145pt>
-File: figures/Capitolo_3/APR4_q09/V1_spectrogram_logy_0.png Graphic file (type 
-png)
-<use figures/Capitolo_3/APR4_q09/V1_spectrogram_logy_0.png>
-Package pdftex.def Info: figures/Capitolo_3/APR4_q09/V1_spectrogram_logy_0.png 
- used on input line 46.
-(pdftex.def)             Requested size: 153.87872pt x 110.578pt.
-
-Overfull \hbox (0.4676pt too wide) in paragraph at lines 27--51
-[]$[]$   [] 
- []
-
 [1
 
 
 
 
+]
+<figures/Capitolo_1/APR4.pdf, id=172, 433.62pt x 289.08pt>
+File: figures/Capitolo_1/APR4.pdf Graphic file (type pdf)
+<use figures/Capitolo_1/APR4.pdf>
+Package pdftex.def Info: figures/Capitolo_1/APR4.pdf  used on input line 51.
+(pdftex.def)             Requested size: 217.66211pt x 145.10866pt.
+ [2 <./figures/Capitolo_1/APR4.pdf>]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 6
+8.
 
- <./figures/Capitolo_3/APR4_q09/L1_spectrogram_logy_0.png> <./figures/Capitolo_
-3/APR4_q09/H1_spectrogram_logy_0.png> <./figures/Capitolo_3/APR4_q09/V1_spectro
-gram_logy_0.png>]
-<figures/Capitolo_3/APR4_q09/l_tfmap_scalogram.png, id=54, 798.985pt x 574.145p
-t>
-File: figures/Capitolo_3/APR4_q09/l_tfmap_scalogram.png Graphic file (type png)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+<figures/Capitolo_1/MagnetarEvolution.png, id=230, 1436.36626pt x 643.40375pt>
+File: figures/Capitolo_1/MagnetarEvolution.png Graphic file (type png)
+<use figures/Capitolo_1/MagnetarEvolution.png>
+Package pdftex.def Info: figures/Capitolo_1/MagnetarEvolution.png  used on inpu
+t line 78.
+(pdftex.def)             Requested size: 287.26816pt x 128.67847pt.
+ [3 <./figures/Capitolo_1/MagnetarEvolution.png>]
+<figures/Capitolo_1/GW_spectrogram_APR4-q10-M1300.pdf, id=252, 604.4846pt x 528
+.08565pt>
+File: figures/Capitolo_1/GW_spectrogram_APR4-q10-M1300.pdf Graphic file (type p
+df)
+<use figures/Capitolo_1/GW_spectrogram_APR4-q10-M1300.pdf>
+Package pdftex.def Info: figures/Capitolo_1/GW_spectrogram_APR4-q10-M1300.pdf  
+used on input line 156.
+(pdftex.def)             Requested size: 217.66211pt x 190.15097pt.
 
-<use figures/Capitolo_3/APR4_q09/l_tfmap_scalogram.png>
-Package pdftex.def Info: figures/Capitolo_3/APR4_q09/l_tfmap_scalogram.png  use
-d on input line 58.
+Overfull \hbox (3.29942pt too wide) in paragraph at lines 179--180
+[]\T1/ptm/m/n/10.95 le fre-quen-ze $\OML/cmm/m/it/10.95 f[]$\T1/ptm/m/n/10.95 ,
+ $\OML/cmm/m/it/10.95 f[]$ \T1/ptm/m/n/10.95 e $\OML/cmm/m/it/10.95 f[]$ \T1/pt
+m/m/n/10.95 rap-pre-sen-ta-no i pic-chi prin-ci-pa-li vi-si-bi-li dal-l'os-ser-
+va-zio-ne del-la post-coalescenza,
+ []
+
+) [4 <./figures/Capitolo_1/GW_spectrogram_APR4-q10-M1300.pdf>]
+\openout2 = `Capitoli/Capitolo_2/Capitolo_2.aux'.
+
+
+(./Capitoli/Capitolo_2/Capitolo_2.tex
+Capitolo 2.
+<figures/Capitolo_2/gw_effect.png, id=299, 2773.36125pt x 1270.7475pt>
+File: figures/Capitolo_2/gw_effect.png Graphic file (type png)
+<use figures/Capitolo_2/gw_effect.png>
+Package pdftex.def Info: figures/Capitolo_2/gw_effect.png  used on input line 7
+.
+(pdftex.def)             Requested size: 193.47578pt x 88.63177pt.
+
+Overfull \hbox (14.4082pt too wide) in paragraph at lines 31--31
+[]\T1/ptm/b/n/14.4 Osservazione del-la coa-le-scen-za di un si-ste-ma di stel-l
+e di neu-tro-ni: GW170817 
+ []
+
+[5
+
+
+
+ <./figures/Capitolo_2/gw_effect.png>]
+<figures/Capitolo_2/gw170817_time_freq.png, id=311, 344.28625pt x 501.875pt>
+File: figures/Capitolo_2/gw170817_time_freq.png Graphic file (type png)
+<use figures/Capitolo_2/gw170817_time_freq.png>
+Package pdftex.def Info: figures/Capitolo_2/gw170817_time_freq.png  used on inp
+ut line 43.
+(pdftex.def)             Requested size: 193.47578pt x 282.03595pt.
+<figures/Capitolo_2/skymap.png, id=316, 501.875pt x 341.275pt>
+File: figures/Capitolo_2/skymap.png Graphic file (type png)
+<use figures/Capitolo_2/skymap.png>
+Package pdftex.def Info: figures/Capitolo_2/skymap.png  used on input line 67.
+(pdftex.def)             Requested size: 193.47578pt x 131.56572pt.
+
+Underfull \hbox (badness 7540) in paragraph at lines 70--70
+[]\T1/ptm/m/n/10 Figura 2.3: |Sky lo-ca-tion ri-co-strui-ta per
+ []
+
+LaTeX Font Info:    Trying to load font information for U+eus on input line 74.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueus.fd
+File: ueus.fd 2013/01/14 v3.01 Euler Script
+) [6 <./figures/Capitolo_2/gw170817_time_freq.png (PNG copy)> <./figures/Capito
+lo_2/skymap.png (PNG copy)>]
+<figures/Capitolo_2/GW170817_spectral_limits.pdf, id=336, 1019.99998pt x 630.39
+47pt>
+File: figures/Capitolo_2/GW170817_spectral_limits.pdf Graphic file (type pdf)
+<use figures/Capitolo_2/GW170817_spectral_limits.pdf>
+Package pdftex.def Info: figures/Capitolo_2/GW170817_spectral_limits.pdf  used 
+on input line 95.
+(pdftex.def)             Requested size: 241.84843pt x 149.4702pt.
+ [7 <./figures/Capitolo_2/GW170817_spectral_limits.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 134--139
+
+ []
+
+) [8]
+\openout2 = `Capitoli/Capitolo_3/Capitolo_3.aux'.
+
+ (./Capitoli/Capitolo_3/Capitolo_3.tex
+Capitolo 3.
+[9
+
+
+
+] [10]
+<figures/Capitolo_3/L1_scalogram_0.png, id=401, 798.985pt x 574.145pt>
+File: figures/Capitolo_3/L1_scalogram_0.png Graphic file (type png)
+<use figures/Capitolo_3/L1_scalogram_0.png>
+Package pdftex.def Info: figures/Capitolo_3/L1_scalogram_0.png  used on input l
+ine 140.
 (pdftex.def)             Requested size: 229.75896pt x 165.10483pt.
 
-Overfull \hbox (7.25516pt too wide) in paragraph at lines 58--59
+Overfull \hbox (7.25516pt too wide) in paragraph at lines 140--141
  [] 
  []
 
-<figures/Capitolo_3/APR4_q09/L1_wf_white_inj_rec.png, id=57, 798.985pt x 473.77
+<figures/Capitolo_3/l_tfmap_scalogram.png, id=405, 798.985pt x 574.145pt>
+File: figures/Capitolo_3/l_tfmap_scalogram.png Graphic file (type png)
+<use figures/Capitolo_3/l_tfmap_scalogram.png>
+Package pdftex.def Info: figures/Capitolo_3/l_tfmap_scalogram.png  used on inpu
+t line 190.
+(pdftex.def)             Requested size: 229.75896pt x 165.10483pt.
+
+Overfull \hbox (7.25516pt too wide) in paragraph at lines 190--191
+ [] 
+ []
+
+[11 <./figures/Capitolo_3/L1_scalogram_0.png> <./figures/Capitolo_3/l_tfmap_sca
+logram.png>]) [12]
+\openout2 = `Capitoli/Capitolo_4/Capitolo_4.aux'.
+
+ (./Capitoli/Capitolo_4/Capitolo_4.tex
+Capitolo 4.
+<figures/Capitolo_4/report/pds.pdf, id=427, 569.12625pt x 409.53pt>
+File: figures/Capitolo_4/report/pds.pdf Graphic file (type pdf)
+<use figures/Capitolo_4/report/pds.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/pds.pdf  used on input line 
+7.
+(pdftex.def)             Requested size: 193.47578pt x 139.2196pt.
+<figures/Capitolo_4/SHT2.0.pdf, id=431, 377.24939pt x 187.902pt>
+File: figures/Capitolo_4/SHT2.0.pdf Graphic file (type pdf)
+<use figures/Capitolo_4/SHT2.0.pdf>
+Package pdftex.def Info: figures/Capitolo_4/SHT2.0.pdf  used on input line 25.
+(pdftex.def)             Requested size: 217.66211pt x 108.41553pt.
+<figures/Capitolo_4/SHT2.2.pdf, id=432, 377.24939pt x 187.902pt>
+File: figures/Capitolo_4/SHT2.2.pdf Graphic file (type pdf)
+<use figures/Capitolo_4/SHT2.2.pdf>
+Package pdftex.def Info: figures/Capitolo_4/SHT2.2.pdf  used on input line 27.
+(pdftex.def)             Requested size: 217.66211pt x 108.41553pt.
+
+Overfull \hbox (6.26657pt too wide) in paragraph at lines 37--45
+[][]
+ []
+
+<figures/Capitolo_4/APR4_q09/L1_spectrogram_logy_0.png, id=434, 798.985pt x 574
+.145pt>
+File: figures/Capitolo_4/APR4_q09/L1_spectrogram_logy_0.png Graphic file (type 
+png)
+<use figures/Capitolo_4/APR4_q09/L1_spectrogram_logy_0.png>
+Package pdftex.def Info: figures/Capitolo_4/APR4_q09/L1_spectrogram_logy_0.png 
+ used on input line 51.
+(pdftex.def)             Requested size: 161.22983pt x 115.85196pt.
+<figures/Capitolo_4/APR4_q09/H1_spectrogram_logy_0.png, id=435, 798.985pt x 574
+.145pt>
+File: figures/Capitolo_4/APR4_q09/H1_spectrogram_logy_0.png Graphic file (type 
+png)
+<use figures/Capitolo_4/APR4_q09/H1_spectrogram_logy_0.png>
+Package pdftex.def Info: figures/Capitolo_4/APR4_q09/H1_spectrogram_logy_0.png 
+ used on input line 53.
+(pdftex.def)             Requested size: 161.22983pt x 115.85196pt.
+<figures/Capitolo_4/APR4_q09/V1_spectrogram_logy_0.png, id=436, 798.985pt x 574
+.145pt>
+File: figures/Capitolo_4/APR4_q09/V1_spectrogram_logy_0.png Graphic file (type 
+png)
+<use figures/Capitolo_4/APR4_q09/V1_spectrogram_logy_0.png>
+Package pdftex.def Info: figures/Capitolo_4/APR4_q09/V1_spectrogram_logy_0.png 
+ used on input line 55.
+(pdftex.def)             Requested size: 161.22983pt x 115.85196pt.
+<figures/Capitolo_4/APR4_q09/l_tfmap_scalogram.png, id=438, 798.985pt x 574.145
 pt>
-File: figures/Capitolo_3/APR4_q09/L1_wf_white_inj_rec.png Graphic file (type pn
+File: figures/Capitolo_4/APR4_q09/l_tfmap_scalogram.png Graphic file (type png)
+
+<use figures/Capitolo_4/APR4_q09/l_tfmap_scalogram.png>
+Package pdftex.def Info: figures/Capitolo_4/APR4_q09/l_tfmap_scalogram.png  use
+d on input line 67.
+(pdftex.def)             Requested size: 193.47578pt x 139.02411pt.
+[13
+
+
+
+ <./figures/Capitolo_4/report/pds.pdf, page is rotated 90 degrees>]
+<figures/Capitolo_4/APR4_q09/L1_wf_white_inj_rec.png, id=491, 798.985pt x 473.7
+7pt>
+File: figures/Capitolo_4/APR4_q09/L1_wf_white_inj_rec.png Graphic file (type pn
 g)
-<use figures/Capitolo_3/APR4_q09/L1_wf_white_inj_rec.png>
-Package pdftex.def Info: figures/Capitolo_3/APR4_q09/L1_wf_white_inj_rec.png  u
-sed on input line 71.
-(pdftex.def)             Requested size: 217.66211pt x 129.06181pt.
-<figures/Capitolo_3/APR4_q09/L1_wf_white_inj_rec_fft.png, id=58, 798.985pt x 47
-3.77pt>
-File: figures/Capitolo_3/APR4_q09/L1_wf_white_inj_rec_fft.png Graphic file (typ
+<use figures/Capitolo_4/APR4_q09/L1_wf_white_inj_rec.png>
+Package pdftex.def Info: figures/Capitolo_4/APR4_q09/L1_wf_white_inj_rec.png  u
+sed on input line 81.
+(pdftex.def)             Requested size: 193.47578pt x 114.7192pt.
+<figures/Capitolo_4/APR4_q09/L1_wf_white_inj_rec_fft.png, id=492, 798.985pt x 4
+73.77pt>
+File: figures/Capitolo_4/APR4_q09/L1_wf_white_inj_rec_fft.png Graphic file (typ
 e png)
-<use figures/Capitolo_3/APR4_q09/L1_wf_white_inj_rec_fft.png>
-Package pdftex.def Info: figures/Capitolo_3/APR4_q09/L1_wf_white_inj_rec_fft.pn
-g  used on input line 73.
-(pdftex.def)             Requested size: 217.66211pt x 129.06181pt.
-<figures/Capitolo_3/SHT2.0spinf1_1/l_tfmap_scalogram.png, id=61, 798.985pt x 57
-4.145pt>
-File: figures/Capitolo_3/SHT2.0spinf1_1/l_tfmap_scalogram.png Graphic file (typ
+<use figures/Capitolo_4/APR4_q09/L1_wf_white_inj_rec_fft.png>
+Package pdftex.def Info: figures/Capitolo_4/APR4_q09/L1_wf_white_inj_rec_fft.pn
+g  used on input line 83.
+(pdftex.def)             Requested size: 193.47578pt x 114.7192pt.
+<figures/Capitolo_4/SHT2.0spinf1_1/l_tfmap_scalogram.png, id=495, 798.985pt x 5
+74.145pt>
+File: figures/Capitolo_4/SHT2.0spinf1_1/l_tfmap_scalogram.png Graphic file (typ
 e png)
-<use figures/Capitolo_3/SHT2.0spinf1_1/l_tfmap_scalogram.png>
-Package pdftex.def Info: figures/Capitolo_3/SHT2.0spinf1_1/l_tfmap_scalogram.pn
-g  used on input line 86.
+<use figures/Capitolo_4/SHT2.0spinf1_1/l_tfmap_scalogram.png>
+Package pdftex.def Info: figures/Capitolo_4/SHT2.0spinf1_1/l_tfmap_scalogram.pn
+g  used on input line 96.
 (pdftex.def)             Requested size: 241.84843pt x 173.78671pt.
-<figures/Capitolo_3/SHT2.2spinf1_1/l_tfmap_scalogram.png, id=62, 798.985pt x 57
-4.145pt>
-File: figures/Capitolo_3/SHT2.2spinf1_1/l_tfmap_scalogram.png Graphic file (typ
+<figures/Capitolo_4/SHT2.2spinf1_1/l_tfmap_scalogram.png, id=496, 798.985pt x 5
+74.145pt>
+File: figures/Capitolo_4/SHT2.2spinf1_1/l_tfmap_scalogram.png Graphic file (typ
 e png)
-<use figures/Capitolo_3/SHT2.2spinf1_1/l_tfmap_scalogram.png>
-Package pdftex.def Info: figures/Capitolo_3/SHT2.2spinf1_1/l_tfmap_scalogram.pn
-g  used on input line 88.
+<use figures/Capitolo_4/SHT2.2spinf1_1/l_tfmap_scalogram.png>
+Package pdftex.def Info: figures/Capitolo_4/SHT2.2spinf1_1/l_tfmap_scalogram.pn
+g  used on input line 98.
 (pdftex.def)             Requested size: 241.84843pt x 173.78671pt.
-<figures/Capitolo_4/Network_SNR_FactorsSHT2_0spin1.pdf, id=63, 569.12625pt x 73
-6.7525pt>
-File: figures/Capitolo_4/Network_SNR_FactorsSHT2_0spin1.pdf Graphic file (type 
-pdf)
-<use figures/Capitolo_4/Network_SNR_FactorsSHT2_0spin1.pdf>
-Package pdftex.def Info: figures/Capitolo_4/Network_SNR_FactorsSHT2_0spin1.pdf 
- used on input line 102.
-(pdftex.def)             Requested size: 241.84843pt x 313.08757pt.
-<figures/Capitolo_4/Network_SNR_FactorsAPR4_q09.pdf, id=64, 569.12625pt x 736.7
-525pt>
-File: figures/Capitolo_4/Network_SNR_FactorsAPR4_q09.pdf Graphic file (type pdf
+
+Underfull \vbox (badness 1231) has occurred while \output is active []
+
+ [14 <./figures/Capitolo_4/SHT2.0.pdf> <./figures/Capitolo_4/SHT2.2.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/Capitolo_4/SHT2.2.pdf): PDF i
+nclusion: multiple pdfs with page group included in a single page
+> <./figures/Capitolo_4/APR4_q09/L1_spectrogram_logy_0.png> <./figures/Capitolo
+_4/APR4_q09/H1_spectrogram_logy_0.png> <./figures/Capitolo_4/APR4_q09/V1_spectr
+ogram_logy_0.png> <./figures/Capitolo_4/APR4_q09/l_tfmap_scalogram.png> <./figu
+res/Capitolo_4/APR4_q09/L1_wf_white_inj_rec.png> <./figures/Capitolo_4/APR4_q09
+/L1_wf_white_inj_rec_fft.png>]
+<figures/Capitolo_4/report/factorsSHT2_0spin1.pdf, id=557, 569.12625pt x 534.99
+875pt>
+File: figures/Capitolo_4/report/factorsSHT2_0spin1.pdf Graphic file (type pdf)
+<use figures/Capitolo_4/report/factorsSHT2_0spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/factorsSHT2_0spin1.pdf  used
+ on input line 116.
+(pdftex.def)             Requested size: 145.11053pt x 136.41063pt.
+<figures/Capitolo_4/report/ipositionSHT2_0spin1.pdf, id=558, 569.12625pt x 266.
+9975pt>
+File: figures/Capitolo_4/report/ipositionSHT2_0spin1.pdf Graphic file (type pdf
 )
-<use figures/Capitolo_4/Network_SNR_FactorsAPR4_q09.pdf>
-Package pdftex.def Info: figures/Capitolo_4/Network_SNR_FactorsAPR4_q09.pdf  us
-ed on input line 104.
-(pdftex.def)             Requested size: 241.84843pt x 313.08757pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
-Make it at least 13.59999pt.
-We now make it that large for the rest of the document.
-This may cause the page layout to be inconsistent, however.
-
-[2 <./figures/Capitolo_3/APR4_q09/l_tfmap_scalogram.png> <./figures/Capitolo_3/
-APR4_q09/L1_wf_white_inj_rec.png> <./figures/Capitolo_3/APR4_q09/L1_wf_white_in
-j_rec_fft.png> <./figures/Capitolo_3/SHT2.0spinf1_1/l_tfmap_scalogram.png> <./f
-igures/Capitolo_3/SHT2.2spinf1_1/l_tfmap_scalogram.png>]
-<figures/Capitolo_4/FITSHT2_0spin1.pdf, id=78, 569.12625pt x 107.40125pt>
-File: figures/Capitolo_4/FITSHT2_0spin1.pdf Graphic file (type pdf)
-<use figures/Capitolo_4/FITSHT2_0spin1.pdf>
-Package pdftex.def Info: figures/Capitolo_4/FITSHT2_0spin1.pdf  used on input l
-ine 115.
-(pdftex.def)             Requested size: 483.69687pt x 91.28328pt.
-<figures/Capitolo_4/FITAPR4_q09.pdf, id=79, 569.12625pt x 107.40125pt>
-File: figures/Capitolo_4/FITAPR4_q09.pdf Graphic file (type pdf)
-<use figures/Capitolo_4/FITAPR4_q09.pdf>
-Package pdftex.def Info: figures/Capitolo_4/FITAPR4_q09.pdf  used on input line
- 118.
-(pdftex.def)             Requested size: 483.69687pt x 91.28328pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (13.59999pt): 
-Make it at least 13.9186pt.
-We now make it that large for the rest of the document.
-This may cause the page layout to be inconsistent, however.
-
-[3 <./figures/Capitolo_4/Network_SNR_FactorsSHT2_0spin1.pdf> <./figures/Capitol
-o_4/Network_SNR_FactorsAPR4_q09.pdf> <./figures/Capitolo_4/FITSHT2_0spin1.pdf, 
-page is rotated 90 degrees> <./figures/Capitolo_4/FITAPR4_q09.pdf, page is rota
-ted 90 degrees>]
-<figures/Capitolo_4/EnergyDistributionDetector1SHT2_0spin1.pdf, id=262, 569.126
-25pt x 384.43625pt>
-File: figures/Capitolo_4/EnergyDistributionDetector1SHT2_0spin1.pdf Graphic fil
+<use figures/Capitolo_4/report/ipositionSHT2_0spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/ipositionSHT2_0spin1.pdf  us
+ed on input line 118.
+(pdftex.def)             Requested size: 290.22107pt x 136.15875pt.
+<figures/Capitolo_4/report/Network_iSNR_FactorsSHT2_0spin1.pdf, id=560, 569.126
+25pt x 555.07375pt>
+File: figures/Capitolo_4/report/Network_iSNR_FactorsSHT2_0spin1.pdf Graphic fil
 e (type pdf)
-<use figures/Capitolo_4/EnergyDistributionDetector1SHT2_0spin1.pdf>
-Package pdftex.def Info: figures/Capitolo_4/EnergyDistributionDetector1SHT2_0sp
-in1.pdf  used on input line 138.
-(pdftex.def)             Requested size: 241.84843pt x 163.36858pt.
-<figures/Capitolo_4/EnergyDistributionDetector1APR4_q09.pdf, id=263, 569.12625p
-t x 384.43625pt>
-File: figures/Capitolo_4/EnergyDistributionDetector1APR4_q09.pdf Graphic file (
+<use figures/Capitolo_4/report/Network_iSNR_FactorsSHT2_0spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/Network_iSNR_FactorsSHT2_0sp
+in1.pdf  used on input line 129.
+(pdftex.def)             Requested size: 161.22983pt x 157.24904pt.
+<figures/Capitolo_4/report/Network_iSNR_FactorsSHT2_2spin1.pdf, id=561, 569.126
+25pt x 555.07375pt>
+File: figures/Capitolo_4/report/Network_iSNR_FactorsSHT2_2spin1.pdf Graphic fil
+e (type pdf)
+<use figures/Capitolo_4/report/Network_iSNR_FactorsSHT2_2spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/Network_iSNR_FactorsSHT2_2sp
+in1.pdf  used on input line 131.
+(pdftex.def)             Requested size: 161.22983pt x 157.24904pt.
+<figures/Capitolo_4/report/Network_iSNR_FactorsAPR4_q09.pdf, id=562, 569.12625p
+t x 555.07375pt>
+File: figures/Capitolo_4/report/Network_iSNR_FactorsAPR4_q09.pdf Graphic file (
 type pdf)
-<use figures/Capitolo_4/EnergyDistributionDetector1APR4_q09.pdf>
-Package pdftex.def Info: figures/Capitolo_4/EnergyDistributionDetector1APR4_q09
-.pdf  used on input line 140.
-(pdftex.def)             Requested size: 241.84843pt x 163.36858pt.
-<figures/Capitolo_4/OverlapDistributionDetector1SHT2_0spin1.pdf, id=264, 569.12
-625pt x 480.79625pt>
-File: figures/Capitolo_4/OverlapDistributionDetector1SHT2_0spin1.pdf Graphic fi
+<use figures/Capitolo_4/report/Network_iSNR_FactorsAPR4_q09.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/Network_iSNR_FactorsAPR4_q09
+.pdf  used on input line 133.
+(pdftex.def)             Requested size: 161.22983pt x 157.24904pt.
+ [15 <./figures/Capitolo_4/SHT2.0spinf1_1/l_tfmap_scalogram.png> <./figures/Cap
+itolo_4/SHT2.2spinf1_1/l_tfmap_scalogram.png> <./figures/Capitolo_4/report/fact
+orsSHT2_0spin1.pdf, page is rotated 90 degrees> <./figures/Capitolo_4/report/ip
+ositionSHT2_0spin1.pdf, page is rotated 90 degrees>]
+<figures/Capitolo_4/report/RfactorsSHT2_0spin1.pdf, id=663, 569.12625pt x 534.9
+9875pt>
+File: figures/Capitolo_4/report/RfactorsSHT2_0spin1.pdf Graphic file (type pdf)
+
+<use figures/Capitolo_4/report/RfactorsSHT2_0spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/RfactorsSHT2_0spin1.pdf  use
+d on input line 152.
+(pdftex.def)             Requested size: 145.11053pt x 136.41063pt.
+<figures/Capitolo_4/report/RopositionSHT2_0spin1.pdf, id=664, 569.12625pt x 266
+.9975pt>
+File: figures/Capitolo_4/report/RopositionSHT2_0spin1.pdf Graphic file (type pd
+f)
+<use figures/Capitolo_4/report/RopositionSHT2_0spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/RopositionSHT2_0spin1.pdf  u
+sed on input line 154.
+(pdftex.def)             Requested size: 290.22107pt x 136.15875pt.
+<figures/Capitolo_4/report/FITSHT2_0spin1.pdf, id=665, 569.12625pt x 108.405pt>
+
+File: figures/Capitolo_4/report/FITSHT2_0spin1.pdf Graphic file (type pdf)
+<use figures/Capitolo_4/report/FITSHT2_0spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/FITSHT2_0spin1.pdf  used on 
+input line 193.
+(pdftex.def)             Requested size: 483.69687pt x 92.1364pt.
+<figures/Capitolo_4/report/FITSHT2_2spin1.pdf, id=666, 569.12625pt x 108.405pt>
+
+File: figures/Capitolo_4/report/FITSHT2_2spin1.pdf Graphic file (type pdf)
+<use figures/Capitolo_4/report/FITSHT2_2spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/FITSHT2_2spin1.pdf  used on 
+input line 196.
+(pdftex.def)             Requested size: 483.69687pt x 92.1364pt.
+<figures/Capitolo_4/report/FITAPR4_q09.pdf, id=667, 569.12625pt x 108.405pt>
+File: figures/Capitolo_4/report/FITAPR4_q09.pdf Graphic file (type pdf)
+<use figures/Capitolo_4/report/FITAPR4_q09.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/FITAPR4_q09.pdf  used on inp
+ut line 199.
+(pdftex.def)             Requested size: 483.69687pt x 92.1364pt.
+<figures/Capitolo_4/report/RatioResidualEnergyDistributionDetector1SHT2_0spin1.
+pdf, id=670, 569.12625pt x 384.43625pt>
+File: figures/Capitolo_4/report/RatioResidualEnergyDistributionDetector1SHT2_0s
+pin1.pdf Graphic file (type pdf)
+<use figures/Capitolo_4/report/RatioResidualEnergyDistributionDetector1SHT2_0sp
+in1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/RatioResidualEnergyDistribut
+ionDetector1SHT2_0spin1.pdf  used on input line 252.
+(pdftex.def)             Requested size: 161.22983pt x 108.90846pt.
+<figures/Capitolo_4/report/RatioResidualEnergyDistributionDetector1SHT2_2spin1.
+pdf, id=671, 569.12625pt x 384.43625pt>
+File: figures/Capitolo_4/report/RatioResidualEnergyDistributionDetector1SHT2_2s
+pin1.pdf Graphic file (type pdf)
+<use figures/Capitolo_4/report/RatioResidualEnergyDistributionDetector1SHT2_2sp
+in1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/RatioResidualEnergyDistribut
+ionDetector1SHT2_2spin1.pdf  used on input line 254.
+(pdftex.def)             Requested size: 161.22983pt x 108.90846pt.
+<figures/Capitolo_4/report/RatioResidualEnergyDistributionDetector1APR4_q09.pdf
+, id=672, 569.12625pt x 384.43625pt>
+File: figures/Capitolo_4/report/RatioResidualEnergyDistributionDetector1APR4_q0
+9.pdf Graphic file (type pdf)
+<use figures/Capitolo_4/report/RatioResidualEnergyDistributionDetector1APR4_q09
+.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/RatioResidualEnergyDistribut
+ionDetector1APR4_q09.pdf  used on input line 256.
+(pdftex.def)             Requested size: 161.22983pt x 108.90846pt.
+<figures/Capitolo_4/report/OverlapDistributionDetector1SHT2_0spin1.pdf, id=673,
+ 569.12625pt x 338.26375pt>
+File: figures/Capitolo_4/report/OverlapDistributionDetector1SHT2_0spin1.pdf Gra
+phic file (type pdf)
+<use figures/Capitolo_4/report/OverlapDistributionDetector1SHT2_0spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/OverlapDistributionDetector1
+SHT2_0spin1.pdf  used on input line 266.
+(pdftex.def)             Requested size: 159.62085pt x 94.8732pt.
+<figures/Capitolo_4/report/OverlapDistributionDetector2SHT2_0spin1.pdf, id=674,
+ 569.12625pt x 338.26375pt>
+File: figures/Capitolo_4/report/OverlapDistributionDetector2SHT2_0spin1.pdf Gra
+phic file (type pdf)
+<use figures/Capitolo_4/report/OverlapDistributionDetector2SHT2_0spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/OverlapDistributionDetector2
+SHT2_0spin1.pdf  used on input line 268.
+(pdftex.def)             Requested size: 159.62085pt x 94.8732pt.
+<figures/Capitolo_4/report/OverlapDistributionDetector3SHT2_0spin1.pdf, id=675,
+ 569.12625pt x 338.26375pt>
+File: figures/Capitolo_4/report/OverlapDistributionDetector3SHT2_0spin1.pdf Gra
+phic file (type pdf)
+<use figures/Capitolo_4/report/OverlapDistributionDetector3SHT2_0spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/OverlapDistributionDetector3
+SHT2_0spin1.pdf  used on input line 270.
+(pdftex.def)             Requested size: 159.62085pt x 94.8732pt.
+<figures/Capitolo_4/report/OverlapDistributionDetector1SHT2_2spin1.pdf, id=676,
+ 569.12625pt x 338.26375pt>
+File: figures/Capitolo_4/report/OverlapDistributionDetector1SHT2_2spin1.pdf Gra
+phic file (type pdf)
+<use figures/Capitolo_4/report/OverlapDistributionDetector1SHT2_2spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/OverlapDistributionDetector1
+SHT2_2spin1.pdf  used on input line 273.
+(pdftex.def)             Requested size: 159.62085pt x 94.8732pt.
+<figures/Capitolo_4/report/OverlapDistributionDetector2SHT2_2spin1.pdf, id=677,
+ 569.12625pt x 338.26375pt>
+File: figures/Capitolo_4/report/OverlapDistributionDetector2SHT2_2spin1.pdf Gra
+phic file (type pdf)
+<use figures/Capitolo_4/report/OverlapDistributionDetector2SHT2_2spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/OverlapDistributionDetector2
+SHT2_2spin1.pdf  used on input line 275.
+(pdftex.def)             Requested size: 159.62085pt x 94.8732pt.
+<figures/Capitolo_4/report/OverlapDistributionDetector3SHT2_2spin1.pdf, id=678,
+ 569.12625pt x 338.26375pt>
+File: figures/Capitolo_4/report/OverlapDistributionDetector3SHT2_2spin1.pdf Gra
+phic file (type pdf)
+<use figures/Capitolo_4/report/OverlapDistributionDetector3SHT2_2spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/OverlapDistributionDetector3
+SHT2_2spin1.pdf  used on input line 277.
+(pdftex.def)             Requested size: 159.62085pt x 94.8732pt.
+<figures/Capitolo_4/report/OverlapDistributionDetector1APR4_q09.pdf, id=679, 56
+9.12625pt x 338.26375pt>
+File: figures/Capitolo_4/report/OverlapDistributionDetector1APR4_q09.pdf Graphi
+c file (type pdf)
+<use figures/Capitolo_4/report/OverlapDistributionDetector1APR4_q09.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/OverlapDistributionDetector1
+APR4_q09.pdf  used on input line 280.
+(pdftex.def)             Requested size: 159.62085pt x 94.8732pt.
+<figures/Capitolo_4/report/OverlapDistributionDetector2APR4_q09.pdf, id=680, 56
+9.12625pt x 338.26375pt>
+File: figures/Capitolo_4/report/OverlapDistributionDetector2APR4_q09.pdf Graphi
+c file (type pdf)
+<use figures/Capitolo_4/report/OverlapDistributionDetector2APR4_q09.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/OverlapDistributionDetector2
+APR4_q09.pdf  used on input line 282.
+(pdftex.def)             Requested size: 159.62085pt x 94.8732pt.
+<figures/Capitolo_4/report/OverlapDistributionDetector3APR4_q09.pdf, id=681, 56
+9.12625pt x 338.26375pt>
+File: figures/Capitolo_4/report/OverlapDistributionDetector3APR4_q09.pdf Graphi
+c file (type pdf)
+<use figures/Capitolo_4/report/OverlapDistributionDetector3APR4_q09.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/OverlapDistributionDetector3
+APR4_q09.pdf  used on input line 284.
+(pdftex.def)             Requested size: 159.62085pt x 94.8732pt.
+<figures/Capitolo_4/report/OverlapDistributionsALLDetector1APR4_q09.pdf, id=682
+, 569.12625pt x 441.65pt>
+File: figures/Capitolo_4/report/OverlapDistributionsALLDetector1APR4_q09.pdf Gr
+aphic file (type pdf)
+<use figures/Capitolo_4/report/OverlapDistributionsALLDetector1APR4_q09.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/OverlapDistributionsALLDetec
+tor1APR4_q09.pdf  used on input line 325.
+(pdftex.def)             Requested size: 159.62085pt x 123.87006pt.
+ [16 <./figures/Capitolo_4/report/Network_iSNR_FactorsSHT2_0spin1.pdf, page is 
+rotated 90 degrees> <./figures/Capitolo_4/report/Network_iSNR_FactorsSHT2_2spin
+1.pdf, page is rotated 90 degrees> <./figures/Capitolo_4/report/Network_iSNR_Fa
+ctorsAPR4_q09.pdf, page is rotated 90 degrees> <./figures/Capitolo_4/report/Rfa
+ctorsSHT2_0spin1.pdf, page is rotated 90 degrees> <./figures/Capitolo_4/report/
+RopositionSHT2_0spin1.pdf, page is rotated 90 degrees>]
+<figures/Capitolo_4/report/overlaps_Colors_GrapgSHT2_0spin1.pdf, id=911, 569.12
+625pt x 409.53pt>
+File: figures/Capitolo_4/report/overlaps_Colors_GrapgSHT2_0spin1.pdf Graphic fi
 le (type pdf)
-<use figures/Capitolo_4/OverlapDistributionDetector1SHT2_0spin1.pdf>
-Package pdftex.def Info: figures/Capitolo_4/OverlapDistributionDetector1SHT2_0s
-pin1.pdf  used on input line 150.
-(pdftex.def)             Requested size: 159.62085pt x 134.84944pt.
-<figures/Capitolo_4/OverlapDistributionDetector2SHT2_0spin1.pdf, id=265, 569.12
-625pt x 480.79625pt>
-File: figures/Capitolo_4/OverlapDistributionDetector2SHT2_0spin1.pdf Graphic fi
+<use figures/Capitolo_4/report/overlaps_Colors_GrapgSHT2_0spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/overlaps_Colors_GrapgSHT2_0s
+pin1.pdf  used on input line 370.
+(pdftex.def)             Requested size: 161.22983pt x 116.01738pt.
+<figures/Capitolo_4/report/overlaps_Colors_GrapgSHT2_2spin1.pdf, id=912, 569.12
+625pt x 409.53pt>
+File: figures/Capitolo_4/report/overlaps_Colors_GrapgSHT2_2spin1.pdf Graphic fi
 le (type pdf)
-<use figures/Capitolo_4/OverlapDistributionDetector2SHT2_0spin1.pdf>
-Package pdftex.def Info: figures/Capitolo_4/OverlapDistributionDetector2SHT2_0s
-pin1.pdf  used on input line 152.
-(pdftex.def)             Requested size: 159.62085pt x 134.84944pt.
-<figures/Capitolo_4/OverlapDistributionDetector3SHT2_0spin1.pdf, id=266, 569.12
-625pt x 480.79625pt>
-File: figures/Capitolo_4/OverlapDistributionDetector3SHT2_0spin1.pdf Graphic fi
-le (type pdf)
-<use figures/Capitolo_4/OverlapDistributionDetector3SHT2_0spin1.pdf>
-Package pdftex.def Info: figures/Capitolo_4/OverlapDistributionDetector3SHT2_0s
-pin1.pdf  used on input line 154.
-(pdftex.def)             Requested size: 159.62085pt x 134.84944pt.
-<figures/Capitolo_4/OverlapDistributionDetector1APR4_q09.pdf, id=267, 569.12625
-pt x 480.79625pt>
+<use figures/Capitolo_4/report/overlaps_Colors_GrapgSHT2_2spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/overlaps_Colors_GrapgSHT2_2s
+pin1.pdf  used on input line 372.
+(pdftex.def)             Requested size: 161.22983pt x 116.01738pt.
+<figures/Capitolo_4/report/overlaps_Colors_GrapgAPR4_q09.pdf, id=913, 569.12625
+pt x 409.53pt>
+File: figures/Capitolo_4/report/overlaps_Colors_GrapgAPR4_q09.pdf Graphic file 
+(type pdf)
+<use figures/Capitolo_4/report/overlaps_Colors_GrapgAPR4_q09.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/overlaps_Colors_GrapgAPR4_q0
+9.pdf  used on input line 374.
+(pdftex.def)             Requested size: 161.22983pt x 116.01738pt.
+<figures/Capitolo_4/OverlapDistributionDetector1APR4_q09.pdf, id=916, 569.12625
+pt x 382.42876pt>
 File: figures/Capitolo_4/OverlapDistributionDetector1APR4_q09.pdf Graphic file 
 (type pdf)
 <use figures/Capitolo_4/OverlapDistributionDetector1APR4_q09.pdf>
 Package pdftex.def Info: figures/Capitolo_4/OverlapDistributionDetector1APR4_q0
-9.pdf  used on input line 157.
-(pdftex.def)             Requested size: 159.62085pt x 134.84944pt.
-<figures/Capitolo_4/OverlapDistributionDetector2APR4_q09.pdf, id=268, 569.12625
-pt x 480.79625pt>
-File: figures/Capitolo_4/OverlapDistributionDetector2APR4_q09.pdf Graphic file 
-(type pdf)
-<use figures/Capitolo_4/OverlapDistributionDetector2APR4_q09.pdf>
-Package pdftex.def Info: figures/Capitolo_4/OverlapDistributionDetector2APR4_q0
-9.pdf  used on input line 159.
-(pdftex.def)             Requested size: 159.62085pt x 134.84944pt.
-<figures/Capitolo_4/OverlapDistributionDetector3APR4_q09.pdf, id=269, 569.12625
-pt x 480.79625pt>
-File: figures/Capitolo_4/OverlapDistributionDetector3APR4_q09.pdf Graphic file 
-(type pdf)
-<use figures/Capitolo_4/OverlapDistributionDetector3APR4_q09.pdf>
-Package pdftex.def Info: figures/Capitolo_4/OverlapDistributionDetector3APR4_q0
-9.pdf  used on input line 161.
-(pdftex.def)             Requested size: 159.62085pt x 134.84944pt.
-<figures/Capitolo_4/FrequencyLHDistributionDetector1SHT2_0spin1.pdf, id=271, 56
-9.12625pt x 384.43625pt>
-File: figures/Capitolo_4/FrequencyLHDistributionDetector1SHT2_0spin1.pdf Graphi
-c file (type pdf)
-<use figures/Capitolo_4/FrequencyLHDistributionDetector1SHT2_0spin1.pdf>
-Package pdftex.def Info: figures/Capitolo_4/FrequencyLHDistributionDetector1SHT
-2_0spin1.pdf  used on input line 172.
-(pdftex.def)             Requested size: 241.84843pt x 163.36858pt.
-<figures/Capitolo_4/FrequencyLHDistributionDetector1APR4_q09.pdf, id=272, 569.1
-2625pt x 384.43625pt>
+9.pdf  used on input line 388.
+(pdftex.def)             Requested size: 193.47578pt x 130.00655pt.
+<figures/Capitolo_4/FrequencyLHDistributionDetector1APR4_q09.pdf, id=917, 569.1
+2625pt x 382.42876pt>
 File: figures/Capitolo_4/FrequencyLHDistributionDetector1APR4_q09.pdf Graphic f
 ile (type pdf)
 <use figures/Capitolo_4/FrequencyLHDistributionDetector1APR4_q09.pdf>
 Package pdftex.def Info: figures/Capitolo_4/FrequencyLHDistributionDetector1APR
-4_q09.pdf  used on input line 174.
-(pdftex.def)             Requested size: 241.84843pt x 163.36858pt.
- [4 <./figures/Capitolo_4/EnergyDistributionDetector1SHT2_0spin1.pdf, page is r
-otated 90 degrees> <./figures/Capitolo_4/EnergyDistributionDetector1APR4_q09.pd
-f, page is rotated 90 degrees> <./figures/Capitolo_4/OverlapDistributionDetecto
-r1SHT2_0spin1.pdf, page is rotated 90 degrees> <./figures/Capitolo_4/OverlapDis
-tributionDetector2SHT2_0spin1.pdf, page is rotated 90 degrees> <./figures/Capit
-olo_4/OverlapDistributionDetector3SHT2_0spin1.pdf, page is rotated 90 degrees> 
-<./figures/Capitolo_4/OverlapDistributionDetector1APR4_q09.pdf, page is rotated
- 90 degrees> <./figures/Capitolo_4/OverlapDistributionDetector2APR4_q09.pdf, pa
-ge is rotated 90 degrees> <./figures/Capitolo_4/OverlapDistributionDetector3APR
-4_q09.pdf, page is rotated 90 degrees>]
-<figures/Capitolo_4/FITAPR4_q09_CUT.pdf, id=635, 569.12625pt x 107.40125pt>
-File: figures/Capitolo_4/FITAPR4_q09_CUT.pdf Graphic file (type pdf)
-<use figures/Capitolo_4/FITAPR4_q09_CUT.pdf>
-Package pdftex.def Info: figures/Capitolo_4/FITAPR4_q09_CUT.pdf  used on input 
-line 186.
-(pdftex.def)             Requested size: 483.69687pt x 91.28328pt.
-<figures/Capitolo_4/EnergyDistributionFactorDetector1APR4_q09_CUT.pdf, id=636, 
-569.12625pt x 107.40125pt>
-File: figures/Capitolo_4/EnergyDistributionFactorDetector1APR4_q09_CUT.pdf Grap
-hic file (type pdf)
-<use figures/Capitolo_4/EnergyDistributionFactorDetector1APR4_q09_CUT.pdf>
-Package pdftex.def Info: figures/Capitolo_4/EnergyDistributionFactorDetector1AP
-R4_q09_CUT.pdf  used on input line 189.
-(pdftex.def)             Requested size: 483.69687pt x 91.28328pt.
-<figures/Capitolo_4/OverlapDistributionFactorDetector2APR4_q09_CUT.pdf, id=637,
- 569.12625pt x 107.40125pt>
-File: figures/Capitolo_4/OverlapDistributionFactorDetector2APR4_q09_CUT.pdf Gra
-phic file (type pdf)
-<use figures/Capitolo_4/OverlapDistributionFactorDetector2APR4_q09_CUT.pdf>
-Package pdftex.def Info: figures/Capitolo_4/OverlapDistributionFactorDetector2A
-PR4_q09_CUT.pdf  used on input line 192.
-(pdftex.def)             Requested size: 483.69687pt x 91.28328pt.
- [5 <./figures/Capitolo_4/FrequencyLHDistributionDetector1SHT2_0spin1.pdf, page
- is rotated 90 degrees> <./figures/Capitolo_4/FrequencyLHDistributionDetector1A
-PR4_q09.pdf, page is rotated 90 degrees> <./figures/Capitolo_4/FITAPR4_q09_CUT.
-pdf, page is rotated 90 degrees> <./figures/Capitolo_4/EnergyDistributionFactor
-Detector1APR4_q09_CUT.pdf, page is rotated 90 degrees> <./figures/Capitolo_4/Ov
-erlapDistributionFactorDetector2APR4_q09_CUT.pdf, page is rotated 90 degrees>]
-<figures/Capitolo_4/OverlapDistributionsDetector1APR4_q09_CUT_1.pdf, id=864, 56
-9.12625pt x 272.01625pt>
-File: figures/Capitolo_4/OverlapDistributionsDetector1APR4_q09_CUT_1.pdf Graphi
-c file (type pdf)
-<use figures/Capitolo_4/OverlapDistributionsDetector1APR4_q09_CUT_1.pdf>
-Package pdftex.def Info: figures/Capitolo_4/OverlapDistributionsDetector1APR4_q
-09_CUT_1.pdf  used on input line 216.
-(pdftex.def)             Requested size: 483.69687pt x 231.19414pt.
-<figures/Capitolo_4/Overlaps_GrapgDetector1SHT2_0spin1.pdf, id=865, 569.12625pt
- x 408.52625pt>
-File: figures/Capitolo_4/Overlaps_GrapgDetector1SHT2_0spin1.pdf Graphic file (t
-ype pdf)
-<use figures/Capitolo_4/Overlaps_GrapgDetector1SHT2_0spin1.pdf>
-Package pdftex.def Info: figures/Capitolo_4/Overlaps_GrapgDetector1SHT2_0spin1.
-pdf  used on input line 226.
-(pdftex.def)             Requested size: 237.01411pt x 170.13365pt.
-<figures/Capitolo_4/Overlaps_GrapgDetector1APR4_q09_CUT.pdf, id=866, 569.12625p
-t x 408.52625pt>
-File: figures/Capitolo_4/Overlaps_GrapgDetector1APR4_q09_CUT.pdf Graphic file (
-type pdf)
-<use figures/Capitolo_4/Overlaps_GrapgDetector1APR4_q09_CUT.pdf>
-Package pdftex.def Info: figures/Capitolo_4/Overlaps_GrapgDetector1APR4_q09_CUT
-.pdf  used on input line 228.
-(pdftex.def)             Requested size: 237.01411pt x 170.13365pt.
-) [6 <./figures/Capitolo_4/OverlapDistributionsDetector1APR4_q09_CUT_1.pdf, pag
-e is rotated 90 degrees> <./figures/Capitolo_4/Overlaps_GrapgDetector1SHT2_0spi
-n1.pdf, page is rotated 90 degrees> <./figures/Capitolo_4/Overlaps_GrapgDetecto
-r1APR4_q09_CUT.pdf, page is rotated 90 degrees>] (./Tesi_Triennale_PMNS.bbl
-Underfull \hbox (badness 1762) in paragraph at lines 11--16
-\T1/ptm/m/it/10.95 The Astro-phy-si-cal Jour-nal\T1/ptm/m/n/10.95 , 851(1):L16,
- Dec
+4_q09.pdf  used on input line 390.
+(pdftex.def)             Requested size: 193.47578pt x 130.00655pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17 <./figures/Capitolo_4/report/FITSHT2_0spin1.pdf, page is rotated 90 degree
+s> <./figures/Capitolo_4/report/FITSHT2_2spin1.pdf, page is rotated 90 degrees>
+ <./figures/Capitolo_4/report/FITAPR4_q09.pdf, page is rotated 90 degrees> <./f
+igures/Capitolo_4/report/RatioResidualEnergyDistributionDetector1SHT2_0spin1.pd
+f, page is rotated 90 degrees> <./figures/Capitolo_4/report/RatioResidualEnergy
+DistributionDetector1SHT2_2spin1.pdf, page is rotated 90 degrees> <./figures/Ca
+pitolo_4/report/RatioResidualEnergyDistributionDetector1APR4_q09.pdf, page is r
+otated 90 degrees> <./figures/Capitolo_4/report/OverlapDistributionsALLDetector
+1APR4_q09.pdf, page is rotated 90 degrees>] [18 <./figures/Capitolo_4/report/Ov
+erlapDistributionDetector1SHT2_0spin1.pdf, page is rotated 90 degrees> <./figur
+es/Capitolo_4/report/OverlapDistributionDetector2SHT2_0spin1.pdf, page is rotat
+ed 90 degrees> <./figures/Capitolo_4/report/OverlapDistributionDetector3SHT2_0s
+pin1.pdf, page is rotated 90 degrees> <./figures/Capitolo_4/report/OverlapDistr
+ibutionDetector1SHT2_2spin1.pdf, page is rotated 90 degrees> <./figures/Capitol
+o_4/report/OverlapDistributionDetector2SHT2_2spin1.pdf, page is rotated 90 degr
+ees> <./figures/Capitolo_4/report/OverlapDistributionDetector3SHT2_2spin1.pdf, 
+page is rotated 90 degrees> <./figures/Capitolo_4/report/OverlapDistributionDet
+ector1APR4_q09.pdf, page is rotated 90 degrees> <./figures/Capitolo_4/report/Ov
+erlapDistributionDetector2APR4_q09.pdf, page is rotated 90 degrees> <./figures/
+Capitolo_4/report/OverlapDistributionDetector3APR4_q09.pdf, page is rotated 90 
+degrees> <./figures/Capitolo_4/report/overlaps_Colors_GrapgSHT2_0spin1.pdf, pag
+e is rotated 90 degrees> <./figures/Capitolo_4/report/overlaps_Colors_GrapgSHT2
+_2spin1.pdf, page is rotated 90 degrees> <./figures/Capitolo_4/report/overlaps_
+Colors_GrapgAPR4_q09.pdf, page is rotated 90 degrees>]
+<figures/Capitolo_4/dump/501/wdm64_501_2_layers64_rec_cut.png, id=1770, 800.992
+5pt x 576.1525pt>
+File: figures/Capitolo_4/dump/501/wdm64_501_2_layers64_rec_cut.png Graphic file
+ (type png)
+<use figures/Capitolo_4/dump/501/wdm64_501_2_layers64_rec_cut.png>
+Package pdftex.def Info: figures/Capitolo_4/dump/501/wdm64_501_2_layers64_rec_c
+ut.png  used on input line 425.
+(pdftex.def)             Requested size: 193.47578pt x 139.16734pt.
+<figures/Capitolo_4/dump/501/wdm64_501_2_layers64_recPM2.png, id=1771, 800.9925
+pt x 576.1525pt>
+File: figures/Capitolo_4/dump/501/wdm64_501_2_layers64_recPM2.png Graphic file 
+(type png)
+<use figures/Capitolo_4/dump/501/wdm64_501_2_layers64_recPM2.png>
+Package pdftex.def Info: figures/Capitolo_4/dump/501/wdm64_501_2_layers64_recPM
+2.png  used on input line 427.
+(pdftex.def)             Requested size: 193.47578pt x 139.16734pt.
+<figures/Capitolo_4/dump/501/V1_snr_cum_SHTdfdt_501.png, id=1772, 600.2425pt x 
+375.4025pt>
+File: figures/Capitolo_4/dump/501/V1_snr_cum_SHTdfdt_501.png Graphic file (type
+ png)
+<use figures/Capitolo_4/dump/501/V1_snr_cum_SHTdfdt_501.png>
+Package pdftex.def Info: figures/Capitolo_4/dump/501/V1_snr_cum_SHTdfdt_501.png
+  used on input line 457.
+(pdftex.def)             Requested size: 193.47578pt x 121.00192pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--463
+
+ []
+
+[19 <./figures/Capitolo_4/OverlapDistributionDetector1APR4_q09.pdf, page is rot
+ated 90 degrees> <./figures/Capitolo_4/FrequencyLHDistributionDetector1APR4_q09
+.pdf, page is rotated 90 degrees> <./figures/Capitolo_4/dump/501/wdm64_501_2_la
+yers64_rec_cut.png> <./figures/Capitolo_4/dump/501/wdm64_501_2_layers64_recPM2.
+png> <./figures/Capitolo_4/dump/501/V1_snr_cum_SHTdfdt_501.png>]
+<figures/Capitolo_4/report/EnergyDistributionFactorDetector3SHT2_0spin1.pdf, id
+=1875, 569.12625pt x 108.405pt>
+File: figures/Capitolo_4/report/EnergyDistributionFactorDetector3SHT2_0spin1.pd
+f Graphic file (type pdf)
+<use figures/Capitolo_4/report/EnergyDistributionFactorDetector3SHT2_0spin1.pdf
+>
+Package pdftex.def Info: figures/Capitolo_4/report/EnergyDistributionFactorDete
+ctor3SHT2_0spin1.pdf  used on input line 478.
+(pdftex.def)             Requested size: 483.69687pt x 92.1364pt.
+<figures/Capitolo_4/report/EnergyDistributionFactorDetector3SHT2_2spin1.pdf, id
+=1876, 569.12625pt x 108.405pt>
+File: figures/Capitolo_4/report/EnergyDistributionFactorDetector3SHT2_2spin1.pd
+f Graphic file (type pdf)
+<use figures/Capitolo_4/report/EnergyDistributionFactorDetector3SHT2_2spin1.pdf
+>
+Package pdftex.def Info: figures/Capitolo_4/report/EnergyDistributionFactorDete
+ctor3SHT2_2spin1.pdf  used on input line 481.
+(pdftex.def)             Requested size: 483.69687pt x 92.1364pt.
+<figures/Capitolo_4/report/EnergyDistributionFactorDetector3APR4_q09.pdf, id=18
+77, 569.12625pt x 108.405pt>
+File: figures/Capitolo_4/report/EnergyDistributionFactorDetector3APR4_q09.pdf G
+raphic file (type pdf)
+<use figures/Capitolo_4/report/EnergyDistributionFactorDetector3APR4_q09.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/EnergyDistributionFactorDete
+ctor3APR4_q09.pdf  used on input line 484.
+(pdftex.def)             Requested size: 483.69687pt x 92.1364pt.
+<figures/Capitolo_4/report/energy_pm_Colors_GrapgSHT2_0spin1.pdf, id=1879, 569.
+12625pt x 409.53pt>
+File: figures/Capitolo_4/report/energy_pm_Colors_GrapgSHT2_0spin1.pdf Graphic f
+ile (type pdf)
+<use figures/Capitolo_4/report/energy_pm_Colors_GrapgSHT2_0spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/energy_pm_Colors_GrapgSHT2_0
+spin1.pdf  used on input line 493.
+(pdftex.def)             Requested size: 161.22983pt x 116.01738pt.
+<figures/Capitolo_4/report/energy_pm_Colors_GrapgSHT2_2spin1.pdf, id=1880, 569.
+12625pt x 409.53pt>
+File: figures/Capitolo_4/report/energy_pm_Colors_GrapgSHT2_2spin1.pdf Graphic f
+ile (type pdf)
+<use figures/Capitolo_4/report/energy_pm_Colors_GrapgSHT2_2spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/energy_pm_Colors_GrapgSHT2_2
+spin1.pdf  used on input line 495.
+(pdftex.def)             Requested size: 161.22983pt x 116.01738pt.
+<figures/Capitolo_4/report/energy_pm_Colors_GrapgAPR4_q09.pdf, id=1881, 569.126
+25pt x 409.53pt>
+File: figures/Capitolo_4/report/energy_pm_Colors_GrapgAPR4_q09.pdf Graphic file
+ (type pdf)
+<use figures/Capitolo_4/report/energy_pm_Colors_GrapgAPR4_q09.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/energy_pm_Colors_GrapgAPR4_q
+09.pdf  used on input line 497.
+(pdftex.def)             Requested size: 161.22983pt x 116.01738pt.
+<figures/Capitolo_4/report/Freq_PM_DistributionDetector3SHT2_0spin1.pdf, id=188
+4, 569.12625pt x 384.43625pt>
+File: figures/Capitolo_4/report/Freq_PM_DistributionDetector3SHT2_0spin1.pdf Gr
+aphic file (type pdf)
+<use figures/Capitolo_4/report/Freq_PM_DistributionDetector3SHT2_0spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/Freq_PM_DistributionDetector
+3SHT2_0spin1.pdf  used on input line 522.
+(pdftex.def)             Requested size: 161.22983pt x 108.90846pt.
+<figures/Capitolo_4/report/Freq_PM_DistributionDetector3SHT2_2spin1.pdf, id=188
+5, 569.12625pt x 384.43625pt>
+File: figures/Capitolo_4/report/Freq_PM_DistributionDetector3SHT2_2spin1.pdf Gr
+aphic file (type pdf)
+<use figures/Capitolo_4/report/Freq_PM_DistributionDetector3SHT2_2spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/Freq_PM_DistributionDetector
+3SHT2_2spin1.pdf  used on input line 524.
+(pdftex.def)             Requested size: 161.22983pt x 108.90846pt.
+<figures/Capitolo_4/report/Freq_PM_DistributionDetector3APR4_q09.pdf, id=1886, 
+569.12625pt x 384.43625pt>
+File: figures/Capitolo_4/report/Freq_PM_DistributionDetector3APR4_q09.pdf Graph
+ic file (type pdf)
+<use figures/Capitolo_4/report/Freq_PM_DistributionDetector3APR4_q09.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/Freq_PM_DistributionDetector
+3APR4_q09.pdf  used on input line 526.
+(pdftex.def)             Requested size: 161.22983pt x 108.90846pt.
+<figures/Capitolo_4/report/frequencies_Colors_GrapgSHT2_0spin1.pdf, id=1887, 56
+9.12625pt x 409.53pt>
+File: figures/Capitolo_4/report/frequencies_Colors_GrapgSHT2_0spin1.pdf Graphic
+ file (type pdf)
+<use figures/Capitolo_4/report/frequencies_Colors_GrapgSHT2_0spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/frequencies_Colors_GrapgSHT2
+_0spin1.pdf  used on input line 534.
+(pdftex.def)             Requested size: 161.22983pt x 116.01738pt.
+<figures/Capitolo_4/report/frequencies_Colors_GrapgSHT2_2spin1.pdf, id=1888, 56
+9.12625pt x 409.53pt>
+File: figures/Capitolo_4/report/frequencies_Colors_GrapgSHT2_2spin1.pdf Graphic
+ file (type pdf)
+<use figures/Capitolo_4/report/frequencies_Colors_GrapgSHT2_2spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/frequencies_Colors_GrapgSHT2
+_2spin1.pdf  used on input line 536.
+(pdftex.def)             Requested size: 161.22983pt x 116.01738pt.
+<figures/Capitolo_4/report/frequencies_Colors_GrapgAPR4_q09.pdf, id=1889, 569.1
+2625pt x 409.53pt>
+File: figures/Capitolo_4/report/frequencies_Colors_GrapgAPR4_q09.pdf Graphic fi
+le (type pdf)
+<use figures/Capitolo_4/report/frequencies_Colors_GrapgAPR4_q09.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/frequencies_Colors_GrapgAPR4
+_q09.pdf  used on input line 538.
+(pdftex.def)             Requested size: 161.22983pt x 116.01738pt.
+ [20 <./figures/Capitolo_4/report/EnergyDistributionFactorDetector3SHT2_0spin1.
+pdf, page is rotated 90 degrees> <./figures/Capitolo_4/report/EnergyDistributio
+nFactorDetector3SHT2_2spin1.pdf, page is rotated 90 degrees> <./figures/Capitol
+o_4/report/EnergyDistributionFactorDetector3APR4_q09.pdf, page is rotated 90 de
+grees>]
+<figures/Capitolo_4/report/bandwidth_Colors_GrapgSHT2_0spin1.pdf, id=2031, 569.
+12625pt x 409.53pt>
+File: figures/Capitolo_4/report/bandwidth_Colors_GrapgSHT2_0spin1.pdf Graphic f
+ile (type pdf)
+<use figures/Capitolo_4/report/bandwidth_Colors_GrapgSHT2_0spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/bandwidth_Colors_GrapgSHT2_0
+spin1.pdf  used on input line 548.
+(pdftex.def)             Requested size: 161.22983pt x 116.01738pt.
+<figures/Capitolo_4/report/bandwidth_Colors_GrapgSHT2_2spin1.pdf, id=2032, 569.
+12625pt x 409.53pt>
+File: figures/Capitolo_4/report/bandwidth_Colors_GrapgSHT2_2spin1.pdf Graphic f
+ile (type pdf)
+<use figures/Capitolo_4/report/bandwidth_Colors_GrapgSHT2_2spin1.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/bandwidth_Colors_GrapgSHT2_2
+spin1.pdf  used on input line 550.
+(pdftex.def)             Requested size: 161.22983pt x 116.01738pt.
+<figures/Capitolo_4/report/bandwidth_Colors_GrapgAPR4_q09.pdf, id=2033, 569.126
+25pt x 409.53pt>
+File: figures/Capitolo_4/report/bandwidth_Colors_GrapgAPR4_q09.pdf Graphic file
+ (type pdf)
+<use figures/Capitolo_4/report/bandwidth_Colors_GrapgAPR4_q09.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/bandwidth_Colors_GrapgAPR4_q
+09.pdf  used on input line 552.
+(pdftex.def)             Requested size: 161.22983pt x 116.01738pt.
+<figures/Capitolo_4/report/Likelihood_DistributionDetector1SHT2_0spin1.pdf, id=
+2035, 569.12625pt x 384.43625pt>
+File: figures/Capitolo_4/report/Likelihood_DistributionDetector1SHT2_0spin1.pdf
+ Graphic file (type pdf)
+<use figures/Capitolo_4/report/Likelihood_DistributionDetector1SHT2_0spin1.pdf>
+
+Package pdftex.def Info: figures/Capitolo_4/report/Likelihood_DistributionDetec
+tor1SHT2_0spin1.pdf  used on input line 574.
+(pdftex.def)             Requested size: 161.22983pt x 108.90846pt.
+<figures/Capitolo_4/report/Likelihood_DistributionDetector1SHT2_2spin1.pdf, id=
+2036, 569.12625pt x 384.43625pt>
+File: figures/Capitolo_4/report/Likelihood_DistributionDetector1SHT2_2spin1.pdf
+ Graphic file (type pdf)
+<use figures/Capitolo_4/report/Likelihood_DistributionDetector1SHT2_2spin1.pdf>
+
+Package pdftex.def Info: figures/Capitolo_4/report/Likelihood_DistributionDetec
+tor1SHT2_2spin1.pdf  used on input line 576.
+(pdftex.def)             Requested size: 161.22983pt x 108.90846pt.
+<figures/Capitolo_4/report/Likelihood_DistributionDetector1APR4_q09.pdf, id=203
+7, 569.12625pt x 384.43625pt>
+File: figures/Capitolo_4/report/Likelihood_DistributionDetector1APR4_q09.pdf Gr
+aphic file (type pdf)
+<use figures/Capitolo_4/report/Likelihood_DistributionDetector1APR4_q09.pdf>
+Package pdftex.def Info: figures/Capitolo_4/report/Likelihood_DistributionDetec
+tor1APR4_q09.pdf  used on input line 578.
+(pdftex.def)             Requested size: 161.22983pt x 108.90846pt.
+
+[21 <./figures/Capitolo_4/report/energy_pm_Colors_GrapgSHT2_0spin1.pdf, page is
+ rotated 90 degrees> <./figures/Capitolo_4/report/energy_pm_Colors_GrapgSHT2_2s
+pin1.pdf, page is rotated 90 degrees> <./figures/Capitolo_4/report/energy_pm_Co
+lors_GrapgAPR4_q09.pdf, page is rotated 90 degrees> <./figures/Capitolo_4/repor
+t/Freq_PM_DistributionDetector3SHT2_0spin1.pdf, page is rotated 90 degrees> <./
+figures/Capitolo_4/report/Freq_PM_DistributionDetector3SHT2_2spin1.pdf, page is
+ rotated 90 degrees> <./figures/Capitolo_4/report/Freq_PM_DistributionDetector3
+APR4_q09.pdf, page is rotated 90 degrees> <./figures/Capitolo_4/report/frequenc
+ies_Colors_GrapgSHT2_0spin1.pdf, page is rotated 90 degrees> <./figures/Capitol
+o_4/report/frequencies_Colors_GrapgSHT2_2spin1.pdf, page is rotated 90 degrees>
+ <./figures/Capitolo_4/report/frequencies_Colors_GrapgAPR4_q09.pdf, page is rot
+ated 90 degrees>]) [22 <./figures/Capitolo_4/report/bandwidth_Colors_GrapgSHT2_
+0spin1.pdf, page is rotated 90 degrees> <./figures/Capitolo_4/report/bandwidth_
+Colors_GrapgSHT2_2spin1.pdf, page is rotated 90 degrees> <./figures/Capitolo_4/
+report/bandwidth_Colors_GrapgAPR4_q09.pdf, page is rotated 90 degrees> <./figur
+es/Capitolo_4/report/Likelihood_DistributionDetector1SHT2_0spin1.pdf, page is r
+otated 90 degrees> <./figures/Capitolo_4/report/Likelihood_DistributionDetector
+1SHT2_2spin1.pdf, page is rotated 90 degrees> <./figures/Capitolo_4/report/Like
+lihood_DistributionDetector1APR4_q09.pdf, page is rotated 90 degrees>]
+(./Tesi_Triennale_PMNS.bbl
+Underfull \hbox (badness 2846) in paragraph at lines 4--10
+[]\T1/ptm/m/sc/10.95 Abbott, B., Ab-bott, R., Ab-bott, T.,
  []
 
 
-Underfull \hbox (badness 2990) in paragraph at lines 33--36
-\T1/ptm/m/n/10.95 Ma-sa-ru Shi-ba-ta.  On the ma-xi-mum mass
+Underfull \hbox (badness 3612) in paragraph at lines 4--10
+\T1/ptm/m/sc/10.95 Abra-ham, S., Acer-ne-se, F., Ac-kley,
  []
 
 
-Underfull \hbox (badness 3240) in paragraph at lines 33--36
-\T1/ptm/m/it/10.95 Astro-phy-si-cal Jour-nal\T1/ptm/m/n/10.95 , 528(1):L29^^UL3
-2, Jan
+Underfull \hbox (badness 1881) in paragraph at lines 4--10
+\T1/ptm/m/sc/10.95 Af-feldt, C., and et al.  \T1/ptm/m/n/10.95 Gwtc-1: A
  []
 
 
-Underfull \hbox (badness 1389) in paragraph at lines 38--41
+Underfull \hbox (badness 1092) in paragraph at lines 26--30
+\T1/ptm/m/sc/10.95 Acer-ne-se, F., Ac-kley, K., Adams, C.,
+ []
+
+
+Underfull \hbox (badness 1092) in paragraph at lines 32--37
+\T1/ptm/m/sc/10.95 Acer-ne-se, F., Ac-kley, K., Adams, C.,
+ []
+
+
+Underfull \hbox (badness 1389) in paragraph at lines 44--47
 \T1/ptm/m/it/10.95 stein's Ge-ne-ral Re-la-ti-vi-ty\T1/ptm/m/n/10.95 .  Addison
 -Wesley,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--79
-[]\T1/ptm/m/n/10.95 Luciano Rez-zol-la and Ken-ta-ro Ta-ka-mi.
+Underfull \hbox (badness 10000) in paragraph at lines 86--90
+[]\T1/ptm/m/sc/10.95 Rezzolla, L., and Ta-ka-mi, K.
  []
 
 
-Underfull \hbox (badness 4556) in paragraph at lines 75--79
+Underfull \hbox (badness 4556) in paragraph at lines 86--90
 \T1/ptm/m/n/10.95 Gravitational-wave si-gnal from bi-na-ry neu-
  []
 
+
+Underfull \hbox (badness 2547) in paragraph at lines 97--100
+\T1/ptm/m/n/10.95 le-scen-ces: in-ve-sti-ga-tion on the post-merger
+ []
+
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 15.
- [7
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 13.
+ [23
 
 
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 15.
- (./Tesi_Triennale_PMNS.aux (./Capitoli/Capitolo_4/Capitolo_4.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 15.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 15.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 13.
+ (./Tesi_Triennale_PMNS.aux (./Capitoli/Frontespizio/Frontespizio.aux)
+(./Capitoli/Capitolo_1/Capitolo_1.aux) (./Capitoli/Capitolo_2/Capitolo_2.aux)
+(./Capitoli/Capitolo_3/Capitolo_3.aux) (./Capitoli/Capitolo_4/Capitolo_4.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 13.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 13.
 Package rerunfilecheck Info: File `Tesi_Triennale_PMNS.out' has not changed.
-(rerunfilecheck)             Checksum: 1D3A46F85217D6B29307E3D618EF410A;540.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 15.
+(rerunfilecheck)             Checksum: 4F8261A61DB6609068785D1FE4FD95B1;2123.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 13.
  ) 
 Here is how much of TeX's memory you used:
- 22711 strings out of 480906
- 371864 string characters out of 5910773
- 712768 words of memory out of 5000000
- 37800 multiletter control sequences out of 15000+600000
- 579154 words of font info for 80 fonts, out of 8000000 for 9000
+ 23298 strings out of 480906
+ 392738 string characters out of 5910773
+ 727967 words of memory out of 5000000
+ 38159 multiletter control sequences out of 15000+600000
+ 615006 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 61i,12n,54p,1035b,2356s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,12n,54p,1129b,2416s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/urw/times/utmri8a.pfb>
-Output written on Tesi_Triennale_PMNS.pdf (7 pages, 1564815 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/euler/eusm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Tesi_Triennale_PMNS.pdf (27 pages, 4245672 bytes).
 PDF statistics:
- 1091 PDF objects out of 1200 (max. 8388607)
- 68 named destinations out of 1000 (max. 500000)
- 209 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2828 PDF objects out of 2984 (max. 8388607)
+ 187 named destinations out of 1000 (max. 500000)
+ 555 words of extra memory for PDF output out of 10000 (max. 10000000)
 
