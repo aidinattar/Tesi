@@ -1,161 +1,252 @@
 % !TEX root = ../../Tesi_Triennale_PMNS.tex
-\chapter[Osservazioni di onde gravtazionali]{Osservazione di onde gravitazionali prodotte da un sistema binario di stelle di neutroni}
-\label{chapter:gw170817}
-\begin{wrapfigure}{r}{0.4\textwidth}
-	\vspace{-10pt}
-	\begin{center}
-		\includegraphics[width=0.4\textwidth]{figures/Capitolo_2/gw_effect.png}
-	\end{center}
-	\vspace{-5pt}
-	\caption{Effetto su un sistema di particelle su piano dovuto al passaggio di un'onda gravitazionale che si propaga ortogonalmente al piano, \cite{universe3030059}}
-	\label{fig:gweffect}
-	\vspace{-10pt}
-\end{wrapfigure}
-Gli effetti fisici del passaggio di un'onda gravitazionale si manifestano nell'interazione con le masse, in particolare è necessario considerare sistemi di due o più corpi poiché, in accordo con il principio di equivalenza, è sempre possibile trovare un sistema di riferimento in cui poter applicare le leggi della relatività speciale. Ciò che bisogna considerare è invece l'accelerazione reciproca tra due corpi, in particolare si dimostra che, con il passaggio della GW, la distanza che separa i due corpi subisce periodicamente contrazioni e allungamenti nella direzione della congiungente.
-È facile dedurre l'effetto che si osserva per sistemi di particelle sia quello di Figura \ref{fig:gweffect}. Questo effetto può essere usato nella rivelazione, tuttavia non è possibile raggiungere sensibilità sufficienti per le ampiezze estremamente limitate di un'onda gravitazionale. 
+\chapter[Algoritmo Coherent WaveBurst]{Coherent WaveBurst: algoritmo per la rivelazione e la ricostruzione di segnali di onde gravitazionali}
+\label{chapter:cwb}
+I dati forniti dalla rete di interferometri sono nella forma 
+\[x(t) = \xi_k(t) + n(t)\]
+dove $\xi_k(t)$ è la risposta del rivelatore al passaggio dell'onda gravitazionale, mentre $n(t)$ rappresenta il rumore di fondo dello strumento.
+La risposta al segnale gravitazionale può essere scritta in una mappa tempo-frequenza come:
+\begin{equation}
+\xi_k = F_{+,k}h_+ + F_{\times,k}h_\times
+\label{eqn:detector_response}
+\end{equation}
+dove $F_{+,k}(\theta,\phi)$ e $F_{\times,k}(\theta,\phi)$ sono gli antenna pattern del rivelatore k-esimo\cite{Klimenko_2008}. In particolare gli antenna pattern descrivono la risposta del detector al passaggio dell'onda gravitazionale e dipendono dalla posizione della sorgente nel cielo e dall'angolo di polarizzazione. 
 
-Il metodo più usato per la rivelazione è invece quello interferometrico basato sul modello classico dell'interferometro di Michelson: un fascio di luce laser monocromatica viene diviso con l'utilizzo di uno splitter con uguale probabilità di trasmettere o riflettere il fascio, in due bracci tra loro perpendicolari; i due fasci vengono poi riflessi ricombinandosi sullo splitter e venendo raccolti da un fotodiodo che ne misura l'intensità. Il passaggio di un'onda gravitazionale che si muove perpendicolarmente al piano dell'interferometro porta l'allungamento di un braccio e la contrazione dell'altro e quindi a una variazione nella fase tra i due fasci e una variazione della potenza registrata dal fotodiodo.\\
-%\begin{wrapfigure}{r}{0.4\textwidth}
-%	\vspace{-10pt}
-%	\begin{center}
-%		\includegraphics[width=0.4\textwidth]{figures/Capitolo_2/michelson.jpg}
-%	\end{center}
-%	\vspace{-5pt}
-%	\caption{Rappresentazione schematica di un interferometro utilizzato per la rivelazione di segnali di onda gravitazionale}
-%	\label{fig:michelson}
-%	\vspace{-10pt}
-%\end{wrapfigure}
-È possibile massimizzare gli effetti del modello classico dell'interferometro di Michelson con tecniche come cavità ottiche, che permettono di avere bracci "efficaci" di lunghezze non ottenibili altrimenti, oltre che tecniche per ridurre il rumore attraverso l'utilizzo di materiali tali da minizzare l'assorbimento del fascio.\\
-È possibile inoltre combinare vari rivelatori in una rete per coprire porzioni maggiori del cielo e per verificare la coerenza tra i segnali e poter scartare gli eventi di rumore rivelati dai singoli rivelatori.\\
-Il network LIGO-Virgo che si utilizza è composto da tre rivelatori (LIGO-Livingston in Luisiana, LIGO-Hanford in Washington e Virgo in Italia) e nel futuro verrà esteso con l'aggiunta di Kagra in Giappone e LIGO-India in India.
-\section{Osservazione della coalescenza di un sistema di stelle di neutroni: GW170817}
-\label{section:osservazioneInspiralGW170817}
-Rivelato il 17 Agosto 2017 dal network LIGO-Virgo, GW170817 è il primo segnale di onda gravitazionale generato dallo spiraleggiamento di un sistema binario di stelle di neutroni.
-Il segnale, osservato alla fine del secondo run di misure O2, è tutt'ora il più energetico osservato tra questi tipi di segnale con un rapporto segnale su rumore (SNR) di 32.4.
-Oltre al segnale di GW è stato osservato un lampo-gamma, dopo 1.7s dalla coalescenza.
+Per semplicità si introduce la seguente notazione:
+\[
+\mathbf{x}[i,j] = \left(x_1[i,j],\dots, x_K[i,j] \right) ;
+\quad
+%\mathbf{w}[i,j] = \left(\frac{x_1[i,j]}{\sigma_1[i,j]},\dots, \frac{x_K[i,j]}{\sigma_K[i,j]} \right) ;
+\]
+\[
+\mathbf{h}[i,j] = (h_+[i,j], h_\times[i,j])
+\quad
+\mathbf{f}_{+(\times)}[i,j] = \left(\frac{F_{1+(\times)}[i,j]}{\sigma_1[i,j]},\dots, \frac{F_{K+(\times)}[i,j]}{\sigma_K[i,j]} \right) 
+\]
+dove K è il numero di rivelatori nella rete, $x_k[i,j]$ è il campione di dati del rivelatore (l'indice $i$ itera sui tempi, mentre l'indice $j$ itera sulle frequenze)\cite{Klimenko_2008}, $h_{+}[i,j]$ e $h_{\times}[i,j]$ sono le ampiezze delle due polarizzazioni della GW. Si userà poi la notazione $\sum_{\Omega_{TF}} = \sum_{i,j=1}^N$, in quanto si scriverà $\Omega_{TF}$ come il dominio tempo-frequenza.
 
-Il segnale è chiaramente visibile nella rappresentazione tempo-frequenza dei dati in Figura  \ref{fig:osservazione_gw170817}, nei rivelatori LIGO, risulta invece aver un rapporto segnale rumore più basso in Virgo, a causa della minor sensibilità del detector rispetto alla posizione nel cielo della sorgente. La (non) rivelazione risulta comunque utile, soprattutto per permettere l'individuazione della posizione celeste della sorgente.
-
-%Dalla rappresentazione tempo-frequenza dei dati, a cui viene sottratto il rumore e sbiancati, si può notare immediatamente che il segnale che è ben visibile nei due rivelatori LIGO, mentre in Virgo, a causa della posizione celeste della sorgente del segnale, non è possibile distiguere visivamente nessun pattern rispetto rumore di fondo. 
-\begin{wrapfigure}{r}{0.4\textwidth}
-	\vspace{-25pt}
-	\begin{center}
-		\includegraphics[width=0.4\textwidth]{figures/Capitolo_2/gw170817_time_freq.png}
-	\end{center}
-	\vspace{-7pt}
-	\caption{Segnali nella mappa tempo frequenza nel network, \cite{Abbott_2017a}}
-	\label{fig:osservazione_gw170817}
-	\vspace{-25pt}
-\end{wrapfigure}
-L'analisi a bassa latenza dell'evento ha mostrato un segnale coerente nei due detector LIGO, grazie al quale si individua la sorgente in una regione identificata da un angolo solido di 31 $\text{deg}^2$, che a sua volta ha permesso l'identificazione della controparte elettromagnetica GRB170817A. 
-Si è ottenuto inoltre un SNR combinato tra i detector di 32.4 che rendono questo segnale il più intenso rivelato finora\cite{Abbott_2017a}.
-
-%La relatività generale fa previsioni abbastanza dettagliate sull'evoluzione della frequenza, che è legata, nella prima fase, a una combinazione delle masse delle stelle progenitrici, detta massa di chirp 
+%Con le notazioni precedenti e denotando il rumore $\mathbf{n}[i,j]$, si può scrivere
 %\begin{equation}
-%	\mathcal{M} = \frac{(m_1m_2)^{3/5}}{(m_1+m_2)^{1/5}}
-%	\label{eqn:chirpmass}
+%\mathbf{x}[i,j] = \mathcal{F}\mathbf{h}[i,j] + \mathbf{n}[i]
 %\end{equation}
-%Nelle fasi più avanzate, le orbite si stringono e aumenta la frequenza dell'onda gravitazionale, mentre la fase della GW è sempre più influenzata da effetti relativistici legati al rapporto tra le masse $q = m_2/m_1$ e dagli accoppiamenti spin-orbita e spin-spin. 
-%La composizione interna degli oggetti diventa importante quando la distanza tra essi diventa paragonabile alle dimensioni dell'oggetto stesso. 
-Valgono le previsioni sulla frequenza fatte nel Capitolo \ref{chapter:segnaleGWdaBNS} per la prima fase di spiraleggiamento. Nelle fasi più avanzate, le orbite si stringono e aumenta la frequenza dell'onda gravitazionale, mentre la fase della GW è sempre più influenzata da effetti relativistici legati al rapporto tra le masse $q = m_2/m_1$ e dagli accoppiamenti spin-orbita e spin-spin. La composizione interna degli oggetti diventa importante quando la distanza tra essi diventa paragonabile alle dimensioni dell'oggetto stesso. 
+%con $\mathcal{F}$ la matrice di antenna pattern, definita come
+%%\begin{wrapfigure}{r}{0.46\textwidth}
+%%	\vspace{-10pt}
+%%	\begin{center}
+%%		\includegraphics[width=0.25\textwidth]{figures/Capitolo_2/Detector_sky_full.eps}
+%%	\end{center}
+%%	\vspace{-5pt}
+%%	\caption{L'orientazione relativa del piano delle polarizzazioni della GW e del piano su cui giacciono i bracci del detector, presa da \cite{Sathyaprakash_2009}.}
+%%	\label{fig:antenna_pattern}
+%%	\vspace{-30pt}
+%%\end{wrapfigure}
+%\begin{equation}
+%\mathcal{F} = \begin{bmatrix}
+%F_{1+}(\theta,\phi)	&F_{1\times}(\theta,\phi)\\
+%\vdots					&   \vdots				 \\
+%F_{K+}(\theta,\phi)	&F_{K\times}(\theta,\phi)\\
+%\end{bmatrix}
+%\end{equation}
 
-Le proprietà della sorgente di onde gravitazionali sono ottenute dal confronto con le forme d'onda predette dalla teoria. Viene fatta dunque una analisi Bayesiana nel range di frequenze 30-2048Hz che include gli effetti dell'incertezza di calibrazione di $1\sigma$ sul segnale ricevuto.\\Per la stima del rumore, le fonti risultano molteplici e data la difficoltà nello stimare il rumore in assenza di sorgenti, non potendo "spegnere" le fonti di onde gravitazionali, la stima viene fatta a partire dai dati di una sessione di misure limitata, che però viene riprodotta e traslata temporalmente tra un rivelatore e l'altro in modo da annullare eventuali coerenze tra i segnali rivelati. Con questa operazione si può ottenere un fondo di migliaia di anni a partire dai dati di pochi giorni.
+%Gli antenna pattern descrivono come il detector riceve l'energia in funzione della posizione angolare e, in particolare, sono caratterizzati da una trasformazione basata sull'angolo di polarizzazione $\Psi$, equivalente alla rotazione del piano sul quale è definito $\mathbf{h}$.
 
-\begin{wrapfigure}{r}{0.4\textwidth}
-	\vspace{-22pt}
+%Nei metodi coerenti le statistiche vengono calcolate come somma coerente delle risposte dei detector singoli. Gli algoritmi che sfruttano questi metodi risultano più efficienti, devono cioè avere una probabilità di falso allarme più bassa, rispetto alle statistiche calcolate sulle risposte di ogni detector singolarmente.
+
+L'algoritmo che si utilizza, Coherent WaveBurst (cWB), ricerca eccessi di potenza nella rappresentazione in un piano tempo-frequenza del segnale, coerenti fra i rivelatori attraverso l'utilizzo di una statistica coerente costituita da una analisi della massima verosimiglianza.\\
+%L'algoritmo differisce dai metodi tradizionali che identificano gli eventi nei detector singolarmente usando statistiche di eccesso di potenza e poi verificano la coerenza tra i segnali nei vari detector.
+L'utilizzo di una statistica costruita coerentemente fra le risposte degli interferometri si dimostra più efficiente dei metodi che impongono la sola coincidenza temporale fra i segnali degli interferometri. Infatti si avranno molteplici vantaggi: innanzitutto la sensibilità del metodo non sarà limitata dal rivelatore meno sensibile nella rete, in quanto la likelihood utilizzata nei metodi coerenti rappresenta il rapporto segnale su rumore (SNR) totale del segnale ricostruito/rivelato dalla rete. 
+Inoltre questo metodo permette di costruire altre statistiche coerenti, come il coefficiente di correlazione fra i rivelatori e la stima della componente coerente e non coerente, per distinguere segnali che effettivamente hanno una controparte fisica rispetto a eccessi di rumore ambientale o strumentale. Infine, è possibile ricostruire la posizione celeste della sorgente\cite{Klimenko_2008}.
+
+L'algoritmo cWB viene utilizzato all'interno della collaborazione LIGO-Virgo sia per l'analisi dei segnali in bassa latenza, per identificare e ricostruire candidati significativi e poter, una volta ottenuta una prima stima della posizione celeste della sorgente, condividerla con i telescopi partner per identificare i segnali elettromagnetici legati; sia per l'analisi di dati consolidati, volta a ottenere risultati più approfonditi sull'evento, stabilendo la significanza degli eventi osservati e identificando le stelle progenitrici\cite{Klimenko_2016}.
+\section{Metodologia di analisi per la ricerca di segnali gravitazionali}
+\label{section:coherent_analysis}
+Per rivelare e ricostruire segnali, la pipeline di cWB utilizza un metodo basato sul rapporto di verosimiglianza, definito come il logaritmo del rapporto di verosimiglianza
+\begin{equation}
+	\Lambda(\mathbf{x},\Omega) = \frac{p(\mathbf{x}|\mathbf{h}(\Omega))}{p(\mathbf{x}|0)}
+\end{equation}
+dove $\Omega$ è il set di parametri che descrive il segnale, $p(\mathbf{x}|0)$ è la probabilità dell'ipotesi nulla $H_0$, quindi di solo rumore strumentale, mentre $p(\mathbf{x}|\mathbf{h})$ è la probabilità dell'ipotesi alternativa $H_1$, ovvero la probabilità composta che vi sia un segnale $\mathbf{h}$ nel campione $\mathbf{x}$\cite{Klimenko_2016}.
+
+
+Nell'ipotesi idealistica di rumore gaussiano quasi stazionario con deviazione standard $\sigma$ le densità di probabilità associate alle ipotesi $H_0$ e $H_1$ in un piano tempo-frequenza sono 
+\begin{equation}
+	p(x|0)) = \prod_{i=1}^N\frac{1}{\sqrt{2\pi}\sigma^2}\exp(-\frac{x^2[i,j]}{2\sigma^2})
+	\quad\quad
+	p(x|h(\Omega)) = \prod_{i=1}^N\frac{1}{\sqrt{2\pi}\sigma^2}\exp(-\frac{(x[i,j]-\xi[i,j])^2}{2\sigma^2}).
+\end{equation}
+Il funzionale di verosimiglianza può essere scritto quindi come
+\begin{equation}
+	L = \ln(\Lambda(x)) = \sum_{i=1}^{N}\left[\frac{1}{\sigma^2}\left(x[i,j]\xi[i,j]-\frac{1}{2}\xi^2[i,j]\right)\right].
+\end{equation}
+Estendendo ad una rete di K rivelatori, supponendo rumore scorrelati tra i vari rivelatori, si scriverà
+\begin{equation}
+	\mathcal{L} = \sum_{k=1}^{K}\sum_{i,j=1}^{N}\left(\frac{x_k^2[i,j]}{\sigma_k^2[i,j]} - \frac{(x_k[i,j]-\xi_k[i,j])^2}{\sigma_k^2[i,j]}  \right)
+	\label{eqn:Likelihood}
+\end{equation}
+
+Il rumore del rivelatore è caratterizzato dalla deviazione standard $\sigma_k[i,j]$,  anch'essa una funzione sul piano tempo-frequenza. 
+%I valori saranno i dati scalati con il rumore (detti sbiancati)\cite{Klimenko_2016}. 
+
+Dunque, al variare di $h_{+}[i,j]$ e $h_{\times}[i,j]$ varia anche $\mathcal{L}$, l'obiettivo è quindi massimizzare il rapporto di verosimiglianza, al variare della possibile posizione nel cielo del segnale. Il segnale viene alla fine ricostruito tramite una trasformazione wavelet inversa nella posizione di massimizzazione della verosimiglianza
+%l'obiettivo è quindi ottenere i valori delle ampiezze che massimizzano il funzionale di verosimiglianza da cui si deduce la forma d'onda nel dominio dei tempi facendo una trasformazione di wavelet inversa.%, che consisterà dunque 
+
+Il funzionale rapporto di verosimiglianza in equazione \ref{eqn:Likelihood} si può scrivere come
+\begin{equation}
+%	\mathcal{L} = \braket{w}{\xi} - \frac{1}{2} \braket{\xi}{\xi} = \mathcal{L}_+ + \mathcal{L}_\times = \sum_{\Omega_{TF}}\left[ \mathbf{w} \cdot \mathbf{f}_+ - \frac{1}{2}|\mathbf{f}_+|^2h_+^2\right] + \sum_{\Omega_{TF}}\left[ \mathbf{w} \cdot \mathbf{f}_\times - \frac{1}{2}|\mathbf{f}_\times|^2h_\times^2\right]
+	\mathcal{L} =  \mathcal{L}_+ + \mathcal{L}_\times = \sum_{\Omega_{TF}}\left[ \mathbf{w} \cdot \mathbf{f}_+ - \frac{1}{2}|\mathbf{f}_+|^2h_+^2\right] + \sum_{\Omega_{TF}}\left[ \mathbf{w} \cdot \mathbf{f}_\times - \frac{1}{2}|\mathbf{f}_\times|^2h_\times^2\right]
+	\label{eqn:label_separated}
+\end{equation}
+dove i vettori di antenna pattern $\mathbf{f}_+$ e $\mathbf{f}_\times$ sono definiti nel Dominant Polarisation wave Frame (DPF), ovvero il piano in cui entrambi gli antenna pattern sono reali, definiti positivi e vale $\mathbf{f}_+ \cdot \mathbf{f}_\times = 0$.  Alla luce di questo, per ottenere la massima verosimiglianza si dovrà risolvere le equazioni:
+\begin{equation}
+%	\mathbf{w} \cdot \mathbf{f}_+ = |\mathbf{f}_+|^2h_+ \quad\quad\quad  \mathbf{w} \cdot \mathbf{f}_\times = |\mathbf{f}_+|^2h_\times 
+	\begin{bmatrix}
+	(\mathbf{w}[i,j]\cdot \mathbf{e}_+[i,j])\\
+	(\mathbf{w}[i,j]\cdot \mathbf{e}_\times[i,j])
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+	\mathbf{f}_+[i,j]	&0\\
+	0					&\mathbf{f}_\times[i,j]
+	\end{bmatrix}
+	\begin{bmatrix}
+	h_+[i,j]\\
+	h_\times[i,j]\\
+	\end{bmatrix}
+	\label{eqn:sistema_soluzione}
+\end{equation}
+%La massima verosimiglianza può essere scritta quindi sostituendo le soluzioni di \ref{eqn:sistema_soluzione} in $\mathcal{L}(h)$, che restituisce
+%\begin{equation}
+%	L_{max} = \sum_{\Omega_{TF}}\mathbf{w}[i,j]P[i,j]\mathbf{w}^\intercal[i,j]
+%\end{equation}
+%dove la matrice $P$ è il proiettore costruito a partire dai versori $\mathbf{e}_+$ e $\mathbf{e}_\times$:
+%\begin{equation}
+%	P_{nm}[i,j]=e_{n+}[i,j]e_{m+}[i,j]+e_{n\times}[i,j]e_{m\times}[i,j]
+%	\label{eqn:proiection}
+%\end{equation}
+
+%\paragraph{Regolatori} C'è una particolare classe di vincoli, i regolatori, che dipendono da come il network reagisce a un determinato segnale. Si può citare un esempio considerando il caso in cui $|f_\times|=0$, come nel caso di detector allineati; la risposta del network dovrebbe essere lungo la direzione di $f_+$ e imporre questo vincolo porta l'analisi della likelihood a ignorare la risposta-$\times$ del network. Anche per detector non allineati si utilizzano questo tipo di vincoli: in base alla posizione della sorgente, il network può essere meno sensibile alla seconda componente della GW ($|\mathbf{f}_\times|^2 \ll |\mathbf{f}_+|^2$) portando a problemi nella ricostruzione di $h_\times$. Quello che viene fatto da cWB è cambiare la norma di $\mathbf{f}_\times$ con un parametro $\delta$, equivalente ad aggiungere un ulteriore detector al network che permette di preservare l'ortogonalità di $\mathbf{e}_+ \text{ e } \mathbf{e}_\times'$.
+\section{Algoritmo cWB}
+L'algoritmo, scritto in C++/ROOT e sviluppato all'interno della collaborazione LIGO-Virgo, ha la caratteristica di non imporre assunzioni (o facendo assunzioni minimali) sulla morfologia del segnale.\\
+Vengono descritti i principali step dell'algoritmo: trasformazione di wavelet, generazione di trigger coerenti e selezione dei trigger coerenti.
+\subsection{Rappresentazione in tempo-frequenza}
+\begin{wrapfigure}{r}{0.46\textwidth}
+	\vspace{-15pt}
 	\begin{center}
-		\includegraphics[width=0.4\textwidth]{figures/Capitolo_2/skymap.png}
+		\includegraphics[width=0.475\textwidth]{figures/Capitolo_2/L1_scalogram_0.png}
 	\end{center}
 	\vspace{-5pt}
-	\caption{Sky location ricostruita per GW170817, nella versione preliminare in blu chiaro per Hanford-Livingston e in blu scuro per Handord-Livingston-Virgo, mentre nella versione finale in verde, presa da \cite{Abbott_2019}}
-	\label{fig:skymap}
-	\vspace{-20pt}
+	\caption{Scalogramma ottenuto da una analisi di una simulazione di coalescenza di una BNS con EOS SHT2.0 con rumore gaussiano del rivelatore LIGO Hanford, con risoluzione df = 256kHz e dt = 2ms}
+	\label{fig:scalogram_example}
+	\vspace{-15pt}
 \end{wrapfigure}
-Attraverso un'analisi più approfondita dei dati consolidati, la sorgente viene identificata in una regione celeste di 28$\text{deg}^2$ di area e $380\text{Mpc}^3$ di volume, utilizzando una combinazione di timing, fase e ampiezza dei tre detector. La distanza luminosa, la più prossima osservata finora, viene individuata in $40_{-14}^{+8}$Mpc. La massa di chirp del sistema si valuta in $\mathcal{M}=1.188_{-0.002}^{+0.004}$, mentre la valutazione delle masse delle stelle progenitrici dipende dalla prior scelta per l'analisi, legata alla scelta dell'EOS che si considera, si stimano dunque interavalli $m_1 \in (1.36, 2.26)M_\odot$ e $m_2 \in (0.86, 1.36)M_\odot$, che, nonostante la grande imprecisione, costituiscono un'evidenza della natura di stelle di neutroni del sistema binario, escludendo invece la possibilità di buchi neri che prevederebbe range di masse superiori\cite{Abbott_2017a}.
-%Per le masse delle stelle compatte risulta più semplice dedurre la massa di chirp, indipendente dalla scelta della prior nell'analisi Bayesiana legata all'equazione di stato scelta per le stelle progenitrici, che si valuta in $\mathcal{M}=1.188_{-0.002}^{+0.004}$, rispetto alle masse singole, che soffrono invece della degenerazione tra il rapporto tra le masse $q$ e le componenti dello spin $\chi_1$ e $\chi_2$. È necessario fare quindi assunzioni a partire dalle EOS che si considerano, ottenendo dei range $m_1 \in (1.36, 2.26)M_\odot$ e $m_2 \in (0.86, 1.36)M_\odot$ evidentemente meno precisi, ma comunque utili come evidenza della natura di stelle di neutroni del sistema binario, escludendo invece la possibilità di buchi neri che prevederebbe range di masse superiori\cite{Abbott_2017a}.
+\label{subsection:wavelet_transform}
+Le trasformazioni di wavelet, partendo dai dati discreti, producono rappresentazioni tempo-frequenza dei dati dei rivelatori $w[i,j]$. Lo spettro di wavelet può essere quindi rappresentato con uno scalogramma tempo-frequenza. La risoluzione nel dominio del tempo $\Delta t_j(R)$ è determinata dal rate di campionamento R e dall'indice di scala j. Poiché le trasformazioni di wavelet costituiscono una serie di trasformazioni di Fourier infinitesime, conservano il volume del campione, pari a 1/2 per la serie temporale in input.\\
+Si avrà quindi una risoluzione in frequenza $\Delta f_j$ definita come 1/(2$\Delta t_j$) che determina la larghezza di banda per l'indice j. Per ottimizzare la ricerca nel piano, cWB procede con diverse trasformazioni a risoluzioni diverse, che permette di ottenere il grafico in Figura \ref{fig:scalogram_example}\cite{Klimenko_2008}.
 
-Oltre al segnale di onda gravitazionale è stato rivelato anche un segnale di short gamma-ray burst dal telescopio spaziale Fermi-GBM, $1.74\pm0.05$s dopo l'istante di coalescenza e della durata di circa 2 secondi. Il segnale viene rivelato anche dal telescopio INTEGRAL e la differenza dei tempi di arrivo del segnale sui due telescopi ha permesso di migliorare significativamente l'area di localizzazione del segnale.\\
-In seguito all'osservazione e alla localizzazione del segnale, diversi telescopi, terrestri e spaziali, vengono direzionati in modo tale da poter osservare il corpo celeste formatosi: la prima osservazione viene fatta dai telescopi dell'osservatorio di Las Campas in Cile circa 10h dopo la coalescenza. Osservando le galassie conosciute viene individuato un unico evento transiente, non corrispondente ad alcun asteroide o supernova conosciute. Dopo la prima osservazione, altri 5 team registrano l'evento. Queste localizzazioni sono state importanti per identificare con maggior precisione la distanza alla quale è avvenuto l'evento\cite{Abbott_2017c}.
-%QUALCOSA SULLE TIDAL DEFORMABILITIES?
-\section{Ricerca del post-merger del residuo}
-\label{section:postmergerGW170817}
-È stata effettuata un'analisi specifica per ricercare un eventuale segnale nella fase di post-coalescenza, tuttavia tale analisi non ha portato ad evidenza statisticamente significativa di rivelazione di un segnale nella fase di coalescenza, ma ha permesso di ottenere informazioni sul limite superiore delle ampiezze di strain ed energie di GW osservabili. Gli attuali detector infatti non hanno una sensibilità tale da permettere rivelazioni alle alte frequenze della post-coalescenza.
+I valori nella mappa tempo-frequenza vengono sbiancati: partendo dalla mappa con massima risoluzione in frequenza per ogni banda di frequenza viene calcolato il valore di scarto quadratico medio del rumore, utilizzando una media mobile. Quindi i dati nel piano tempo-frequenza sono normalizzati rispetto allo scarto quadratico medio e scalati con il rumore come $w_k[i,j] = x_k[i,j]/\sigma_k[i,j]$ \cite{Klimenko_2016}.
 
-Per la ricerca di segnali con incertezze teoriche così grandi risulta inefficiente l'utilizzo di metodi di ricerca matched-filtering, ovvero metodi che utilizzano segnali di forme conosciute e, attraverso funzioni di filtraggio escludono la componente di rumore, usando come filtro la funzione che massimizza il rapporto segnale su rumore (SNR) per tale segnale\cite{maggiore2008gravitational}. È immediato comprendere che non conoscendo con certezza la forma che deve assumere il segnale questo metodo risulta inefficace per la ricerca del post-merger. Gli algoritmi che si usano invece ricercano eccessi di potenza in una mappa tempo-frequenza e, usando metodi di riconoscimento dei pattern, possono identificare la presenza di segnali di GW. In particolare gli algoritmi sono tali da considerare i dati della rete e non dei singoli rivelatori, utilizzando tecniche che permettono di combinare coerentemente i dati dei singoli rivelatori e dare risposte differenti a forme d'onda diverse.
-
-Mentre lo studio del segnale elettromagnetico associato alla GW non permette di escludere nessuno dei possibili stati finali indicati in sezione \ref{section:residual}, grazie ai valori ottenuti per le masse dei progenitori date nella sezione \ref{section:osservazioneInspiralGW170817} si calcola che per un ampio range di equazioni di stato la coalescenza produce uno stato di NS ipermassiva. Questo spiega anche il ritardo del lampo gamma rispetto all'istante di rivelazione del segnale di merger. 
-
-Come si vedrà nella sezione \ref{section:examples} in base alla EOS che si considera si ottiene un contributo diverso nel post-merger che inizia attorno a $\smallsim2$kHz. Più in generale, oltre alla EOS hanno fondamentale importanza le masse e gli spin degli oggetti iniziali. 
-Per quanto riguarda invece la rivelazione di questa fase del segnale, anche considerando modelli ottimistici da stati finali di NS ipermassiva o supermassiva, l'SNR atteso per distanze di $\smallsim40$Mpc è $\smallsim1-2$ ordini di grandezza più piccolo di quello rivelabile dalla rete LIGO-Virgo attualmente utilizzata, facendo uso di algoritmi di confronto con segnali modellati (che comunque sono meno utilizzati per la post-coalescenza per i motivi già citati).
-Si ipotizza tuttavia che nei prossimi run la sensibilità del network sarà tale da permettere la rivelazione di queste emissioni\cite{Abbott_2017b}, e si studierà nel dettaglio nel Capitolo \ref{chapter:analisi}.
-
-\begin{wrapfigure}{r}{0.5\textwidth}
-	\vspace{-20pt}
+\begin{wrapfigure}{r}{0.46\textwidth}
+	\vspace{-15pt}
 	\begin{center}
-		\includegraphics[width=0.5\textwidth]{figures/Capitolo_2/GW170817_spectral_limits.pdf}
+		\includegraphics[width=0.475\textwidth]{figures/Capitolo_2/wavepacket_patterns.png}
 	\end{center}
 	\vspace{-5pt}
-	\caption{Sensibilità di ciascun rivelatore durante il run O2, indicata dall'ampiezza del rumore di strain in funzione della frequenza, \cite{Abbott_2017b}}
-	\label{fig:NoiseFrequenze}
+	\caption{Alcuni pattern caratteristici per la selezione dei pixel}
+	\label{fig:patterns}
+	\vspace{-15pt}
+\end{wrapfigure}
+cWB esegue trasformazioni di wavelet a diverse risoluzioni e per ogni risoluzione seleziona i pixel con eccesso di potenza che saranno selezionati per il prossimo passo dell'analisi. I pixel con eccesso di potenza vengono scelti se superano una soglia definita. Tale soglia fa riferimento alla coda destra di probabilità di una distribuzione gaussiana attesa per il rumore. Infine, poiché un evento deve essere costituito da un gruppo di pixel contigui, vengono selezionati i gruppi pixel che soddisfano diverse possibili condizioni sull'eccesso di potenza rispetto alla media attesa per il rumore \cite{cWB_Manual}. Si riportano in Figura \ref{fig:patterns} alcuni dei pattern di selezione di cWB.
+%\subsection{Filtro di predizione lineare dell'errore}
+%\label{subsection:lpe_filter}
+%I filtri per la predizione lineare dell'errore (LPE) sono usati per rimuovere le componenti prevedibili dalla serie temporale in input. Possono essere applicati nel dominio di wavelet, ma più frequentemente vengono usati nel dominio temporale restituendo una serie temporale sbiancata.
+%
+%Ogni layer di wavelet (quindi a frequenza fissata) è una serie temporale, perciò anzichè applicare il filtro LPE alla sere temporale $x(t)$, si può fare prima una decomposizione di wavelet $x(t)\rightarrow w(f,t)$ e quindi applicare il filtro ad ogni layer di wavelet. Si ottiene dunque un campione $w'(f, t)$ da cui è possibile ricostruire la serie temporale sbiancata $x'(t)$ attraverso una trasformazione di wavelet inversa\cite{Klimenko_2008}.
+%\subsection{Filtri per il ritardo temporale nel dominio di wavelet}
+%\label{subsection:time_delay_filters}
+%Per la valutazione della likelihood è necessario computare il prodotto scalare $\bra{x_n(\tau_n)}\ket{x_m(\tau_m)}$, dove bisogna considerare un ritardo intrinseco del set di dati del rivelatore $n$ rispetto a $m$, in quanto le GW viaggiano a velocità finita pari a $c$. Dunque il ritardo temporale $\tau_n - \tau_m$ dipende dalla posizione $(\theta, \phi)$ della sorgente.
+%
+%Nel dominio di wavelet è invece necessario calcolare il prodotto interno $\bra{w_n(\tau_n)}\ket{w_m(\tau_m)}$, le ampiezze ritardate possono essere calcolate a partire dalle ampiezze originali utilizzando un filtro di ritardo temporale $D_{kl}(\tau)$
+%\begin{equation}
+%	w_{n,m}(i,j,\tau) = \sum_{kl}D_{kl}(\tau, j)w_{n,m}(i+k, j+l)
+%	\label{eqn:time_filter}
+%\end{equation}
+%dove $k$ ed $l$ sono le coordinate locali nel piano tempo-frequenza rispetto alla posizione $(i,j)$.
+%
+%La costruzione di questi filtri è legata alla decomposizione delle funzioni di wavelet ritardate $\Psi_j(t+\tau)$ nella base delle funzioni non traslate $\Psi_j(t)$. Si procede dunque per step:
+%\begin{enumerate}
+%	\item viene creata una serie di wavelet con un solo coefficiente pari all'unità nella posizione $(i,j)$;
+%	\item viene applicata la trasformazione di wavelet inversa ricostruendo $\Psi_j(t)$ nel dominio dei tempi;
+%	\item viene applicata la traslazione temporale $\Psi_j(t)\rightarrow\Psi_j(t+\tau)$ e si decompone quest'ultima;
+%	\item le ampiezze di wavelet ottenute nelle posizioni $(i+k, j+l)$ rappresentano i coefficienti del filtro $D_{kl}(\tau, j)$ per il layer j.
+%\end{enumerate}
+%L'applicazione di questo filtro porta a una perdita di energia, valutabile in $\epsilon_K = 1 - \sum_{K}D_{kl}^2$
+%%\begin{equation}
+%%	\epsilon_K = 1 - \sum_{K}D_{kl}^2
+%%	\label{eqn:energy_loss}
+%%\end{equation}
+%e perciò la lunghezza del filtro sarà legata alla quantità di energia acsecettabile da perdere (valori tipici sono $K>20$ per ottenere una perdita di energia inferiore a $1\%$)\cite{Klimenko_2008}.
+\subsection{Generazione di trigger coerenti}
+\label{section:coherent_trigger}
+
+La generazione dei trigger, quindi l'identificazione dei segnali, è basata su statistiche di eccesso di potenza e di correlazione incrociata tra i segnali dei rivelatori. 
+
+\begin{wrapfigure}{r}{0.46\textwidth}
+	\vspace{-25pt}
+	\begin{center}
+		\includegraphics[width=0.475\textwidth]{figures/Capitolo_2/l_tfmap_scalogram.png}
+	\end{center}
+	\vspace{-5pt}
+	\caption{Mappa di Likelihood ottenuta da una analisi di una simulazione di coalescenza di una BNS con EOS SHT2.0 con rumore gaussiano della rete LIGO-Virgo}
+	\label{fig:Likelihood_example}
 	\vspace{-10pt}
 \end{wrapfigure}
-Come si può osservare in Figura \ref{fig:NoiseFrequenze} i tre detector del network hanno zone diverse di sensibilità al segnale considerato, in particolare si nota che in generale la sensibilità diminuisce significativamente ad alte frequenze. 
-
-La ricerca è stata effettuata utilizzando diversi algoritmi, e su diversi range di frequenza. È stato utilizzato l'algoritmo cWB, per la ricerca di segnali di breve durata (fino ai pochi secondi), nel range di frequenza 1024-4096 Hz. 
-Un'ulteriore ricerca è stata effettuata per cercare segnali di più lunga durata (dalla decina alle poche centinaia di secondi) utilizzando l'algoritmo cWB nella banda di frequenza 24-2048Hz, e STAMP nella banda 24-4000Hz.
-
-%Per l'analisi sono stati usati due diversi algoritmi, in base al tipo di segnale ricercato: per segnali di brave durata è stato usato cWB (Coherent Wave Burst) utilizzando i dati di LIGO tra 1024Hz e 4096Hz, mentre per i segnali di durata intermedia si è utilizzato l'algoritmo STAMP (Stochastic Transient Analysis Multidetector Pipeline) nelle frequenze comprese tra 24Hz e 2000Hz e tra 2000Hz e 4000Hz nei dati di LIGO, mentre cWB con i dati del network LIGO-Virgo ricerca le frequenze tra 24Hz e 2048Hz.
-%Come anticipato, la ricerca viene divisa tra segnali brevi ($\lesssim$1s) e intermedi ($\lesssim$500s).
-%\subsection{Segnali brevi}
-L'analisi dei segnali brevi ad alte frequenze consiste nella ricerca di eccessi di potenza nell'intervallo di 2s che precede il segnale elettromagnetico GRB 170817a, in un intervallo che comprende quindi anche la coalescenza.
-
-%In particolare l'algoritmo valuta la massima verosimiglianza di eccessi di potenza in una trasformata di wavelet a multi-risoluzione per ogni detector, classificando gli eventi in una gerarchia di SNR. La significanza degli eventi è data dal confronto con la distribuzione del fondo stocastico, che è generata con metodi che saranno precisati nel capitolo \ref{chapter:cwb}. 
-È convenzione esprimere la sensibilità della ricerca di una data forma d'onda in $h_{rss}^{50\%}$, ovvero la somma in quadratura delle ampiezze di strain di segnali che sono rivelati con un'efficienza del 50\%. La quantità $h_{rss}$ è definita come
+Riprendendo quanto scritto in \ref{eqn:Likelihood}, il funzionale di likelihood viene calcolato come somma sui campioni selezionati per l'analisi, il numero di termini sommati dipende all'area nel piano tempo-frequenza che si considera. Se tale somma consiste di un solo elemento si può scrivere il funzionale come
 \begin{equation}
-	h_{rss} = \sqrt{2\int_{f_{min}}^{f_{max}}df(|\tilde{h}_+(f)|^2 + |\tilde{h}_\times(f)|^2 )}
+	\mathcal{L}_p(i,j,\theta,\phi)=|\mathbf{w}|^2 -|\mathbf{w} - \mathbf{f}_+h_+ - \mathbf{f}_\times h_\times|^2
+	\label{eqn:likelihood_single_term}
 \end{equation}
-dove $f_{min}$ e $f_{max}$ sono rispettivamente le frequenze massima e minima sulle quali si effettua la ricerca. 
-Il criterio sulla soglia di rivelazione e quindi su $h_{rss}^{50\%}$ per questo metodo di ricerca è tale da garantire una probabilità di falso allarme di $10^{-4}$.
-Per evitare la possibile perdita di segnali di EOS rigide, la ricerca viene effettuata a partire da 1024Hz, nonostante le previsioni teoriche mostrino una frequenza sempre maggiore.
-%a frequenza maggiore si fa la scelta conservativa di ricercare segnali a partire da 1024Hz, nonostante tutte le forme d'onda abbiano emissioni dominanti molto al di sopra di tale soglia.
-
-In conclusione, non viene trovata evidenza di nessun segnale di GW in questa banda di frequenze.
-L'ampiezza di strain per produrre una probabilità del 50\% di rivelazione di un segnale è compresa tra $2.1 \times 10^{-22} \text{Hz}^{-1/2}$ e $3.5 \times 10^{-22} \text{Hz}^{-1/2}$. L'energia irradiata da un sorgente che emette isotropicamente è data da 
+Poiché è possibile applicare il metodo della likelihood al funzionale \ref{eqn:likelihood_single_term}, si può trovare il massimo $L_p(\theta, \phi)$ al variare di $h_+$ e $h_\times$ e quindi ricercare il massimo in funzione della posizione nel cielo
 \begin{equation}
-	E_{gw}^{iso} = \frac{\pi c^3}{2G}\mathcal{D}^2\int d\Omega \int_{f_{min}}^{f_{max}}dff^2(|\tilde{h}_+(f)|^2 + |\tilde{h}_\times(f)|^2 ) \approx \frac{\pi^2 c^3}{G}\mathcal{D}^2\bar{f}^2h_{rss}^2
+	L_m(i,j)= \max_{\theta, \phi}[L_p(i,j,\theta,\phi)]
+	\label{eqn:max_L}
 \end{equation}
-con $\mathcal{D}$ è la distanza dalla sorgente e $\bar{f}$ è la frequenza caratteristica data da 
+La statistica $L_m$ ha quindi il significato della massima energia rivelata dalla rete in una determinata posizione del piano tempo-frequenza. Selezionando quindi i valori di $L_m$ sopra una determinata soglia si può identificare un cluster di pixel come potenziale segnale di GW. In questo modo si identificano i segnali combinando i dati dell'intera rete e non si cercano i segnali sui singoli rivelatori, verificando successivamente la coerenza.
+%A questo punto si devono ricostruire i parametri del segnale legato al trigger, incluse la posizione della sorgente, le due polarizzazioni della GW, le risposte individuali dei rivelatori e le statistiche di massima likelihood dei trigger. In particolare la likelihood è ricostruita come
+%\begin{equation}
+%	\mathcal{L}_c(\theta,\phi) = \sum_{i,j}\mathcal{L}_p(i,j,\theta, \phi)
+%\end{equation}
+%La massima likelihood $L_{max}$ è ottenuta facendo variare $\mathcal{L}_c$ su $\theta$ e $\phi$ ed è calcolata su tutti i pixel di likelihood nel piano tempo frequenza per formare il trigger coerente\cite{Klimenko_2008}.
+\subsection{Selezione dei trigger coerenti}
+Nel caso di rumore gaussiano stazionario la massima verosimiglianza è l'unica statistica necessaria per la rivelazione e per la selezione degli eventi, per cui la probabilità di falso allarme e di scartare eventi effettivi è legata alla soglia minima per $L_{max}$. 
+%Nella realtà tuttavia il rumore non è tale, ma i dati sono sporcati da rumore strumentale e ambientale, per cui è necessario applicare altri metodi per distinguere i segnali reali. 
+La condizione di idealità non si realizza nella realtà, motivo per cui cWB utilizza estimatori sulla coerenza del segnale per distinguere possibili segnali gravitazionali, da eccessi di rumore strumentale e ambientale.
+Alcuni esempi sono le statistiche coerenti ricavate dalle matrici di verosimiglianza e di energia non coerente.
+La matrice di likelihood $L_{mn}$ è ottenuta dalla forma quadratica della likelihood
+%da completare la parte dei regolatori a cui questa parte fa riferimento.
 \begin{equation}
-	\bar{f} = \frac{2}{h_{rss}^2}\int_{f_{min}}^{f_{max}}dff(|\tilde{h}_+(f)|^2 + |\tilde{h}_\times(f)|^2 )
+	L_{max} = \sum_{mn}L_{mn} = \sum_{mn}\left[\left< w_nw_me_{+n}e_{+m} \right> + \left< w_nw_me_{\times n}e_{\times m} \right>\right]
+	\label{eqn:likelihood_matrix}
 \end{equation}
-In questo modo si ottiene un range di energie rivelabili che, secondo il criterio del $h_{rss}^{500\%}$, è dato da $4.8-\SI{19.6}{\solarmass}c^2$, al di fuori delle masse in gioco per BNS, per cui non è possibile con i rivelatori attuali rivelare le emissioni di GW di NS ipermassive associate a GW170817.
-%\subsection{Segnali di durata intermedia}
+dove $m\text{ e }n$ sono gli indici che identificano i rivelatori\cite{Klimenko_2008}. Gli elementi della diagonale di $L_{mn}$ descrivono l'energia incoerente normalizzata, mentre quelli dell'antidiagonale sono espressione dell'energia coerente normalizzata, la cui somma restituisce l'energia coerente totale $E_{coh}$ rivelata dalla rete
+\begin{equation}
+	E_{inc} = \sum_{\Omega_{TF}}\sum_{n}w_n[i,j]P_{mn}[i,j]w_n[i,j],
+	\quad\quad
+	E_{coh} = \sum_{\Omega_{TF}}\sum_{m\neq n}w_n[i,j]P_{mn}[i,j]w_n[i,j].
+\end{equation}
+dove la matrice $P$ è il proiettore costruito a partire dai versori $\mathbf{e}_+$ e $\mathbf{e}_\times$: $P_{nm}[i,j]=e_{n+}[i,j]e_{m+}[i,j]+e_{n\times}[i,j]e_{m\times}[i,j]$\cite{Klimenko_2016}. 
+%Queste statistiche coerenti sono particolarmente utilizzate per la ricerca di segnali e la ricostruzione.
+%Si può dunque esprimere i coefficienti di correlazione per detector allineati e quindi l'energia coerente ridotta
+%\begin{equation}
+%	r_{mn} = \frac{L_{mn}}{\sqrt{L_{nn}L_{mm}}} \quad\quad\quad \rightarrow \quad\quad\quad e_{coh}=\sum_{ n\neq m}L_{nm}|r_{nm}|
+%	\label{eqn:coherent_energy}
+%\end{equation}
+%quest'ultima in particolare risulta uno dei parametri più efficienti per l'accettazione/rifiuto di un trigger.
 
-Per segnali di durata intermedia si utilizzano i due algoritmi cWB e STAMP, concentrando la ricerca in una zona limitata dello spazio, indicata dalla controparte elettromagnetica che permette di evitare trigger accidentali.\\
-%Sono considerate due morfologie di forme d'onda corrispondenti a GW da bar-modes secolari o causati da elicità causate dal campo magnetico nella stella nascente. I meccanismi di emissione attraverso modi-r non sono considerati per la durata che richiederebbe scale temporali più lunghe.
-\\
-%Nell'analisi di STAMP, che ricerca segnali in uno spettrogramma con pixel di 1s$\times$1Hz, creati con la correlazione incrociata dei dati di detector spazialmente separati, sia con metodi seed-based clustering, dove per seed si intendono pixel con un eccesso di potenza sopra una certa soglia che vengono connessi formando un cluster, sia con algoritmi seedless, senza quindi applicare soglie minime, per il riconoscimento dei pattern, non viene trovato nessun significativo eccesso di potenza, con una probabilità di falso allarme di $10^{-2}$.
-Mentre l'analisi fatta con l'algoritmo STAMP non viene qui approfondita, l'analisi con cWB è analoga alla precedente, ma considera un intervallo di tempo che parte dal merger e copre 1000s. Per entrambe le analisi, con probabilità di falso allarme di $10^{-2}$ per STAMP e di $10^{-4}$ per cWB, nessun candidato è trovato nella banda di frequenza considerata. È possibile confrontare il range di energie rivelabili in Figura \ref{fig:NoiseFrequenze}.
-
-Concludendo, non viene trovata nessuna evidenza di un segnale di post coalescenza nei dati considerati: se esiste un segnale questo è comunque troppo debole per essere rivelato dai rivelatori nel run O2 \cite{Abbott_2017b}.
-
-\section{Segnale GW190425}
-%\subsection*{GW190425}
-Il secondo evento rivelato di spiraleggiamento di BNS è GW190425 durante il run O3 del network Virgo-LIGO. In realtà durante l'evento il detector LIGO Hanford era spento, quindi il network contava solo su due rivelatori. Non sono inoltre stati rivelati segnali elettromagnetici associati all'evento.\\
-L'evento ha avuto un SNR di 12.9 per LIGO Livingston mentre di solo 2.5, ovvero sotto la soglia di trigger pari a 4, per Virgo. La differenza tra i due rivelatori è consistente con la differenza di sensibilità tra i due detector\cite{Abbott_2020b}.
-
-%\paragraph{Proprietà della sorgente} 
-In continuità con le definizioni fatte per le proprietà del segnale GW170817, si riportano brevemente le caratteristiche del segnale GW190425: si individua la sorgente in un'area celeste di 8284deg$^2$ al 90\% di credibilità (estremamente più impreciso di GW170817) e la distanza viene valutata in $159_{-71}^{+69}$Mpc. La così più grande incertezza rispetto al primo segnale è dovuta al minor numero di detector coinvolti e all'impossibilità di escludere regioni grazie alla controparte elettromagnetica che non viene rivelata in questo caso.
-La massa di chirp è pari a $1.4873^{+0.0008}_{-0.0006}M_\odot$, mentre le masse delle stelle progenitrici sono $m_1 \in (1.60, 2.52)M_\odot$ e $m_2 \in (1.46, 1.68)M_\odot$\cite{Abbott_2020b}.
-
-È stata effettuata anche una ricerca di un eventuale segnale di post-coalescenza, supponendo che il sistema non collassi immediatamente in buco nero. La ricerca, effettuata con metodi alternativi a quelli che verranno descritti nel capitolo \ref{chapter:cwb}, non porta a nessuna evidenza statisticamente significativa di un segnale.
-%\begin{wrapfigure}{r}{0.5\textwidth}
-%	\vspace{-5pt}
-%	\begin{center}
-%		\includegraphics[width=0.5\textwidth]{figures/Capitolo_2/signal.png}
-%	\end{center}
-%	\vspace{-5pt}
-%	\caption{\cite{Abbott_2017b}}
-%	\label{fig:signalInspiral}
-%	\vspace{-10pt}
-%\end{wrapfigure}
+La matrice di energia non coerente rappresenta l'energia normalizzata del rumore ricostruito
+\begin{equation}
+	N_{nm} = E_{nm}-L_{nm}
+\end{equation}
+con $E_{mn}$  matrice diagonale delle energie normalizzate dei rivelatori $E_{mm}  = \left<x_m^2\right>$. Per distinguere i segnali effettivi dal rumore strumentale e ambientale si usano i coefficienti di correlazione 
+\begin{equation}
+	C_{net} = \frac{E_{coh}}{N_{ull}+|E_{coh}|}, \quad\quad\quad c_{net} = \frac{e_{coh}}{N_{ull}+|e_{coh}|}
+	\label{eqn:coefficient_energy}
+\end{equation}
+dove $N_{ull}$ è la somma di tutti gli elementi della matrice di non coerenza, che rappresenta l'energia totale non coerente. Accade infatti che eccessi di rumore vengano ricostruiti come segnale: i coefficienti $C_{net}$ e $c_{net}$ sono usati quindi come verifica della consistenza del segnale in quanto comparano l'energia non coerente e l'energia coerente\cite{Klimenko_2008}, in particolare un evento genuino risulta per $c\smallsim 1$, mentre per $c \ll 1$ corrisponde ad un evento spurio\cite{Klimenko_2016}.

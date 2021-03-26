@@ -65,7 +65,7 @@
    <dc:title><rdf:Alt><rdf:li xml:lang="x-default">Ricerca di segnali gravitazionali dovuti alla coalescenza di sistemi binari di stelle di neutroni nella fase di post coalescenza</rdf:li></rdf:Alt></dc:title>
    <dc:creator><rdf:Seq><rdf:li>Aidin Attar</rdf:li></rdf:Seq></dc:creator>
    <dc:rights><rdf:Alt><rdf:li xml:lang="x-default">Copyright © 2021 "Aidin Attar"</rdf:li></rdf:Alt></dc:rights>
-   <dc:description><rdf:Alt><rdf:li xml:lang="x-default">This is where you put the abstract.</rdf:li></rdf:Alt></dc:description>
+   <dc:description><rdf:Alt><rdf:li xml:lang="x-default">La tesi è dedicata allo studio dei segnali di onda gravitazionale generati dalla post-coalescenza di sistemi binari di stelle di neutroni attraverso l'algoritmo Coherent WaveBurst. Nella prima parte si descrive il fenomeno dello spiraleggiamento di un sistema binario di stelle di neutroni con la conseguente emissione di onde gravitazionali e si studiano gli stati finali in seguito alla coalescenza, fortemente dipendenti dalle masse delle stelle progenitrici e dall'equazione di stato, e si valutano con particolare attenzione i segnali di onda gravitazionale legati alla coalescenza. Nella seconda parte si ripercorre la prima osservazione di onda gravitazionale da questo tipo di sistemi, avvenuta il 17 Agosto 2017, che risulta tutt'oggi il segnale più energetico osservato e si considerano i limiti sperimentali che non permettono l'osservazione del segnale di post-coalescenza. Invece l'analisi obiettivo di questa tesi viene fatta attraverso l'utilizzo dell'algoritmo Coherent WaveBurst, considerando iniezioni di dati simulati nel contesto della rete LIGO-Virgo, secondo le previsioni di sensibilità del run O4. Quello che ci si propone di valutare sono le curve di sensibilità dell'algoritmo che si utilizza, verificando l'energia persa nella ricostruzione e la corrispondenza del segnale ricostruito rispetto al segnale iniettato e, facendo riferimento alla fase del segnale relativo alla post-coalescenza, si valutano le principali caratteristiche di quest'ultimo, utilizzando un metodo che permette di studiarlo in modo isolato. La tesi è organizzata nel seguente modo: nel Capitolo 1 viene introdotta la struttura teorica che regola l'emissione di onde gravitazionali da sistemi binari di stelle di neutroni e i possibili destini di tali complessi; nel Capitolo 2 si ripercorre la rivelazione, da parte della collaborazione LIGO-Virgo, del segnale GW170817; nel Capitolo 3 si descrive l'algoritmo cWB, con particolare attenzione alle statistiche che verranno utilizzate nell'analisi e infine nel Capitolo 4 si sviluppa l'analisi e si trarranno le conclusioni.</rdf:li></rdf:Alt></dc:description>
    <dc:subject><rdf:Bag><rdf:li>gravitational waves</rdf:li>
      <rdf:li>binary neutron star</rdf:li>
      <rdf:li>GW transient search</rdf:li>
@@ -81,9 +81,9 @@
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/"> 
    <xmp:CreatorTool>LaTeX with hyperref</xmp:CreatorTool> 
-   <xmp:ModifyDate>2021-03-23T13:20:34+01:00</xmp:ModifyDate> 
-   <xmp:CreateDate>2021-03-23T13:20:34+01:00</xmp:CreateDate> 
-   <xmp:MetadataDate>2021-03-23T13:20:34+01:00</xmp:MetadataDate> 
+   <xmp:ModifyDate>2021-03-26T23:06:13+01:00</xmp:ModifyDate> 
+   <xmp:CreateDate>2021-03-26T23:06:13+01:00</xmp:CreateDate> 
+   <xmp:MetadataDate>2021-03-26T23:06:13+01:00</xmp:MetadataDate> 
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmpRights = "http://ns.adobe.com/xap/1.0/rights/"> 
    <xmpRights:Marked>True</xmpRights:Marked>
@@ -91,7 +91,7 @@
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"> 
    <xmpMM:DocumentID>uuid:D1C18CF6-9570-5F1E-6E17-01B120186396</xmpMM:DocumentID> 
-   <xmpMM:InstanceID>uuid:1FD8B1A1-F408-B4DC-48DA-40B99ED0DC87</xmpMM:InstanceID> 
+   <xmpMM:InstanceID>uuid:BB742F7C-3FF4-D6E4-03E6-1768155EB4C2</xmpMM:InstanceID> 
   </rdf:Description> 
  </rdf:RDF> 
 </x:xmpmeta> 

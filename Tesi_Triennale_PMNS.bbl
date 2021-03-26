@@ -22,6 +22,13 @@
   $\sim3.4${M}$_\odot$.
 \newblock {\em The Astrophysical Journal 892}, 1 (Mar 2020), L3.
 
+\bibitem{Abbott_2020a}
+{\sc Abbott, B.~P., Abbott, R., Abbott, T.~D., Abraham, S., Acernese, F.,
+  Ackley, K., Adams, C., Adya, V.~B., Affeldt, C., and et~al.}
+\newblock Prospects for observing and localizing gravitational-wave transients
+  with advanced ligo, advanced virgo and kagra.
+\newblock {\em Living Reviews in Relativity 23}, 1 (Sep 2020).
+
 \bibitem{Abbott_2017c}
 {\sc Abbott, B.~P., Abbott, R., Abbott, T.~D., Acernese, F., Ackley, K., Adams,
   C., Adams, T., Addesso, P., Adhikari, R.~X., Adya, V.~B., and et~al.}
@@ -35,10 +42,28 @@
   binary neutron star merger gw170817.
 \newblock {\em The Astrophysical Journal 851}, 1 (Dec 2017), L16.
 
+\bibitem{Akmal_1998}
+{\sc Akmal, A., Pandharipande, V.~R., and Ravenhall, D.~G.}
+\newblock Equation of state of nucleon matter and neutron star structure.
+\newblock {\em Physical Review C 58}, 3 (Sep 1998), 1804–1828.
+
 \bibitem{Baumgarte_2000}
 {\sc Baumgarte, T.~W., Shapiro, S.~L., and Shibata, M.}
 \newblock On the maximum mass of differentially rotating neutron stars.
 \newblock {\em The Astrophysical Journal 528}, 1 (Jan 2000), L29–L32.
+
+\bibitem{cWB_Manual}
+{\sc CoherentWaveburst}.
+\newblock {cWB Manual}.
+\newblock \url{https://gwburst.gitlab.io/documentation/latest/html/index.html}.
+\newblock Accessed: 26 March 2021.
+
+\bibitem{Han_2020}
+{\sc Han, M.-Z., Tang, S.-P., Hu, Y.-M., Li, Y.-J., Jiang, J.-L., Jin, Z.-P.,
+  Fan, Y.-Z., and Wei, D.-M.}
+\newblock Is {GW}190425 consistent with being a neutron star{\textendash}black
+  hole merger?
+\newblock {\em The Astrophysical Journal 891}, 1 (feb 2020), L5.
 
 \bibitem{hartle2003gravity}
 {\sc Hartle, J.}
@@ -81,6 +106,7 @@
 {\sc Puecher, A.}
 \newblock Characterization of the gravitational wave emission from binary
   neutron stars mergers.
+\newblock Master's thesis, Università degli Studi di Trento, 2018.
 
 \bibitem{Rezzolla_2016}
 {\sc Rezzolla, L., and Takami, K.}
@@ -93,9 +119,16 @@
 \newblock The evolution of binary neutron star post-merger remnants: a review,
   2020.
 
+\bibitem{Shen_2010}
+{\sc Shen, G., Horowitz, C.~J., and Teige, S.}
+\newblock Equation of state of dense matter from a density dependent
+  relativistic mean field model.
+\newblock {\em Physical Review C 82}, 1 (Jul 2010).
+
 \bibitem{Tringali_2017}
 {\sc Tringali, M.~C.}
-\newblock Analysis methods for gravitational wave from binary neutron star
-  coalescences: investigation on the post-merger phase.
+\newblock {\em Analysis methods for gravitational wave from binary neutron star
+  coalescences: investigation on the post-merger phase}.
+\newblock PhD thesis, Università degli Studi di Trento, Jul 2017.
 
 \end{thebibliography}
