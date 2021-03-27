@@ -144,16 +144,16 @@ Si avrà quindi una risoluzione in frequenza $\Delta f_j$ definita come 1/(2$\De
 I valori nella mappa tempo-frequenza vengono sbiancati: partendo dalla mappa con massima risoluzione in frequenza per ogni banda di frequenza viene calcolato il valore di scarto quadratico medio del rumore, utilizzando una media mobile. Quindi i dati nel piano tempo-frequenza sono normalizzati rispetto allo scarto quadratico medio e scalati con il rumore come $w_k[i,j] = x_k[i,j]/\sigma_k[i,j]$ \cite{Klimenko_2016}.
 
 \begin{wrapfigure}{r}{0.46\textwidth}
-	\vspace{-15pt}
+	\vspace{-18pt}
 	\begin{center}
 		\includegraphics[width=0.475\textwidth]{figures/Capitolo_2/wavepacket_patterns.png}
 	\end{center}
 	\vspace{-5pt}
-	\caption{Alcuni pattern caratteristici per la selezione dei pixel}
+	\caption{Alcuni pattern caratteristici per la selezione dei pixel, \cite{cWB_Manual}}
 	\label{fig:patterns}
 	\vspace{-15pt}
 \end{wrapfigure}
-cWB esegue trasformazioni di wavelet a diverse risoluzioni e per ogni risoluzione seleziona i pixel con eccesso di potenza che saranno selezionati per il prossimo passo dell'analisi. I pixel con eccesso di potenza vengono scelti se superano una soglia definita. Tale soglia fa riferimento alla coda destra di probabilità di una distribuzione gaussiana attesa per il rumore. Infine, poiché un evento deve essere costituito da un gruppo di pixel contigui, vengono selezionati i gruppi pixel che soddisfano diverse possibili condizioni sull'eccesso di potenza rispetto alla media attesa per il rumore \cite{cWB_Manual}. Si riportano in Figura \ref{fig:patterns} alcuni dei pattern di selezione di cWB.
+cWB esegue trasformazioni di wavelet a diverse risoluzioni e per ogni risoluzione seleziona i pixel con eccesso di potenza che saranno utilizzati nel prossimo passo dell'analisi. I pixel con eccesso di potenza vengono scelti se superano una soglia definita. Tale soglia fa riferimento alla coda destra di probabilità di una distribuzione gaussiana attesa per il rumore. Infine, poiché un evento deve essere costituito da un gruppo di pixel contigui, vengono selezionati i gruppi pixel che soddisfano diverse possibili condizioni sull'eccesso di potenza rispetto alla media attesa per il rumore \cite{cWB_Manual}. Si riportano in Figura \ref{fig:patterns} alcuni dei pattern di selezione di cWB.
 %\subsection{Filtro di predizione lineare dell'errore}
 %\label{subsection:lpe_filter}
 %I filtri per la predizione lineare dell'errore (LPE) sono usati per rimuovere le componenti prevedibili dalla serie temporale in input. Possono essere applicati nel dominio di wavelet, ma più frequentemente vengono usati nel dominio temporale restituendo una serie temporale sbiancata.
@@ -189,7 +189,7 @@ cWB esegue trasformazioni di wavelet a diverse risoluzioni e per ogni risoluzion
 La generazione dei trigger, quindi l'identificazione dei segnali, è basata su statistiche di eccesso di potenza e di correlazione incrociata tra i segnali dei rivelatori. 
 
 \begin{wrapfigure}{r}{0.46\textwidth}
-	\vspace{-25pt}
+	\vspace{-27pt}
 	\begin{center}
 		\includegraphics[width=0.475\textwidth]{figures/Capitolo_2/l_tfmap_scalogram.png}
 	\end{center}

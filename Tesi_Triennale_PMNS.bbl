@@ -53,9 +53,10 @@
 \newblock {\em The Astrophysical Journal 528}, 1 (Jan 2000), L29–L32.
 
 \bibitem{cWB_Manual}
-{\sc CoherentWaveburst}.
+{\sc cWB}.
 \newblock {cWB Manual}.
-\newblock \url{https://gwburst.gitlab.io/documentation/latest/html/index.html}.
+\newblock \url{https://gwburst.gitlab.io/documentation/latest/html/index.html},
+  2021.
 \newblock Accessed: 26 March 2021.
 
 \bibitem{Han_2020}
