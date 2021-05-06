@@ -52,6 +52,19 @@
 \newblock On the maximum mass of differentially rotating neutron stars.
 \newblock {\em The Astrophysical Journal 528}, 1 (Jan 2000), L29–L32.
 
+\bibitem{curve_sens}
+{\sc {Brian O'Reilly, Marica Branchesi, Sadakazu Haino, Gianluca Gemme}}.
+\newblock Noise curves used for simulations in the update of the observing
+  scenarios paper.
+\newblock \url{https://dcc.ligo.org/LIGO-T2000012/public}.
+\newblock [Online; accessed 30-March-2021].
+
+\bibitem{cWB}
+{\sc cWB}.
+\newblock {coherent WaveBurst}.
+\newblock \url{https://gwburst.gitlab.io/}, 2021.
+\newblock Accessed: 01 April 2021.
+
 \bibitem{cWB_Manual}
 {\sc cWB}.
 \newblock {cWB Manual}.
@@ -92,6 +105,12 @@
 {\sc Królak, A., and Patil, M.}
 \newblock The first detection of gravitational waves.
 \newblock {\em Universe 3}, 3 (2017).
+
+\bibitem{wiki_ligo}
+{\sc {LIGO Scientific Collaboration}}.
+\newblock What is an interferometer?
+\newblock \url{https://www.ligo.caltech.edu/page/what-is-interferometer}.
+\newblock [Online; accessed 29-March-2021].
 
 \bibitem{maggiore2008gravitational}
 {\sc Maggiore, M.}

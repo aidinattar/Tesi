@@ -1,15 +1,15 @@
 % !TEX root = ../../Tesi_Triennale_PMNS.tex
 \chapter[Algoritmo Coherent WaveBurst]{Coherent WaveBurst: algoritmo per la rivelazione e la ricostruzione di segnali di onde gravitazionali}
 \label{chapter:cwb}
-I dati forniti dalla rete di interferometri sono nella forma 
+I dati forniti dalla rete di interferometri possono essere scritti come:
 \[x(t) = \xi_k(t) + n(t)\]
 dove $\xi_k(t)$ è la risposta del rivelatore al passaggio dell'onda gravitazionale, mentre $n(t)$ rappresenta il rumore di fondo dello strumento.
-La risposta al segnale gravitazionale può essere scritta in una mappa tempo-frequenza come:
+La risposta al segnale gravitazionale può essere scritta come:
 \begin{equation}
 \xi_k = F_{+,k}h_+ + F_{\times,k}h_\times
 \label{eqn:detector_response}
 \end{equation}
-dove $F_{+,k}(\theta,\phi)$ e $F_{\times,k}(\theta,\phi)$ sono gli antenna pattern del rivelatore k-esimo\cite{Klimenko_2008}. In particolare gli antenna pattern descrivono la risposta del detector al passaggio dell'onda gravitazionale e dipendono dalla posizione della sorgente nel cielo e dall'angolo di polarizzazione. 
+dove $F_{+,k}(\theta,\phi)$ e $F_{\times,k}(\theta,\phi)$ sono gli antenna pattern del rivelatore $k$-esimo\cite{Klimenko_2008}. In particolare gli antenna pattern descrivono la risposta del detector al passaggio dell'onda gravitazionale in funzione dalla posizione della sorgente nel cielo e dall'angolo di polarizzazione. 
 
 Per semplicità si introduce la seguente notazione:
 \[
@@ -18,11 +18,12 @@ Per semplicità si introduce la seguente notazione:
 %\mathbf{w}[i,j] = \left(\frac{x_1[i,j]}{\sigma_1[i,j]},\dots, \frac{x_K[i,j]}{\sigma_K[i,j]} \right) ;
 \]
 \[
-\mathbf{h}[i,j] = (h_+[i,j], h_\times[i,j])
+\mathbf{h}[i,j] = (h_+[i,j], h_\times[i,j]);
 \quad
 \mathbf{f}_{+(\times)}[i,j] = \left(\frac{F_{1+(\times)}[i,j]}{\sigma_1[i,j]},\dots, \frac{F_{K+(\times)}[i,j]}{\sigma_K[i,j]} \right) 
 \]
-dove K è il numero di rivelatori nella rete, $x_k[i,j]$ è il campione di dati del rivelatore (l'indice $i$ itera sui tempi, mentre l'indice $j$ itera sulle frequenze)\cite{Klimenko_2008}, $h_{+}[i,j]$ e $h_{\times}[i,j]$ sono le ampiezze delle due polarizzazioni della GW. Si userà poi la notazione $\sum_{\Omega_{TF}} = \sum_{i,j=1}^N$, in quanto si scriverà $\Omega_{TF}$ come il dominio tempo-frequenza.
+dove $K$ è il numero di rivelatori nella rete, $x_k[i,j]$ è il campione di dati del rivelatore (l'indice $i$ itera sui tempi, mentre l'indice $j$ itera sulle frequenze)\cite{Klimenko_2008}, $h_{+}[i,j]$ e $h_{\times}[i,j]$ sono le ampiezze delle due polarizzazioni della GW.
+% Si userà poi la notazione $\sum_{\Omega_{TF}} = \sum_{i,j=1}^N$, in quanto si scriverà $\Omega_{TF}$ come il dominio tempo-frequenza.
 
 %Con le notazioni precedenti e denotando il rumore $\mathbf{n}[i,j]$, si può scrivere
 %\begin{equation}
@@ -51,15 +52,15 @@ dove K è il numero di rivelatori nella rete, $x_k[i,j]$ è il campione di dati 
 
 %Nei metodi coerenti le statistiche vengono calcolate come somma coerente delle risposte dei detector singoli. Gli algoritmi che sfruttano questi metodi risultano più efficienti, devono cioè avere una probabilità di falso allarme più bassa, rispetto alle statistiche calcolate sulle risposte di ogni detector singolarmente.
 
-L'algoritmo che si utilizza, Coherent WaveBurst (cWB), ricerca eccessi di potenza nella rappresentazione in un piano tempo-frequenza del segnale, coerenti fra i rivelatori attraverso l'utilizzo di una statistica coerente costituita da una analisi della massima verosimiglianza.\\
+L'algoritmo che si utilizza, Coherent WaveBurst\footnote{L'algoritmo è open source e disponibile in \cite{cWB}} (cWB), ricerca eccessi di potenza coerenti fra i rivelatori nella rappresentazione in un piano tempo-frequenza del segnale, attraverso l'utilizzo di una statistica coerente costituita da una analisi della massima verosimiglianza.\\
 %L'algoritmo differisce dai metodi tradizionali che identificano gli eventi nei detector singolarmente usando statistiche di eccesso di potenza e poi verificano la coerenza tra i segnali nei vari detector.
-L'utilizzo di una statistica costruita coerentemente fra le risposte degli interferometri si dimostra più efficiente dei metodi che impongono la sola coincidenza temporale fra i segnali degli interferometri. Infatti si avranno molteplici vantaggi: innanzitutto la sensibilità del metodo non sarà limitata dal rivelatore meno sensibile nella rete, in quanto la likelihood utilizzata nei metodi coerenti rappresenta il rapporto segnale su rumore (SNR) totale del segnale ricostruito/rivelato dalla rete. 
+L'utilizzo di una statistica costruita coerentemente fra le risposte degli interferometri si dimostra più efficiente dei metodi che impongono la sola coincidenza temporale fra i segnali degli interferometri, si avranno infatti molteplici vantaggi: innanzitutto la sensibilità del metodo non sarà limitata dal rivelatore meno sensibile nella rete, in quanto la verosimiglianza utilizzata nei metodi coerenti rappresenta il rapporto segnale su rumore (SNR) totale del segnale ricostruito dalla rete. 
 Inoltre questo metodo permette di costruire altre statistiche coerenti, come il coefficiente di correlazione fra i rivelatori e la stima della componente coerente e non coerente, per distinguere segnali che effettivamente hanno una controparte fisica rispetto a eccessi di rumore ambientale o strumentale. Infine, è possibile ricostruire la posizione celeste della sorgente\cite{Klimenko_2008}.
 
-L'algoritmo cWB viene utilizzato all'interno della collaborazione LIGO-Virgo sia per l'analisi dei segnali in bassa latenza, per identificare e ricostruire candidati significativi e poter, una volta ottenuta una prima stima della posizione celeste della sorgente, condividerla con i telescopi partner per identificare i segnali elettromagnetici legati; sia per l'analisi di dati consolidati, volta a ottenere risultati più approfonditi sull'evento, stabilendo la significanza degli eventi osservati e identificando le stelle progenitrici\cite{Klimenko_2016}.
+L'algoritmo cWB viene utilizzato all'interno della collaborazione LIGO-Virgo sia per l'analisi dei segnali in bassa latenza, per identificare e ricostruire candidati significativi e poter, una volta ottenuta una prima stima della posizione celeste della sorgente, condividerla con i telescopi partner per identificare i segnali elettromagnetici legati; sia per l'analisi di dati consolidati, volta a ottenere risultati più approfonditi sull'evento, stabilendo la significanza di quest'ultimo e identificando le stelle progenitrici\cite{Klimenko_2016}.
 \section{Metodologia di analisi per la ricerca di segnali gravitazionali}
 \label{section:coherent_analysis}
-Per rivelare e ricostruire segnali, la pipeline di cWB utilizza un metodo basato sul rapporto di verosimiglianza, definito come il logaritmo del rapporto di verosimiglianza
+Per rivelare e ricostruire segnali, la pipeline di cWB utilizza un metodo basato su una statistica di verosimiglianza, definita come il logaritmo del rapporto di verosimiglianza
 \begin{equation}
 	\Lambda(\mathbf{x},\Omega) = \frac{p(\mathbf{x}|\mathbf{h}(\Omega))}{p(\mathbf{x}|0)}
 \end{equation}
@@ -68,27 +69,28 @@ dove $\Omega$ è il set di parametri che descrive il segnale, $p(\mathbf{x}|0)$ 
 
 Nell'ipotesi idealistica di rumore gaussiano quasi stazionario con deviazione standard $\sigma$ le densità di probabilità associate alle ipotesi $H_0$ e $H_1$ in un piano tempo-frequenza sono 
 \begin{equation}
-	p(x|0)) = \prod_{i=1}^N\frac{1}{\sqrt{2\pi}\sigma^2}\exp(-\frac{x^2[i,j]}{2\sigma^2})
+	p(\mathbf{x}|0)) = \prod_{i,j=1}^N\frac{1}{\sqrt{2\pi}\sigma^2}\exp(-\frac{x^2[i,j]}{2\sigma^2})
 	\quad\quad
-	p(x|h(\Omega)) = \prod_{i=1}^N\frac{1}{\sqrt{2\pi}\sigma^2}\exp(-\frac{(x[i,j]-\xi[i,j])^2}{2\sigma^2}).
+	p(\mathbf{x}|\mathbf{h}(\Omega)) = \prod_{i,j=1}^N\frac{1}{\sqrt{2\pi}\sigma^2}\exp(-\frac{(x[i,j]-\xi[i,j])^2}{2\sigma^2}).
 \end{equation}
 Il funzionale di verosimiglianza può essere scritto quindi come
 \begin{equation}
-	L = \ln(\Lambda(x)) = \sum_{i=1}^{N}\left[\frac{1}{\sigma^2}\left(x[i,j]\xi[i,j]-\frac{1}{2}\xi^2[i,j]\right)\right].
+	L = \ln(\Lambda(x)) = \sum_{i,j=1}^{N}\left[\frac{1}{\sigma^2}\left(x[i,j]\xi[i,j]-\frac{1}{2}\xi^2[i,j]\right)\right].
 \end{equation}
-Estendendo ad una rete di K rivelatori, supponendo rumore scorrelati tra i vari rivelatori, si scriverà
+Estendendo ad una rete di $K$ rivelatori, supponendo rumore scorrelato tra i vari rivelatori, si avrà
 \begin{equation}
 	\mathcal{L} = \sum_{k=1}^{K}\sum_{i,j=1}^{N}\left(\frac{x_k^2[i,j]}{\sigma_k^2[i,j]} - \frac{(x_k[i,j]-\xi_k[i,j])^2}{\sigma_k^2[i,j]}  \right)
 	\label{eqn:Likelihood}
 \end{equation}
 
-Il rumore del rivelatore è caratterizzato dalla deviazione standard $\sigma_k[i,j]$,  anch'essa una funzione sul piano tempo-frequenza. 
+Il rumore del rivelatore è anch'esso una funzione sul piano tempo-frequenza ed è caratterizzato dalla deviazione standard $\sigma_k[i,j]$, dispersione nella distribuzione gaussiana.
+%,  anch'essa una funzione sul piano tempo-frequenza. 
 %I valori saranno i dati scalati con il rumore (detti sbiancati)\cite{Klimenko_2016}. 
 
 Dunque, al variare di $h_{+}[i,j]$ e $h_{\times}[i,j]$ varia anche $\mathcal{L}$, l'obiettivo è quindi massimizzare il rapporto di verosimiglianza, al variare della possibile posizione nel cielo del segnale. Il segnale viene alla fine ricostruito tramite una trasformazione wavelet inversa nella posizione di massimizzazione della verosimiglianza
 %l'obiettivo è quindi ottenere i valori delle ampiezze che massimizzano il funzionale di verosimiglianza da cui si deduce la forma d'onda nel dominio dei tempi facendo una trasformazione di wavelet inversa.%, che consisterà dunque 
 
-Il funzionale rapporto di verosimiglianza in equazione \ref{eqn:Likelihood} si può scrivere come
+Il funzionale rapporto di verosimiglianza in equazione \ref{eqn:Likelihood} si può scrivere come\footnote{Si usa la notazione $\sum_{\Omega_{TF}} = \sum_{i,j=1}^N$, con $\Omega_{TF}$ dominio tempo-frequenza.}:
 \begin{equation}
 %	\mathcal{L} = \braket{w}{\xi} - \frac{1}{2} \braket{\xi}{\xi} = \mathcal{L}_+ + \mathcal{L}_\times = \sum_{\Omega_{TF}}\left[ \mathbf{w} \cdot \mathbf{f}_+ - \frac{1}{2}|\mathbf{f}_+|^2h_+^2\right] + \sum_{\Omega_{TF}}\left[ \mathbf{w} \cdot \mathbf{f}_\times - \frac{1}{2}|\mathbf{f}_\times|^2h_\times^2\right]
 	\mathcal{L} =  \mathcal{L}_+ + \mathcal{L}_\times = \sum_{\Omega_{TF}}\left[ \mathbf{w} \cdot \mathbf{f}_+ - \frac{1}{2}|\mathbf{f}_+|^2h_+^2\right] + \sum_{\Omega_{TF}}\left[ \mathbf{w} \cdot \mathbf{f}_\times - \frac{1}{2}|\mathbf{f}_\times|^2h_\times^2\right]
@@ -124,11 +126,11 @@ dove i vettori di antenna pattern $\mathbf{f}_+$ e $\mathbf{f}_\times$ sono defi
 
 %\paragraph{Regolatori} C'è una particolare classe di vincoli, i regolatori, che dipendono da come il network reagisce a un determinato segnale. Si può citare un esempio considerando il caso in cui $|f_\times|=0$, come nel caso di detector allineati; la risposta del network dovrebbe essere lungo la direzione di $f_+$ e imporre questo vincolo porta l'analisi della likelihood a ignorare la risposta-$\times$ del network. Anche per detector non allineati si utilizzano questo tipo di vincoli: in base alla posizione della sorgente, il network può essere meno sensibile alla seconda componente della GW ($|\mathbf{f}_\times|^2 \ll |\mathbf{f}_+|^2$) portando a problemi nella ricostruzione di $h_\times$. Quello che viene fatto da cWB è cambiare la norma di $\mathbf{f}_\times$ con un parametro $\delta$, equivalente ad aggiungere un ulteriore detector al network che permette di preservare l'ortogonalità di $\mathbf{e}_+ \text{ e } \mathbf{e}_\times'$.
 \section{Algoritmo cWB}
-L'algoritmo, scritto in C++/ROOT e sviluppato all'interno della collaborazione LIGO-Virgo, ha la caratteristica di non imporre assunzioni (o facendo assunzioni minimali) sulla morfologia del segnale.\\
-Vengono descritti i principali step dell'algoritmo: trasformazione di wavelet, generazione di trigger coerenti e selezione dei trigger coerenti.
+L'algoritmo, scritto in C++/ROOT e sviluppato all'interno della collaborazione LIGO-Virgo, ha la caratteristica di non imporre assunzioni (o fare assunzioni minimali) sulla morfologia del segnale.\\
+Vengono descritti i principali step dell'algoritmo: generazione della mappa tempo-frequenza, generazione di trigger coerenti e selezione dei trigger coerenti.
 \subsection{Rappresentazione in tempo-frequenza}
 \begin{wrapfigure}{r}{0.46\textwidth}
-	\vspace{-15pt}
+	\vspace{-20pt}
 	\begin{center}
 		\includegraphics[width=0.475\textwidth]{figures/Capitolo_2/L1_scalogram_0.png}
 	\end{center}
@@ -138,22 +140,27 @@ Vengono descritti i principali step dell'algoritmo: trasformazione di wavelet, g
 	\vspace{-15pt}
 \end{wrapfigure}
 \label{subsection:wavelet_transform}
-Le trasformazioni di wavelet, partendo dai dati discreti, producono rappresentazioni tempo-frequenza dei dati dei rivelatori $w[i,j]$. Lo spettro di wavelet può essere quindi rappresentato con uno scalogramma tempo-frequenza. La risoluzione nel dominio del tempo $\Delta t_j(R)$ è determinata dal rate di campionamento R e dall'indice di scala j. Poiché le trasformazioni di wavelet costituiscono una serie di trasformazioni di Fourier infinitesime, conservano il volume del campione, pari a 1/2 per la serie temporale in input.\\
-Si avrà quindi una risoluzione in frequenza $\Delta f_j$ definita come 1/(2$\Delta t_j$) che determina la larghezza di banda per l'indice j. Per ottimizzare la ricerca nel piano, cWB procede con diverse trasformazioni a risoluzioni diverse, che permette di ottenere il grafico in Figura \ref{fig:scalogram_example}\cite{Klimenko_2008}.
+Le trasformazioni di wavelet, partendo dai dati discreti, producono rappresentazioni tempo-frequenza dei dati dei rivelatori $w[i,j]$. Lo spettro di wavelet può essere quindi rappresentato con uno scalogramma tempo-frequenza. La risoluzione nel dominio del tempo $\Delta t_j(R)$ è determinata dalla frequenza di campionamento R. Le trasformazioni di wavelet sono costruite in modo da conservare il volume del campione, $df\times dt=1/2$ in questo caso.\\
+Si avrà quindi una risoluzione in frequenza $\Delta f_j$ definita come 1/(2$\Delta t_j$) che determina la larghezza di banda per l'indice $j$. Per ottimizzare la ricerca nel piano, cWB procede con diverse trasformazioni a risoluzioni diverse, che permette di ottenere il grafico in Figura \ref{fig:scalogram_example}\cite{Klimenko_2008}.
 
-I valori nella mappa tempo-frequenza vengono sbiancati: partendo dalla mappa con massima risoluzione in frequenza per ogni banda di frequenza viene calcolato il valore di scarto quadratico medio del rumore, utilizzando una media mobile. Quindi i dati nel piano tempo-frequenza sono normalizzati rispetto allo scarto quadratico medio e scalati con il rumore come $w_k[i,j] = x_k[i,j]/\sigma_k[i,j]$ \cite{Klimenko_2016}.
+I valori nella mappa tempo-frequenza vengono sbiancati: nella mappa con massima risoluzione in frequenza per ogni banda viene calcolato il valore di scarto quadratico medio del rumore, utilizzando una media mobile. Quindi i dati nel piano tempo-frequenza sono normalizzati rispetto allo scarto quadratico medio attraverso $w_k[i,j] = x_k[i,j]/\sigma_k[i,j]$ \cite{Klimenko_2016}.
 
 \begin{wrapfigure}{r}{0.46\textwidth}
-	\vspace{-18pt}
+	\vspace{-10pt}
 	\begin{center}
 		\includegraphics[width=0.475\textwidth]{figures/Capitolo_2/wavepacket_patterns.png}
 	\end{center}
 	\vspace{-5pt}
-	\caption{Alcuni pattern caratteristici per la selezione dei pixel, \cite{cWB_Manual}}
+	\caption{Pattern caratteristici di cWB per la selezione dei pixel, \cite{cWB_Manual}}
 	\label{fig:patterns}
 	\vspace{-15pt}
 \end{wrapfigure}
-cWB esegue trasformazioni di wavelet a diverse risoluzioni e per ogni risoluzione seleziona i pixel con eccesso di potenza che saranno utilizzati nel prossimo passo dell'analisi. I pixel con eccesso di potenza vengono scelti se superano una soglia definita. Tale soglia fa riferimento alla coda destra di probabilità di una distribuzione gaussiana attesa per il rumore. Infine, poiché un evento deve essere costituito da un gruppo di pixel contigui, vengono selezionati i gruppi pixel che soddisfano diverse possibili condizioni sull'eccesso di potenza rispetto alla media attesa per il rumore \cite{cWB_Manual}. Si riportano in Figura \ref{fig:patterns} alcuni dei pattern di selezione di cWB.
+cWB esegue trasformazioni di wavelet a diverse risoluzioni e per ogni risoluzione seleziona i pixel con eccesso di potenza che saranno utilizzati nel prossimo passo dell'analisi. I pixel con eccesso di potenza sono selezionati in base a una soglia che determina approssimativamente la frazione dei pixel selezionati. Un evento viene quindi definito dall'insieme di pixel contigui selezionati; l'algoritmo permette di scegliere i pixel senza alcuna assunzione, o imponendo assunzioni minime sulla morfologia del segnale, quali ad esempio il fatto che la frequenza aumenti con il tempo come accade per i segnali da coalescenti. La Figura \ref{fig:patterns} riporta le possibili configurazioni nella selezione dei pixel.
+
+
+%Poiché un evento deve essere costituito da un gruppo di pixel contigui, vengono selezionati i gruppi pixel che soddisfano diverse possibili combinazioni, in base a modelli che rappresentano assunzioni sul tipo di segnale atteso\cite{cWB_Manual}.
+%condizioni sull'eccesso di potenza rispetto alla media attesa per il rumore .
+%Si riportano in Figura \ref{fig:patterns} alcuni dei pattern di selezione di cWB.
 %\subsection{Filtro di predizione lineare dell'errore}
 %\label{subsection:lpe_filter}
 %I filtri per la predizione lineare dell'errore (LPE) sono usati per rimuovere le componenti prevedibili dalla serie temporale in input. Possono essere applicati nel dominio di wavelet, ma più frequentemente vengono usati nel dominio temporale restituendo una serie temporale sbiancata.
@@ -188,36 +195,39 @@ cWB esegue trasformazioni di wavelet a diverse risoluzioni e per ogni risoluzion
 
 La generazione dei trigger, quindi l'identificazione dei segnali, è basata su statistiche di eccesso di potenza e di correlazione incrociata tra i segnali dei rivelatori. 
 
+Riprendendo quanto scritto in \ref{eqn:Likelihood}, il funzionale di likelihood viene calcolato come somma sui campioni selezionati per l'analisi, il numero di termini sommati dipende all'area nel piano tempo-frequenza che si considera. 
+%Se tale somma consiste di un solo elemento si può scrivere il funzionale come
+%\begin{equation}
+%	\mathcal{L}_p(i,j,\theta,\phi)=|\mathbf{w}|^2 -|\mathbf{w} - \mathbf{f}_+h_+ - \mathbf{f}_\times h_\times|^2
+%	\label{eqn:likelihood_single_term}
+%\end{equation}
+%Poiché è possibile applicare il metodo della likelihood al funzionale \ref{eqn:likelihood_single_term}, 
+Si può trovare il massimo $L(\theta, \phi)$ al variare di $h_+$ e $h_\times$ e quindi ricercare il massimo in funzione della posizione nel cielo
+\begin{equation}
+	L_m(i,j)= \max_{\theta, \phi}[L_p(i,j,\theta,\phi)]
+	\label{eqn:max_L}
+\end{equation}
 \begin{wrapfigure}{r}{0.46\textwidth}
-	\vspace{-27pt}
+	\vspace{-15pt}
 	\begin{center}
 		\includegraphics[width=0.475\textwidth]{figures/Capitolo_2/l_tfmap_scalogram.png}
 	\end{center}
 	\vspace{-5pt}
 	\caption{Mappa di Likelihood ottenuta da una analisi di una simulazione di coalescenza di una BNS con EOS SHT2.0 con rumore gaussiano della rete LIGO-Virgo}
 	\label{fig:Likelihood_example}
-	\vspace{-10pt}
+	\vspace{-15pt}
 \end{wrapfigure}
-Riprendendo quanto scritto in \ref{eqn:Likelihood}, il funzionale di likelihood viene calcolato come somma sui campioni selezionati per l'analisi, il numero di termini sommati dipende all'area nel piano tempo-frequenza che si considera. Se tale somma consiste di un solo elemento si può scrivere il funzionale come
-\begin{equation}
-	\mathcal{L}_p(i,j,\theta,\phi)=|\mathbf{w}|^2 -|\mathbf{w} - \mathbf{f}_+h_+ - \mathbf{f}_\times h_\times|^2
-	\label{eqn:likelihood_single_term}
-\end{equation}
-Poiché è possibile applicare il metodo della likelihood al funzionale \ref{eqn:likelihood_single_term}, si può trovare il massimo $L_p(\theta, \phi)$ al variare di $h_+$ e $h_\times$ e quindi ricercare il massimo in funzione della posizione nel cielo
-\begin{equation}
-	L_m(i,j)= \max_{\theta, \phi}[L_p(i,j,\theta,\phi)]
-	\label{eqn:max_L}
-\end{equation}
-La statistica $L_m$ ha quindi il significato della massima energia rivelata dalla rete in una determinata posizione del piano tempo-frequenza. Selezionando quindi i valori di $L_m$ sopra una determinata soglia si può identificare un cluster di pixel come potenziale segnale di GW. In questo modo si identificano i segnali combinando i dati dell'intera rete e non si cercano i segnali sui singoli rivelatori, verificando successivamente la coerenza.
+La statistica $L_m$ ha quindi il significato della massima energia rivelata dalla rete in una determinata posizione del piano tempo-frequenza.
+Selezionando quindi i valori di $L_m$ sopra una determinata soglia si può identificare un cluster di pixel come potenziale segnale di GW. In questo modo si identificano i segnali combinando i dati dell'intera rete anziché cercare i segnali sui singoli rivelatori, verificando successivamente la coerenza.
 %A questo punto si devono ricostruire i parametri del segnale legato al trigger, incluse la posizione della sorgente, le due polarizzazioni della GW, le risposte individuali dei rivelatori e le statistiche di massima likelihood dei trigger. In particolare la likelihood è ricostruita come
 %\begin{equation}
 %	\mathcal{L}_c(\theta,\phi) = \sum_{i,j}\mathcal{L}_p(i,j,\theta, \phi)
 %\end{equation}
 %La massima likelihood $L_{max}$ è ottenuta facendo variare $\mathcal{L}_c$ su $\theta$ e $\phi$ ed è calcolata su tutti i pixel di likelihood nel piano tempo frequenza per formare il trigger coerente\cite{Klimenko_2008}.
 \subsection{Selezione dei trigger coerenti}
-Nel caso di rumore gaussiano stazionario la massima verosimiglianza è l'unica statistica necessaria per la rivelazione e per la selezione degli eventi, per cui la probabilità di falso allarme e di scartare eventi effettivi è legata alla soglia minima per $L_{max}$. 
+%Nel caso di rumore gaussiano stazionario la massima verosimiglianza è l'unica statistica necessaria per la rivelazione e per la selezione degli eventi, per cui la probabilità di falso allarme e di scartare eventi effettivi è legata solo alla soglia minima per $L_{max}$. 
 %Nella realtà tuttavia il rumore non è tale, ma i dati sono sporcati da rumore strumentale e ambientale, per cui è necessario applicare altri metodi per distinguere i segnali reali. 
-La condizione di idealità non si realizza nella realtà, motivo per cui cWB utilizza estimatori sulla coerenza del segnale per distinguere possibili segnali gravitazionali, da eccessi di rumore strumentale e ambientale.
+La condizione di idealità di rumore gaussiano non si realizza nella realtà a causa di picchi di rumore strumentale e ambientale, motivo per cui cWB utilizza estimatori sulla coerenza del segnale per distinguere possibili segnali gravitazionali, da eccessi di rumore che non hanno controparte fisica.
 Alcuni esempi sono le statistiche coerenti ricavate dalle matrici di verosimiglianza e di energia non coerente.
 La matrice di likelihood $L_{mn}$ è ottenuta dalla forma quadratica della likelihood
 %da completare la parte dei regolatori a cui questa parte fa riferimento.
@@ -249,4 +259,4 @@ con $E_{mn}$  matrice diagonale delle energie normalizzate dei rivelatori $E_{mm
 	C_{net} = \frac{E_{coh}}{N_{ull}+|E_{coh}|}, \quad\quad\quad c_{net} = \frac{e_{coh}}{N_{ull}+|e_{coh}|}
 	\label{eqn:coefficient_energy}
 \end{equation}
-dove $N_{ull}$ è la somma di tutti gli elementi della matrice di non coerenza, che rappresenta l'energia totale non coerente. Accade infatti che eccessi di rumore vengano ricostruiti come segnale: i coefficienti $C_{net}$ e $c_{net}$ sono usati quindi come verifica della consistenza del segnale in quanto comparano l'energia non coerente e l'energia coerente\cite{Klimenko_2008}, in particolare un evento genuino risulta per $c\smallsim 1$, mentre per $c \ll 1$ corrisponde ad un evento spurio\cite{Klimenko_2016}.
+dove $N_{ull}$ è la somma di tutti gli elementi della matrice di non coerenza, che rappresenta l'energia totale non coerente, mentre $e_{coh}$ è l'energia coerente ridotta. Accade infatti che eccessi di rumore vengano ricostruiti come segnale: i coefficienti $C_{net}$ e $c_{net}$ sono usati quindi come verifica della consistenza del segnale in quanto comparano l'energia non coerente e l'energia coerente\cite{Klimenko_2008}, in particolare un evento genuino risulta per $c\smallsim 1$, mentre per $c \ll 1$ corrisponde ad un evento spurio\cite{Klimenko_2016}.

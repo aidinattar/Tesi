@@ -1,15 +1,15 @@
 % !TEX root = ../../Tesi_Triennale_PMNS.tex
 \chapter{Segnali gravitazionali da coalescenza di  sistemi binari di stelle di neutroni}
 \label{chapter:segnaleGWdaBNS}
-L'idea fondamentale della relatività generale è che le masse producono una curvatura nello spazio-tempo. Le equazioni che mettono in relazione la curvatura locale dello spazio-tempo e il tensore energia-impulso sono dette equazioni di Einstein:
+La teoria della relatività generale permette di relazionare la curvatura locale dello spazio-tempo con il tensore energia-impulso attraverso le equazioni di Einstein:
 \begin{equation}
-	R_{\alpha\beta} -\frac{1}{2}Rg_{\alpha\beta}=\frac{8\pi G}{c^4}T_{\alpha\beta}
+	R_{\mu\nu} -\frac{1}{2}Rg_{\mu\nu}=\frac{8\pi G}{c^4}T_{\mu\nu}
 \end{equation}
-con $R_{\alpha\beta}$ e $R$ rispettivamente tensore di Ricci e scalare di Ricci, legati al tensore di curvatura, $g_{\alpha\beta}$ tensore metrico, simmetrico e non degenere, e $T_{\alpha\beta}$ il tensore energia-impulso che è descrivibile come flusso di energia o equivalentemente come densità di impulso.
+con $R_{\mu\nu}$ e $R$ rispettivamente tensore di Ricci e scalare di Ricci, legati al tensore di curvatura, $g_{\mu\nu}$ tensore metrico, simmetrico e non degenere, e $T_{\mu\nu}$ il tensore energia-impulso che descrive il flusso e la densità di energia e di momento nello spazio-tempo.
 Tale equazione rappresenta un sistema di 10 equazioni differenziali non lineari, indipendenti, risolvibili solo in casi particolari. \\
 Considerando l'approssimazione di campo debole 
 \begin{equation}
-	g_{\alpha\beta} = \eta_{\alpha\beta} + h_{\alpha\beta}\quad\quad\text{ con }\quad |h_{\alpha\beta}|\ll \eta_{\alpha\beta} 
+	g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}\quad\quad\text{ con }\quad |h_{\mu\nu}|\ll \eta_{\mu\nu} 
 \end{equation}
 cioè ponendosi a distanza sufficiente dalla massa da poter considerare lo spazio piatto, è possibile linearizzare le equazioni di Einstein e, sviluppando i calcoli matematici e facendo opportune scelte di gauge, che non vengono qui riportate ma che si possono osservare in \cite{maggiore2008gravitational}, è possibile ottenere l'equazione d'onda gravitazionale:
 \begin{equation}
@@ -18,33 +18,33 @@ cioè ponendosi a distanza sufficiente dalla massa da poter considerare lo spazi
 con $\bar{h}_{\mu\nu} = h_{\mu\nu} - \frac{1}{2}\eta_{\mu\nu}h$ traccia inversa.
 
 Tra le sorgenti più interessanti di onde gravitazioni vi è la coalescenza di stelle di neutroni.
-Una stella di neutroni (NS) è la fase finale dell'evoluzione stellare, che segue alla cessazione delle reazioni di fusione nucleare degli elementi leggeri al suo interno, per stelle con massa $\SI{10}{\solarmass} < M < \SI{25}{\solarmass}$. Accade dunque che, in una certa fase del collasso, le densità estremamente alte portino gli elettroni a interagire con i protoni, attraverso il fenomeno della cattura elettronica, con la formazione di neutroni (e neutrini). Date le densità estreme della stella di neutroni, rimane incertezza sulle equazioni di stato della materia nucleare\cite{hobson2006general}.
+Una stella di neutroni (NS) è la fase finale dell'evoluzione stellare, che segue alla cessazione delle reazioni di fusione nucleare degli elementi leggeri al suo interno, per stelle con massa $\SI{10}{\solarmass} < M < \SI{25}{\solarmass}$. Le densità estremamente alte portano gli elettroni a interagire con i protoni, attraverso il fenomeno della cattura elettronica, con la formazione di neutroni (e neutrini). Date le densità estreme della stella di neutroni, rimane incertezza sulle equazioni di stato della materia nucleare\cite{hobson2006general}.
 Una stella di neutroni è resa stabile, contro il collasso dovuto alla forza di gravità, non da pressioni termiche come per il sole, ma da forze legate al principio di esclusione di Pauli e interazioni nucleari tra i neutroni. Queste forze hanno effetti solo sopra le densità nucleari, spiegando perché le NS siano così compatte (una NS ha una massa poco superiore rispetto alla massa solare in un raggio di $\smallsim$10 km)\cite{hartle2003gravity}
 %    ALTRO?
 
-Un sistema binario di stelle di neutroni (BNS), ovvero una coppia di NS che ruota attorno al centro di massa, legato attraverso la forza di attrazione gravitazionale, emette segnali di onda gravitazionale (GW) che possono essere interpretati come fase di spiraleggiamento, coalescenza e post-coalescenza (Figura \ref{fig:forma_onda_APR4}). Si consideri infatti una coppia di stelle con masse $m_1$ e $m_2$, massa totale $M = m_1 + m_2$ e massa ridotta $\mu = m_1m_2/(m_1+m_2)$, in orbita circolare di raggio R attorno al centro di massa e velocità tangenziale $v$: utilizzando un'analisi newtoniana si ottiene immediatamente che l'equilibrio di forza gravitazionale e forza centrifuga conduce alla terza legge di Keplero $\frac{v^2}{R} = \frac{GM}{4R^2}$. Definendo la frequenza orbitale $\Omega=2\pi/T$, con $T$ periodo dell'orbita, si ottiene	$\Omega=\sqrt{\frac{GM}{4R^3}}$. Facendo un'opportuna parametrizzazione delle coordinate delle stelle si ottiene il tensore momento di quadrupolo, definito come $I^{ij} = \int d^3yT^{00}y^iy^j$
+Un sistema binario di stelle di neutroni (BNS), ovvero una coppia di NS che ruota attorno al centro di massa, legato attraverso la forza di attrazione gravitazionale, emette onde gravitazionali (GW); il processo di coalescenza è costituito da tre fasi: spiraleggiamento, coalescenza e post-coalescenza (Figura \ref{fig:forma_onda_APR4}). Si consideri infatti una coppia di stelle con masse $m_1$ e $m_2$, massa totale $M = m_1 + m_2$ e massa ridotta $\mu = m_1m_2/(m_1+m_2)$, in orbita circolare di raggio R attorno al centro di massa e velocità tangenziale $v$: considerando la terza legge di Keplero $\frac{v^2}{R} = \frac{GM}{4R^2}$ e definendo la frequenza orbitale $\Omega=2\pi/T$, con $T$ periodo dell'orbita, si ottiene	$\Omega=\sqrt{\frac{GM}{4R^3}}$.  Definendo il tensore momento di quadrupolo come $I^{ij} = \int d^3yT^{00}y^iy^j$, che misura il grado di disomogeneità nella distribuzione della massa, e facendo un'opportuna parametrizzazione delle coordinate delle stelle si ottengono le componenti del tensore:
 \begin{equation}
 	I^{xx} = \mu R^2\frac{1-\cos{2\Omega t}}{2}, \quad I^{yy} = \mu R^2\frac{1+\cos{2\Omega t}}{2}, \quad I^{xy}  = -\frac{1}{2}\mu R^2\sin{2\Omega t}= I^{yx}
 	\label{eqn:quadrupole_moment}
 \end{equation}
-che porta a un'onda
+e quindi a un'onda
 \begin{equation}
 	h_{ij} = \frac{4G\mu\Omega^2R^2}{r}
 	\begin{bmatrix}
 	\cos{2\Omega t_r}	&\sin{2\Omega t_r}	&0\\
 	\sin{2\Omega t_r}	&-\cos{2\Omega t_r}	&0\\
 	0					&0					&0
-	\end{bmatrix}
+	\end{bmatrix}.
 	\label{eqn:wave_form}
 \end{equation}
 La frequenza dell'onda gravitazionale emessa da questi sistemi è tale che $\omega_{GW} = 2\Omega$.
-Si può scrivere la potenza irradiata $P=\frac{32}{5}\frac{c^5}{G}\left(\frac{GM_c\omega_{GW}}{2c^3}\right)^{10/3}$, con $M_c=\left(m_1m_2\right)^{3/5}/\left(m_1+m_2\right)^{1/5}$ massa di chirp. Con la radiazione di potenza nel sistema c'è perdita di energia $E_{orbita} = T + U = -\frac{Gm_1m_2}{R}$, per compensare l'energia persa, $R$ deve decrescere e di conseguenza $\Omega$ aumentare, andamento che conduce alla coalescenza dei due corpi.
+Si può scrivere la potenza irradiata $P=\frac{32}{5}\frac{c^5}{G}\left(\frac{GM_c\omega_{GW}}{2c^3}\right)^{10/3}$, con $M_c=\left(m_1m_2\right)^{3/5}/\left(m_1+m_2\right)^{1/5}$ massa di chirp; con la radiazione di potenza nel sistema c'è perdita di energia, che si può scrivere come $E_{orbita} = T + U = -\frac{Gm_1m_2}{R}$. Per compensare l'energia persa, $R$ deve decrescere e di conseguenza $\Omega$ aumentare, andamento che conduce alla coalescenza dei due corpi.
 A partire dalla legge per la potenza irradiata, è possibile valutare l'evoluzione della frequenza dell'onda gravitazionale 
 \begin{equation}
 	\dot{\omega}_{GW} = \frac{12}{5}2^{1/3}\left(\frac{GM_c}{c^3}\right)^{5/3}\omega_{GW}^{11/3}
 	\label{eqn:gw_frequency_law}
 \end{equation} 
-che integrata restituisce $\omega_{GW}$, che formalmente diverge in un tempo finito: si avrà che la fase di spiraleggiamento sarà descritta da un andamento a chirp e sarà descrivibile con un approccio analitico. Ovviamente la divergenza della frequenza non è fisica e compare solo formalmente, nella realtà infatti a distanze minori di una soglia critica l'approssimazione di corpi puntiformi fatta fin'ora non è più corretta e a dominare invece sono gli effetti di deformazione mareale, tipici di corpi estesi. Questo andamento viene sfruttato da Hulse e Taylor nella scoperta del primo sistema binario, osservando la decadenza dell'orbita a causa dell'emissione di onde gravitazionali.
+che integrata restituisce $\omega_{GW}$, che formalmente diverge in un tempo finito: si ottiene che la fase di spiraleggiamento è descritta da un andamento a chirp e può essere descritta con un approccio analitico. La divergenza della frequenza non è fisica e compare solo formalmente, a distanze minori di una soglia critica l'approssimazione di corpi puntiformi fatta fin'ora non è più corretta e a dominare sono invece gli effetti di deformazione mareale, tipici di corpi estesi. Questo andamento viene sfruttato da Hulse e Taylor nella scoperta del primo sistema binario, osservando la decadenza dell'orbita a causa dell'emissione di onde gravitazionali.
 \begin{wrapfigure}{r}{0.45\textwidth}
 	\vspace{-10pt}
 	\begin{center}
@@ -55,12 +55,12 @@ che integrata restituisce $\omega_{GW}$, che formalmente diverge in un tempo fin
 	\label{fig:forma_onda_APR4}
 	\vspace{-10pt}
 \end{wrapfigure}
-Perciò la fase di spiraleggiamento termina con i due oggetti che si scontrano dando inizio alla fase di coalescenza e quindi, dopo la fusione, alla post-coalescenza, che in base alle proprietà iniziali del sistema può portare a forme d'onda e oggetti diversi.	Mentre la fase di coalescenza dura pochi millisecondi, la fase di post-coalescenza genera un segnale quasi-stazionario. Queste due fasi risultano più complesse da modellare, per cui per il loro studio si fa affidamento a metodi numerici. \cite{maggiore2008gravitational}
+La fase di spiraleggiamento termina con i due oggetti che si scontrano dando inizio alla fase di coalescenza e quindi, dopo la fusione, alla post-coalescenza che, in base alle proprietà iniziali del sistema, può portare a forme d'onda e oggetti diversi.	Mentre la fase di coalescenza dura pochi millisecondi, la fase di post-coalescenza genera un segnale quasi-stazionario. Queste due fasi risultano più complesse da modellare, per cui per il loro studio si fa affidamento a metodi numerici. \cite{maggiore2008gravitational}
 %    Cenno sulle equazioni di stato.
 
 I sistemi binari di stelle di neutroni, oltre che ottime sorgenti di onde gravitazionali, risultano anche i migliori scenari per spiegare la fenomenologia dei lampi gamma brevi (short gamma ray burst). I lampi gamma consistono nell'emissione di intensi raggi gamma con uno spettro di durate estremamente vario, per cui si distinguono i short gamma ray burst con durata tipica inferiore a 2s e con un energia media dei fotoni superiore, i long gamma ray burst la quale durata è piccata attorno a 30s, fino agli ultra-long gamma ray burst che arrivano a durare diverse ore, mediamente meno energetici. 
-La separazione è legata ai fenomeni fisici che li generano: mentre i GRB lunghi hanno origine nel collasso del nucleo di stelle massive, nel fenomeno della post-luminescenza, la comprensione dell'origine di GRB brevi è risultata più complessa, infatti l'osservazione sperimentale ha portato ad escludere il collasso di stelle massive come origine di tali fenomeni. Candidati plausibili sono risultati invece la coalescenza di BNS o di binarie NS-BH, poiché la durata di GRB brevi richiede strutture compatte con caratteristiche sulla scala dei tempi nell'ordine delle decine di millisecondi, compatibili con la coalescenza di un sistema binario di NS, in particolare l'osservazione di GW170817, evento che si approfondirà nella sezione \ref{chapter:gw170817}, mostra come i GRB brevi siano effettivamente legati alla coalescenza di sistemi binari di stelle compatte \cite{maggiore2018gravitational}.
-\section{Formazione del corpo celeste}
+La separazione è legata ai fenomeni fisici che li generano: mentre i GRB lunghi hanno origine nel collasso del nucleo di stelle massive nel fenomeno della post-luminescenza, la comprensione dell'origine di GRB brevi è risultata più complessa. L'osservazione sperimentale ha portato ad escludere il collasso di stelle massive come origine di tali fenomeni. Candidati plausibili sono risultati invece la coalescenza di BNS o di binarie NS-BH, poiché la durata di GRB brevi richiede strutture compatte con caratteristiche sulla scala dei tempi nell'ordine delle decine di millisecondi, compatibili con la coalescenza di un sistema binario di NS, in particolare l'osservazione di GW170817, evento che si approfondirà nella sezione \ref{chapter:gw170817}, mostra come i GRB brevi siano effettivamente legati alla coalescenza di sistemi binari di stelle compatte \cite{maggiore2018gravitational}.
+\section{Collasso del sistema binario}
 \label{section:residual}
 Ci sono quattro possibili risultati della coalescenza di due stelle di neutroni, in base alle masse delle stelle e alle loro equazioni di stato. 
 Data la massa dell'oggetto $M$, \cite{sarin2020evolution} descrive i possibili stati finali del sistema (Fig.\ref{fig:EvoluzioneBNS}):
@@ -77,19 +77,19 @@ Data la massa dell'oggetto $M$, \cite{sarin2020evolution} descrive i possibili s
 \begin{SCfigure}[][ht]
 	\includegraphics[scale=0.2]{figures/Capitolo_1/MagnetarEvolution.png}
 	\captionsetup{width=0.8\textwidth}
-	\caption{Rappresentazione pittorica del destino del residuo del merger di un sistema binario di stelle di neutroni, \cite{sarin2020evolution}}
+	\caption{Rappresentazione pittorica del destino del corpo celeste formatosi dalla coalescenza di un sistema binario di stelle di neutroni, \cite{sarin2020evolution}}
 	\label{fig:EvoluzioneBNS}
 	\vspace{-20pt}
 \end{SCfigure}
 
-\subsection{Formazione diretta un black hole}	
+\subsection{Formazione diretta di un buco nero}	
 \label{subsection:Diretto_Black_hole}
 La formazione diretta di un buco nero dopo la coalescenza implica lo spegnimento del segnale, con un collasso quasi sferico che genera delle onde gravitazionali minime\cite{sarin2020evolution}.\\
-Questo tipo di segnale ha la particolarità, al contrario degli altri casi di post-merger, di ammattere uno studio analitico attraverso metodi perturbativi relativamente semplici (decrescita esponenziale con un tempo caratteristico legato alla massa del buco nero)\cite{maggiore2018gravitational}.
+Questo tipo di segnale ha la particolarità, al contrario degli altri casi di post-coalescenza, di ammettere uno studio analitico attraverso metodi perturbativi relativamente semplici (decrescita esponenziale con un tempo caratteristico legato alla massa del buco nero)\cite{maggiore2018gravitational}.
 
-\subsection{Formazione di una NS ipermassiva}
+\subsection{Formazione di una stella di neutroni ipermassiva}
 \label{subsection:ipermassiva}	
-La maggior parte delle coalescenze di stelle di neutroni porta alla formazione di stelle di neutroni ipermassive, supermassive o stabili. 
+La maggior parte delle coalescenze di stelle di neutroni porta alla formazione di stelle di neutroni ipermassive, supermassive o stabili\cite{sarin2020evolution}. 
 
 Una stella di neutroni ipermassiva è tale da avere una massa superiore al massimo in massa per una stella rotante uniformemente $M_{TOV}$, ma non collassa per la rotazione differenziale, cioè il fenomeno per cui le sue diverse parti ruotano con velocità angolare differente che permette una maggiore stabilità rispetto a stelle non rotanti o rotanti uniformemente \cite{Baumgarte_2000}, e per il supporto di gradienti termici.
 Nel momento in cui la stella rallenta la sua rotazione e/o si raffredda  la stella collassa in un buco nero. \\
@@ -98,14 +98,14 @@ Nel momento in cui la stella rallenta la sua rotazione e/o si raffredda  la stel
 %È in generale molto complessa la fisica che regola il collasso dell'ipermassiva residua tuttavia assumendo che per il rilascio del lampo gamma sia necessario tale collasso in buco nero, il ritardo con il quale si è osservato per GW170817, come si vedrà nel capitolo \ref{chapter:gw170817}, può essere, almeno in parte, spiegato con il collasso.
 L'emissione di GW dalla fase di post-coalescenza è attesa avere una quantità di energia rilasciata sotto forma di GW relativamente ampia e confrontabile con il massimo dello spiraleggiamento\cite{sarin2020evolution}. 
 
-\subsection{Formazione di una NS con lunga vita media}
+\subsection{Formazione di una stella di neutroni con lunga vita media}
 \label{subsection:long_lived}
-I residui della post-coalescenza che hanno una massa inferiore a $\smallsim1.2M_{TOV}$ sopravvivono per un tempo superiore al secondo e vengono denomiate supermassive se hanno una massa superiore al limite definito in precedenza $M_{TOV}$, mentre per valori inferiori sono stabili.
+Nel caso in cui il corpo celeste formatosi abbia una massa inferiore a $\smallsim1.2M_{TOV}$ sopravvive per un tempo superiore al secondo e viene denominata supermassiva se la massa è superiore al limite definito in precedenza $M_{TOV}$, mentre per valori inferiori è detta stabile.
 È importante osservare in Figura \ref{fig:EvoluzioneBNS} che per entrambi i prodotti finali si passa comunque per una fase di forte rotazione differenziale immediatamente successiva alla coalescenza rendendo i metodi di ricerca di segnali di GW non differenti da quelli per il caso di residuo ipermassivo.
-L'osservazione sperimentale mostra che questo tipo di esito si presenta in un numero non trascurabile di casi.
+L'osservazione sperimentale mostra che questo tipo di esito si presenta in un numero non trascurabile di casi\cite{sarin2020evolution}.
 
 Come detto, le simulazioni mostrano che stelle supermassive generate dalla coalescenza di un sistema binario di stelle di neutroni hanno una vita compresa tra $\smallsim10$s e $\smallsim10^4$s. In realtà l'osservazione sperimentale mostra che queste stelle tendono a collassare in una scala di tempi più breve di quella attesa e tale discrepanza si pensa possa includere eccessi di energia emessa in onde gravitazionali nelle prime fasi, o quark liberi che portano a modifiche nel momento di inerzia della stella rispetto al caso con materia ordinaria\cite{sarin2020evolution}.\\
-Questi vincoli hanno grande importanza, soprattutto per la ricerca futura: il fatto che le stelle di neutroni nascenti siano composte da quark non confinati suggerisce che vi sia una transizione di fase adrone-quark dipendente dalla temperatura e, comprendere dove avvenga questa transizione nel diagramma di fase nucleare è un informazione chiave per dedurre informazioni sul comportamento della materia nucleare e di conseguenza sull'equazione di stato.
+Questi vincoli hanno grande importanza, soprattutto per la ricerca futura: il fatto che le stelle di neutroni nascenti siano composte da quark non confinati suggerisce che vi sia una transizione di fase adrone-quark dipendente dalla temperatura e, comprendere dove avvenga questa transizione nel diagramma di fase nucleare è un informazione chiave per dedurre informazioni sul comportamento della materia nucleare e di conseguenza sull'equazione di stato (EOS).
 Il fatto, invece, che le NS supermassive rallentino la rotazione soprattutto a causa dell'emissione di GW ha importanti conseguenze per la dinamica della NS stessa e permette di avere vincoli sull'energia per ricostruire la natura dell'oggetto residuo nelle future analisi\cite{sarin2020evolution}.
 %neutrino emissions, thermal evolution, dynamical evolution, elettromagnetic observations?
 
@@ -136,21 +136,19 @@ Il fatto, invece, che le NS supermassive rallentino la rotazione soprattutto a c
 %	\vspace{-20pt}
 %\end{wrapfigure}
 %Una BNS realistica presenta una massa compresa tra $\smallsim\SI{2.4}{\solarmass}$ e $\smallsim\SI{2.8}{\solarmass}$ e una differenza tra le due componenti che è di $\smallsim20\%$ o minore.
-A partire dal segnale di GW, in particolare nelle fasi di coalescenza e post-coalescenza, possono essere ottenute informazioni sull'equazione di stato della materia a densità nucleare e, da un'analisi spettrale, informazioni sulla deformabilità mareale delle due stelle.\\
-Simulazioni numeriche relativistiche di coalescenza di BNS e l'evoluzione della post-coalescenza mostra che l'emissione di GW da un residuo ipermassivo è legato alla EOS e può trovarsi a frequenze comprese tra $\smallsim2$ e 4kHz, ed è fortemente correlato con la compattezza e la deformabilità mareale delle stelle. Questa correlazione, con quantità calcolate per stelle di neutroni fredde e non rotanti, stato in cui non si trova l'ipermassiva residua, suggerisce come gli effetti dovuti a rotazione e temperatura giochino un ruolo limitato nelle proprietà del segnale di onda gravitazionale e mostra come la misura del modo dominante nella frequenza del post-merger possa portare a una importante misura dell'equazione di stato nucleare\cite{sarin2020evolution}.\\
-Considerando dunque il segnale gravitazionale dovuto alla coalescenza di due stelle di neutroni, con una differneza di massa inferiore al 20\%, si possono riassumere le proprietà fondamentali come descritto in \cite{Rezzolla_2016}:
+A partire dal segnale di GW, in particolare da un'analisi spettrale delle fasi di coalescenza e post-coalescenza, possono essere ottenute informazioni sull'equazione di stato della materia a densità nucleare e sulla deformabilità mareale delle due stelle.\\
+Simulazioni numeriche relativistiche di coalescenza di BNS e post-coalescenza mostrano che l'emissione di GW da un corpo celeste ipermassivo è legata alla EOS e può trovarsi a frequenze comprese tra $\smallsim2$ e 4kHz, ed è fortemente correlato con la compattezza e con la deformabilità mareale delle stelle. Questa correlazione, con quantità calcolate per stelle di neutroni fredde e non rotanti, stato in cui non si trova l'ipermassiva residua, suggerisce come gli effetti dovuti a rotazione e temperatura giochino un ruolo limitato nelle proprietà del segnale di onda gravitazionale e mostra come la misura del modo dominante nella frequenza della post-coalescenza possa portare a una importante misura dell'equazione di stato nucleare\cite{sarin2020evolution}.\\
+Considerando dunque il segnale gravitazionale dovuto alla coalescenza di due stelle di neutroni, con una differenza di massa inferiore al 20\%, si possono riassumere le proprietà fondamentali del segnale immediatamente successivo alla coalescenza come descritto in \cite{Rezzolla_2016}:
 \begin{itemize}
 	\item la frequenza della GW al massimo di ampiezza $f_{max}$ è legata in modo quasi-universale con la deformabilità mareale delle due stelle;
 	\item le frequenze $f_1$, $f_{2,i}$ e $f_3$ rappresentano i picchi principali visibili dall'osservazione della post-coalescenza, tra le quali si ottiene la seguente relazione empirica: $f_{2,i}\simeq\frac{f_1 + f_3}{2}$. Il picco $f_1$ è legato alla compattezza delle stelle, mentre il picco $f_{2,i}$ è legato al raggio della configurazione non rotante più massiva e corrisponde al modo fondamentale della NS ipermassiva con $l=2=m$;
 	\item si identifica in alcuni casi un altro picco $f_{2-0}$ che si riferisce all'accoppiamento tra il modo fondamentale con $l=2=m$ e il modo con simmetria assiale, cioè con $l=2$ e $m=0$;
-	\item il picco $f_{spiral}$ associato alla deformazione spiraleggiante dovuta alla rotazione, è però impossibile da misurare in calcoli numerici e si utilizzano dunque i valori prodotti da considerazioni analitiche. Si nota infine che $f_{spiral}$ coincide per molte EOS (in particolare EOS rigide) con la frequenza $f_1$, mentre per altre (EOS morbide) non si ha questa corrispondenza.
+	\item vi è un picco $f_{spiral}$ associato alla deformazione spiraleggiante dovuta alla rotazione, è però impossibile da misurare in calcoli numerici e si utilizzano dunque i valori prodotti da considerazioni analitiche. Si nota infine che $f_{spiral}$ coincide per molte EOS (in particolare EOS rigide) con la frequenza $f_1$, mentre per altre (EOS morbide) non si ha questa corrispondenza.
 \end{itemize}
 
-Nella fase di post-coalescenza, nei casi in cui il sistema non collassa immediatamente in un buco nero, evidenziando nella forma d'onda una fase di ringdown in cui il segnale si spegne, l'unica frequenza a sopravvivere è il picco $f_2$, spariscono gli altri picchi, lasciando solo $f_{2-0}$ a basse energie, come si osserva in Figura \ref{fig:spettrogramma_postmerger_APR4}.
+Analizzando le frequenze dominanti su scale temporali più lunghe, nei casi in cui il sistema non collassi immediatamente in un buco nero evidenziando nella forma d'onda una fase di ringdown in cui il segnale si spegne, l'unica frequenza a sopravvivere è il picco $f_2$, spariscono gli altri picchi, lasciando solo $f_{2-0}$ a basse energie, come si osserva in Figura \ref{fig:spettrogramma_postmerger_APR4}.
 
 È poi possibile trovare diverse relazioni quantitative che legano le frequenze osservate con le proprietà stellari, che risultano particolarmente utili come verifica delle previsioni teoriche.
-
-% !TEX root = ../../Tesi_Triennale_PMNS.tex
 \section[Osservazioni di onde gravtazionali]{Osservazione di onde gravitazionali prodotte da un sistema binario di stelle di neutroni}
 \label{chapter:gw170817}
 \begin{wrapfigure}{r}{0.4\textwidth}
@@ -163,34 +161,35 @@ Nella fase di post-coalescenza, nei casi in cui il sistema non collassa immediat
 	\label{fig:gweffect}
 	\vspace{-10pt}
 \end{wrapfigure}
-Gli effetti fisici del passaggio di un'onda gravitazionale si manifestano nell'interazione con le masse, in particolare è necessario considerare sistemi di due o più corpi poiché, in accordo con il principio di equivalenza, è sempre possibile trovare un sistema di riferimento in cui poter applicare le leggi della relatività speciale. Ciò che bisogna considerare è invece l'accelerazione reciproca tra due corpi, in particolare si dimostra che, con il passaggio della GW, la distanza che separa i due corpi subisce periodicamente contrazioni e allungamenti nella direzione della congiungente.
-È facile dedurre l'effetto che si osserva per sistemi di particelle sia quello di Figura \ref{fig:gweffect}. Questo effetto può essere usato nella rivelazione, tuttavia non è possibile raggiungere sensibilità sufficienti per le ampiezze estremamente limitate di un'onda gravitazionale. 
+Gli effetti fisici del passaggio di un'onda gravitazionale si manifestano nell'interazione con le masse, in particolare è necessario considerare sistemi di due o più corpi poiché, non si osserverebbero effetti su corpi singoli: in accordo con il principio di equivalenza, è sempre possibile trovare un sistema di riferimento in cui poter applicare le leggi della relatività speciale: se si studia il moto di un corpo in un sistema di riferimento solidale ad esso, questo rimarrà in quiete indipendentemente dal passaggio di un'onda gravitazionale. Ciò che bisogna considerare è invece l'accelerazione reciproca tra due corpi, in particolare si dimostra che, con il passaggio della GW, la distanza che separa i due corpi subisce periodicamente contrazioni e allungamenti nella direzione della congiungente.
+È facile dedurre l'effetto che si osserva per sistemi di particelle sia quello di Figura \ref{fig:gweffect}. Questo effetto può essere usato nella rivelazione.
+%, tuttavia non è possibile raggiungere sensibilità sufficienti per le ampiezze estremamente limitate di un'onda gravitazionale. 
 
-Il metodo più usato per la rivelazione è invece quello interferometrico basato sul modello classico dell'interferometro di Michelson: un fascio di luce laser monocromatica viene diviso con l'utilizzo di uno splitter con uguale probabilità di trasmettere o riflettere il fascio, in due bracci tra loro perpendicolari; i due fasci vengono poi riflessi ricombinandosi sullo splitter e venendo raccolti da un fotodiodo che ne misura l'intensità. Il passaggio di un'onda gravitazionale che si muove perpendicolarmente al piano dell'interferometro porta l'allungamento di un braccio e la contrazione dell'altro e quindi a una variazione nella fase tra i due fasci e una variazione della potenza registrata dal fotodiodo.\\
-%\begin{wrapfigure}{r}{0.4\textwidth}
-%	\vspace{-10pt}
-%	\begin{center}
-%		\includegraphics[width=0.4\textwidth]{figures/Capitolo_1/michelson.jpg}
-%	\end{center}
-%	\vspace{-5pt}
-%	\caption{Rappresentazione schematica di un interferometro utilizzato per la rivelazione di segnali di onda gravitazionale}
-%	\label{fig:michelson}
-%	\vspace{-10pt}
-%\end{wrapfigure}
-È possibile massimizzare gli effetti del modello classico dell'interferometro di Michelson con tecniche come cavità ottiche, che permettono di avere bracci "efficaci" di lunghezze non ottenibili altrimenti, oltre che tecniche per ridurre il rumore attraverso l'utilizzo di materiali tali da minizzare l'assorbimento del fascio.\\
-È possibile inoltre combinare vari rivelatori in una rete per coprire porzioni maggiori del cielo e per verificare la coerenza tra i segnali e poter scartare gli eventi di rumore rivelati dai singoli rivelatori.\\
-Il network LIGO-Virgo che si utilizza è composto da tre rivelatori (LIGO-Livingston in Luisiana, LIGO-Hanford in Washington e Virgo in Italia) e nel futuro verrà esteso con l'aggiunta di Kagra in Giappone e LIGO-India in India.
+Il metodo più usato per la rivelazione è quello interferometrico basato sul modello classico dell'interferometro di Michelson: un fascio di luce laser monocromatica viene diviso con l'utilizzo di un separatore con uguale probabilità di trasmettere o riflettere il fascio, in due bracci tra loro perpendicolari; i due fasci vengono poi riflessi ricombinandosi sul separatore  e sono quindi raccolti da un fotodiodo che ne misura l'intensità. Il passaggio di un'onda gravitazionale che si muove perpendicolarmente al piano dell'interferometro porta l'allungamento di un braccio e la contrazione dell'altro e quindi a una variazione nella fase tra i due fasci e una variazione della potenza registrata dal fotodiodo.\\
+\begin{wrapfigure}{r}{0.37\textwidth}
+	\vspace{-25pt}
+	\begin{center}
+		\includegraphics[width=0.37\textwidth]{figures/Capitolo_1/michelson.jpg}
+	\end{center}
+	\vspace{-7pt}
+	\caption{Rappresentazione schematica di un interferometro utilizzato per la rivelazione di segnali di onda gravitazionale, \cite{wiki_ligo}}
+	\label{fig:michelson}
+	\vspace{-15pt}
+\end{wrapfigure}
+È possibile massimizzare gli effetti del modello classico dell'interferometro di Michelson con tecniche come cavità ottiche, che permettono di avere bracci "efficaci" di lunghezze non ottenibili altrimenti, oltre che tecniche per ridurre il rumore attraverso l'utilizzo di materiali tali da minizzare l'assorbimento del fascio.
+
+La rete di interferometri LIGO-Virgo che si utilizza è composta da tre rivelatori (LIGO-Livingston in Luisiana, LIGO-Hanford in Washington e Virgo in Italia) e nel futuro verrà estesa con l'aggiunta di KAGRA in Giappone e LIGO-India in India. L'utilizzo di una rete di rivelatori permette aumentare la capacità di discriminare segnale e rumore analizzando la coincidenza temporale e la coerenza dei segnali nella rete di interferometri, oltre a permettere di aumentare il tempo osservativo.
 \subsection{Osservazione della coalescenza di un sistema di stelle di neutroni: GW170817}
 \label{section:osservazioneInspiralGW170817} 
 Rivelato il 17 Agosto 2017 dal network LIGO-Virgo, GW170817 è il primo segnale di onda gravitazionale generato dallo spiraleggiamento di un sistema binario di stelle di neutroni.
-Il segnale, osservato alla fine del secondo run di misure O2, è tutt'ora il più energetico osservato tra questi tipi di segnale con un rapporto segnale su rumore (SNR) di 32.4.
-Oltre al segnale di GW è stato osservato un lampo-gamma, dopo 1.7s dalla coalescenza.
+Il segnale, osservato alla fine del secondo run di misure O2, è tutt'ora il più energetico osservato tra questi tipi di segnale, con un rapporto segnale su rumore (SNR) di 32.4.
+Oltre al segnale di GW è stato osservato un lampo-gamma, dopo 1.7s dalla coalescenza\cite{Abbott_2017a}.
 
-Il segnale è chiaramente visibile nella rappresentazione tempo-frequenza dei dati in Figura  \ref{fig:osservazione_gw170817}, nei rivelatori LIGO, risulta invece aver un rapporto segnale rumore più basso in Virgo, a causa della minor sensibilità del detector rispetto alla posizione nel cielo della sorgente. La (non) rivelazione risulta comunque utile, soprattutto per permettere l'individuazione della posizione celeste della sorgente.
+Il segnale è chiaramente visibile nella rappresentazione tempo-frequenza dei dati, in Figura  \ref{fig:osservazione_gw170817}, nei rivelatori LIGO, risulta invece aver un rapporto segnale rumore più basso in Virgo, a causa della minor sensibilità del detector rispetto alla posizione nel cielo della sorgente. La (non) rivelazione risulta comunque utile, soprattutto per permettere l'individuazione della posizione celeste della sorgente.
 
 %Dalla rappresentazione tempo-frequenza dei dati, a cui viene sottratto il rumore e sbiancati, si può notare immediatamente che il segnale che è ben visibile nei due rivelatori LIGO, mentre in Virgo, a causa della posizione celeste della sorgente del segnale, non è possibile distiguere visivamente nessun pattern rispetto rumore di fondo.
-L'analisi a bassa latenza dell'evento ha mostrato un segnale coerente nei due detector LIGO, grazie al quale si individua la sorgente in una regione identificata da un angolo solido di 31 $\text{deg}^2$, che a sua volta ha permesso l'identificazione della controparte elettromagnetica GRB170817A. 
-Si è ottenuto inoltre un SNR combinato tra i detector di 32.4 che rendono questo segnale il più intenso rivelato finora\cite{Abbott_2017a}.
+L'analisi a bassa latenza dell'evento ha mostrato un segnale coerente nei due detector LIGO, grazie al quale si individua la sorgente in una regione del cielo pari a 31 $\text{deg}^2$, che a sua volta ha permesso l'identificazione della controparte elettromagnetica GRB170817A. 
+%Si è ottenuto inoltre un SNR combinato tra i detector di 32.4 che rendono questo segnale il più intenso rivelato finora\cite{Abbott_2017a}.
 
 %La relatività generale fa previsioni abbastanza dettagliate sull'evoluzione della frequenza, che è legata, nella prima fase, a una combinazione delle masse delle stelle progenitrici, detta massa di chirp 
 %\begin{equation}
@@ -199,21 +198,21 @@ Si è ottenuto inoltre un SNR combinato tra i detector di 32.4 che rendono quest
 %\end{equation}
 %Nelle fasi più avanzate, le orbite si stringono e aumenta la frequenza dell'onda gravitazionale, mentre la fase della GW è sempre più influenzata da effetti relativistici legati al rapporto tra le masse $q = m_2/m_1$ e dagli accoppiamenti spin-orbita e spin-spin. 
 %La composizione interna degli oggetti diventa importante quando la distanza tra essi diventa paragonabile alle dimensioni dell'oggetto stesso. 
-Valgono le previsioni sulla frequenza fatte ad inizio capitolo per la prima fase di spiraleggiamento. Nelle fasi più avanzate, le orbite si stringono e aumenta la frequenza dell'onda gravitazionale, mentre la fase della GW è sempre più influenzata da effetti relativistici legati al rapporto tra le masse $q = m_2/m_1$ e dagli accoppiamenti spin-orbita e spin-spin. La composizione interna degli oggetti diventa importante quando la distanza tra essi diventa paragonabile alle dimensioni dell'oggetto stesso. 
+Valgono le previsioni sulla frequenza fatte ad inizio capitolo per la prima fase di spiraleggiamento. Nelle fasi più avanzate, le orbite si stringono e aumenta la frequenza dell'onda gravitazionale, mentre la fase della GW è sempre più influenzata da effetti relativistici legati al rapporto tra le masse $q = m_2/m_1$ e agli accoppiamenti spin-orbita e spin-spin. La composizione interna degli oggetti diventa importante quando la distanza tra essi diventa paragonabile alle dimensioni dell'oggetto stesso. 
 
-\begin{wrapfigure}{r}{0.4\textwidth}
+\begin{wrapfigure}{r}{0.37\textwidth}
 	\vspace{-10pt}
 	\begin{center}
-		\includegraphics[width=0.4\textwidth]{figures/Capitolo_1/gw170817_time_freq.png}
+		\includegraphics[width=0.37\textwidth]{figures/Capitolo_1/gw170817_time_freq.png}
 	\end{center}
 	\vspace{-7pt}
 	\caption{Segnali nella mappa tempo frequenza nel network, \cite{Abbott_2017a}}
 	\label{fig:osservazione_gw170817}
 	\vspace{-15pt}
 \end{wrapfigure}
-Le proprietà della sorgente di onde gravitazionali sono ottenute dal confronto con le forme d'onda predette dalla teoria. Viene fatta dunque una analisi Bayesiana nel range di frequenze 30-2048Hz che include gli effetti dell'incertezza di calibrazione di $1\sigma$ sul segnale ricevuto.\\Per la stima del rumore, le fonti risultano molteplici e data la difficoltà nello stimare il rumore in assenza di sorgenti, non potendo "spegnere" le fonti di onde gravitazionali, la stima viene fatta a partire dai dati di una sessione di misure limitata, che però viene riprodotta e traslata temporalmente tra un rivelatore e l'altro in modo da annullare eventuali coerenze tra i segnali rivelati. Con questa operazione si può ottenere un fondo di migliaia di anni a partire dai dati di pochi giorni.
+Le proprietà della sorgente di onde gravitazionali sono ottenute dal confronto con le forme d'onda per la fase di spiraleggiamento predette dalla teoria. Viene fatta dunque una analisi Bayesiana nell'intervallo di frequenze 30-2048Hz che include gli effetti dell'incertezza di calibrazione di $1\sigma$ sul segnale ricevuto.\\Per la stima del rumore, le fonti risultano molteplici e data la difficoltà nello stimare il rumore in assenza di sorgenti, non potendo "spegnere" le fonti di onde gravitazionali, la stima viene fatta a partire dai dati di una sessione di misure limitata, che però viene riprodotta e traslata temporalmente tra un rivelatore e l'altro in modo da annullare eventuali coerenze tra i segnali rivelati. In questo modo si possono ottenere migliaia di anni di tempo equivalente per poter stimare il fondo di rumore atteso, a partire dai dati di pochi giorni.
 
-Attraverso un'analisi più approfondita dei dati consolidati, la sorgente viene identificata in una regione celeste di 28$\text{deg}^2$ di area e $380\text{Mpc}^3$ di volume, utilizzando una combinazione di timing, fase e ampiezza dei tre detector. La distanza luminosa, la più prossima osservata finora, viene individuata in $40_{-14}^{+8}$Mpc. La massa di chirp del sistema si valuta in $\mathcal{M}=1.188_{-0.002}^{+0.004}$, mentre la valutazione delle masse delle stelle progenitrici dipende dalla prior scelta per l'analisi, legata alla scelta dell'EOS che si considera, si stimano dunque interavalli $m_1 \in (1.36, 2.26)M_\odot$ e $m_2 \in (0.86, 1.36)M_\odot$, che, nonostante la grande imprecisione, costituiscono un'evidenza della natura di stelle di neutroni del sistema binario, escludendo invece la possibilità di buchi neri che prevederebbe range di masse superiori\cite{Abbott_2017a}.\\
+Attraverso un'analisi più approfondita dei dati consolidati, la sorgente viene identificata in una regione celeste di 28$\text{deg}^2$ di area e $380\text{Mpc}^3$ di volume, utilizzando una combinazione di timing, fase e ampiezza del segnale dei tre detector. La distanza luminosa, la più prossima osservata finora, viene individuata in $40_{-14}^{+8}$Mpc. La massa di chirp del sistema si valuta in $\mathcal{M}=1.188_{-0.002}^{+0.004}$, mentre la valutazione delle masse delle stelle progenitrici dipende dalla prior scelta per l'analisi, legata alla scelta dell'EOS che si considera, si stimano dunque interavalli $m_1 \in (1.36, 2.26)M_\odot$ e $m_2 \in (0.86, 1.36)M_\odot$, che, nonostante la grande imprecisione, costituiscono un'evidenza della natura di stelle di neutroni del sistema binario, escludendo invece la possibilità di buchi neri che prevederebbe range di masse superiori\cite{Abbott_2017a}.\\
 Nello spiraleggiamento di una BNS il campo gravitazionale di ogni stella induce una deformazione mareale sull'altra.
 La deformazione mareale può essere descritta quantitativamente da un parametro di deformazione
 %\begin{equation}
@@ -226,44 +225,42 @@ L'analisi che viene fatta, permettendo ai parametri di deformazione di variare i
 
 %Per le masse delle stelle compatte risulta più semplice dedurre la massa di chirp, indipendente dalla scelta della prior nell'analisi Bayesiana legata all'equazione di stato scelta per le stelle progenitrici, che si valuta in $\mathcal{M}=1.188_{-0.002}^{+0.004}$, rispetto alle masse singole, che soffrono invece della degenerazione tra il rapporto tra le masse $q$ e le componenti dello spin $\chi_1$ e $\chi_2$. È necessario fare quindi assunzioni a partire dalle EOS che si considerano, ottenendo dei range $m_1 \in (1.36, 2.26)M_\odot$ e $m_2 \in (0.86, 1.36)M_\odot$ evidentemente meno precisi, ma comunque utili come evidenza della natura di stelle di neutroni del sistema binario, escludendo invece la possibilità di buchi neri che prevederebbe range di masse superiori\cite{Abbott_2017a}.
 
-\begin{wrapfigure}{r}{0.4\textwidth}
-	\vspace{-10pt}
+\begin{wrapfigure}{r}{0.37\textwidth}
+	\vspace{-30pt}
 	\begin{center}
-		\includegraphics[width=0.4\textwidth]{figures/Capitolo_1/skymap.png}
+		\includegraphics[width=0.37\textwidth]{figures/Capitolo_1/skymap.png}
 	\end{center}
-	\vspace{-5pt}
-	\caption{Sky location ricostruita per GW170817, nella versione preliminare in blu chiaro per Hanford-Livingston e in blu scuro per Handord-Livingston-Virgo, mentre nella versione finale in verde, \cite{Abbott_2019}}
+	\vspace{-6pt}
+	\caption{Posizione celeste ricostruita per GW170817, nella versione preliminare in azzurro per Hanford-Livingston e in blu per Handord-Livingston-Virgo, mentre in verde per la versione finale, \cite{Abbott_2019}}
 	\label{fig:skymap}
-	\vspace{-15pt}
+	\vspace{-30pt}
 \end{wrapfigure}
 Oltre al segnale di onda gravitazionale è stato rivelato anche un segnale di short gamma-ray burst dal telescopio spaziale Fermi-GBM, $1.74\pm0.05$s dopo l'istante di coalescenza e della durata di circa 2 secondi. Il segnale viene rivelato anche dal telescopio INTEGRAL e la differenza dei tempi di arrivo del segnale sui due telescopi ha permesso di migliorare significativamente l'area di localizzazione del segnale.\\
-In seguito all'osservazione e alla localizzazione del segnale, diversi telescopi, terrestri e spaziali, vengono direzionati in modo tale da poter osservare il corpo celeste formatosi: la prima osservazione viene fatta dai telescopi dell'osservatorio di Las Campas in Cile circa 10h dopo la coalescenza. Osservando le galassie conosciute viene individuato un unico evento transiente, non corrispondente ad alcun asteroide o supernova conosciute. Dopo la prima osservazione, altri 5 team registrano l'evento. Queste localizzazioni sono state importanti per identificare con maggior precisione la distanza alla quale è avvenuto l'evento\cite{Abbott_2017c}.
+In seguito all'osservazione e alla localizzazione del segnale, diversi telescopi, terrestri e spaziali, vengono direzionati in modo tale da poter osservare il corpo celeste formatosi: la prima osservazione viene fatta dai telescopi dell'osservatorio di Las Campas in Cile circa 10h dopo la coalescenza. Osservando le galassie conosciute viene individuato un unico evento transiente, non corrispondente ad alcun asteroide o supernova conosciuti. Dopo la prima osservazione, altri 5 team registrano l'evento. Queste localizzazioni sono state importanti per identificare con maggior precisione la distanza alla quale è avvenuto l'evento\cite{Abbott_2017c}.
 %QUALCOSA SULLE TIDAL DEFORMABILITIES?
 
 
 \subsubsection{Ricerca della post-coalescenza nel segnale GW170817}
 \label{section:postmergerGW170817}
-È stata effettuata un'analisi specifica per ricercare un eventuale segnale nella fase di post-coalescenza, tuttavia tale analisi non ha portato ad evidenza statisticamente significativa di rivelazione di un segnale nella fase di coalescenza, ma ha permesso di ottenere informazioni sul limite superiore delle ampiezze di strain ed energie di GW osservabili. Gli attuali detector infatti non hanno una sensibilità tale da permettere rivelazioni alle alte frequenze della post-coalescenza.
+È stata effettuata un'analisi specifica per ricercare un eventuale segnale nella fase di post-coalescenza che tuttavia non ha portato ad evidenza statisticamente significativa di rivelazione di un segnale nella fase di coalescenza, ma ha permesso di ottenere informazioni sul limite superiore delle ampiezze di strain ed energie di GW osservabili in questa fase del segnale. Gli attuali interferometri infatti non hanno una sensibilità tale da permettere rivelazioni alle alte frequenze della post-coalescenza.
 
-Per la ricerca di segnali con incertezze teoriche così grandi risulta inefficiente l'utilizzo di metodi di ricerca matched-filtering, ovvero metodi che utilizzano segnali di forme conosciute e, attraverso funzioni di filtraggio escludono la componente di rumore, usando come filtro la funzione che massimizza il rapporto segnale su rumore (SNR) per tale segnale\cite{maggiore2008gravitational}. È immediato comprendere che non conoscendo con certezza la forma che deve assumere il segnale questo metodo risulta inefficace per la ricerca della post-coalescenza. Gli algoritmi che si usano invece ricercano eccessi di potenza in una mappa tempo-frequenza e, usando metodi di riconoscimento dei pattern, possono identificare la presenza di segnali di GW. In particolare gli algoritmi sono tali da considerare i dati della rete e non dei singoli rivelatori, utilizzando tecniche che permettono di combinare coerentemente i dati dei singoli rivelatori e dare risposte differenti a forme d'onda diverse.
+Per la ricerca di segnali con incertezze teoriche così grandi risulta inefficiente l'utilizzo di metodi di ricerca matched-filtering, ovvero metodi che utilizzano segnali di forme conosciute e, attraverso funzioni di filtraggio escludono la componente di rumore, associando la funzione che massimizza il rapporto segnale su rumore (SNR)	\cite{maggiore2008gravitational}. Infatti non conoscendo con certezza la forma che deve assumere il segnale questo metodo risulta inefficace per la ricerca della post-coalescenza. Vengono quindi utilizzati algoritmi, definiti non modellati, che non prevedono l'assunzione della morfologia del segnale, che ricercano eccessi di potenza in una mappa tempo-frequenza e, usando metodi di riconoscimento dei pattern, possono identificare la presenza di segnali di GW. In particolare gli algoritmi sono tali da considerare i dati della rete e non dei singoli rivelatori, utilizzando tecniche che permettono di combinare coerentemente i dati dei singoli rivelatori e dare risposte differenti a forme d'onda diverse.
 
-Mentre lo studio del segnale elettromagnetico associato alla GW non permette di escludere nessuno dei possibili stati finali indicati in sezione \ref{section:residual}, grazie ai valori ottenuti per le masse dei progenitori date nella sezione \ref{section:osservazioneInspiralGW170817} si calcola che per un ampio range di equazioni di stato la coalescenza produce uno stato di NS ipermassiva. Questo spiega anche il ritardo del lampo gamma rispetto all'istante di rivelazione del segnale di post-coalescenza. 
-
-Come si vedrà nella sezione \ref{subsection:APR4} in base alla EOS che si considera si ottiene un contributo diverso nella post-coalescenza che inizia attorno a $\smallsim2$kHz. Più in generale, oltre alla EOS hanno fondamentale importanza le masse e gli spin degli oggetti iniziali. 
-Per quanto riguarda invece la rivelazione di questa fase del segnale, anche considerando modelli ottimistici da stati finali di NS ipermassiva o supermassiva, l'SNR atteso per distanze di $\smallsim40$Mpc è $\smallsim1-2$ ordini di grandezza più piccolo di quello rivelabile dalla rete LIGO-Virgo attualmente utilizzata, facendo uso di algoritmi di confronto con segnali modellati (che comunque sono meno utilizzati per la post-coalescenza per i motivi già citati).
-Si ipotizza tuttavia che nei prossimi run la sensibilità del network sarà tale da permettere la rivelazione di queste emissioni\cite{Abbott_2017b}, e si studierà nel dettaglio nel Capitolo \ref{chapter:analisi}.
+Mentre lo studio del segnale elettromagnetico associato alla GW non permette di escludere nessuno dei possibili stati finali indicati in sezione \ref{section:residual}, grazie ai valori ottenuti per le masse delle progenitrici date nella sezione \ref{section:osservazioneInspiralGW170817} si calcola che per un ampio range di equazioni di stato la coalescenza produce una NS ipermassiva. Questo spiega anche il ritardo del lampo gamma rispetto all'istante di rivelazione del segnale di coalescenza\cite{sarin2020evolution}. 
 
 \begin{wrapfigure}{r}{0.5\textwidth}
-	\vspace{-20pt}
+	\vspace{-10pt}
 	\begin{center}
 		\includegraphics[width=0.5\textwidth]{figures/Capitolo_1/GW170817_spectral_limits.pdf}
 	\end{center}
 	\vspace{-5pt}
 	\caption{Sensibilità al segnale di ciascun rivelatore durante il run O2, indicata dall'ampiezza del rumore di strain in funzione della frequenza, \cite{Abbott_2017b}}
 	\label{fig:NoiseFrequenze}
-	\vspace{-10pt}
+	\vspace{-15pt}
 \end{wrapfigure}
-Come si può osservare in Figura \ref{fig:NoiseFrequenze} i tre detector del network hanno zone diverse di sensibilità al segnale considerato, in particolare si nota che in generale la sensibilità diminuisce significativamente ad alte frequenze. 
+Come si vedrà nella sezione \ref{subsection:APR4} in base alla EOS che si considera si ottiene un contributo diverso nella post-coalescenza che inizia attorno a $\smallsim2$kHz. 
+%Più in generale, oltre alla EOS hanno fondamentale importanza le masse e gli spin degli oggetti iniziali. 
+Per la rivelazione di questa fase del segnale, anche considerando modelli ottimistici da stati finali di NS ipermassiva o supermassiva, l'SNR atteso per distanze di $\smallsim40$Mpc è $\smallsim1-2$ ordini di grandezza più piccolo di quello rivelabile dalla rete LIGO-Virgo allora utilizzata, facendo uso di algoritmi di confronto con segnali modellati. Come si può osservare in Figura \ref{fig:NoiseFrequenze} i tre rivelatori della rete hanno zone diverse di sensibilità al segnale considerato, in particolare la sensibilità diminuisce significativamente ad alte frequenze. Si ipotizza tuttavia che nei prossimi run la sensibilità del network sarà tale da permettere la rivelazione di queste emissioni\cite{Abbott_2017b}, e si studierà nel dettaglio nel Capitolo \ref{chapter:analisi}.
 
 La ricerca è stata effettuata utilizzando diversi algoritmi, e su diversi range di frequenza. È stato utilizzato l'algoritmo cWB, per la ricerca di segnali di breve durata (fino ai pochi secondi), nel range di frequenza 1024-4096 Hz. 
 Un'ulteriore ricerca è stata effettuata per cercare segnali di più lunga durata (dalla decina alle poche centinaia di secondi) utilizzando l'algoritmo cWB nella banda di frequenza 24-2048Hz, e STAMP nella banda 24-4000Hz.
@@ -278,7 +275,7 @@ L'analisi dei segnali brevi ad alte frequenze consiste nella ricerca di eccessi 
 \begin{equation}
 h_{rss} = \sqrt{2\int_{f_{min}}^{f_{max}}df(|\tilde{h}_+(f)|^2 + |\tilde{h}_\times(f)|^2 )}
 \end{equation}
-dove $f_{min}$ e $f_{max}$ sono rispettivamente le frequenze massima e minima sulle quali si effettua la ricerca. 
+dove $f_{min}$ e $f_{max}$ sono rispettivamente le frequenze minima e massima sulle quali si effettua la ricerca. 
 Il criterio sulla soglia di rivelazione e quindi su $h_{rss}^{50\%}$ per questo metodo di ricerca è tale da garantire una probabilità di falso allarme di $10^{-4}$.
 Per evitare la possibile perdita di segnali di EOS rigide, la ricerca viene effettuata a partire da 1024Hz, nonostante le previsioni teoriche mostrino una frequenza sempre maggiore.
 %a frequenza maggiore si fa la scelta conservativa di ricercare segnali a partire da 1024Hz, nonostante tutte le forme d'onda abbiano emissioni dominanti molto al di sopra di tale soglia.
@@ -292,29 +289,28 @@ con $\mathcal{D}$ è la distanza dalla sorgente e $\bar{f}$ è la frequenza cara
 \begin{equation}
 \bar{f} = \frac{2}{h_{rss}^2}\int_{f_{min}}^{f_{max}}dff(|\tilde{h}_+(f)|^2 + |\tilde{h}_\times(f)|^2 )
 \end{equation}
-In questo modo si ottiene un range di energie rivelabili che, secondo il criterio del $h_{rss}^{500\%}$, è dato da $4.8-\SI{19.6}{\solarmass}c^2$, al di fuori delle masse in gioco per BNS, per cui non è possibile con i rivelatori attuali rivelare le emissioni di GW di NS ipermassive associate a GW170817.
+In questo modo si ottiene un range di energie rivelabili che, secondo il criterio del $h_{rss}^{50\%}$, è dato da $4.8-\SI{19.6}{\solarmass}c^2$, al di fuori delle masse in gioco per BNS, per cui non è possibile con la rete di interferometri del run O2 rivelare le emissioni di post-coalescenza associate a GW170817.
 %\subsection{Segnali di durata intermedia}
 
-Per segnali di durata intermedia si utilizzano i due algoritmi cWB e STAMP, concentrando la ricerca in una zona limitata dello spazio, indicata dalla controparte elettromagnetica che permette di evitare trigger accidentali.\\
+Per segnali di durata intermedia si utilizzano i due algoritmi cWB e STAMP, concentrando la ricerca in una zona limitata dello spazio, indicata dalla controparte elettromagnetica che permette di evitare trigger accidentali.
 %Sono considerate due morfologie di forme d'onda corrispondenti a GW da bar-modes secolari o causati da elicità causate dal campo magnetico nella stella nascente. I meccanismi di emissione attraverso modi-r non sono considerati per la durata che richiederebbe scale temporali più lunghe.
-\\
 %Nell'analisi di STAMP, che ricerca segnali in uno spettrogramma con pixel di 1s$\times$1Hz, creati con la correlazione incrociata dei dati di detector spazialmente separati, sia con metodi seed-based clustering, dove per seed si intendono pixel con un eccesso di potenza sopra una certa soglia che vengono connessi formando un cluster, sia con algoritmi seedless, senza quindi applicare soglie minime, per il riconoscimento dei pattern, non viene trovato nessun significativo eccesso di potenza, con una probabilità di falso allarme di $10^{-2}$.
 Mentre l'analisi fatta con l'algoritmo STAMP non viene qui approfondita, l'analisi con cWB è analoga alla precedente, ma considera un intervallo di tempo che parte dalla coalescenza e copre 1000s. Per entrambe le analisi, con probabilità di falso allarme di $10^{-2}$ per STAMP e di $10^{-4}$ per cWB, nessun candidato è trovato nella banda di frequenza considerata. È possibile confrontare il range di energie rivelabili in Figura \ref{fig:NoiseFrequenze}.
 
-Concludendo, non viene trovata nessuna evidenza di un segnale di post coalescenza nei dati considerati: se esiste un segnale questo è comunque troppo debole per essere rivelato dai rivelatori nel run O2 \cite{Abbott_2017b}.
+Concludendo, non viene trovata nessuna evidenza di un segnale di post-coalescenza nei dati considerati: se esiste un segnale questo è comunque troppo debole per essere rivelato dai rivelatori nel run O2 \cite{Abbott_2017b}.
 
 \subsection{Osservazione del segnale GW190425}
 %\subsection*{GW190425}
-Il secondo evento rivelato di spiraleggiamento di BNS è GW190425 durante il run O3 del network Virgo-LIGO. In realtà durante l'evento il detector LIGO Hanford era spento, quindi il network contava solo su due rivelatori. Non sono inoltre stati rivelati segnali elettromagnetici associati all'evento\\
-L'evento ha avuto un SNR di 12.9 per LIGO Livingston mentre di solo 2.5, ovvero sotto la soglia di trigger pari a 4, per Virgo. La differenza tra i due rivelatori è consistente con la differenza di sensibilità tra i due detector\cite{Abbott_2020b}.
+Il secondo evento rivelato di spiraleggiamento di BNS è GW190425 durante il run O3 del network Virgo-LIGO. In realtà durante l'evento il detector LIGO Hanford era spento, quindi il network contava solo su due rivelatori. Non sono inoltre stati rivelati segnali elettromagnetici associati all'evento.\\
+L'evento ha avuto un SNR di 12.9 per LIGO Livingston mentre di solo 2.5 per Virgo. La differenza tra i due rivelatori è consistente con la differenza di sensibilità tra i due detector\cite{Abbott_2020b}.
 
 %\paragraph{Proprietà della sorgente} 
 In continuità con le definizioni fatte per le proprietà del segnale GW170817, si riportano brevemente le caratteristiche del segnale GW190425: si individua la sorgente in un'area celeste di 8284deg$^2$ al 90\% di credibilità (estremamente più impreciso di GW170817) e la distanza viene valutata in $159_{-71}^{+69}$Mpc. La così più grande incertezza rispetto al primo segnale è dovuta al minor numero di detector coinvolti e all'impossibilità di escludere regioni grazie alla controparte elettromagnetica che non viene rivelata in questo caso.
-La massa di chirp è pari a $1.44^{+0.02}_{-0.02}M_\odot$, mentre le masse delle stelle progenitrici sono $m_1 \in (1.60, 2.52)M_\odot$ e $m_2 \in (1.46, 1.68)M_\odot$\cite{Abbott_2020b}.
+La massa di chirp è pari a $1.44^{+0.02}_{-0.02}M_\odot$, mentre le masse delle stelle progenitrici sono $m_1 \in (1.60, 2.52)M_\odot$ e $m_2 \in (1.46, 1.68)M_\odot$\cite{Abbott_2020b}. 
+In realtà le masse in gioco non permettono di escludere nemmeno la possibilità che uno dei due corpi sia un buco nero \cite{Han_2020}.
 
-È stata effettuata anche una ricerca di un eventuale segnale di post-coalescenza, supponendo che il sistema non collassi immediatamente in buco nero. La ricerca, effettuata con metodi alternativi a quelli che verranno descritti nel capitolo \ref{chapter:cwb}, non porta a nessuna evidenza statisticamente significativa di un segnale\cite{Abbott_2020b}.
+È stata effettuata anche una ricerca di un eventuale segnale di post-coalescenza, supponendo che il sistema non collassi immediatamente in buco nero. La ricerca, effettuata con metodi alternativi a quelli descritti precedentemente, non porta a nessuna evidenza statisticamente significativa di un segnale\cite{Abbott_2020b}.
 
-In realtà le masse in gioco non permettono di escludere nemmeno la possibilità di coalescenza tra una stella di neutroni e un buco nero \cite{Han_2020}
 %\begin{wrapfigure}{r}{0.5\textwidth}
 %	\vspace{-5pt}
 %	\begin{center}

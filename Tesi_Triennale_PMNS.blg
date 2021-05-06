@@ -3,49 +3,50 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Tesi_Triennale_PMNS.aux
 The style file: acm.bst
 A level-1 auxiliary file: Capitoli/Frontespizio/Frontespizio.aux
+A level-1 auxiliary file: Capitoli/Frontespizio/abstract.aux
 A level-1 auxiliary file: Capitoli/Capitolo_1/Capitolo_1.aux
 A level-1 auxiliary file: Capitoli/Capitolo_2/Capitolo_2.aux
 A level-1 auxiliary file: Capitoli/Capitolo_3/Capitolo_3.aux
 A level-1 auxiliary file: Capitoli/Conclusioni/Conclusioni.aux
 Database file #1: BibliografiaTesi.bib
-You've used 22 entries,
+You've used 25 entries,
             2253 wiz_defined-function locations,
-            674 strings with 8485 characters,
-and the built_in function-call counts, 7893 in all, are:
-= -- 670
-> -- 604
+            690 strings with 9038 characters,
+and the built_in function-call counts, 8554 in all, are:
+= -- 734
+> -- 625
 < -- 0
-+ -- 249
-- -- 224
-* -- 735
-:= -- 1412
-add.period$ -- 68
-call.type$ -- 22
-change.case$ -- 173
++ -- 258
+- -- 230
+* -- 757
+:= -- 1521
+add.period$ -- 80
+call.type$ -- 25
+change.case$ -- 185
 chr.to.int$ -- 0
-cite$ -- 22
-duplicate$ -- 213
-empty$ -- 478
-format.name$ -- 224
-if$ -- 1508
+cite$ -- 25
+duplicate$ -- 237
+empty$ -- 547
+format.name$ -- 230
+if$ -- 1653
 int.to.chr$ -- 0
-int.to.str$ -- 22
+int.to.str$ -- 25
 missing$ -- 22
-newline$ -- 113
-num.names$ -- 44
-pop$ -- 176
+newline$ -- 131
+num.names$ -- 50
+pop$ -- 204
 preamble$ -- 1
-purify$ -- 156
+purify$ -- 165
 quote$ -- 0
-skip$ -- 119
+skip$ -- 135
 stack$ -- 0
-substring$ -- 221
-swap$ -- 43
+substring$ -- 236
+swap$ -- 49
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 80
+type$ -- 92
 warning$ -- 0
-while$ -- 51
-width$ -- 24
-write$ -- 219
+while$ -- 57
+width$ -- 27
+write$ -- 253
